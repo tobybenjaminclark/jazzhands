@@ -3,6 +3,6 @@
 if(current_state == other.stype)
 {
 	global.points = global.points + 1;
-	audio_play_sound(sndBlockHit, 2, false);
+	audio_play_sound(sndBrickHit, 2, false);
 	instance_destroy(other);
 }
