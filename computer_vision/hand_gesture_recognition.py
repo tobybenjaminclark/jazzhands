@@ -39,7 +39,7 @@ s = None
 
 def initialise_connection():
     TCP_IP = '127.0.0.1'
-    TCP_PORT = 1045
+    TCP_PORT = 1045 
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
         s.bind((TCP_IP, TCP_PORT))
@@ -50,6 +50,9 @@ def initialise_connection():
             print(f"Connected by {addr}")
             options = setup_image()
             while True:
+                data = conn.recv(1024)
+                if not data:
+                    break
                 image_data = receive_image_data(options)
                 conn.sendall(image_data)
 
