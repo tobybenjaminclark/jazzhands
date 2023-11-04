@@ -1,6 +1,7 @@
 // Create Event of obj_SpawnObject
 file = file_text_open_read("THRILLER.txt");
 alarm_count = 0; // Initialize alarm_count
+triggered_alarm_count = 0;
 line_number = 0;
 var line_number = 1; // Initialize line number counter
 if (file != -1) {
@@ -17,9 +18,10 @@ if (file != -1) {
 		var name_line = file_text_readln(file);
 		var side_line = file_text_readln(file);
 		line_number = line_number + 3;
-		var new_linepos = string_pos("\n", timer_line);
-		var new_linepos2 = string_pos("\n", name_line);
-		var new_linepos3 = string_pos("\n", side_line);
+		var new_linepos = string_pos("\cr\lf", timer_line);
+		var new_linepos2 = string_pos("\cr\lf", name_line);
+		var new_linepos3 = string_pos("\cr\lf", side_line);
+		
 		var newtimer = string_delete(timer_line, new_linepos, 1);
 		var newname = string_delete(name_line, new_linepos2, 1);
 		var newside = string_delete(side_line, new_linepos3, 1);
@@ -35,13 +37,16 @@ if (file != -1) {
 			show_message("TIMER was " + newtimer);
 			show_message("SIDE was " + newside);
 		}
-        var object_name = newname;
        
-		
-        alarm[alarm_count] = spawn_time * room_speed div 1000; // Convert milliseconds to steps
+		if(triggered_alarm_count == 0)
+		{
+			alarm[alarm_count] = spawn_time * room_speed div 1000; // Convert milliseconds to steps
+			triggered_alarm_count = 1;
+		}
             
         // Store object name in the ds_list
-        ds_list_add(object_names, object_name);
+		show_debug_message("Added {0} at {1} at side {2}", newname, string(spawn_time), newside);
+        ds_list_add(object_names, newname);
         ds_list_add(object_times, spawn_time); 
 		ds_list_add(object_sides, newside);
 		

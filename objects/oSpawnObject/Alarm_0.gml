@@ -1,10 +1,10 @@
 // Alarm 0 Event of obj_SpawnObject
-show_debug_message("Alarm 0 triggered");
 if (ds_list_size(object_names) > 0) {
 	
 	var object_side = object_sides[| 0];
+	
 	var xoffset = 0
-	if (object_side == "RIGHT")
+	if (string_char_at(object_side, 1) == "R")
 	{
 		xoffset = x + 100;
 	}
@@ -16,19 +16,44 @@ if (ds_list_size(object_names) > 0) {
     // Get the object name from the ds_list
     var object_name = ds_list_find_value(object_names, 0);
 	
+		// Original string
+	var originalString = object_name;
+
+	// Get the length of the string
+	var stringLength = string_length(originalString);
+
+	// Check if the string is not empty
+	if (stringLength > 0) {
+	    // Remove the last character from the string
+	    var modifiedString = string_delete(originalString, stringLength - 1, 1);
+    
+	    // Output the modified string
+	    show_debug_message("Modified String: " + modifiedString);
+	} else {
+	    // Handle empty string case if necessary
+	    show_debug_message("String is empty.");
+	}
+	
+	object_name = modifiedString;
+
+	
 	show_debug_message("Object Name is {0}", object_name);
-    if (object_name == "OPEN_HAND") {
+    if (object_name == "OPEN_HAND" || object_name == "OPEN_HAND\n") {
         a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "OPEN_HAND";
 		a.sprite_index = sprOpenHand;
-    } else if (object_name == "VICTORY") {
+    } else if (object_name == "VICTORY" || object_name == "VICTORY\n") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "VICTORY";
 		a.sprite_index = sprVictory;
+	} else if (object_name == "THUMB_UP" || object_name == "THUMB_UP\n") {
+		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
+		a.stype = "THUMB_UP";
+		a.sprite_index = sprThumbsUp;
     } else {
         show_message("Invalid object name (" + object_name + ") in THRILLER.txt");
     }
-    
+
 	current_timer = object_times[|0];
 	if(ds_list_size(object_times) > 1)
 	{
