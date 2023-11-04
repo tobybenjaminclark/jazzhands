@@ -12,6 +12,7 @@ import socket
 import struct
 import time
 import json
+from threading import Thread
 
 possible_gestures = ["None", "Closed_Fist", "Open_Palm", "Pointing_Up", "Thumb_Down", "Thumb_Up", "Victory", "ILoveYou"]
 
@@ -38,12 +39,13 @@ previous_result = {
 
 
 def initialise_connection():
-    options = setup_image()
 
     HOST = "127.0.0.1"
     PORT = 5005
 
     while True:
+
+        print(f"current result server: {current_result}")
 
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             s.bind((HOST, PORT))
@@ -54,10 +56,13 @@ def initialise_connection():
                 print(f"Connected by {addr}")
                 try:
                     while True:
-                        
-                        image_string = receive_image_data(options)
-                        conn.sendall(bytes(image_string, "utf-8"))
-                        print("sending")
+                        if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
+                            previous_result["Left"] = current_result["Left"]
+                            previous_result["Right"] = current_result["Right"]
+
+                            image_string = f"left: {current_result['Left']} right: {current_result['Right']}"
+
+                            conn.sendall(bytes(image_string, "utf-8"))
                 except:
                     pass
 
@@ -76,6 +81,7 @@ def receive_image_data(options):
     with GestureRecognizer.create_from_options(options) as recognizer:
 
         while True:
+
             # Read each frame from the webcam
             _, frame = cap.read()
 
@@ -85,13 +91,10 @@ def receive_image_data(options):
             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
             recognition_result = recognizer.recognize_async(mp_image, timestamp)
 
-            if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
-                print(current_result)
-                previous_result["Left"] = current_result["Left"]
-                previous_result["Right"] = current_result["Right"]
+            cv2.imshow("frame", frame)
 
-                return f"left: {current_result['Left']} right: {current_result['Right']}"
-
+            if cv2.waitKey(1) == ord('q'):
+                break
 
     # release the webcam and destroy all active windows
     cap.release()
@@ -122,6 +125,30 @@ def print_result(result: GestureRecognizerResult, output_image: mp.Image, timest
     current_result["Left"] = data["Left"]
     current_result["Right"] = data["Right"]
 
+    """if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
+                previous_result["Left"] = current_result["Left"]
+                previous_result["Right"] = current_result["Right"]
+
+                print(f"current result client: {current_result}")
+
+                #return f"left: {current_result['Left']} right: {current_result['Right']}"""
+            
+            
 
 
-initialise_connection()
+
+
+
+#initialise_connection()
+
+thread = Thread(target=initialise_connection)
+
+thread.start()
+
+options = setup_image()
+
+receive_image_data(options)
+
+
+
+
