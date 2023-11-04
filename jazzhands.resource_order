@@ -17,9 +17,15 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings": [
+    {"name":"sprThrillerIcon","order":2,"path":"sprites/sprThrillerIcon/sprThrillerIcon.yy",},
+    {"name":"oSelectGame","order":1,"path":"objects/oSelectGame/oSelectGame.yy",},
     {"name":"rmSelectMode","order":2,"path":"rooms/rmSelectMode/rmSelectMode.yy",},
+    {"name":"oGameInfo","order":3,"path":"objects/oGameInfo/oGameInfo.yy",},
+    {"name":"oSelectMode","order":2,"path":"objects/oSelectMode/oSelectMode.yy",},
+    {"name":"sprOnePlayer","order":3,"path":"sprites/sprOnePlayer/sprOnePlayer.yy",},
     {"name":"rmSelectGame","order":1,"path":"rooms/rmSelectGame/rmSelectGame.yy",},
     {"name":"sprLogo","order":1,"path":"sprites/sprLogo/sprLogo.yy",},
+    {"name":"sprTwoPlayer","order":4,"path":"sprites/sprTwoPlayer/sprTwoPlayer.yy",},
     {"name":"rmGame","order":3,"path":"rooms/rmGame/rmGame.yy",},
   ],
 }
