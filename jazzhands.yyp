@@ -27,7 +27,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
   ],
-  "IncludedFiles": [],
+  "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"THRILLER.txt","CopyToMask":-1,"filePath":"datafiles",},
+  ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
@@ -35,11 +37,14 @@
   },
   "resources": [
     {"id":{"name":"sprThrillerIcon","path":"sprites/sprThrillerIcon/sprThrillerIcon.yy",},},
+    {"id":{"name":"timer","path":"scripts/timer/timer.yy",},},
     {"id":{"name":"oSelectGame","path":"objects/oSelectGame/oSelectGame.yy",},},
     {"id":{"name":"rmSelectMode","path":"rooms/rmSelectMode/rmSelectMode.yy",},},
     {"id":{"name":"oGameInfo","path":"objects/oGameInfo/oGameInfo.yy",},},
+    {"id":{"name":"oSymbol","path":"objects/oSymbol/oSymbol.yy",},},
     {"id":{"name":"oScreenSaver","path":"objects/oScreenSaver/oScreenSaver.yy",},},
     {"id":{"name":"sprInsertCredit","path":"sprites/sprInsertCredit/sprInsertCredit.yy",},},
+    {"id":{"name":"oSpawnObject","path":"objects/oSpawnObject/oSpawnObject.yy",},},
     {"id":{"name":"oSelectMode","path":"objects/oSelectMode/oSelectMode.yy",},},
     {"id":{"name":"sprOnePlayer","path":"sprites/sprOnePlayer/sprOnePlayer.yy",},},
     {"id":{"name":"ParticleSystem1","path":"particles/ParticleSystem1/ParticleSystem1.yy",},},
