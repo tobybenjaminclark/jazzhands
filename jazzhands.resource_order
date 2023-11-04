@@ -23,7 +23,6 @@
     {"name":"rmSelectMode","order":2,"path":"rooms/rmSelectMode/rmSelectMode.yy",},
     {"name":"sprOpenHand","order":12,"path":"sprites/sprOpenHand/sprOpenHand.yy",},
     {"name":"oGameInfo","order":3,"path":"objects/oGameInfo/oGameInfo.yy",},
-    {"name":"sndBlockHit","order":1,"path":"sounds/sndBlockHit/sndBlockHit.yy",},
     {"name":"oSymbol","order":5,"path":"objects/oSymbol/oSymbol.yy",},
     {"name":"sprVictory","order":14,"path":"sprites/sprVictory/sprVictory.yy",},
     {"name":"rmNewGameInitialization","order":5,"path":"rooms/rmNewGameInitialization/rmNewGameInitialization.yy",},

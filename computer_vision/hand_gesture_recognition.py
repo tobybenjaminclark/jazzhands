@@ -43,22 +43,23 @@ def initialise_connection():
     HOST = "127.0.0.1"
     PORT = 5005
 
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((HOST, PORT))
-        print("listening")
-        s.listen()
-        conn, addr = s.accept()
-        with conn:
-            print(f"Connected by {addr}")
-            while True:
-                """data =   conn.recv(1024)
-                if not data:
-                    break"""
-                
-                image_string = receive_image_data(options)
-                conn.sendall(bytes(image_string, "utf-8"))
-                print("sending")
+    while True:
 
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.bind((HOST, PORT))
+            print("listening")
+            s.listen()
+            conn, addr = s.accept()
+            with conn:
+                print(f"Connected by {addr}")
+                try:
+                    while True:
+                        
+                        image_string = receive_image_data(options)
+                        conn.sendall(bytes(image_string, "utf-8"))
+                        print("sending")
+                except:
+                    pass
 
 
 def setup_image():
