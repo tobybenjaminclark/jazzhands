@@ -6,7 +6,7 @@ import cv2
 import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
-
+import time
 import socket
 import struct
 import time
@@ -17,7 +17,7 @@ possible_gestures = ["None", "Closed_Fist", "Open_Palm", "Pointing_Up", "Thumb_D
 # Initialize the webcam
 cap = cv2.VideoCapture(0)
 
-model_path = r"computer_vision\gesture_recognizer.task"
+model_path = r"computer_vision/gesture_recognizer.task"
 
 BaseOptions = mp.tasks.BaseOptions
 GestureRecognizer = mp.tasks.vision.GestureRecognizer
@@ -97,13 +97,12 @@ with GestureRecognizer.create_from_options(options) as recognizer:
     while True:
         # Read each frame from the webcam
         _, frame = cap.read()
-        timestamp = cap.get(cv2.CAP_PROP_POS_MSEC)
+
+        # Get the current time in milliseconds
+        timestamp = int(time.time() * 1000)
 
         mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
-
-        recognition_result = recognizer.recognize_async(mp_image, int(timestamp))
-
-
+        recognition_result = recognizer.recognize_async(mp_image, timestamp)
         # Show the final output
         cv2.imshow("Output", frame) 
 
