@@ -1,12 +1,11 @@
-client_socket = network_create_socket(network_socket_tcp);
 
-var ip = string("127.0.0.1")
-var server = network_connect(client_socket, ip, 8008);
-if server < 0
-    {
-		show_message("not connected")
-    }
-else
-    {
-		show_message("connected")
-    }
+if (result == network_ok) {
+    // Connection successful
+    var data = network_receive(client_socket, buffer, buffer_size);
+    // Process the received data
+    show_message("Received data: " + buffer_read_string(data));
+    buffer_delete(data);
+} else {
+    // Connection failed
+    show_message("Failed to connect to the server");
+}

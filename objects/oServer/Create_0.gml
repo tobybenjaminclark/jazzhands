@@ -1,6 +1,12 @@
-server_socket = network_create_server(network_socket_tcp, 8008, 5);
-if (server_socket < 0)
+client_socket = network_create_socket(network_socket_tcp);
+
+var ip = string("192.168.1.1'")
+var server = network_connect(client_socket, ip, 8008);
+if server < 0
 {
-	show_mesage("Failed to initialize server!");
-	game_end(1);
+	show_message("not connected")
+}
+else
+{
+	show_message("connected")
 }
