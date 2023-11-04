@@ -1,7 +1,3 @@
+
 y = y + 1;
-/// @description Insert description here
-// You can write your code in this editor
-
-draw_text(x, y, stype);
-
-
+part_system_position(p_sys, x+64, y+64);

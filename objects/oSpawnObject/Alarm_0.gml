@@ -19,10 +19,12 @@ if (ds_list_size(object_names) > 0) {
 	show_debug_message("Object Name is {0}", object_name);
     if (object_name == "OPEN_HAND") {
         a=instance_create_layer(xoffset, y, "Instances", oSymbol);
-		a.stype = "OPENHAND";
-    } else if (object_name == "CLOSED_FIST") {
+		a.stype = "OPEN_HAND";
+		a.sprite_index = sprOpenHand;
+    } else if (object_name == "VICTORY") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
-		a.stype = "CLOSEDFIST";
+		a.stype = "VICTORY";
+		a.sprite_index = sprVictory;
     } else {
         show_message("Invalid object name (" + object_name + ") in THRILLER.txt");
     }

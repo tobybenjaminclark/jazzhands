@@ -1,4 +1,5 @@
-# TechVidvan hand Gesture Recognizer
+
+# TOBY AMBER hand Gesture Recognizer
 
 # import necessary packages
 
@@ -17,7 +18,7 @@ possible_gestures = ["None", "Closed_Fist", "Open_Palm", "Pointing_Up", "Thumb_D
 # Initialize the webcam
 cap = cv2.VideoCapture(0)
 
-model_path = r"computer_vision/gesture_recognizer.task"
+model_path = r"computer_vision//gesture_recognizer.task"
 
 BaseOptions = mp.tasks.BaseOptions
 GestureRecognizer = mp.tasks.vision.GestureRecognizer
@@ -26,35 +27,39 @@ GestureRecognizerResult = mp.tasks.vision.GestureRecognizerResult
 VisionRunningMode = mp.tasks.vision.RunningMode
 
 current_result = {
-    "Left": None,
-    "Right": None
+    "Left": "Not_Detected",
+    "Right": "Not_Detected"
 }
 
 previous_result = {
-    "Left": None,
-    "Right": None
+    "Left": "Not_Detected",
+    "Right": "Not_Detected"
 }
 
-s = None
 
 def initialise_connection():
-    TCP_IP = '127.0.0.1'
-    TCP_PORT = 1045 
+    options = setup_image()
+
+    HOST = "127.0.0.1"
+    PORT = 5005
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((TCP_IP, TCP_PORT))
+        s.bind((HOST, PORT))
         print("listening")
         s.listen()
         conn, addr = s.accept()
         with conn:
             print(f"Connected by {addr}")
-            options = setup_image()
             while True:
-                data = conn.recv(1024)
+                """data =   conn.recv(1024)
                 if not data:
-                    break
-                image_data = receive_image_data(options)
-                conn.sendall(image_data)
+                    break"""
+                
+                image_string = receive_image_data(options)
+                conn.sendall(bytes(image_string, "utf-8"))
+                print("sending")
+
+
 
 def setup_image():
     options = GestureRecognizerOptions(
@@ -78,27 +83,19 @@ def receive_image_data(options):
 
             mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
             recognition_result = recognizer.recognize_async(mp_image, timestamp)
-            # Show the final output
-            cv2.imshow("Output", frame) 
 
             if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
                 print(current_result)
                 previous_result["Left"] = current_result["Left"]
                 previous_result["Right"] = current_result["Right"]
 
-            return current_result
+                return f"left: {current_result['Left']} right: {current_result['Right']} "
 
 
     # release the webcam and destroy all active windows
     cap.release()
 
     cv2.destroyAllWindows()
-
-def send_data(gesture_data):
-
-    data_string = json.dumps(gesture_data)
-    s.send(data_string)
-    time.sleep(.1)
 
 # Create a gesture recognizer instance with the live stream mode:
 def print_result(result: GestureRecognizerResult, output_image: mp.Image, timestamp_ms: int):
@@ -125,13 +122,5 @@ def print_result(result: GestureRecognizerResult, output_image: mp.Image, timest
     current_result["Right"] = data["Right"]
 
 
-try:
-    initialise_connection()
-    connected = True
-except Exception as e:
-    print(e)
-    connected = False
 
-print(f"connected: {connected}")
-
-
+initialise_connection()
