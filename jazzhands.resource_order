@@ -23,6 +23,7 @@
     {"name":"rmSelectMode","order":2,"path":"rooms/rmSelectMode/rmSelectMode.yy",},
     {"name":"oGameInfo","order":3,"path":"objects/oGameInfo/oGameInfo.yy",},
     {"name":"oSymbol","order":5,"path":"objects/oSymbol/oSymbol.yy",},
+    {"name":"rmNewGameInitialization","order":5,"path":"rooms/rmNewGameInitialization/rmNewGameInitialization.yy",},
     {"name":"rmDifficulty","order":4,"path":"rooms/rmDifficulty/rmDifficulty.yy",},
     {"name":"oSpawnObject","order":4,"path":"objects/oSpawnObject/oSpawnObject.yy",},
     {"name":"oSelectMode","order":2,"path":"objects/oSelectMode/oSelectMode.yy",},
@@ -40,5 +41,6 @@
     {"name":"sprDifficultyEasy","order":10,"path":"sprites/sprDifficultyEasy/sprDifficultyEasy.yy",},
     {"name":"rmGame","order":3,"path":"rooms/rmGame/rmGame.yy",},
     {"name":"sprSymbolKiller","order":7,"path":"sprites/sprSymbolKiller/sprSymbolKiller.yy",},
+    {"name":"oNewGame","order":10,"path":"objects/oNewGame/oNewGame.yy",},
   ],
 }
