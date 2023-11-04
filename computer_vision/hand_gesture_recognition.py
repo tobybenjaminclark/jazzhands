@@ -17,7 +17,7 @@ possible_gestures = ["None", "Closed_Fist", "Open_Palm", "Pointing_Up", "Thumb_D
 # Initialize the webcam
 cap = cv2.VideoCapture(0)
 
-model_path = r"C:\Users\amber\Documents\hackathon\computer_vision\gesture_recognizer.task"
+model_path = r"computer_vision\gesture_recognizer.task"
 
 BaseOptions = mp.tasks.BaseOptions
 GestureRecognizer = mp.tasks.vision.GestureRecognizer
@@ -35,9 +35,6 @@ previous_result = {
     "Right": None
 }
 
-buffer_u16 = "H"
-buffer_u8 = "b"
-buffer_type = buffer_u8+buffer_u16
 s = None
 
 def initialise_connection():
