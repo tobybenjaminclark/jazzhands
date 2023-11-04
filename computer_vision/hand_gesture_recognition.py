@@ -38,23 +38,19 @@ previous_result = {
 s = None
 
 def initialise_connection():
-    TCP_IP = '127.0.0.1'
-    TCP_PORT = 1045 
+    UDP_IP = "127.0.0.1"
+    UDP_PORT = 5005
+    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
+    sock.bind((UDP_IP, UDP_PORT))
 
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((TCP_IP, TCP_PORT))
-        print("listening")
-        s.listen()
-        conn, addr = s.accept()
-        with conn:
-            print(f"Connected by {addr}")
-            options = setup_image()
-            while True:
-                data = conn.recv(1024)
-                if not data:
-                    break
-                image_data = receive_image_data(options)
-                conn.sendall(image_data)
+    options = setup_image()
+
+    while True:
+        data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
+        print("received message: %s" % data)
+
+        image_data = receive_image_data(options)
+        sock.sendto(image_data, (UDP_IP, UDP_PORT))
 
 def setup_image():
     options = GestureRecognizerOptions(
@@ -86,7 +82,7 @@ def receive_image_data(options):
                 previous_result["Left"] = current_result["Left"]
                 previous_result["Right"] = current_result["Right"]
 
-            return current_result
+                return current_result
 
 
     # release the webcam and destroy all active windows
