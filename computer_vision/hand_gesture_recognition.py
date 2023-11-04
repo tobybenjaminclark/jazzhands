@@ -89,7 +89,7 @@ def receive_image_data(options):
                 previous_result["Left"] = current_result["Left"]
                 previous_result["Right"] = current_result["Right"]
 
-                return f"left: {current_result['Left']} right: {current_result['Right']} "
+            return current_result
 
 
     # release the webcam and destroy all active windows
