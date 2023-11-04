@@ -1,6 +1,7 @@
 // Create Event of obj_SpawnObject
 file = file_text_open_read("THRILLER.txt");
 alarm_count = 0; // Initialize alarm_count
+line_number = 0;
 var line_number = 1; // Initialize line number counter
 if (file != -1) {
     // Initialize a ds_list to store object names
@@ -11,9 +12,11 @@ if (file != -1) {
     // Read and execute commands until the end of the file
     while (!file_text_eof(file)) {
         // Read the time (in milliseconds) and object name
+			
 		var timer_line = file_text_readln(file);
 		var name_line = file_text_readln(file);
 		var side_line = file_text_readln(file);
+		line_number = line_number + 3;
 		var new_linepos = string_pos("\n", timer_line);
 		var new_linepos2 = string_pos("\n", name_line);
 		var new_linepos3 = string_pos("\n", side_line);
@@ -21,7 +24,17 @@ if (file != -1) {
 		var newname = string_delete(name_line, new_linepos2, 1);
 		var newside = string_delete(side_line, new_linepos3, 1);
 		
-        var spawn_time = real(newtimer);
+		try
+		{
+			var spawn_time = real(newtimer);
+		}
+		catch(e)
+		{
+			show_message("Error parsing near line " + string(line_number))
+			show_message("NAME WAS " + newname);
+			show_message("TIMER was " + newtimer);
+			show_message("SIDE was " + newside);
+		}
         var object_name = newname;
        
 		
