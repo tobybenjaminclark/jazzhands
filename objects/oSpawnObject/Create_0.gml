@@ -6,27 +6,31 @@ if (file != -1) {
     // Initialize a ds_list to store object names
     object_names = ds_list_create();
 	object_times = ds_list_create();
+	object_sides = ds_list_create();
     
     // Read and execute commands until the end of the file
     while (!file_text_eof(file)) {
         // Read the time (in milliseconds) and object name
 		var timer_line = file_text_readln(file);
 		var name_line = file_text_readln(file);
+		var side_line = file_text_readln(file);
 		var new_linepos = string_pos("\n", timer_line);
 		var new_linepos2 = string_pos("\n", name_line);
+		var new_linepos3 = string_pos("\n", side_line);
 		var newtimer = string_delete(timer_line, new_linepos, 1);
 		var newname = string_delete(name_line, new_linepos2, 1);
+		var newside = string_delete(side_line, new_linepos3, 1);
 		
         var spawn_time = real(newtimer);
         var object_name = newname;
-        
+       
+		
         alarm[alarm_count] = spawn_time * room_speed div 1000; // Convert milliseconds to steps
             
-		
-			
         // Store object name in the ds_list
         ds_list_add(object_names, object_name);
-        ds_list_add(object_times, spawn_time);    
+        ds_list_add(object_times, spawn_time); 
+		ds_list_add(object_sides, newside);
 		
         // Increase alarm_count for the next alarm slot
         alarm_count++;

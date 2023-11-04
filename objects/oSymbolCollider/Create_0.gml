@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-draw_text(x, y, stype);
+image_yscale = 1 + global.DIFFICULTY
+
 
