@@ -39,12 +39,57 @@ s = None
 
 def initialise_connection():
     TCP_IP = '127.0.0.1'
-    TCP_PORT = 8008
+    TCP_PORT = 1045
 
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect((TCP_IP, TCP_PORT))
-    time.sleep(.1)
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((TCP_IP, TCP_PORT))
+        print("listening")
+        s.listen()
+        conn, addr = s.accept()
+        with conn:
+            print(f"Connected by {addr}")
+            options = setup_image()
+            while True:
+                image_data = receive_image_data(options)
+                conn.sendall(image_data)
 
+def setup_image():
+    options = GestureRecognizerOptions(
+    base_options=BaseOptions(model_asset_path=model_path),
+    running_mode=VisionRunningMode.LIVE_STREAM,
+    result_callback=print_result,
+    num_hands=2)
+
+    return options
+
+def receive_image_data(options):
+
+    with GestureRecognizer.create_from_options(options) as recognizer:
+
+        while True:
+            # Read each frame from the webcam
+            _, frame = cap.read()
+
+            # Get the current time in milliseconds
+            timestamp = int(time.time() * 1000)
+
+            mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
+            recognition_result = recognizer.recognize_async(mp_image, timestamp)
+            # Show the final output
+            cv2.imshow("Output", frame) 
+
+            if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
+                print(current_result)
+                previous_result["Left"] = current_result["Left"]
+                previous_result["Right"] = current_result["Right"]
+
+                return current_result
+
+
+    # release the webcam and destroy all active windows
+    cap.release()
+
+    cv2.destroyAllWindows()
 
 def send_data(gesture_data):
 
@@ -80,45 +125,10 @@ def print_result(result: GestureRecognizerResult, output_image: mp.Image, timest
 try:
     initialise_connection()
     connected = True
-except:
+except Exception as e:
+    print(e)
     connected = False
 
 print(f"connected: {connected}")
 
 
-options = GestureRecognizerOptions(
-    base_options=BaseOptions(model_asset_path=model_path),
-    running_mode=VisionRunningMode.LIVE_STREAM,
-    result_callback=print_result,
-    num_hands=2)
-
-with GestureRecognizer.create_from_options(options) as recognizer:
-
-    while True:
-        # Read each frame from the webcam
-        _, frame = cap.read()
-
-        # Get the current time in milliseconds
-        timestamp = int(time.time() * 1000)
-
-        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
-        recognition_result = recognizer.recognize_async(mp_image, timestamp)
-        # Show the final output
-        cv2.imshow("Output", frame) 
-
-        if cv2.waitKey(1) == ord('q'):
-            break
-
-        if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
-            print(current_result)
-            previous_result["Left"] = current_result["Left"]
-            previous_result["Right"] = current_result["Right"]
-
-            if(connected):
-                send_data(current_result)
-
-
-# release the webcam and destroy all active windows
-cap.release()
-
-cv2.destroyAllWindows()
