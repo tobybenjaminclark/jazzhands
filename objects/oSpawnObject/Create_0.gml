@@ -44,3 +44,6 @@ if (file != -1) {
     show_message("Failed to open THRILLER.txt");
     instance_destroy(); // Destroy the object if the file cannot be opened
 }
+
+// Play sound
+audio_play_sound(sndThriller, 1, false);

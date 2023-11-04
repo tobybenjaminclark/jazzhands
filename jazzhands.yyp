@@ -28,6 +28,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
   ],
   "IncludedFiles": [
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"mixkit-electronic-retro-block-hit-2185.wav","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"THRILLER.txt","CopyToMask":-1,"filePath":"datafiles",},
   ],
   "isEcma": false,
@@ -36,6 +37,7 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
+    {"id":{"name":"sndThriller","path":"sounds/sndThriller/sndThriller.yy",},},
     {"id":{"name":"sprDifficultyHard","path":"sprites/sprDifficultyHard/sprDifficultyHard.yy",},},
     {"id":{"name":"psSymbol","path":"particles/psSymbol/psSymbol.yy",},},
     {"id":{"name":"sprThrillerIcon","path":"sprites/sprThrillerIcon/sprThrillerIcon.yy",},},
@@ -44,6 +46,7 @@
     {"id":{"name":"rmSelectMode","path":"rooms/rmSelectMode/rmSelectMode.yy",},},
     {"id":{"name":"sprOpenHand","path":"sprites/sprOpenHand/sprOpenHand.yy",},},
     {"id":{"name":"oGameInfo","path":"objects/oGameInfo/oGameInfo.yy",},},
+    {"id":{"name":"sndBlockHit","path":"sounds/sndBlockHit/sndBlockHit.yy",},},
     {"id":{"name":"oSymbol","path":"objects/oSymbol/oSymbol.yy",},},
     {"id":{"name":"sprVictory","path":"sprites/sprVictory/sprVictory.yy",},},
     {"id":{"name":"oScreenSaver","path":"objects/oScreenSaver/oScreenSaver.yy",},},

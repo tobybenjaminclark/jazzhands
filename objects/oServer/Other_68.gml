@@ -10,7 +10,7 @@ if(n_id == server_socket){
         var t_buffer = ds_map_find_value(async_load, "buffer"); 
         var cmd_type = buffer_read(t_buffer, buffer_string);
         
-        show_message(cmd_type);
+        current_message = string(cmd_type);
     }
     //show_message("Something happened!");
 }
