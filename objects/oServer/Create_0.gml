@@ -1,5 +1,6 @@
 client_socket = network_create_socket(network_socket_tcp);
-current_message = "NONE";
+global.left_hand = "NONE";
+global.right_hand = "NONE";
 server_socket = network_connect_raw_async(client_socket, "127.0.0.1", 5005);
 
 if(server_socket < 0) show_message("Could not connect! Try turning on the server?");

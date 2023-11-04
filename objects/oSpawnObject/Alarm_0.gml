@@ -4,9 +4,11 @@ if (ds_list_size(object_names) > 0) {
 	var object_side = object_sides[| 0];
 	
 	var xoffset = 0
+	var side = "LEFT";
 	if (string_char_at(object_side, 1) == "R")
 	{
 		xoffset = x + 100;
+		side = "RIGHT";
 	}
 	else
 	{
@@ -41,16 +43,29 @@ if (ds_list_size(object_names) > 0) {
     if (object_name == "OPEN_HAND" || object_name == "OPEN_HAND\n") {
         a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "OPEN_HAND";
+		a.side = side;
 		a.sprite_index = sprOpenHand;
     } else if (object_name == "VICTORY" || object_name == "VICTORY\n") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "VICTORY";
+		a.side = side;
 		a.sprite_index = sprVictory;
 	} else if (object_name == "THUMB_UP" || object_name == "THUMB_UP\n") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "THUMB_UP";
+		a.side = side;
 		a.sprite_index = sprThumbsUp;
-    } else {
+    } else if (object_name == "THUMB_DOWN" || object_name == "THUMB_DOWN\n") {
+		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
+		a.stype = "THUMB_DOWN";
+		a.side = side;
+		a.sprite_index = sprThumbsDown;
+    }else if (object_name == "POINTING_UP" || object_name == "POINTING_UP\n") {
+		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
+		a.stype = "POINTING_UP";
+		a.side = side;
+		a.sprite_index = sprPointingUp;
+    }else {
         show_message("Invalid object name (" + object_name + ") in THRILLER.txt");
     }
 

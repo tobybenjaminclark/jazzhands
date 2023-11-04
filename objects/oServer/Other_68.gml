@@ -10,7 +10,23 @@ if(n_id == server_socket){
         var t_buffer = ds_map_find_value(async_load, "buffer"); 
         var cmd_type = buffer_read(t_buffer, buffer_string);
         
-        current_message = string(cmd_type);
+        // Original string
+		var originalString = string(cmd_type);
+
+		// Split the string at space
+		var stringArray = string_split(originalString, " ");
+
+		// Print the resulting array elements
+		if(array_length_1d(stringArray) < 2)
+		{
+			global.left_hand = "NONE";
+			global.right_hand = "NONE";
+		}
+		else
+		{
+			global.left_hand = stringArray[0];
+			global.right_hand = stringArray[1];
+		}
     }
     //show_message("Something happened!");
 }

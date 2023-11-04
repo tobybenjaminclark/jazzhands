@@ -64,4 +64,4 @@ if (file != -1) {
 }
 
 // Play sound
-audio_play_sound(sndThriller, 1, false);
+alarm[1] = 6 * room_speed;
