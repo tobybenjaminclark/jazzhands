@@ -1,5 +1,7 @@
 
-if (result == network_ok) {
+// Connect to the server
+
+if (server) {
     // Connection successful
     var data = network_receive(client_socket, buffer, buffer_size);
     // Process the received data
@@ -7,5 +9,5 @@ if (result == network_ok) {
     buffer_delete(data);
 } else {
     // Connection failed
-    show_message("Failed to connect to the server");
+	draw_text(x,y,"FAILED TO CONNECT!");
 }

@@ -38,7 +38,7 @@ previous_result = {
 s = None
 
 def initialise_connection():
-    TCP_IP = '127.0.0.1'
+    TCP_IP = '192.168.1.1'
     TCP_PORT = 8008
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
