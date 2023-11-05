@@ -2,7 +2,12 @@
 // You can write your code in this editor
 
 // Play sound!
-audio_play_sound(sndThriller, 1, false);
-
-
+if(global.SONG_SELECTED == "THRILLER")
+{
+	audio_play_sound(sndThriller, 1, false);
+}
+else if(global.SONG_SELECTED == "RASPUTIN")
+{
+	audio_play_sound(sndRasputin, 1, false);
+}
 

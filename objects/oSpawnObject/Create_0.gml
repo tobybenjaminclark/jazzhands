@@ -1,5 +1,13 @@
 // Create Event of obj_SpawnObject
-file = file_text_open_read("THRILLER.txt");
+if(global.SONG_SELECTED == "THRILLER")
+{
+	file = file_text_open_read("THRILLER.txt");
+}
+else
+{
+	file = file_text_open_read("RASPUTIN.txt");
+}
+
 alarm_count = 0; // Initialize alarm_count
 triggered_alarm_count = 0;
 line_number = 0;
@@ -56,10 +64,12 @@ if (file != -1) {
         // Increment the line number counter
         line_number++;
     }
-    
+	
+    alarm[3] = (spawn_time + 1000) * room_speed div 1000;
+	
     file_text_close(file);
 } else {
-    show_message("Failed to open THRILLER.txt");
+    show_message("Failed to open file");
     instance_destroy(); // Destroy the object if the file cannot be opened
 }
 

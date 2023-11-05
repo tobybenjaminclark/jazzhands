@@ -40,27 +40,27 @@ if (ds_list_size(object_names) > 0) {
 
 	
 	show_debug_message("Object Name is {0}", object_name);
-    if (object_name == "OPEN_HAND" || object_name == "OPEN_HAND\n") {
+    if (object_name == "OPEN_HAND" || object_name == "OPEN_HAND\n" || object_name == "OPEN_HAN" || object_name == "OPEN_PAL\n"|| object_name == "OPEN_HAN\n" || object_name == "OPEN_PAL\n") {
         a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "OPEN_HAND";
 		a.side = side;
 		a.sprite_index = sprOpenHand;
-    } else if (object_name == "VICTORY" || object_name == "VICTORY\n") {
+    } else if (object_name == "VICTORY" || object_name == "VICTORY\n"|| object_name == "VICTOR\n"|| object_name == "VICTOR") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "VICTORY";
 		a.side = side;
 		a.sprite_index = sprVictory;
-	} else if (object_name == "THUMB_UP" || object_name == "THUMB_UP\n") {
+	} else if (object_name == "THUMB_UP" || object_name == "THUMB_UP\n" || object_name == "THUMB_U" || object_name == "THUMB_U\n") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "THUMB_UP";
 		a.side = side;
 		a.sprite_index = sprThumbsUp;
-    } else if (object_name == "THUMB_DOWN" || object_name == "THUMB_DOWN\n") {
+    } else if (object_name == "THUMB_DOWN" || object_name == "THUMB_DOWN\n" || object_name == "THUMB_DOW" || object_name == "THUMB_DOW\n") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "THUMB_DOWN";
 		a.side = side;
 		a.sprite_index = sprThumbsDown;
-    }else if (object_name == "POINTING_UP" || object_name == "POINTING_UP\n") {
+    }else if (object_name == "POINTING_UP" || object_name == "POINTING_UP\n" || object_name == "POINTING_U" || object_name == "POINTING_U\n") {
 		a=instance_create_layer(xoffset, y, "Instances", oSymbol);
 		a.stype = "POINTING_UP";
 		a.side = side;
@@ -77,7 +77,7 @@ if (ds_list_size(object_names) > 0) {
 		new_time = (next_time - current_timer);
 		alarm_set(0, new_time * room_speed div 1000);
 	}
-	
+
     // Remove the processed command from the ds_list
 	ds_list_delete(object_times, 0);
     ds_list_delete(object_names, 0);
