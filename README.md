@@ -7,7 +7,7 @@ JazzHands is a mixed-reality, retro-style rhythm game developed using GameMakerS
 ![](JazzHandsLogo.png)
 
 # Backend
-JazzHands uses MediaPipe to recognize hand gestures. Jazzhands can recognise if a hand is left or right handed, and handle multiple hands.
+JazzHands uses MediaPipe to recognize hand gestures. Jazzhands can distinguish left hands from right hands, and successfully handle multiple hands, allowing for single and multiplayer mode.
 
 # Frontend
-Assets are made in Aesprite, 
+Assets are made in Aesprite. JazzHands was made with a retro feel in mind, hoping to combine the nostalgic feel of arcade games with cutting-edge computer vision technology. We tailored our design decisions to portray this idea.
