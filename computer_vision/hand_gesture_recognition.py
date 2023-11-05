@@ -61,7 +61,7 @@ def initialise_connection():
                             previous_result["Right"] = current_result["Right"]
 
                             image_string = f"{current_result['Left']} {current_result['Right']}"
-
+                            print(image_string)
                             conn.sendall(bytes(image_string, "utf-8"))
                 except:
                     pass
