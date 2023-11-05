@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "sprThrillerIcon",
-  "bbox_bottom": 455,
-  "bbox_left": 41,
-  "bbox_right": 476,
-  "bbox_top": 37,
+  "bbox_bottom": 127,
+  "bbox_left": 0,
+  "bbox_right": 127,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4c14659c-421f-4c64-9d16-9398def1ae90",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7f755367-bcd2-4a14-9e95-e7c0adbee9f0",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 512,
+  "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"503f4882-636c-48da-ade8-3a164a2ca2e8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"93a99fd4-1ae3-44ad-b5f0-7cb6850cd950","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4c14659c-421f-4c64-9d16-9398def1ae90","path":"sprites/sprThrillerIcon/sprThrillerIcon.yy",},},},"Disabled":false,"id":"94519772-4878-4986-ae70-063c24f6e2e9","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7f755367-bcd2-4a14-9e95-e7c0adbee9f0","path":"sprites/sprThrillerIcon/sprThrillerIcon.yy",},},},"Disabled":false,"id":"2268eab0-8803-4693-8b57-bce5aba97a2d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 512,
+  "width": 128,
 }

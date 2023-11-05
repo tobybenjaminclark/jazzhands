@@ -5,6 +5,7 @@ if(global.right_hand == "Open_Palm")
 {
 	sprite_index = sprOpenHand;
 	image_speed = 0;
+
 }
 else if(global.right_hand == "Closed_Fist")
 {

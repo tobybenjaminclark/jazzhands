@@ -19,7 +19,7 @@ if(alive == false)
 	{
 		x = x - 1;
 	}
-	image_alpha = image_alpha - 0.002;
+	image_alpha = image_alpha - 0.006;
 	image_xscale = image_xscale + 0.01;
 	image_yscale = image_yscale + 0.01;
 	if(ticks_since_dead > 2000)
