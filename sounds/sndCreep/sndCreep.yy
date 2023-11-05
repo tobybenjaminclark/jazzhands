@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "sndCreep.mp3",
   "type": 0,
-  "volume": 0.12,
+  "volume": 0.22,
 }

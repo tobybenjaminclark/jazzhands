@@ -78,28 +78,31 @@ def setup_image():
 
 def receive_image_data(options):
 
-    with GestureRecognizer.create_from_options(options) as recognizer:
+    while True:
 
-        while True:
+        try:
+            with GestureRecognizer.create_from_options(options) as recognizer:
 
-            try:
+                while True:
 
-                # Read each frame from the webcam
-                _, frame = cap.read()
 
-                # Get the current time in milliseconds
-                timestamp = int(time.time() * 1000)
+                        # Read each frame from the webcam
+                        _, frame = cap.read()
 
-                mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
-                recognition_result = recognizer.recognize_async(mp_image, timestamp)
+                        # Get the current time in milliseconds
+                        timestamp = int(time.time() * 1000)
 
-                cv2.imshow("frame", frame)
+                        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
+                        recognition_result = recognizer.recognize_async(mp_image, timestamp)
 
-                if cv2.waitKey(1) == ord('q'):
-                    break
+                        cv2.imshow("frame", frame)
 
-            except:
-                pass
+                        if cv2.waitKey(1) == ord('q'):
+                            break
+        except:
+            pass
+
+       
 
     # release the webcam and destroy all active windows
     cap.release()
