@@ -3,11 +3,16 @@ if(global.SONG_SELECTED == "THRILLER")
 {
 	file = file_text_open_read("THRILLER.txt");
 }
+else if(global.SONG_SELECTED == "TETRIS")
+{
+	file = file_text_open_read("TETRIS.txt");
+}
 else
 {
 	file = file_text_open_read("RASPUTIN.txt");
 }
 
+objects_spawned = 0;
 alarm_count = 0; // Initialize alarm_count
 triggered_alarm_count = 0;
 line_number = 0;

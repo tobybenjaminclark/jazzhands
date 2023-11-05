@@ -1,6 +1,8 @@
 // Alarm 0 Event of obj_SpawnObject
 if (ds_list_size(object_names) > 0) {
 	
+	objects_spawned += 1;
+	show_debug_message(string(objects_spawned));
 	var object_side = object_sides[| 0];
 	
 	var xoffset = 0
@@ -75,7 +77,13 @@ if (ds_list_size(object_names) > 0) {
 	
 		next_time = object_times[|1];
 		new_time = (next_time - current_timer);
-		alarm_set(0, new_time * room_speed div 1000);
+		var new_time = new_time * room_speed div 1000
+		if(new_time < 5)
+		{
+			new_time = 5;
+		}
+		
+		alarm_set(0, new_time);
 	}
 
     // Remove the processed command from the ds_list

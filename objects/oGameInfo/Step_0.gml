@@ -13,6 +13,10 @@ if(global.spawnrate > global.spawnmoment)
 		instance_create_layer(100, 585+random_range(0,400), "BackgroundCharacters", oRussianDoll);
 		instance_create_layer(100 - random_range(100,200), 585+random_range(0,400), "BackgroundCharacters", oRussianSoldier);
 	}
+	else if(global.SONG_SELECTED == "TETRIS")
+	{
+		instance_create_layer(100, 585+random_range(0,400), "BackgroundCharacters", oRedTetra);
+	}
 	
 	
 	global.spawnrate = 0;

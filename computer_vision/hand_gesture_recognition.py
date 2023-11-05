@@ -82,19 +82,24 @@ def receive_image_data(options):
 
         while True:
 
-            # Read each frame from the webcam
-            _, frame = cap.read()
+            try:
 
-            # Get the current time in milliseconds
-            timestamp = int(time.time() * 1000)
+                # Read each frame from the webcam
+                _, frame = cap.read()
 
-            mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
-            recognition_result = recognizer.recognize_async(mp_image, timestamp)
+                # Get the current time in milliseconds
+                timestamp = int(time.time() * 1000)
 
-            cv2.imshow("frame", frame)
+                mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
+                recognition_result = recognizer.recognize_async(mp_image, timestamp)
 
-            if cv2.waitKey(1) == ord('q'):
-                break
+                cv2.imshow("frame", frame)
+
+                if cv2.waitKey(1) == ord('q'):
+                    break
+
+            except:
+                pass
 
     # release the webcam and destroy all active windows
     cap.release()
@@ -111,28 +116,24 @@ def print_result(result: GestureRecognizerResult, output_image: mp.Image, timest
     "Right": "Not_Detected"
     }
 
-
-    for x in range(len(result.handedness)):
-        handedness.append(result.handedness[x][0].category_name)
+    try:
 
 
-    for x in range(len(result.gestures)):
-
-        if(result.gestures[x][0].score > 0.5):
-            data[handedness[x]] = result.gestures[x][0].category_name
+        for x in range(len(result.handedness)):
+            handedness.append(result.handedness[x][0].category_name)
 
 
-    current_result["Left"] = data["Left"]
-    current_result["Right"] = data["Right"]
+        for x in range(len(result.gestures)):
 
-    """if(current_result["Left"] != previous_result["Left"] or current_result["Right"] != previous_result["Right"]):
-                previous_result["Left"] = current_result["Left"]
-                previous_result["Right"] = current_result["Right"]
+            if(result.gestures[x][0].score > 0.5):
+                data[handedness[x]] = result.gestures[x][0].category_name
 
-                print(f"current result client: {current_result}")
 
-                #return f"left: {current_result['Left']} right: {current_result['Right']}"""
-            
+        current_result["Left"] = data["Left"]
+        current_result["Right"] = data["Right"]
+
+    except Exception as e:
+        print(e)
             
 
 
@@ -149,7 +150,3 @@ options = setup_image()
 
 receive_image_data(options)
 
-
-
-
-    

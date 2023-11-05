@@ -10,4 +10,8 @@ else if(global.SONG_SELECTED == "RASPUTIN")
 {
 	audio_play_sound(sndRasputin, 1, false);
 }
+else if(global.SONG_SELECTED == "TETRIS")
+{
+	audio_play_sound(sndTetris, 1, false);
+}
 
