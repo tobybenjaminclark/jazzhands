@@ -16,22 +16,28 @@ The founders boast a rich portfolio of related experiences:
 - Engaged in Human-Computer Interaction (HCI) development during an internship with Horizon Institute.
 - Contributed to Python Robotics Development through an internship with the University of Nottingham.
 - Holds expertise in Computer Vision, garnered from a comprehensive Robotics Thesis.
+- Holds expertise in Programming, shown through a dissertation on Programming Language Design.
 
 #### Educational Background
 
-Amber and Toby's educational journey underscores their commitment to excellence:
+Amber and Toby's educational journey underscores their commitment to excellence. The following highlights some of the key educational achivements shared amongst the founders.
 
-- Both hold a Master of Science in Computer Science with a focus on Artificial Intelligence from the University of Nottingham.
-- A-Level qualifications include Computer Science (A*), Economics (A), and Further Mathematics (A).
-- Level 3 Extended Diploma in IT achieved with the highest distinctions.
-- Amber's Extended Project Qualification in Games Design showcases a specialized interest in the gaming domain.
+- MSci Computer Science with Artificial Intelligence (Hons) at University of Nottingham
+- MSci Computer Science (Hons) at University of Nottingham
+- A-Level Computer Science (A*)
+- A-Level Economics (A)
+- A-Level Computer Science (A*)
+- A-Level Mathematics (A)
+- A-Level Further Mathematics (A)
+- Level 3 Extended Diploma in IT (A*/Distinction*)
+- Extended Project Qualification in Games Design
 
 #### Skills and Interests
 
 The founders' skill sets and interests align seamlessly with the objectives of Jazzhands:
 
-- Toby's proficiency in general programming (C/Python) and Game Design, utilizing tools like Game Maker Studio 2, positions him as a key player in the development process.
-- Amber's expertise in computer vision, specifically in pose recognition, store page optimization, and a commitment to product quality, contributes significantly to Jazzhands' technological foundation and market positioning.
+- Toby's proficiency in general programming (C/Python) and Game Design, utilizing tools like Game Maker Studio 2, positions him as a key player in the development process. Additionally, with previous experience working with Steamworks deployments, furthers the project experience.
+- Amber's expertise in computer vision, specifically in pose recognition, store page optimization, and a commitment to product quality, contributes significantly to Jazzhands' technological foundation and market positioning. Furthermore, from studying Philosophy from 2019 - 2021, Amber has developed a rich, critical thinking ability which will allow her to evaluate user demographics with accuracy and unbias.
 
 In essence, Amber and Toby's educational background, professional experiences, and aligned interests collectively form a robust foundation for the successful development and market placement of Jazzhands.
 
