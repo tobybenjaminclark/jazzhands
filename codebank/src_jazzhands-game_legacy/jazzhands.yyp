@@ -50,7 +50,6 @@
     {"id":{"name":"timer","path":"scripts/timer/timer.yy",},},
     {"id":{"name":"sprTutorialBot","path":"sprites/sprTutorialBot/sprTutorialBot.yy",},},
     {"id":{"name":"sndCreep","path":"sounds/sndCreep/sndCreep.yy",},},
-    {"id":{"name":"s_blueToPink","path":"shaders/s_blueToPink/s_blueToPink.yy",},},
     {"id":{"name":"sprJazzHands","path":"sprites/sprJazzHands/sprJazzHands.yy",},},
     {"id":{"name":"oSelectGame","path":"objects/oSelectGame/oSelectGame.yy",},},
     {"id":{"name":"rmSelectMode","path":"rooms/rmSelectMode/rmSelectMode.yy",},},
