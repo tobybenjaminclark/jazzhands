@@ -5,3 +5,4 @@ fullscreen = false
 
 
 
+bg = audio_play_sound(sndCluster, 1, false)
