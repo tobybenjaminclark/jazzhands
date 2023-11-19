@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Planets",
+    "path": "folders/Objects/Techno/Planets.yy",
   },
   "parentObjectId": null,
   "persistent": false,
