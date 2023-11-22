@@ -3,10 +3,17 @@
 
 if (place_meeting(x, y, objNavigatorPlayer) )
 {
+	if(!audio_playing)
+	{
+		audio_play_sound(song, 1, false);
+		audio_playing = true;
+	}
 	state = 1;
 }
 else
 {
+	audio_playing = false;
+    audio_stop_sound(song);
 	state = 0;
 }
 
