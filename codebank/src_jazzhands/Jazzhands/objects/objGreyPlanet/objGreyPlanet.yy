@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Planets",
-    "path": "folders/Objects/Techno/Planets.yy",
+    "path": "folders/Objects/navlevel_techno/Planets.yy",
   },
   "parentObjectId": null,
   "persistent": false,

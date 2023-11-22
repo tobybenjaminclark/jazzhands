@@ -16,8 +16,8 @@
     "path": "folders/Tile Sets.yy",
   },
   "spriteId": {
-    "name": "sprTechFloor",
-    "path": "sprites/sprTechFloor/sprTechFloor.yy",
+    "name": "sprTechnoNavLevelTileset",
+    "path": "sprites/sprTechnoNavLevelTileset/sprTechnoNavLevelTileset.yy",
   },
   "spriteNoExport": false,
   "textureGroupId": {

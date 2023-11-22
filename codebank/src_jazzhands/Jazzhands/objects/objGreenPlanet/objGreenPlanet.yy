@@ -10,7 +10,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Planets",
-    "path": "folders/Objects/Techno/Planets.yy",
+    "path": "folders/Objects/navlevel_techno/Planets.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_GreenPlanet2",
-    "path": "sprites/spr_GreenPlanet2/spr_GreenPlanet2.yy",
+    "name": "sprGreenPlanet2",
+    "path": "sprites/sprGreenPlanet2/sprGreenPlanet2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

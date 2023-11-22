@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "Techno Sprites",
-    "path": "folders/Sprites/Techno Sprites.yy",
+    "name": "techno_objects",
+    "path": "folders/Sprites/navlevel_techno/techno_objects.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

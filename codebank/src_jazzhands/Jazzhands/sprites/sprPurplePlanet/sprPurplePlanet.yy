@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Techno Sprites",
-    "path": "folders/Sprites/Techno Sprites.yy",
+    "name": "techno_space",
+    "path": "folders/Sprites/navlevel_techno/techno_space.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

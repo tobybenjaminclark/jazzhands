@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Techno",
-    "path": "folders/Objects/Techno.yy",
+    "name": "navlevel_techno",
+    "path": "folders/Objects/navlevel_techno.yy",
   },
   "parentObjectId": null,
   "persistent": false,
