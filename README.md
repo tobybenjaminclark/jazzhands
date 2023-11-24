@@ -13,4 +13,4 @@ JazzHands uses MediaPipe to recognize hand gestures. Jazzhands can distinguish l
 Assets are made in Aesprite. JazzHands was made with a retro feel in mind, hoping to combine the nostalgic feel of arcade games with cutting-edge computer vision technology. We tailored our design decisions to portray this idea.
 
 # Redevelopment & Continuing Works
-Jazzhands is currently under a massive redevelopment.ß
+Jazzhands is currently under a massive redevelopment. Aiming for 2024 release.
