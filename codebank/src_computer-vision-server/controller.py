@@ -2,11 +2,12 @@
 # Written by Amber Swarbrick 06/01/2024
 # Code Review Passed by Toby Clark 06/01/2024
 
+from SettingsReader import JazzHandsSettingsReader
 from hand_gesture_recognition import JazzHandsGestureRecognizer
 from cv_client import GMS2Client
 from queue import Queue
 
-class JazzhandsController:
+class JazzhandsController(JazzHandsSettingsReader):
     running: bool                                   # A flag to determine if the program has ended. Facilitates safe termination of threads.
     client: GMS2Client                              # An instance of the cv_client.Client object (communicates to GMS2 server)
     client_queue: Queue                             # An instance of the client queue. Facilitates sending gesture data to the client object.
@@ -17,6 +18,9 @@ class JazzhandsController:
         """
         Main function which initiates the client and gesture recognition.
         """
+
+        # Retrieve the settings.ini declarations.
+        super().__init__()
 
         self.create_client()
         self.create_gesture_recognizer()

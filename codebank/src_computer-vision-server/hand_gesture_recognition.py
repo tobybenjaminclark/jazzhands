@@ -11,19 +11,9 @@ from typing import Dict, List
 import numpy as np
 import threading
 
-POSSIBLE_GESTURES = [
-    "None",
-    "Closed_Fist",
-    "Open_Palm",
-    "Pointing_Up",
-    "Thumb_Down",
-    "Thumb_Up",
-    "Victory",
-    "ILoveYou",
-]
-WEBCAM_ID = 0
+from SettingsReader import JazzHandsSettingsReader
 
-class JazzHandsGestureRecognizer:
+class JazzHandsGestureRecognizer(JazzHandsSettingsReader):
     stop_event: threading.Event      # Event to signal the termination of the thread.
     gesture_queue: Queue             # Queue to transfer data from the subthread to the main thread.
     thread: threading.Thread         # Thread to continously retrieve gestures from webcam input.
@@ -34,6 +24,10 @@ class JazzHandsGestureRecognizer:
         """
         Initialise the stop event and gesture queue.
         """
+
+        # Retrieve the settings.ini declarations.
+        super().__init__()
+
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event: threading.Event = threading.Event()
         self.gesture_queue = Queue()
@@ -177,7 +171,7 @@ class JazzHandsGestureRecognizer:
         )
 
         # Initialise the webcam feed using the constant WEBCAM_ID.
-        cap: np.array = cv2.VideoCapture(WEBCAM_ID)
+        cap: np.array = cv2.VideoCapture(int(self.settings["WEBCAM_ID"]))
 
         self.current_result = {"Left": "None", "Right": "None"}
         self.previous_result = {"Left": "None", "Right": "None"}

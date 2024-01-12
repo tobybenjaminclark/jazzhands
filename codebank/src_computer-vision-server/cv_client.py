@@ -6,11 +6,9 @@ import socket
 import threading
 from queue import Queue
 
-HOST = "127.0.0.1"
-PORT = 5005
-SOCKET_TIMEOUT = 5
+from SettingsReader import JazzHandsSettingsReader
 
-class GMS2Client:
+class GMS2Client(JazzHandsSettingsReader):
     stop_event: threading.Event     # Event to signal the termination of the thread.
     client_queue: Queue             # Queue to transfer data from the subthread to the main thread.
     thread: threading.Thread        # Client thread to maintain client-server connection.
@@ -19,6 +17,9 @@ class GMS2Client:
         """
         Initializes stop event & client queue
         """
+
+        # Retrieve the settings.ini declarations.
+        super().__init__()
 
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event = threading.Event()
@@ -66,9 +67,10 @@ class GMS2Client:
 
         # Initialise the socket and bind it to the specified host, at the specified port.
         sock: socket.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        sock.bind((HOST, PORT))
+
+        sock.bind(( self.settings["HOST"], int(self.settings["PORT"]) ))
         sock.listen()
-        sock.settimeout(SOCKET_TIMEOUT)
+        sock.settimeout(int(self.settings["SOCKET_TIMEOUT"]))
 
         # Attempt connection to the server.
         try:
