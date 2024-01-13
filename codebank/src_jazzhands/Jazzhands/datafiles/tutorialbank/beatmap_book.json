@@ -1,0 +1,6 @@
+{
+  "level_data": "{\"level_name\": \"book\", \"description\": \"tutorial level 2\", \"background\": \"example.png\", \"song\": \"example_song\"}",
+  "events": [
+    "{\"event_type\": \"beat\", \"event_data\": {\"start_time\": 1000, \"symbol\": \"OPEN_HAND\", \"side\": \"LEFT\"}}"
+  ]
+}
