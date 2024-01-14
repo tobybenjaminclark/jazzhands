@@ -1,9 +1,0 @@
-{
-    "level_data": {
-        "level_name": "Name",
-        "description": "Description",
-        "background": "TUTORIAL",
-        "song": "snd_cord.wav"
-    },
-    "events": []
-}
