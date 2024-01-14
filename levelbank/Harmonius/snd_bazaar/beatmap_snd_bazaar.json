@@ -1,8 +1,9 @@
 {
-    "leveldata": {
+    "level_data": {
         "level_name": "bazaar",
         "description": "tutorial, level 1",
-        "background": "example.png"
+        "background": "TUTORIAL"
+	"song": "snd_bazaar.wav"
     },
     "events": [
 
