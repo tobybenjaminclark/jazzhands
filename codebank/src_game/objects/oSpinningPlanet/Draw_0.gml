@@ -11,6 +11,7 @@ if(text_alpha != 0)
 	draw_text(x + 70, y - 25, title);
 	draw_set_font(fntRaananaSmall);
 	draw_text(x + 70, y + 25, description);
+	draw_set_alpha(1);
 }
 
 
