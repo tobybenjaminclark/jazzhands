@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Creation & Side Offset
+/// @author Toby Benjamin Clark
+/// @date   14/01/2023
 
 start_time = 0;
 target_time = 0;

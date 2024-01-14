@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Handles Pausing
+/// @author Toby Benjamin Clark
+/// @date   14/01/2023
 
 if(paused == true)
 {

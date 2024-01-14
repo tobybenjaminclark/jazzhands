@@ -49,6 +49,7 @@
     {"name":"rmInitialize","order":3,"path":"rooms/rmInitialize/rmInitialize.yy",},
     {"name":"oBeatEvent","order":1,"path":"objects/oBeatEvent/oBeatEvent.yy",},
     {"name":"oRoomController","order":3,"path":"objects/oRoomController/oRoomController.yy",},
+    {"name":"get_sprite_from_symbol","order":6,"path":"scripts/get_sprite_from_symbol/get_sprite_from_symbol.yy",},
     {"name":"fntRaananaSmall","order":1,"path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},
     {"name":"macros","order":4,"path":"scripts/macros/macros.yy",},
     {"name":"sprSymbolPointUpBase","order":3,"path":"sprites/sprSymbolPointUpBase/sprSymbolPointUpBase.yy",},

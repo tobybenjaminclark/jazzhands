@@ -37,8 +37,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "Sprite8",
-    "path": "sprites/Sprite8/Sprite8.yy",
+    "name": "sprUnknownSymbol",
+    "path": "sprites/sprUnknownSymbol/sprUnknownSymbol.yy",
   },
   "spriteMaskId": null,
   "visible": true,
