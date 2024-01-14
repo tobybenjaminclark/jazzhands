@@ -1,0 +1,82 @@
+{
+    "level_data": {
+        "level_name": "test beatmap",
+        "description": "testing the beatmap loader",
+        "background": "ROCK",
+        "song": "snd_cord.wav"
+    },
+    "events": [
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 2100,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 2100,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 4800,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 7900,
+                "symbol": "POINTING_UP",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 10600,
+                "symbol": "THUMBS_DOWN",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 10600,
+                "symbol": "THUMBS_DOWN",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 12500,
+                "symbol": "THUMBS_UP",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 12500,
+                "symbol": "THUMBS_UP",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "start_time": 14900,
+                "symbol": "VICTORY",
+                "side": "RIGHT"
+            }
+        }
+    ]
+}
