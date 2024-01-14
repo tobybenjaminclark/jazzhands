@@ -1,7 +1,7 @@
 from tkinter import PhotoImage, Event, Tk, Button, Frame, Label, Scale, Checkbutton, IntVar, Canvas, filedialog, simpledialog, OptionMenu, StringVar
 from pygame import mixer
 import librosa
-from typing import Tuple, Dict, List
+from typing import Tuple, Dict, List, Union
 from beatmap_creator import BeatmapGenerator
 import os
 import shutil
@@ -52,7 +52,6 @@ class Player(JazzHandsSettingsReader):
         
 
         self.create_window()
-        #self.play_song()
 
     def initialise_timestamps(self) -> None:
         """
@@ -158,23 +157,24 @@ class Player(JazzHandsSettingsReader):
         # Store the image in an array to bypass garbage collection.
         self.command_images.append(image_resized)
 
+        slider_val = self.music_slider.get()
+        slider_pos = self.get_slider_position(slider_val)
+        timestamp:int = self.current_time.cget("text")
+
+
         if(self.left_chosen.get()):
-            self.place_symbol(image_resized, self.left_canvas, command, "LEFT")
+            self.place_symbol(image_resized, self.left_canvas, command, "LEFT", slider_pos,timestamp)
         if(self.right_chosen.get()):
-            self.place_symbol(image_resized, self.right_canvas, command, "RIGHT")
+            self.place_symbol(image_resized, self.right_canvas, command, "RIGHT", slider_pos,timestamp)
 
 
-    def place_symbol(self, image:PhotoImage, canvas:Canvas, command:str, handedness:str) -> None:
+    def place_symbol(self, image:PhotoImage, canvas:Canvas, command:str, handedness:str, pos_x:float, timestamp:int) -> None:
         """
         Place a symbol, image, at the current timestamp in the left or right canvas.
         """
-
-        # Retrieve the current slider position.
-        pos_x:int
-        pos_x, _ = self.get_slider_position()
-
         if pos_x == 0:
             return
+        
 
         canvas_image_id:int = canvas.create_image(pos_x, canvas.winfo_height() / 2, image=image)
 
@@ -182,7 +182,6 @@ class Player(JazzHandsSettingsReader):
 
         self.canvas_images.append(canvas_image_id)
 
-        timestamp:int = self.current_time.cget("text")
         self.events[f"{handedness}_{canvas_image_id}"] = (timestamp, command, handedness)
 
     def load_song(self) -> None:
@@ -294,14 +293,61 @@ class Player(JazzHandsSettingsReader):
         Open a filedialog allowing the user to select a beatmap.
         """
         beatmap_path = filedialog.askopenfilename(initialdir=self.JSON_PATH)
-
-        print(beatmap_path.parent)
-
+        beatmap_location = beatmap_path.rsplit('/', 1)[0]
+        
         beatmap_dict = self.generator.parse_file_as_json(beatmap_path)
-        print(beatmap_dict)
+        beatmap_song = beatmap_dict["level_data"]["song"]
+        beatmap_song_location = f"{beatmap_location}/{beatmap_song}"
 
+        self.song_path = beatmap_song_location
+        self.file_name = beatmap_song
+
+        self.populate_window()
+
+
+
+        for event in beatmap_dict["events"]:
+            event_type = event["event_type"]
+            event_data = event["event_data"]
+
+            time = event_data["time"]
+            symbol = event_data["symbol"]
+            side = event_data["side"]
+
+            canvas = None
+            if side=="LEFT":
+                canvas = self.left_canvas
+            elif side=="RIGHT":
+                canvas = self.right_canvas
+
+            image = self.get_image_from_command_name(symbol)
+            image_resized:PhotoImage = image.subsample(2)
+            self.canvas_images.append(image_resized)
+
+            slider_pos = self.get_slider_position(time)
+            print(f"slider pos: {slider_pos}")
+            self.place_symbol(image_resized,canvas,symbol,side, slider_pos, time)
         
-        
+
+        self.description_textbox["text"] = beatmap_dict["level_data"]["description"]
+        self.name_textbox["text"] = beatmap_dict["level_data"]["level_name"]
+
+
+    def get_image_from_command_name(self, command:str) -> Union[PhotoImage, None]:
+
+        if command=="OPEN_PALM":
+            return self.open_palm
+        elif command=="CLOSED_FIST":
+            return self.closed_fist
+        elif command=="POINTING_UP":
+            return self.pointing_up
+        elif command=="THUMBS_DOWN":
+            return self.thumbs_down
+        elif command=="THUMBS_UP":
+            return self.thumbs_up
+        elif command=="VICTORY":
+            return self.victory
+        raise("Invalid command")
 
     def store_event_data(self):
 
@@ -335,15 +381,22 @@ class Player(JazzHandsSettingsReader):
         self.generator.generate_file(json_file_path, data_arr, self.file_name, song_name, description,background)
         
 
-    def get_slider_position(self):
-        
+    def get_slider_position(self, slider_value:int):
+
+        print(f"slider val: {slider_value}")
+        print(self.music_slider.winfo_x())
+        print(self.end_time["text"])
+        print(self.music_slider.winfo_width())
+
+
+        # slider value can either be the current value of the slider or the value from the file
+
         if (self.music_slider['to'] - self.music_slider['from']) == 0:
-            return 0,0
+            return 0
         
-        slider_value = self.music_slider.get()
-        slider_x = self.music_slider.winfo_x() + (slider_value / (self.music_slider['to'] - self.music_slider['from'])) * self.music_slider.winfo_width()
-        slider_y = self.music_slider.winfo_y() + self.music_slider.winfo_height() / 2
-        return slider_x, slider_y
+        
+        slider_x = self.music_slider.winfo_x() + (slider_value / self.end_time["text"]) * self.music_slider.winfo_width()
+        return slider_x
 
 
     def create_slider_frame(self):
@@ -400,6 +453,8 @@ class Player(JazzHandsSettingsReader):
         self.initialise_timestamps()
 
         self.play_song()
+
+        self.window.update_idletasks()
 
 
     def create_window(self):

@@ -162,8 +162,8 @@ class EventData():
     symbol: str
     side: str
 
-    def __init__(self, start_time: int, symbol: str, side: str):
-        self.start_time = start_time
+    def __init__(self, time: int, symbol: str, side: str):
+        self.time = time
         self.symbol = symbol
         self.side = side
 
