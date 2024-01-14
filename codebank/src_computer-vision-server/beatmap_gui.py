@@ -41,6 +41,10 @@ class Player(JazzHandsSettingsReader):
         # Retrieve the settings.ini declarations.
         super().__init__()
 
+        self.generator = BeatmapGenerator()
+
+        self.song_path=None
+
         self.SONG_LIST_PATH = self.settings["SOUND_PATH"]
         self.ASSET_PATH = self.settings["ASSET_PATH"]
         self.JSON_PATH = self.settings["JSON_PATH"]
@@ -48,14 +52,17 @@ class Player(JazzHandsSettingsReader):
         
 
         self.create_window()
-        self.play_song()
+        #self.play_song()
 
     def initialise_timestamps(self) -> None:
         """
         Initialise the timestamps describing the start and the end of the song.
         """
 
-        duration_ms: int = int(librosa.get_duration(path=self.song_path) * 1000)
+
+        duration_ms: int = 0
+        if self.song_path:
+            duration_ms: int = int(librosa.get_duration(path=self.song_path) * 1000)
         self.end_time.config(text = duration_ms)
         self.music_slider.config(from_ = 0, to = duration_ms)
                 
@@ -64,14 +71,16 @@ class Player(JazzHandsSettingsReader):
         Load and play the song specified in self.song_path.
         """
 
-        # Initialise the mixer and load / play the specified song.
-        self.mixer:mixer = mixer
-        self.mixer.init()
-        self.mixer.music.load(self.song_path)
-        self.mixer.music.play()
-        
-        # Signal the timestamp to increase.
-        self.play_time()
+        if self.song_path:
+
+            # Initialise the mixer and load / play the specified song.
+            self.mixer:mixer = mixer
+            self.mixer.init()
+            self.mixer.music.load(self.song_path)
+            self.mixer.music.play()
+            
+            # Signal the timestamp to increase.
+            self.play_time()
     
     def pause_song(self) -> None:
         """
@@ -103,7 +112,8 @@ class Player(JazzHandsSettingsReader):
         """
         Update the position of the track to reflect the position of the slider.
         """
-        self.mixer.music.set_pos(int(self.music_slider.get() / 1000))
+        if self.song_path:
+            self.mixer.music.set_pos(int(self.music_slider.get() / 1000))
 
     def create_selection_frame(self) -> None:
         """
@@ -163,6 +173,9 @@ class Player(JazzHandsSettingsReader):
         pos_x:int
         pos_x, _ = self.get_slider_position()
 
+        if pos_x == 0:
+            return
+
         canvas_image_id:int = canvas.create_image(pos_x, canvas.winfo_height() / 2, image=image)
 
         canvas.tag_bind(canvas_image_id, '<ButtonPress-1>', lambda e:self.on_hand_click(e, canvas, f"{handedness}_{canvas_image_id}"))
@@ -178,6 +191,8 @@ class Player(JazzHandsSettingsReader):
         """
         self.song_path = filedialog.askopenfilename(initialdir=self.SONG_LIST_PATH)
         self.file_name = self.song_path.split('/')[-1]
+
+        self.populate_window()
         
 
 
@@ -259,17 +274,34 @@ class Player(JazzHandsSettingsReader):
 
         background_frame.pack(side="left")
 
-        choose_song_btn = Button(master=options_frame, text="Choose Song", bg = self.BACKGROUND_COLOUR, command = self.populate_window, fg="white")
+        choose_song_btn = Button(master=options_frame, text="Choose Song", bg = self.BACKGROUND_COLOUR, command = self.load_song, fg="white")
         choose_song_btn.pack(side="left")
 
         self.pause_img = PhotoImage(file = f"{self.ASSET_PATH}/pause.png")
         pause_btn = Button(master = options_frame, image = self.pause_img, borderwidth = 0, bg = self.BACKGROUND_COLOUR, command = self.pause_song)
         pause_btn.pack(side="left")
 
-        done_btn = Button(master=options_frame, text="Export", relief = "flat", bg = self.BACKGROUND_COLOUR, command = self.store_event_data, fg="white")
+        done_btn = Button(master=options_frame, text="Export", bg = self.BACKGROUND_COLOUR, command = self.store_event_data, fg="white")
         done_btn.pack(side="left")
 
+        open_beatmap_btn = Button(master=options_frame, text="Open Beatmap", bg = self.BACKGROUND_COLOUR, command = self.open_beatmap, fg="white")
+        open_beatmap_btn.pack(side="left")
+
         options_frame.pack(side="left")
+
+    def open_beatmap(self):
+        """
+        Open a filedialog allowing the user to select a beatmap.
+        """
+        beatmap_path = filedialog.askopenfilename(initialdir=self.JSON_PATH)
+
+        print(beatmap_path.parent)
+
+        beatmap_dict = self.generator.parse_file_as_json(beatmap_path)
+        print(beatmap_dict)
+
+        
+        
 
     def store_event_data(self):
 
@@ -293,7 +325,6 @@ class Player(JazzHandsSettingsReader):
 
         json_file_path = f"{current_working_dir}/beatmap.json"
 
-        self.generator = BeatmapGenerator(json_file_path)
 
         data_arr = []
         for key,value in self.events.items():
@@ -301,10 +332,14 @@ class Player(JazzHandsSettingsReader):
                 data_arr.append(value)
 
         
-        self.generator.generate_file(data_arr, self.file_name, song_name, description,background)
+        self.generator.generate_file(json_file_path, data_arr, self.file_name, song_name, description,background)
         
 
     def get_slider_position(self):
+        
+        if (self.music_slider['to'] - self.music_slider['from']) == 0:
+            return 0,0
+        
         slider_value = self.music_slider.get()
         slider_x = self.music_slider.winfo_x() + (slider_value / (self.music_slider['to'] - self.music_slider['from'])) * self.music_slider.winfo_width()
         slider_y = self.music_slider.winfo_y() + self.music_slider.winfo_height() / 2
@@ -321,7 +356,7 @@ class Player(JazzHandsSettingsReader):
         self.end_time.pack(side="right")
     
         self.music_slider = Scale(master = slider_frame, from_ = 0, to = 100, orient = "horizontal", bg = self.BACKGROUND_COLOUR, relief = "flat", length = 270, showvalue = False)
-        self.music_slider.bind("<ButtonRelease-1>", self.updateMusic)
+        self.music_slider.bind("<ButtonRelease-1>", lambda e:self.updateMusic())
         self.music_slider.pack(fill="x", expand=True,side="bottom")
 
         slider_frame.pack(side="bottom", fill="x")
@@ -358,7 +393,6 @@ class Player(JazzHandsSettingsReader):
             widget.destroy()
 
         self.initialise_frame_info()
-        self.load_song()
         self.create_slider_frame()
         self.create_hand_frames()
         self.create_selection_frame()

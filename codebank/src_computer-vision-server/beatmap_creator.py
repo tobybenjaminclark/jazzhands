@@ -9,22 +9,23 @@ class BeatmapGenerator(JazzHandsSettingsReader):
     path: str
     json_data: Dict[str,str]
 
-    def __init__(self, path:str):
+    def __init__(self):
 
         # Retrieve the settings.ini declarations.
         super().__init__()
 
         self.INDENT = int(self.settings["JSON_INDENT"])
-        self.path = path
 
-    def generate_file(self, events:List[Tuple[int,str,str]], file_name: str, song_name:str, description:str,background:str):
+    def generate_file(self, path, events:List[Tuple[int,str,str]], file_name: str, song_name:str, description:str,background:str):
         # Generate a JSON beatmap file from the given events, file name, song name, description and background.
+
+        self.path=path
 
         json_file:Dict[str,any] = self.create_json_file(events, file_name, song_name, description,background)
         self.write_json_to_file(json_file)
 
         # Retrieve the contents of the newly written file.
-        new_json:Union[str,None] = self.parse_file_as_json()
+        new_json:Union[str,None] = self.parse_file_as_json(path)
         print(f"file contents: {new_json}")
 
     def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str, description:str,background:str) -> Dict[str,any]:
@@ -56,7 +57,7 @@ class BeatmapGenerator(JazzHandsSettingsReader):
         json_file.close()
         return None
 
-    def parse_file_as_json(self) -> Union[str, None]:
+    def parse_file_as_json(self, path) -> Union[str, None]:
         """
         Parse the file specified in the path class variable as a JSON dictionary.
         Returns: a JSON dictionary containing the translated file contents.
@@ -64,7 +65,7 @@ class BeatmapGenerator(JazzHandsSettingsReader):
 
         try:
             file_contents: io.TextIOWrapper
-            file_contents = open(self.path, encoding='utf-8')
+            file_contents = open(path, encoding='utf-8')
             contents:Dict[str,any] = json.loads(file_contents.read())
             file_contents.close()
             return contents
