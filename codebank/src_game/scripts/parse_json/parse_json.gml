@@ -20,7 +20,7 @@ function parse_json(file_path)
         buffer_delete(file_buffer);
 
         // Parse the JSON string into a ds_map
-        json_map = json_decode(json_string);
+        json_map = json_parse(json_string);
 
         // Check if the decoding was successful
         if (json_map != undefined)
