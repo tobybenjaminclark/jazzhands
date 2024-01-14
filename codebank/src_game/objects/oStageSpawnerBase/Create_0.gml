@@ -2,6 +2,12 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
+/* Started */
+start_time = 0;
+paused = false;
+unpaused_time = 0;
+paused_time = 0;
+
 /* Parse JSON from supplied beatmap path */
 beatmap_structure = json_parse_from_filepath(beatmap_path);
 if(beatmap_structure == undefined)
@@ -18,7 +24,23 @@ if(!beatmap_valid)
 	exit;
 }
 
-/* TODO Load Song */
+/* Load Song */
+sound = audio_create_stream(filepath_replace_last_element(beatmap_path, beatmap_structure.level_data.song));
 
-inst = instance_create_layer(x, y, layer, class_symbol);
-inst.sprite_index = sprite_victory;
+/* Create Beat Events */
+for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++)
+{
+	switch(beatmap_structure.events[event_index].event_type)
+	{
+		case "beat":
+			var inst = instance_create_layer(x,y,layer, class_symbol);
+			inst.parent = self;
+			inst.time = real(beatmap_structure.events[event_index].event_data.time);
+			inst.side = string(beatmap_structure.events[event_index].event_data.side);
+			inst.symbol = string(beatmap_structure.events[event_index].event_data.symbol);
+		break;
+		
+		default:
+		break;
+	}
+}

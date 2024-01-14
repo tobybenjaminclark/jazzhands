@@ -47,7 +47,7 @@
     {"name":"oRadio","order":2,"path":"objects/oRadio/oRadio.yy",},
     {"name":"sprSymbolThumbsDownBase","order":2,"path":"sprites/sprSymbolThumbsDownBase/sprSymbolThumbsDownBase.yy",},
     {"name":"rmInitialize","order":3,"path":"rooms/rmInitialize/rmInitialize.yy",},
-    {"name":"oSymbolBase","order":1,"path":"objects/oSymbolBase/oSymbolBase.yy",},
+    {"name":"oBeatEvent","order":1,"path":"objects/oBeatEvent/oBeatEvent.yy",},
     {"name":"oRoomController","order":3,"path":"objects/oRoomController/oRoomController.yy",},
     {"name":"fntRaananaSmall","order":1,"path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},
     {"name":"macros","order":4,"path":"scripts/macros/macros.yy",},
