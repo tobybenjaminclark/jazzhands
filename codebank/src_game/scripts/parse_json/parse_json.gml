@@ -1,5 +1,6 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/// @description Function to parse json from a file.
+/// @author Toby Benjamin Clark
+/// @date   14/01/2023
 
 function parse_json(file_path)
 {

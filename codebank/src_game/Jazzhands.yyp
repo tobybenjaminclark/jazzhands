@@ -71,7 +71,7 @@
     {"id":{"name":"rmstage_harmonica","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},},
     {"id":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},},
     {"id":{"name":"oSpinningPlanet","path":"objects/oSpinningPlanet/oSpinningPlanet.yy",},},
-    {"id":{"name":"validate_schema","path":"scripts/validate_schema/validate_schema.yy",},},
+    {"id":{"name":"validate_beatmap","path":"scripts/validate_beatmap/validate_beatmap.yy",},},
     {"id":{"name":"logo_large","path":"sprites/logo_large/logo_large.yy",},},
     {"id":{"name":"logistic_curve","path":"scripts/logistic_curve/logistic_curve.yy",},},
     {"id":{"name":"oStoryNavigator","path":"objects/oStoryNavigator/oStoryNavigator.yy",},},
@@ -81,6 +81,7 @@
     {"id":{"name":"rmInitialize","path":"rooms/rmInitialize/rmInitialize.yy",},},
     {"id":{"name":"oRoomController","path":"objects/oRoomController/oRoomController.yy",},},
     {"id":{"name":"fntRaananaSmall","path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},},
+    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"navrmStory","path":"rooms/navrmStory/navrmStory.yy",},},
   ],
   "RoomOrderNodes": [

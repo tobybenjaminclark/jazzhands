@@ -35,7 +35,7 @@
     {"name":"oSpinningCog","order":5,"path":"objects/oSpinningCog/oSpinningCog.yy",},
     {"name":"oLabel","order":1,"path":"objects/oLabel/oLabel.yy",},
     {"name":"oSpinningPlanet","order":7,"path":"objects/oSpinningPlanet/oSpinningPlanet.yy",},
-    {"name":"validate_schema","order":1,"path":"scripts/validate_schema/validate_schema.yy",},
+    {"name":"validate_beatmap","order":1,"path":"scripts/validate_beatmap/validate_beatmap.yy",},
     {"name":"logistic_curve","order":1,"path":"scripts/logistic_curve/logistic_curve.yy",},
     {"name":"oStoryNavigator","order":8,"path":"objects/oStoryNavigator/oStoryNavigator.yy",},
     {"name":"sprCogRecord","order":2,"path":"sprites/sprCogRecord/sprCogRecord.yy",},
@@ -43,5 +43,6 @@
     {"name":"rmInitialize","order":3,"path":"rooms/rmInitialize/rmInitialize.yy",},
     {"name":"oRoomController","order":3,"path":"objects/oRoomController/oRoomController.yy",},
     {"name":"fntRaananaSmall","order":1,"path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},
+    {"name":"macros","order":4,"path":"scripts/macros/macros.yy",},
   ],
 }
