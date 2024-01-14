@@ -10,6 +10,7 @@ from queue import Queue
 from typing import Dict, List
 import numpy as np
 import threading
+import json
 
 from SettingsReader import JazzHandsSettingsReader
 
@@ -136,10 +137,11 @@ class JazzHandsGestureRecognizer(JazzHandsSettingsReader):
         self.previous_result["Left"] = self.current_result["Left"]
         self.previous_result["Right"] = self.current_result["Right"]
 
-        image_string: str = (
-            f"{self.current_result['Left']} {self.current_result['Right']}"
-        )
-        queue.put(image_string)
+        image_json = json.dumps(self.current_result)
+
+        
+
+        queue.put(image_json)
 
         return None
 

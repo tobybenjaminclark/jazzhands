@@ -94,7 +94,7 @@ class GMS2Client(JazzHandsSettingsReader):
         while not stop_event.is_set():
             if not self.client_queue.empty():
                 data: str = self.client_queue.get()
-                conn.send(data)
+                conn.send(bytes(data,encoding=self.settings["ENCODING"]))
             else:
                 pass
         return None
