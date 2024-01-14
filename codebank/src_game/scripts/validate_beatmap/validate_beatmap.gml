@@ -223,5 +223,5 @@ function validate_beatmap(level_map, file_path)
 	}
 
 	
-	return global.validation_failure;
+	return !global.validation_failure;
 }

@@ -4,18 +4,18 @@
 
 function wav_get_sample_rate(buffer)
 {
-	var _b_25 = buffer_peek(buffer,24,buffer_u8);
-	var _b_26 = buffer_peek(buffer,25,buffer_u8);
-	var _b_27 = buffer_peek(buffer,26,buffer_u8);
-	var _b_28 = buffer_peek(buffer,27,buffer_u8);
+    
+    var _b_25 = buffer_peek(buffer,24,buffer_u8);
+    var _b_26 = buffer_peek(buffer,25,buffer_u8);
+    var _b_27 = buffer_peek(buffer,26,buffer_u8);
+    var _b_28 = buffer_peek(buffer,27,buffer_u8);
 
-	var _sr = (_b_28 << 24) | (_b_27 << 16) | (_b_26 << 8) | _b_25;
-	return _sr;
+    var _sr = (_b_28 << 24) | (_b_27 << 16) | (_b_26 << 8) | _b_25;
+    return _sr;
 }
 
 function import_wav_trimmed(filename)
 {
-	/* https://forum.gamemaker.io/index.php?threads/playing-loading-an-external-wav-file-from-included-files.87214/ */
     var buffer_init = buffer_load(filename);
     var buffer_size = buffer_get_size(buffer_init);
     var channels = buffer_peek(buffer_init,22,buffer_u8);
@@ -29,24 +29,27 @@ function import_wav_trimmed(filename)
     var offset = 0;
    
     // loop through each buffer byte
-    for (var i=0;i<buffer_size;i++) {
+    for (var i=0;i<buffer_size;i++)
+	{
        
-        var arrValue = arr[arrIndex]
-        var dataValue = buffer_peek(buffer_init,i,buffer_u8);
-        var dataFound = (dataValue == arrValue);
+	    var arrValue = arr[arrIndex]
+	    var dataValue = buffer_peek(buffer_init,i,buffer_u8);
+	    var dataFound = (dataValue == arrValue);
        
-        //if i >=25 && i <= 28
-        db(string(i+1)+": "+string(dataValue))
+	    if i >=25 && i <= 28
+			show_debug_message(string(i+1)+": "+string(dataValue))
        
-        arrIndex = pick(0,arrIndex+1,dataFound);
-       
-        // found end of header
-        if (arrIndex == array_length(arr)) {
+		if(dataFound) arrindex = arrIndex + 1;
+		else arrIndex = 0;
+
+	    // found end of header
+	    if (arrIndex == array_length(arr))
+		{
            
-            var offset = i+5;
-            break;
-            }
-        }
+	        var offset = i+5;
+	        break;
+	   }
+	}
        
     // use buffer fast instead
     buffer_size -= offset;

@@ -2,7 +2,9 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "oStageSpawnerBase",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
@@ -23,7 +25,16 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"beatmap_path","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"levelbank/world_harmonius/level_bazaar/beatmap.json","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"class_symbol","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oSymbolBase","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_open_palm","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolOpenPalmBase","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_closed_fist","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolClosedFistBase","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_victory","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolVictoryBase","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_point_up","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolPointUpBase","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_thumbs_up","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolThumbsUpBase","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_thumbs_down","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolThumbsDownBase","varType":5,},
+  ],
   "solid": false,
   "spriteId": null,
   "spriteMaskId": null,
