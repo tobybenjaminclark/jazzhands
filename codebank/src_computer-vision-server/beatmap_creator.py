@@ -17,20 +17,20 @@ class BeatmapGenerator():
         self.INDENT = 4
         self.path = path
 
-    def generate_file(self, events:List[Tuple[int,str,str]], file_name: str, song_name:str):
-        json_file = self.create_json_file(events, file_name, song_name)
+    def generate_file(self, events:List[Tuple[int,str,str]], file_name: str, song_name:str, description:str,background:str):
+        json_file = self.create_json_file(events, file_name, song_name, description,background)
         self.write_json_to_file(json_file)
         new_json = self.parse_file_as_json()
         print(f"file contents: {new_json}")
 
-    def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str):
+    def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str, description:str,background:str):
         """
         Create the contents of a JazzHands beatmap from the supplied events and file_name and song_name.
         Convert the contents to json.
         Returns: the beatmap in json format.
         """
 
-        level_data: Dict[str,any] = self.create_level_data(file_name, "", "example.png", song_name)
+        level_data: Dict[str,any] = self.create_level_data(file_name, description, background, song_name,)
 
         event_list: List[Dict[str,any]] = []
         for event in events:
@@ -68,14 +68,14 @@ class BeatmapGenerator():
             print(e)
         return None
     
-    def create_level_data(self, file_name:str, description:str, background:str, song:str) -> Dict[str,any]:
+    def create_level_data(self, file_name:str, description:str, background:str, level_name:str) -> Dict[str,any]:
         """
         Create a LevelData object with the level_name, description, background, and song parameters.
         Convert the object to a JSON dictionary.
         Returns: a JSON dictionary containing the LevelData attributes.
         """
 
-        level_data:LevelData = LevelData(file_name, description, background, song)
+        level_data:LevelData = LevelData(level_name, description, background, file_name)
         level_data_json:Dict[str,any] = json.dumps(level_data.__dict__)
         return json.loads(level_data_json)
     

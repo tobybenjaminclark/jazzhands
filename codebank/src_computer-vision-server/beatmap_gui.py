@@ -1,4 +1,4 @@
-from tkinter import PhotoImage, Tk, Button, Frame, Label, Scale, Checkbutton, IntVar, Canvas, filedialog
+from tkinter import PhotoImage, Tk, Button, Frame, Label, Scale, Checkbutton, IntVar, Canvas, filedialog, simpledialog, OptionMenu, StringVar
 from pygame import mixer
 import librosa
 from typing import Tuple, Dict
@@ -134,8 +134,6 @@ class Player():
     def load_song(self):
         self.song_path = filedialog.askopenfilename(initialdir=self.SONG_LIST_PATH)
         self.file_name = self.song_path.split('/')[-1]
-        self.song_name = self.file_name.split('.')[0]
-
         
 
 
@@ -151,8 +149,61 @@ class Player():
 
         self.events[canvas_id] = None
     
+    def change_name_text(self):
+        # Prompt the user for a new name
+        new_name = simpledialog.askstring("Change Song Name", "Enter new song name:")
+        if new_name:
+            self.name_textbox.config(text=new_name)
+
+    def change_description_text(self):
+        # Prompt the user for a new name
+        new_description = simpledialog.askstring("Change Song Description", "Enter new description:")
+        if new_description:
+            self.description_textbox.config(text=new_description)
+
+
     def create_options_frame(self):
         options_frame = Frame(master = self.window, bg="#262626")
+
+        name_frame = Frame(master = options_frame, bg="#262626")
+
+        self.name_textbox = Button(master = name_frame, width=20, command = self.change_name_text,text="Name", bg = "#262626", fg="white")
+        self.name_textbox.pack(side="bottom")
+
+
+        name_label = Label(master = name_frame, text = 'Name:', fg = "white", anchor = "w", bg = "#262626")
+        name_label.pack(side="top")
+
+        name_frame.pack(side="left")
+
+        description_frame = Frame(master = options_frame, bg="#262626")
+
+        self.description_textbox = Button(master=description_frame, command=self.change_description_text,text="Description",width=50, bg = "#262626", fg="white")
+        self.description_textbox.pack(side="bottom")
+
+        # Set the focus to the Entry widget
+        self.description_textbox.focus_set()
+
+        description_label = Label(master = description_frame, text = 'Description:', fg = "white", anchor = "w", bg = "#262626")
+        description_label.pack(side="top")
+
+        description_frame.pack(side="left")
+
+        background_frame = Frame(master=options_frame,bg="#262626")
+
+        background_options=["Tutorial", "Rock", "Techno"]
+
+        self.background_var = StringVar(background_frame)
+        self.background_var.set(background_options[0])
+
+        choose_background_dropdown = OptionMenu(background_frame, self.background_var, *background_options)
+        choose_background_dropdown.config(bg="#262626",fg="white",highlightthickness=0)
+        choose_background_dropdown.pack(side="bottom")
+
+        background_label = Label(background_frame, text="Background:", bg="#262626", fg="white")
+        background_label.pack(side="top")
+
+        background_frame.pack(side="left")
 
         choose_song_btn = Button(master=options_frame, text="Choose Song", bg = "#262626", command = self.populate_window, fg="white")
         choose_song_btn.pack(side="left")
@@ -171,7 +222,7 @@ class Player():
         pause_btn = Button(master = options_frame, image = self.pause_img, borderwidth = 0, bg = "#262626", command = self.pause_song)
         pause_btn.pack(side="left")
 
-        done_btn = Button(master=options_frame, text="Done", relief = "flat", bg = "#262626", command = self.store_event_data, fg="white")
+        done_btn = Button(master=options_frame, text="Export", relief = "flat", bg = "#262626", command = self.store_event_data, fg="white")
         done_btn.pack(side="left")
 
         options_frame.pack(side="left")
@@ -181,7 +232,12 @@ class Player():
         # Prompt the user to choose a playlist folder to store the selected song.
         current_song_folder = filedialog.askdirectory(initialdir=self.JSON_PATH)
 
-        current_working_dir = f"{current_song_folder}/{self.song_name}"
+        song_name = self.name_textbox["text"]
+        song_name_no_spaces = song_name.replace(" ","_")
+        description = self.description_textbox["text"]
+        background=self.background_var.get().upper()
+
+        current_working_dir = f"{current_song_folder}/{song_name_no_spaces}"
 
         if os.path.exists(current_working_dir): 
             shutil.rmtree(current_working_dir)
@@ -191,7 +247,7 @@ class Player():
         # store the song in that folder
         shutil.copy(self.song_path, current_working_dir)
 
-        json_file_path = f"{current_working_dir}/beatmap_{self.song_name}.json"
+        json_file_path = f"{current_working_dir}/beatmap.json"
 
         self.generator = BeatmapGenerator(json_file_path)
 
@@ -201,7 +257,7 @@ class Player():
                 data_arr.append(value)
 
         
-        self.generator.generate_file(data_arr, self.file_name, self.song_name)
+        self.generator.generate_file(data_arr, self.file_name, song_name, description,background)
         
 
     def get_slider_position(self):
@@ -215,8 +271,8 @@ class Player():
         
         slider_frame = Frame(self.window, bg = "#262626")
 
-        self.start_time = Label(master = slider_frame, text = '', fg = "white", anchor = "w", bg = "#262626", padx = 10)
-        self.end_time = Label(master = slider_frame, text = '', fg = "white", anchor = "e", bg = "#262626", padx = 10)
+        self.start_time = Label(master = slider_frame, text = '', fg = "white", anchor = "w", bg = "#262626")
+        self.end_time = Label(master = slider_frame, text = '', fg = "white", anchor = "e", bg = "#262626")
         self.start_time.pack(side="left")
         self.end_time.pack(side="right")
     
@@ -230,7 +286,7 @@ class Player():
         
         self.right_frame = Frame(self.window, bg="#262626")
         self.right_frame.pack_propagate(0)
-        right_label = Label(master = self.right_frame, text = "Right", fg = "white", anchor = "w", bg = "#262626", padx = 10)
+        right_label = Label(master = self.right_frame, text = "Right", fg = "white", anchor = "w", bg = "#262626")
         right_label.pack(side="left")
         self.right_frame.pack(side="bottom", fill="both", expand=True)
         self.right_canvas = Canvas(master=self.right_frame, bg="#262626", highlightthickness=0)
@@ -238,7 +294,7 @@ class Player():
 
         self.left_frame = Frame(self.window, bg="#262626")
         self.left_frame.pack_propagate(0)
-        left_label = Label(master = self.left_frame, text = "Left", fg = "white", anchor = "w", bg = "#262626", padx = 10)
+        left_label = Label(master = self.left_frame, text = "Left", fg = "white", anchor = "w", bg = "#262626")
         left_label.pack(side="left")
         self.left_frame.pack(side = "bottom", fill="both", expand=True)
         self.left_canvas = Canvas(master=self.left_frame, bg="#262626", highlightthickness=0)

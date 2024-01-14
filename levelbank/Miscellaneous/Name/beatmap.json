@@ -1,0 +1,9 @@
+{
+    "level_data": {
+        "level_name": "snd_level.wav",
+        "description": "Description",
+        "background": "TUTORIAL",
+        "song": "Name"
+    },
+    "events": []
+}
