@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "parse_level",
+  "name": "validate_schema",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "parsing_scripts",
+    "path": "folders/Scripts/parsing_scripts.yy",
   },
 }

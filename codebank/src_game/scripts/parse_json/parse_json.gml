@@ -1,13 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
-function parse_level()
+function parse_json(file_path)
 {
     // Create a ds_map to store the parsed JSON data
     var json_map = ds_map_create();
 
-    // Specify the file path of your JSON file
-    var file_path = "tutorial.json";
 
     // Check if the file exists
     if (file_exists(file_path))
@@ -32,7 +30,7 @@ function parse_level()
         }
         else
         {
-            show_message("Failed to decode JSON");
+            show_message("Failed to decode JSON for " + file_path);
         }
     }
     else
@@ -41,5 +39,5 @@ function parse_level()
     }
 
     // Destroy the ds_map to free up memory
-    ds_map_destroy(json_map);
+    return json_map;
 }

@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-parse_level();
+a = parse_json("tutorial.json");
+validate_schema(a, "tutorial.json");
 
 step = 0;
