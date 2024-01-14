@@ -1,8 +1,12 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Display Planetary Text
+/// @author Toby Benjamin Clark
+/// @date   12/01/2023
 
+
+/* Draw planet sprite */
 draw_self();
 
+/* Draw Text (if text is visible) */
 if(text_alpha != 0)
 {
 	draw_set_alpha(text_alpha);

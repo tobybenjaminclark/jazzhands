@@ -1,6 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Handles Room Transitions
+/// @author Toby Benjamin Clark
+/// @date   14/01/2023
 
+/* If there is a queued room */
 if(global.queued_room != -1)
 {
 	transitioning = true;
@@ -8,6 +10,7 @@ if(global.queued_room != -1)
 	global.queued_room = -1;
 }
 
+/* If transitioning to a new room */
 if(transitioning)
 {
 	step += 1;
@@ -23,6 +26,7 @@ if(transitioning)
 	}
 }
 
+/* If transitioned to a new room, and slowing effect */
 else if(slowing)
 {
 	shake_fx = layer_get_fx("ShakeLayer");
@@ -37,6 +41,7 @@ else if(slowing)
 	}
 }
 
+/* If not transitioning, ensure ShakeLayer isn't acting */
 else
 {
 	step = 0;
