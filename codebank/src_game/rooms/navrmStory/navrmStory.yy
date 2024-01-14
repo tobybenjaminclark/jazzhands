@@ -31,12 +31,18 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabel/oLabel.yy",},"value":"fntRaananaSmall",},
           ],"rotation":0.0,"scaleX":0.98560286,"scaleY":1.0,"x":89.0,"y":140.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ForegroundInstances","depth":300,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"ForegroundInstances","depth":300,"effectEnabled":true,"effectType":"_effect_glow","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1914350","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"navrmMain",},
           ],"rotation":0.0,"scaleX":0.15392858,"scaleY":0.15392858,"x":90.07741,"y":92.87752,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_13EC5B13","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oStoryNavigator","path":"objects/oStoryNavigator/oStoryNavigator.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":352.0,},
-      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+      ],"layers":[],"properties":[
+        {"name":"g_GlowRadius","type":0,"value":"256",},
+        {"name":"g_GlowQuality","type":0,"value":"5",},
+        {"name":"g_GlowIntensity","type":0,"value":"0.5",},
+        {"name":"g_GlowGamma","type":0,"value":"0",},
+        {"name":"g_GlowAlpha","type":0,"value":"1",},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_5D1B2479","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":0.68285716,"scaleY":0.68285716,"spriteId":{"name":"sprCogRecord","path":"sprites/sprCogRecord/sprCogRecord.yy",},"x":672.0,"y":288.0,},
       ],"depth":400,"effectEnabled":true,"effectType":"_filter_ripples","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
@@ -47,7 +53,13 @@
         {"name":"g_RipplesAmplitude","type":0,"value":"0.6",},
         {"name":"g_RipplesRadius","type":0,"value":"923",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundInstances","depth":500,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"BackgroundInstances","depth":500,"effectEnabled":true,"effectType":"_effect_glow","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[
+        {"name":"g_GlowRadius","type":0,"value":"256",},
+        {"name":"g_GlowQuality","type":0,"value":"5",},
+        {"name":"g_GlowIntensity","type":0,"value":"0.5",},
+        {"name":"g_GlowGamma","type":0,"value":"0",},
+        {"name":"g_GlowAlpha","type":0,"value":"1",},
+      ],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DiscEffectLayer","depth":600,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},
         {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},

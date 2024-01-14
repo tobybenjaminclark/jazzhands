@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Variable Setup
+/// @author Toby Benjamin Clark
+/// @date   12/01/2023
 
 global.queued_room = -1;
 
