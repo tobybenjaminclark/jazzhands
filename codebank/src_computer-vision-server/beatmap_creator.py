@@ -1,29 +1,33 @@
 import json
-from typing import Dict, List, Tuple, Union, TextIO
+from typing import Dict, List, Tuple, Union
+import io
 
-# on done:
+from SettingsReader import JazzHandsSettingsReader
 
-# there will be an array of eventdata
-
-# [ [1100, closed_fist, left], [1200, closed_fist, right], ... ]
-
-class BeatmapGenerator():
+class BeatmapGenerator(JazzHandsSettingsReader):
 
     path: str
     json_data: Dict[str,str]
 
     def __init__(self, path:str):
 
-        self.INDENT = 4
+        # Retrieve the settings.ini declarations.
+        super().__init__()
+
+        self.INDENT = int(self.settings["JSON_INDENT"])
         self.path = path
 
     def generate_file(self, events:List[Tuple[int,str,str]], file_name: str, song_name:str, description:str,background:str):
-        json_file = self.create_json_file(events, file_name, song_name, description,background)
+        # Generate a JSON beatmap file from the given events, file name, song name, description and background.
+
+        json_file:Dict[str,any] = self.create_json_file(events, file_name, song_name, description,background)
         self.write_json_to_file(json_file)
-        new_json = self.parse_file_as_json()
+
+        # Retrieve the contents of the newly written file.
+        new_json:Union[str,None] = self.parse_file_as_json()
         print(f"file contents: {new_json}")
 
-    def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str, description:str,background:str):
+    def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str, description:str,background:str) -> Dict[str,any]:
         """
         Create the contents of a JazzHands beatmap from the supplied events and file_name and song_name.
         Convert the contents to json.
@@ -47,7 +51,7 @@ class BeatmapGenerator():
         Write a JSON dictionary to the file, json_contents.
         """
 
-        json_file = open(self.path, 'w')
+        json_file:io.TextIOWrapper = open(self.path, 'w')
         json.dump(json_contents, json_file, indent = self.INDENT)
         json_file.close()
         return None
@@ -59,7 +63,7 @@ class BeatmapGenerator():
         """
 
         try:
-            file_contents: TextIO
+            file_contents: io.TextIOWrapper
             file_contents = open(self.path, encoding='utf-8')
             contents:Dict[str,any] = json.loads(file_contents.read())
             file_contents.close()
@@ -81,7 +85,7 @@ class BeatmapGenerator():
     
     def create_event(self, event_type:str, data:Dict[str,any])-> Dict[str,any]:
         """
-        Create a LevelData object with the event_type and event_data parameters.
+        Create a Event object with the event_type and event_data parameters.
         Convert the object to a JSON dictionary.
         Returns: a JSON dictionary containing the Event attributes.
         """
@@ -122,7 +126,7 @@ class BeatmapGenerator():
         """
 
         try:
-            json_data = json.loads(data)
+            json_data:Dict[str,any] = json.loads(data)
             return json_data
         except Exception as e:
             print(e)
