@@ -33,11 +33,13 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 	switch(beatmap_structure.events[event_index].event_type)
 	{
 		case "beat":
-			var inst = instance_create_layer(x,y,layer, class_symbol);
-			inst.parent = self;
-			inst.time = real(beatmap_structure.events[event_index].event_data.time);
-			inst.side = string(beatmap_structure.events[event_index].event_data.side);
-			inst.symbol = string(beatmap_structure.events[event_index].event_data.symbol);
+			temp = self;
+			var inst = instance_create_layer(x,y,layer, class_symbol,{
+				parent: temp,
+				time: real(beatmap_structure.events[event_index].event_data.time),
+				side: string(beatmap_structure.events[event_index].event_data.side),
+				symbol: string(beatmap_structure.events[event_index].event_data.symbol)
+			});
 		break;
 		
 		default:

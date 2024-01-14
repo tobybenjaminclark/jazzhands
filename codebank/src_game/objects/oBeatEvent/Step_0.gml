@@ -21,12 +21,7 @@ if (parent.start_time != 0 && !set) {
     moving = true;
 }
 
-// Set x position based on side
-if (side == "LEFT") {
-    x = sx - 100;
-} else if (side == "RIGHT") {
-    x = sx + 100;
-}
+
 
 // Pause if parent is paused
 if (parent.paused) {
