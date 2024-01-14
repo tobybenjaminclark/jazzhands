@@ -3,7 +3,7 @@
         "level_name": "bazaar",
         "description": "tutorial, level 1",
         "background": "example.png",
-        "song": "test.ogg"
+        "song": "snd_bazaar.wav"
     },
     "events": [
 

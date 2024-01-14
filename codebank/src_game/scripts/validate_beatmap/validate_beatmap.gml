@@ -1,4 +1,4 @@
-/// @description Validating Beatmap using the Schema Defined (www.github.com/tobybenjaminclark/jazzhands/wiki)
+/// @description Validating Beatmap using the Schema Defined (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
 
@@ -15,17 +15,16 @@ function display_validation_failure(displayed_string)
 
 
 /**
- * Validate a level_data object based on the provided Beatmap API documentation.
- * @param {struct} level_data  - Provided Level Data Structure
- * @param {string} file_path   - File Path to current level
- *
+ * Replaces the last element of a file path with another string.
+ * 
+ * @param {string} filePath - The original file path.
+ * @param {string} newElement - The new element to replace the last one.
+ * @return {string} - The modified file path.
  */
-function validate_level_data(level_data, file_path)
+function filepath_replace_last_element(file_path, new_element)
 {
-    if(!variable_struct_exists(level_data, "level_name")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'level_name' attribute");
-    if(!variable_struct_exists(level_data, "description")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'description' attribute");
-    if(!variable_struct_exists(level_data, "background")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'background' attribute");
-    if(!variable_struct_exists(level_data, "song")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'song' attribute");
+    /* Splits the string at '/' instances, replaces the final element with the new element */
+    return string_replace(file_path, string_split(file_path, "/")[array_length(string_split(file_path, "/")) - 1], new_element);
 }
 
 
@@ -54,7 +53,7 @@ function validate_string_in_list(target, string_list)
 
 /**
  * Validate a target variable is of type real
- * @param {string} target     - Variable to ttest
+ * @param {string} target     - Variable to test
  * @return {bool}             - True if can be parsed, False if not.
  */
 function validate_real(target)
@@ -87,8 +86,41 @@ function validate_string(target)
 
 
 /**
- * Validates event data based on the provided Beatmap API documentation.
- * @param {object} event      - The 'beat' event object.
+ * Validate a level_data object based on the provided Beatmap API documentation. (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
+ * @param {struct} level_data  - Provided Level Data Structure
+ * @param {string} file_path   - File Path to current level
+ *
+ */
+function validate_level_data(level_data, file_path)
+{
+	/* Validate `.level_name` attribute exists, and is of type string */
+    if(!variable_struct_exists(level_data, "level_name")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'level_name' attribute");
+	else if(!validate_string(level_data.level_name)) display_validation_failure("Level " + string(file_path) + " leveldata.level_name cannot be parsed to type `String`");
+	
+	/* Validate `.description` attribute exists, and is of type string */
+    if(!variable_struct_exists(level_data, "description")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'description' attribute");
+	else if(!validate_string(level_data.description)) display_validation_failure("Level " + string(file_path) + " leveldata.description cannot be parsed to type `String`");
+	
+	/* Validate `.background` attribute exists, and is of type string */
+    if(!variable_struct_exists(level_data, "background")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'background' attribute");
+	else if(!validate_string(level_data.background)) display_validation_failure("Level " + string(file_path) + " leveldata.background cannot be parsed to type `String`");
+	
+	/* Validate `.song` attribute exists */
+    if(!variable_struct_exists(level_data, "song")) display_validation_failure("Level `" + string(file_path) + ".leveldata - missing 'song' attribute");
+	{
+		/* Validate that `.song` is of type string, and the file exists. */
+		if(!validate_string(level_data.song)) display_validation_failure("Level " + string(file_path) + " leveldata.song cannot be parsed to type `String`");
+		else if(!file_exists(string(filepath_replace_last_element(file_path, level_data.song)))) display_validation_failure("Level " + string(file_path) + " Missing Resource: " + string(filepath_replace_last_element(file_path, level_data.song)));
+	
+		/* TODO: Add format validation */
+	}
+}
+
+
+
+/**
+ * Validates event data based on the provided Beatmap API documentation. (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
+ * @param {object} event      - The event object.
  * @param {string} file_path  - The path to the beatmap file being validated.
  * @param {int} event_index   - Index of the current event.
  */
@@ -102,6 +134,7 @@ function validate_event_data(event, file_path, event_index)
 			/* Validate `time` attribute exists & can be parsed to `real`. */
 	        if(!variable_struct_exists(event.event_data, "time")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `time`");
 			else if(!validate_real(event.event_data.time)) display_validation_failure("Event " + string(event_index) + " beatdata.time cannot be parsed to type `Real` (Int)");
+
 
 			/* Validating that the `symbol` attribute is of type string, and is in JS_SYMBOL_LIST (see macros) */
 	        if(!variable_struct_exists(event.event_data, "symbol")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `symbol`");
@@ -134,7 +167,7 @@ function validate_event_data(event, file_path, event_index)
 
 
 /**
- * Validates each event in the beatmap based on the provided Beatmap API documentation.
+ * Validates each event in the beatmap based on the provided Beatmap API documentation. (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
  * @param {object} event      - The event object to be validated.
  * @param {string} file_path  - The path to the beatmap file being validated
  * @param {int} event_index   - The index of the current event
@@ -156,20 +189,20 @@ function validate_event(event, file_path, event_index)
 
 
 /**
- * Validates the entire beatmap schema based on the provided Beatmap API documentation.
+ * Validates the entire beatmap schema based on the provided Beatmap API documentation. (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
  * @param {struct} level_map   The beatmap object to be validated.
  * @param {string} file_path  - The path to the beatmap file being validated.
  */
 function validate_beatmap(level_map, file_path)
 {
-	/* Set failure flag to false */
+	/* Set failure flag to false, this is updated to true in the `display_validation_failure` function. */
 	global.validation_failure = false;
 	 
     /* Validating Level Data exists, and is of type `Struct` */
     if(!variable_struct_exists(level_map, "level_data")) display_validation_failure("Level `" + string(file_path) + "` - missing 'level_data' attribute");
 	else
 	{
-		/* Validate level_data is of type Struct, and then validate it's contents */
+		/* Validate level_data is of type Struct, and then validate its contents */
 		if(!is_struct(level_map.level_data)) display_validation_failure("Level " + string(file_path) + ".level_data is not of type `Struct`");
 		else validate_level_data(level_map.level_data, file_path);
     
@@ -177,15 +210,18 @@ function validate_beatmap(level_map, file_path)
 	
 	/* Validating Events exists */
     if(!variable_struct_exists(level_map, "events")) display_validation_failure("Level `" + string(file_path) + "` - missing 'events' attribute");
-	
-    /* Validating Events */
-    var events = level_map.events;
-    if(!is_array(events)) display_validation_failure("Level `" + string(file_path) + "` - is not of type `Array`");
-    else
-    {
-        /* Iterating through & validating each event */
-        for(var event_index = 0; event_index < array_length(events); event_index++) validate_event(events[event_index], file_path, event_index);
-    }
+	else
+	{
+		/* Validating Events */
+	    var events = level_map.events;
+	    if(!is_array(events)) display_validation_failure("Level `" + string(file_path) + "` - is not of type `Array`");
+	    else
+	    {
+	        /* Iterating through & validating each event */
+	        for(var event_index = 0; event_index < array_length(events); event_index++) validate_event(events[event_index], file_path, event_index);
+	    }	
+	}
+
 	
 	return global.validation_failure;
 }
