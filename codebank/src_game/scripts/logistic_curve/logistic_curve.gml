@@ -16,6 +16,8 @@ function logistic_curve(min, max, step)
     return lerp(0, 1, (1 / (1 + exp(- (step - min) / (max - min)))));
 }
 
+
+
 /**
  * Returns the value of a modified logistic curve. (uses sigmoid curve)
  * @param {real} x - The input value.

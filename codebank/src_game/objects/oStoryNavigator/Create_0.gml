@@ -1,11 +1,12 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Setup for Planetary Navigator
+/// @author Toby Benjamin Clark
+/// @date   12/01/2023
 
-
-
+/* Initial Variables */
 moving = true;
 planetary_movement = directions.counter_clockwise
 
+/* Setting Planet Titles */
 titles = 
 [
 	"Symphonya",
@@ -15,6 +16,7 @@ titles =
 	"Maritune",
 ]
 
+/* Setting Planet Descriptions */
 descriptions = 
 [
 	"Planet of harmony, peace and symphony.",
@@ -24,6 +26,10 @@ descriptions =
 	"Planet o' the shantys.",
 ]
 
+/*
+ * Spawn Planets & Set Initial Variables
+ * This isn't great, rewite at some point.
+ */
 angle_step = 0;
 for(i = 0; i < 5; i++;)
 {
