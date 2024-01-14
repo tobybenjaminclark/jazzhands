@@ -11,7 +11,7 @@ class Player():
     def __init__(self, path:str):
 
         self.song_path = path
-        print(self.song_path.split('/')[-1].split('.')[0])
+        self.song_name = self.song_path.split('/')[-1].split('.')[0]
         self.ispaused = False
         self.command_images = []
         self.commands = []
