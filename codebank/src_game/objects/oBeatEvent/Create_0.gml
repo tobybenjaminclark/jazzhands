@@ -4,7 +4,7 @@
 
 start_time = 0;
 target_time = 0;
-movement_factor = 6;
+movement_factor = 3;
 paused = false;
 set = false;
 
