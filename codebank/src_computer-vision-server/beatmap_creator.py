@@ -1,5 +1,11 @@
 import json
-from typing import Dict, List, Union, TextIO
+from typing import Dict, List, Tuple, Union, TextIO
+
+# on done:
+
+# there will be an array of eventdata
+
+# [ [1100, closed_fist, left], [1200, closed_fist, right], ... ]
 
 class BeatmapGenerator():
 
@@ -8,27 +14,31 @@ class BeatmapGenerator():
 
     def __init__(self, path:str):
 
-        self.INDENT = 2
-
+        self.INDENT = 4
         self.path = path
-        json_file = self.create_json_file()
+
+    def generate_file(self, events:List[Tuple[int,str,str]], file_name: str, song_name:str):
+        json_file = self.create_json_file(events, file_name, song_name)
         self.write_json_to_file(json_file)
         new_json = self.parse_file_as_json()
-        print(json_file)
-        print(new_json)
+        print(f"file contents: {new_json}")
 
-    def create_json_file(self):
+    def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str):
         """
-        Create the contents of a JazzHands beatmap.
+        Create the contents of a JazzHands beatmap from the supplied events and file_name and song_name.
         Convert the contents to json.
         Returns: the beatmap in json format.
         """
 
-        level_data: Dict[str,any] = self.create_level_data("book", "tutorial level 2", "example.png", "example_song")
-        event_data: Dict[str, any] = self.create_event_data(1000, "OPEN_HAND", "LEFT")
-        event: Dict[str,any] = self.create_event("beat", event_data)
-        events: List[Dict[str,any]] = [event]
-        level: Dict[str,any] = self.create_level(level_data, events)
+        level_data: Dict[str,any] = self.create_level_data(file_name, "", "example.png", song_name)
+
+        event_list: List[Dict[str,any]] = []
+        for event in events:
+            current_event_data: Dict[str, any] = self.create_event_data(event)
+            event: Dict[str,any] = self.create_event("beat", current_event_data)
+            event_list.append(event)
+
+        level: Dict[str,any] = self.create_level(level_data, event_list)
         json_file: Dict[str,any] = self.create_json(level)
         return json_file
     
@@ -58,16 +68,16 @@ class BeatmapGenerator():
             print(e)
         return None
     
-    def create_level_data(self, level_name:str, description:str, background:str, song:str) -> Dict[str,any]:
+    def create_level_data(self, file_name:str, description:str, background:str, song:str) -> Dict[str,any]:
         """
         Create a LevelData object with the level_name, description, background, and song parameters.
         Convert the object to a JSON dictionary.
         Returns: a JSON dictionary containing the LevelData attributes.
         """
 
-        level_data:LevelData = LevelData(level_name, description, background, song)
+        level_data:LevelData = LevelData(file_name, description, background, song)
         level_data_json:Dict[str,any] = json.dumps(level_data.__dict__)
-        return level_data_json
+        return json.loads(level_data_json)
     
     def create_event(self, event_type:str, data:Dict[str,any])-> Dict[str,any]:
         """
@@ -78,16 +88,18 @@ class BeatmapGenerator():
 
         event:Event = Event(event_type, json.loads(data))
         event_json:Dict[str,any] = json.dumps(event.__dict__)
-        return event_json
+        return json.loads(event_json)
     
-    def create_event_data(self, start_time:int, symbol:str, side:str)-> Dict[str,any]:
+    def create_event_data(self, data_tuple:[Tuple[int,str,str]])-> Dict[str,any]:
         """
         Create a EventData object with the start_time, symbol and side parameters.
         Convert the object to a JSON dictionary.
         Returns: a JSON dictionary containing the EventData attributes.
         """
 
-        event_data:EventData = EventData(start_time, symbol, side)
+
+
+        event_data:EventData = EventData(*(data_tuple))
         event_data_json:Dict[str,any] = json.dumps(event_data.__dict__)
         return event_data_json
     
@@ -176,6 +188,3 @@ class Level():
         self.level_data = level_data
         self.events = events
 
-
-path = r"src_jazzhands/Jazzhands/datafiles/tutorialbank/beatmap_book.json"
-json_generator = BeatmapGenerator(path)
