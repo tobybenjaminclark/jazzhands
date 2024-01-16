@@ -2,13 +2,11 @@ from tkinter import PhotoImage, Event, Tk, Button, Frame, Label, Scale, Checkbut
 from pygame import mixer
 import librosa
 from typing import Tuple, Dict, List, Union
-from beatmap_creator import BeatmapGenerator
+from src.src_level_editor.beatmap_creator import BeatmapGenerator
 import os
 import shutil
 
-from SettingsReader import JazzHandsSettingsReader
-
-class Player(JazzHandsSettingsReader):
+class Player():
 
 
 
@@ -36,10 +34,9 @@ class Player(JazzHandsSettingsReader):
 
     command_images:List[PhotoImage]         # A list storing the images of all placed commands to bypass garbage collection.
 
-    def __init__(self):
+    def __init__(self, settings):
 
-        # Retrieve the settings.ini declarations.
-        super().__init__()
+        self.settings = settings
 
         self.generator = BeatmapGenerator()
 

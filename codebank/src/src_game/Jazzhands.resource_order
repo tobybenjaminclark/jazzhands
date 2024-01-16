@@ -19,9 +19,9 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"miscellaneous","order":7,"path":"folders/Sprites/miscellaneous.yy",},
     {"name":"symbols","order":8,"path":"folders/Sprites/symbols.yy",},
+    {"name":"symbols_base","order":1,"path":"folders/Sprites/symbols/symbols_base.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"symbols_base","order":1,"path":"folders/Sprites/symbols/symbols_base.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oSpinningDisc","order":6,"path":"objects/oSpinningDisc/oSpinningDisc.yy",},

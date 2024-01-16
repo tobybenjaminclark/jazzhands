@@ -2,17 +2,16 @@ import json
 from typing import Dict, List, Tuple, Union
 import io
 
-from SettingsReader import JazzHandsSettingsReader
 
-class BeatmapGenerator(JazzHandsSettingsReader):
+class BeatmapGenerator():
 
     path: str
     json_data: Dict[str,str]
 
-    def __init__(self):
+    def __init__(self, settings):
 
         # Retrieve the settings.ini declarations.
-        super().__init__()
+        self.settings = settings
 
         self.INDENT = int(self.settings["JSON_INDENT"])
 

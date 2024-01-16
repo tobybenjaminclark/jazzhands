@@ -1,6 +1,6 @@
 {
     "level_data": {
-        "level_name": "Name",
+        "level_name": "level_bazaar",
         "description": "Description",
         "background": "TUTORIAL",
         "song": "snd_bazaar.ogg"
@@ -233,7 +233,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 48433,
+                "time": 47400,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -241,7 +241,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 51433,
+                "time": 50800,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -249,16 +249,16 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 65792,
-                "symbol": "CLOSED_FIST",
+                "time": 61000,
+                "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 62288,
-                "symbol": "OPEN_PALM",
+                "time": 64400,
+                "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
         }
