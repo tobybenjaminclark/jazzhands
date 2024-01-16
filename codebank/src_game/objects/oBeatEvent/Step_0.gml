@@ -24,6 +24,7 @@ if (parent.start_time != 0 && !set)
 /* Move Symbol if moving & not paused */
 if (moving && !paused)
 {
+	
 	/* Moving Logic */
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 	
@@ -38,6 +39,8 @@ if (moving && !paused)
 /* Symbol Death Logic */
 if(dead)
 {
+	image_blend = make_color_rgb(255, 100, 100);
+	
 	moving = false;
 	y = y - 1;
 	if(x>room_width/2) x += 1;
