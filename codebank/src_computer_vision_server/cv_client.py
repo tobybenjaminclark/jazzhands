@@ -68,6 +68,7 @@ class GMS2Client():
         sock: socket.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
         sock.bind(( self.settings["HOST"], int(self.settings["PORT"]) ))
+        print("listening")
         sock.listen()
         sock.settimeout(int(self.settings["SOCKET_TIMEOUT"]))
 

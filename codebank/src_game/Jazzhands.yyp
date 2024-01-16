@@ -55,7 +55,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},},
