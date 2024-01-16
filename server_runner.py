@@ -1,5 +1,5 @@
-from src.src_computer_vision_server.controller import JazzhandsController
-from settings_config.SettingsReader import JazzHandsSettingsReader
+from codebank.src_computer_vision_server.controller import JazzhandsController
+from codebank.src_settings_loader.SettingsReader import JazzHandsSettingsReader
 
 if __name__ == "__main__":
     settings = JazzHandsSettingsReader().settings

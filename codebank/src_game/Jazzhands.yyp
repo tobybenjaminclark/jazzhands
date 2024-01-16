@@ -53,7 +53,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},},
@@ -62,7 +62,6 @@
     {"id":{"name":"fntRaanana","path":"fonts/fntRaanana/fntRaanana.yy",},},
     {"id":{"name":"sprSymbolThumbsUpBase","path":"sprites/sprSymbolThumbsUpBase/sprSymbolThumbsUpBase.yy",},},
     {"id":{"name":"logo_pallette","path":"sprites/logo_pallette/logo_pallette.yy",},},
-    {"id":{"name":"oServer","path":"objects/oServer/oServer.yy",},},
     {"id":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},},
     {"id":{"name":"sprPlanetRecord1","path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},},
     {"id":{"name":"navrmMain","path":"rooms/navrmMain/navrmMain.yy",},},
@@ -83,6 +82,7 @@
     {"id":{"name":"logo_large","path":"sprites/logo_large/logo_large.yy",},},
     {"id":{"name":"logistic_curve","path":"scripts/logistic_curve/logistic_curve.yy",},},
     {"id":{"name":"oStoryNavigator","path":"objects/oStoryNavigator/oStoryNavigator.yy",},},
+    {"id":{"name":"oServer","path":"objects/oServer/oServer.yy",},},
     {"id":{"name":"sprCogRecord","path":"sprites/sprCogRecord/sprCogRecord.yy",},},
     {"id":{"name":"parse_json","path":"scripts/parse_json/parse_json.yy",},},
     {"id":{"name":"sprUnknownSymbol","path":"sprites/sprUnknownSymbol/sprUnknownSymbol.yy",},},
