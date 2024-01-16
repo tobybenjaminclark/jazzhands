@@ -109,7 +109,8 @@ class JazzHandsGestureRecognizer():
         recognizer.recognize_async(mp_image, int(time.time() * 1000))
 
         # Display the frame in OpenCV.
-        cv2.imshow("frame", frame)
+        # Fix for macOS (uncomment to break macOS support, at your demise.)
+        # cv2.imshow("frame", frame)
         cv2.waitKey(1)
 
         return None
