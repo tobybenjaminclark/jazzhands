@@ -30,9 +30,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Sprites","folderPath":"folders/Sprites.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"miscellaneous","folderPath":"folders/Sprites/miscellaneous.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"symbols","folderPath":"folders/Sprites/symbols.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"symbols_base","folderPath":"folders/Sprites/symbols/symbols_base.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"symbols_base","folderPath":"folders/Sprites/symbols/symbols_base.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"datafiles alias","CopyToMask":-1,"filePath":"datafiles",},
@@ -62,6 +62,7 @@
     {"id":{"name":"fntRaanana","path":"fonts/fntRaanana/fntRaanana.yy",},},
     {"id":{"name":"sprSymbolThumbsUpBase","path":"sprites/sprSymbolThumbsUpBase/sprSymbolThumbsUpBase.yy",},},
     {"id":{"name":"logo_pallette","path":"sprites/logo_pallette/logo_pallette.yy",},},
+    {"id":{"name":"oServer","path":"objects/oServer/oServer.yy",},},
     {"id":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},},
     {"id":{"name":"sprPlanetRecord1","path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},},
     {"id":{"name":"navrmMain","path":"rooms/navrmMain/navrmMain.yy",},},

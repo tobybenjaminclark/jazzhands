@@ -19,9 +19,9 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"miscellaneous","order":7,"path":"folders/Sprites/miscellaneous.yy",},
     {"name":"symbols","order":8,"path":"folders/Sprites/symbols.yy",},
+    {"name":"symbols_base","order":1,"path":"folders/Sprites/symbols/symbols_base.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"symbols_base","order":1,"path":"folders/Sprites/symbols/symbols_base.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oSpinningDisc","order":6,"path":"objects/oSpinningDisc/oSpinningDisc.yy",},
@@ -29,6 +29,7 @@
     {"name":"rmstage_techno","order":1,"path":"rooms/rmstage_techno/rmstage_techno.yy",},
     {"name":"sprSymbolThumbsUpBase","order":1,"path":"sprites/sprSymbolThumbsUpBase/sprSymbolThumbsUpBase.yy",},
     {"name":"logo_pallette","order":1,"path":"sprites/logo_pallette/logo_pallette.yy",},
+    {"name":"oServer","order":9,"path":"objects/oServer/oServer.yy",},
     {"name":"oSpinButtonBase","order":4,"path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},
     {"name":"sprPlanetRecord1","order":5,"path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},
     {"name":"navrmMain","order":2,"path":"rooms/navrmMain/navrmMain.yy",},
