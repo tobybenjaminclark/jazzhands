@@ -12,22 +12,21 @@ import numpy as np
 import threading
 import json
 
-from SettingsReader import JazzHandsSettingsReader
 
-class JazzHandsGestureRecognizer(JazzHandsSettingsReader):
+class JazzHandsGestureRecognizer():
     stop_event: threading.Event      # Event to signal the termination of the thread.
     gesture_queue: Queue             # Queue to transfer data from the subthread to the main thread.
     thread: threading.Thread         # Thread to continously retrieve gestures from webcam input.
     current_result: Dict[str,str]    # Dictionary mapping handedness to gesture (e.g. left: OPEN_HAND)
     previous_result: Dict[str,str]   # Dictionary storing the previous contents of current_result.
 
-    def __init__(self):
+    def __init__(self, settings):
         """
         Initialise the stop event and gesture queue.
         """
 
         # Retrieve the settings.ini declarations.
-        super().__init__()
+        self.settings = settings
 
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event: threading.Event = threading.Event()
@@ -75,7 +74,7 @@ class JazzHandsGestureRecognizer(JazzHandsSettingsReader):
 
         options: mp.tasks.vision.GestureRecognizerOptions = mp.tasks.vision.GestureRecognizerOptions(
             base_options=mp.tasks.BaseOptions(
-                model_asset_path=r"src_computer-vision-server/gesture_recognizer.task"
+                model_asset_path=self.settings["MEDIAPIPE_PATH"]
             ),
             running_mode=mp.tasks.vision.RunningMode.LIVE_STREAM,
             result_callback=(lambda x, u1, u2: self.handle_gestures(x, queue)),

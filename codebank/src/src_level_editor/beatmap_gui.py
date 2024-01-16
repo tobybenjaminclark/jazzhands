@@ -38,7 +38,7 @@ class Player():
 
         self.settings = settings
 
-        self.generator = BeatmapGenerator()
+        self.generator = BeatmapGenerator(settings)
 
         self.song_path=None
 
@@ -46,10 +46,10 @@ class Player():
         self.ASSET_PATH = self.settings["ASSET_PATH"]
         self.JSON_PATH = self.settings["JSON_PATH"]
         self.BACKGROUND_COLOUR = f"#{self.settings['GUI_BACKGROUND_COLOUR']}"
-        
+
 
         self.create_window()
-
+        
     def initialise_timestamps(self) -> None:
         """
         Initialise the timestamps describing the start and the end of the song.
@@ -322,7 +322,6 @@ class Player():
             self.canvas_images.append(image_resized)
 
             slider_pos = self.get_slider_position(time)
-            print(f"slider pos: {slider_pos}")
             self.place_symbol(image_resized,canvas,symbol,side, slider_pos, time)
         
 
@@ -379,11 +378,6 @@ class Player():
         
 
     def get_slider_position(self, slider_value:int):
-
-        print(f"slider val: {slider_value}")
-        print(self.music_slider.winfo_x())
-        print(self.end_time["text"])
-        print(self.music_slider.winfo_width())
 
 
         # slider value can either be the current value of the slider or the value from the file

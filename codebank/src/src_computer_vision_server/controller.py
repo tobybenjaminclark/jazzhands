@@ -2,25 +2,23 @@
 # Written by Amber Swarbrick 06/01/2024
 # Code Review Passed by Toby Clark 06/01/2024
 
-from SettingsReader import JazzHandsSettingsReader
-from hand_gesture_recognition import JazzHandsGestureRecognizer
-from cv_client import GMS2Client
+from src.src_computer_vision_server.cv_client import GMS2Client
+from src.src_computer_vision_server.hand_gesture_recognition import JazzHandsGestureRecognizer
 from queue import Queue
 
-class JazzhandsController(JazzHandsSettingsReader):
+class JazzhandsController():
     running: bool                                   # A flag to determine if the program has ended. Facilitates safe termination of threads.
     client: GMS2Client                              # An instance of the cv_client.Client object (communicates to GMS2 server)
     client_queue: Queue                             # An instance of the client queue. Facilitates sending gesture data to the client object.
-    gesture_recognizer: JazzHandsGestureRecognizer  # An instance of the hand_gesture_recognition.GestureRecognition object.
     gesture_queue: Queue                            # An instance of the gesture_recognition queue. Allows transmission of gesture data to the client.
 
-    def __init__(self) -> None:
+    def __init__(self, settings) -> None:
         """
         Main function which initiates the client and gesture recognition.
         """
 
         # Retrieve the settings.ini declarations.
-        super().__init__()
+        self.settings = settings
 
         self.create_client()
         self.create_gesture_recognizer()
@@ -33,7 +31,7 @@ class JazzhandsController(JazzHandsSettingsReader):
         Creates a thread which initialises the client.
         """
 
-        self.client = GMS2Client()
+        self.client = GMS2Client(self.settings)
         self.client_queue: Queue = self.client.client_queue
         self.client.start_thread()
 
@@ -42,7 +40,7 @@ class JazzhandsController(JazzHandsSettingsReader):
         Creates a thread which initialises the gesture recognition.
         """
 
-        self.gesture_recognizer = JazzHandsGestureRecognizer()
+        self.gesture_recognizer = JazzHandsGestureRecognizer(self.settings)
         self.gesture_queue: Queue = self.gesture_recognizer.gesture_queue
         self.gesture_recognizer.start_thread()
 

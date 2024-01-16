@@ -6,20 +6,19 @@ import socket
 import threading
 from queue import Queue
 
-from SettingsReader import JazzHandsSettingsReader
 
-class GMS2Client(JazzHandsSettingsReader):
+class GMS2Client():
     stop_event: threading.Event     # Event to signal the termination of the thread.
     client_queue: Queue             # Queue to transfer data from the subthread to the main thread.
     thread: threading.Thread        # Client thread to maintain client-server connection.
 
-    def __init__(self):
+    def __init__(self, settings):
         """
         Initializes stop event & client queue
         """
 
         # Retrieve the settings.ini declarations.
-        super().__init__()
+        self.settings = settings
 
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event = threading.Event()
