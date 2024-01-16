@@ -22,15 +22,26 @@ if (parent.start_time != 0 && !set)
 
 
 /* Move Symbol if moving & not paused */
-if (moving && !paused)
+if (moving && !paused && !dead)
 {
 	
 	/* Moving Logic */
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 	
 	/* Symbol Death Transition */
-    if (y >= (parent.kill_line) || current_time >= target_time) dead = true;
-	
+    if (y >= (parent.kill_line) || current_time >= target_time)
+	{
+		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
+		{
+			image_blend = make_color_rgb(100, 255, 100);
+		}
+		else
+		{
+			image_blend = make_color_rgb(255, 100, 100);
+		}
+		
+		dead = true;
+	}
 	/* TODO: Score Logic */
 }
 
@@ -39,8 +50,6 @@ if (moving && !paused)
 /* Symbol Death Logic */
 if(dead)
 {
-	image_blend = make_color_rgb(255, 100, 100);
-	
 	moving = false;
 	y = y - 1;
 	if(x>room_width/2) x += 1;

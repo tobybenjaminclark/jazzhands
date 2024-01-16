@@ -16,6 +16,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Fonts","folderPath":"folders/Fonts.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Notes","folderPath":"folders/Notes.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Objects","folderPath":"folders/Objects.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gui","folderPath":"folders/Objects/gui.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"miscellaneous","folderPath":"folders/Objects/miscellaneous.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"stage","folderPath":"folders/Objects/stage.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Particle Systems","folderPath":"folders/Particle Systems.yy",},
@@ -31,10 +32,9 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"miscellaneous","folderPath":"folders/Sprites/miscellaneous.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"symbols","folderPath":"folders/Sprites/symbols.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"symbols_base","folderPath":"folders/Sprites/symbols/symbols_base.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"utilities","folderPath":"folders/Sprites/utilities.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"utilities","folderPath":"folders/Sprites/utilities.yy",},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gui","folderPath":"folders/Objects/gui.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"datafiles alias","CopyToMask":-1,"filePath":"datafiles",},
@@ -55,7 +55,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.2.108",
+    "IDEVersion": "2023.11.1.129",
   },
   "resources": [
     {"id":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},},

@@ -35,6 +35,8 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"speed_addition","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"speed_maximum_amp","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"6","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"scale_modifier","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"1.035","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"left_trigger","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"Left Hand Trigger","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"right_trigger","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"Right Hand Trigger","varType":2,},
   ],
   "solid": false,
   "spriteId": {

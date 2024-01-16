@@ -2,6 +2,15 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
+/* Handle CV Button Trigger */
+// Change state to speeding if not already.
+if (global.left_hand == left_trigger			/* <-- Left Hand Matches */
+	&& global.right_hand == right_trigger	    /* <-- Right Hand Matches */
+	&& state == state_spin_button.spinning)		/* <-- Not already triggered */
+{
+	state = state_spin_button.speeding;
+}
+
 // Switch dependent on button state.
 switch(state)
 {
