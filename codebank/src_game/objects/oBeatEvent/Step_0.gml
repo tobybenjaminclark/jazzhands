@@ -21,17 +21,32 @@ if (parent.start_time != 0 && !set)
 }
 
 
-// Update y position if moving and not paused
+/* Move Symbol if moving & not paused */
 if (moving && !paused)
 {
 	/* Moving Logic */
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 	
-	/* Symbol Death Logic */
-    if (y >= (parent.kill_line) || current_time >= target_time) moving = false;
+	/* Symbol Death Transition */
+    if (y >= (parent.kill_line) || current_time >= target_time) dead = true;
+	
+	/* TODO: Score Logic */
 }
 
 
+
+/* Symbol Death Logic */
+if(dead)
+{
+	moving = false;
+	y = y - 1;
+	if(x>room_width/2) x += 1;
+	else x -= 1;
+	if((x<0 || x>room_width) && (y<0 || y>room_height))
+	{
+		instance_destroy(self);
+	}
+}
 
 
 
