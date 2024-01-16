@@ -12,7 +12,7 @@ class JazzHandsSettingsReader():
         Initialise the settings dictionary containing the contents of the settings.ini.
         """
 
-        self.SETTINGS_PATH = "src_settings_loader/settings.ini"
+        self.SETTINGS_PATH = "settings.ini"
         self.settings = self.read_settings()
 
     def read_settings(self) -> Dict[str, any]:
