@@ -21,20 +21,23 @@ if(n_id == server_socket)
         
         // Original string
 		var originalString = string(cmd_type);
-
-		// Split the string at space
-		var stringArray = string_split(originalString, " ");
-
-		// Print the resulting array elements
-		if(array_length_1d(stringArray) < 2)
+	
+		jsonData = json_parse(originalString)
+		
+		// Check if the struct has left variable
+		if variable_struct_exists(jsonData, "Left")
 		{
-			global.left_hand = "NONE";
-			global.right_hand = "NONE";
+			global.left_hand = jsonData.Left;
 		}
-		else
+		
+		// Check if the struct has left variable
+		if variable_struct_exists(jsonData, "Right")
 		{
-			global.left_hand = stringArray[0];
-			global.right_hand = stringArray[1];
+			global.right_hand = jsonData.Right;
 		}
+		
+		
+		show_debug_message(jsonData)
+		
     }
 }
