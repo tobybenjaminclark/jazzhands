@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "miscellaneous",
-    "path": "folders/Objects/miscellaneous.yy",
+    "name": "gui",
+    "path": "folders/Objects/gui.yy",
   },
   "parentObjectId": {
     "name": "oSpinButtonBase",

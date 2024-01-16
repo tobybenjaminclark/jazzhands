@@ -34,6 +34,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"utilities","folderPath":"folders/Sprites/utilities.yy",},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"gui","folderPath":"folders/Objects/gui.yy",},
   ],
   "IncludedFiles": [
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"datafiles alias","CopyToMask":-1,"filePath":"datafiles",},
@@ -83,7 +84,7 @@
     {"id":{"name":"logo_large","path":"sprites/logo_large/logo_large.yy",},},
     {"id":{"name":"logistic_curve","path":"scripts/logistic_curve/logistic_curve.yy",},},
     {"id":{"name":"oStoryNavigator","path":"objects/oStoryNavigator/oStoryNavigator.yy",},},
-    {"id":{"name":"oServer","path":"objects/oServer/oServer.yy",},},
+    {"id":{"name":"oServerLink","path":"objects/oServerLink/oServerLink.yy",},},
     {"id":{"name":"sprCogRecord","path":"sprites/sprCogRecord/sprCogRecord.yy",},},
     {"id":{"name":"parse_json","path":"scripts/parse_json/parse_json.yy",},},
     {"id":{"name":"sprUnknownSymbol","path":"sprites/sprUnknownSymbol/sprUnknownSymbol.yy",},},
