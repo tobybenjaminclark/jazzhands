@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "stage",
-    "path": "folders/Objects/stage.yy",
+    "name": "base",
+    "path": "folders/Objects/stage/base.yy",
   },
   "parentObjectId": null,
   "persistent": false,

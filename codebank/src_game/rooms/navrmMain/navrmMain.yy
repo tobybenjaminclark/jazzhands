@@ -56,7 +56,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"left_trigger","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"POINTING_UP",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"right_trigger","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"POINTING_UP",},
           ],"rotation":0.0,"scaleX":0.28499997,"scaleY":0.28499997,"x":416.0,"y":447.99997,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1828353_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpinningCog","path":"objects/oSpinningCog/oSpinningCog.yy",},"properties":[],"rotation":0.0,"scaleX":0.2871428,"scaleY":0.2871428,"x":928.0,"y":448.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1828353_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpinningCog","path":"objects/oSpinningCog/oSpinningCog.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"rmstage_techno",},
+          ],"rotation":0.0,"scaleX":0.2871428,"scaleY":0.2871428,"x":928.0,"y":448.0,},
       ],"layers":[],"properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FFFFFFFF",},
         {"name":"g_OutlineRadius","type":0,"value":"3",},
