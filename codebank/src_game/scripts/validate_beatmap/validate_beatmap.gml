@@ -102,7 +102,7 @@ function validate_level_data(level_data, file_path)
 		if(!validate_string(level_data.song)) display_validation_failure("Level " + string(file_path) + " leveldata.song cannot be parsed to type `String`");
 		else if(!file_exists(string(filepath_replace_last_element(file_path, level_data.song)))) display_validation_failure("Level " + string(file_path) + " Missing Resource: " + string(filepath_replace_last_element(file_path, level_data.song)));
 	
-		/* TODO: Add format validation */
+		/* TODO: Add format validation (song is .ogg) */
 	}
 }
 

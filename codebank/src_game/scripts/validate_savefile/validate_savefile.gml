@@ -2,6 +2,8 @@
 /// @author Toby Benjamin Clark
 /// @date   16/01/2023
 
+
+
 /**
  * Validates the statistics section of a savefile based on the specified schema. (https://github.com/tobybenjaminclark/jazzhands/wiki/Savefile-Schema)
  * @param {object} savefile_struct - The savefile structure to be validated.
@@ -59,5 +61,5 @@ function validate_savefile(savefile_struct, file_path)
         else validate_savefile_statistics(savefile_struct, file_path);
     }
 
-    return global.validation_failure;
+    return !global.validation_failure;
 }
