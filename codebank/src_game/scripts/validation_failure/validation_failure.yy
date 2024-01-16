@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "validate_beatmap",
+  "name": "validation_failure",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

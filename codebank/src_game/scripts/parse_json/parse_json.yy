@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "parsing_scripts",
-    "path": "folders/Scripts/parsing_scripts.yy",
+    "name": "Parsing & Schemas",
+    "path": "folders/Scripts/Parsing & Schemas.yy",
   },
 }
