@@ -86,8 +86,3 @@ class JazzhandsController():
             return True
         else:
             return False
-
-
-if __name__ == "__main__":
-    controller = JazzhandsController()
-    controller.mainloop()

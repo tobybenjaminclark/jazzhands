@@ -2,7 +2,7 @@ from tkinter import PhotoImage, Event, Tk, Button, Frame, Label, Scale, Checkbut
 from pygame import mixer
 import librosa
 from typing import Tuple, Dict, List, Union
-from src.src_level_editor.beatmap_creator import BeatmapGenerator
+from codebank.src_level_editor.beatmap_creator import BeatmapGenerator
 import os
 import shutil
 
