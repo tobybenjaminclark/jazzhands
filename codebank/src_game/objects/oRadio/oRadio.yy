@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprRadio",
+    "path": "sprites/sprRadio/sprRadio.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
