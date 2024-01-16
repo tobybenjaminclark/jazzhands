@@ -18,6 +18,9 @@ else if (side == "RIGHT")
     x = x + 100;
 }
 
+/* Initial Y Position */
+y = (parent.kill_line - (sprite_height / 2)) - ((current_time + time) - current_time)
+
 moving = false;
 
 
