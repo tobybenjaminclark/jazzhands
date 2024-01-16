@@ -2,8 +2,8 @@
 # Written by Amber Swarbrick 06/01/2024
 # Code Review Passed by Toby Clark 06/01/2024
 
-from src.src_computer_vision_server.cv_client import GMS2Client
-from src.src_computer_vision_server.hand_gesture_recognition import JazzHandsGestureRecognizer
+from codebank.src_computer_vision_server.cv_client import GMS2Client
+from codebank.src_computer_vision_server.hand_gesture_recognition import JazzHandsGestureRecognizer
 from queue import Queue
 
 class JazzhandsController():
@@ -86,8 +86,3 @@ class JazzhandsController():
             return True
         else:
             return False
-
-
-if __name__ == "__main__":
-    controller = JazzhandsController()
-    controller.mainloop()
