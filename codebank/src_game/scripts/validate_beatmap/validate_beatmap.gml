@@ -160,11 +160,11 @@ function validate_event_hold(event, file_path, event_index)
 {
 	/* Validate `start_time` attribute exists & can be parsed to `real`. */
 	if(!variable_struct_exists(event.event_data, "start_time")) display_validation_failure("Event " + string(event_index) + " beatdata (`hold`) missing attribute `start_time`");
-	else if(!validate_real(event.event_data.time)) display_validation_failure("Event " + string(event_index) + " beatdata.start_time cannot be parsed to type `Real` (Int)");
+	else if(!validate_real(event.event_data.start_time)) display_validation_failure("Event " + string(event_index) + " beatdata.start_time cannot be parsed to type `Real` (Int)");
 
 	/* Validate `end_time` attribute exists & can be parsed to `real`. */
 	if(!variable_struct_exists(event.event_data, "end_time")) display_validation_failure("Event " + string(event_index) + " beatdata (`hold`) missing attribute `end_time`");
-	else if(!validate_real(event.event_data.time)) display_validation_failure("Event " + string(event_index) + " beatdata.end_time cannot be parsed to type `Real` (Int)");
+	else if(!validate_real(event.event_data.end_time)) display_validation_failure("Event " + string(event_index) + " beatdata.end_time cannot be parsed to type `Real` (Int)");
 
 
 	/* Validating that the `symbol` attribute is of type string, and is in JS_SYMBOL_LIST (see macros) */

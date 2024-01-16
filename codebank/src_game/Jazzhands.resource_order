@@ -27,6 +27,7 @@
     {"name":"pallette","order":10,"path":"folders/Sprites/pallette.yy",},
     {"name":"base","order":2,"path":"folders/Objects/stage/base.yy",},
     {"name":"technostage","order":3,"path":"folders/Objects/stage/technostage.yy",},
+    {"name":"tutorial","order":6,"path":"folders/Objects/miscellaneous/tutorial.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"oTechnoBeat","order":1,"path":"objects/oTechnoBeat/oTechnoBeat.yy",},
@@ -38,6 +39,7 @@
     {"name":"sprPlanetRecord1","order":5,"path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},
     {"name":"navrmMain","order":2,"path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"sprRecord","order":6,"path":"sprites/sprRecord/sprRecord.yy",},
+    {"name":"rmTutorial","order":5,"path":"rooms/rmTutorial/rmTutorial.yy",},
     {"name":"oStageSpawnerBase","order":1,"path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},
     {"name":"sprMountains","order":4,"path":"sprites/sprMountains/sprMountains.yy",},
     {"name":"import_wav","order":5,"path":"scripts/import_wav/import_wav.yy",},
@@ -49,6 +51,7 @@
     {"name":"sprSymbolClosedFistBase","order":5,"path":"sprites/sprSymbolClosedFistBase/sprSymbolClosedFistBase.yy",},
     {"name":"logistic_curve","order":1,"path":"scripts/logistic_curve/logistic_curve.yy",},
     {"name":"oStoryNavigator","order":4,"path":"objects/oStoryNavigator/oStoryNavigator.yy",},
+    {"name":"oHoldEvent","order":3,"path":"objects/oHoldEvent/oHoldEvent.yy",},
     {"name":"oServerLink","order":4,"path":"objects/oServerLink/oServerLink.yy",},
     {"name":"sprCogRecord","order":2,"path":"sprites/sprCogRecord/sprCogRecord.yy",},
     {"name":"oRadio","order":2,"path":"objects/oRadio/oRadio.yy",},

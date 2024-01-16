@@ -4,9 +4,7 @@
   "name": "oTechnoStage",
   "eventList": [],
   "managed": true,
-  "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oStageSpawnerBase","path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},"propertyId":{"name":"class_symbol","path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},"value":"oTechnoBeat",},
-  ],
+  "overriddenProperties": [],
   "parent": {
     "name": "technostage",
     "path": "folders/Objects/stage/technostage.yy",
