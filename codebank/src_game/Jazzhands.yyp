@@ -100,6 +100,7 @@
     {"id":{"name":"rmInitialize","path":"rooms/rmInitialize/rmInitialize.yy",},},
     {"id":{"name":"sprSymbolVictoryBase","path":"sprites/sprSymbolVictoryBase/sprSymbolVictoryBase.yy",},},
     {"id":{"name":"oBeatEvent","path":"objects/oBeatEvent/oBeatEvent.yy",},},
+    {"id":{"name":"oBadBeatEvent","path":"objects/oBadBeatEvent/oBadBeatEvent.yy",},},
     {"id":{"name":"oRoomController","path":"objects/oRoomController/oRoomController.yy",},},
     {"id":{"name":"sprRadio","path":"sprites/sprRadio/sprRadio.yy",},},
     {"id":{"name":"sprController","path":"sprites/sprController/sprController.yy",},},

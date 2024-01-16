@@ -55,6 +55,7 @@
     {"name":"sprLabel","order":2,"path":"sprites/sprLabel/sprLabel.yy",},
     {"name":"sprSymbolThumbsDownBase","order":2,"path":"sprites/sprSymbolThumbsDownBase/sprSymbolThumbsDownBase.yy",},
     {"name":"rmInitialize","order":3,"path":"rooms/rmInitialize/rmInitialize.yy",},
+    {"name":"oBadBeatEvent","order":2,"path":"objects/oBadBeatEvent/oBadBeatEvent.yy",},
     {"name":"oRoomController","order":3,"path":"objects/oRoomController/oRoomController.yy",},
     {"name":"sprController","order":1,"path":"sprites/sprController/sprController.yy",},
     {"name":"get_sprite_from_symbol","order":6,"path":"scripts/get_sprite_from_symbol/get_sprite_from_symbol.yy",},
