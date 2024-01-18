@@ -1,18 +1,18 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oInitializer",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "oTechnoStage",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "miscellaneous",
-    "path": "folders/Objects/miscellaneous.yy",
+    "name": "technostage",
+    "path": "folders/Objects/Stage Objects/technostage.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oStageSpawnerBase",
+    "path": "objects/oStageSpawnerBase/oStageSpawnerBase.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

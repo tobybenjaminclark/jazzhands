@@ -1,0 +1,10 @@
+{
+    "username": "Test User",
+    "hex_code": "#AAFFAA",
+    "id": 1,
+    "statistics":{
+        "beats_hit": 5,
+        "beats_missed": 0,
+        "songs_played": 1
+    }
+}

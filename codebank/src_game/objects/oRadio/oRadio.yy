@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "miscellaneous",
-    "path": "folders/Objects/miscellaneous.yy",
+    "name": "Miscellaeneous",
+    "path": "folders/Objects/Miscellaeneous.yy",
   },
   "parentObjectId": null,
   "persistent": true,
@@ -28,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprRadio",
+    "path": "sprites/sprRadio/sprRadio.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

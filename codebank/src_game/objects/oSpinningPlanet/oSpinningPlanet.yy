@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "miscellaneous",
-    "path": "folders/Objects/miscellaneous.yy",
+    "name": "User Interface",
+    "path": "folders/Objects/User Interface.yy",
   },
   "parentObjectId": {
     "name": "oSpinButtonBase",

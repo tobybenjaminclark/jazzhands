@@ -7,9 +7,10 @@
     },
     "events": [
         {
-            "event_type": "beat",
+            "event_type": "hold",
             "event_data": {
-                "time": 6800,
+                "start_time": 4000,
+                "end_time": 5500,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }

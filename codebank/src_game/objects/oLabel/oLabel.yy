@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "miscellaneous",
-    "path": "folders/Objects/miscellaneous.yy",
+    "name": "Miscellaeneous",
+    "path": "folders/Objects/Miscellaeneous.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,7 +32,10 @@
       ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"fntRaanana","varType":5,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sprLabel",
+    "path": "sprites/sprLabel/sprLabel.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

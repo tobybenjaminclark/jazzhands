@@ -2,16 +2,6 @@
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
 
-/**
- * Display a validation failure in a window.
- * @param {string} displayed_string  - String to display.
- */
-function display_validation_failure(displayed_string)
-{
-	show_message("Jazzhands Level Import\nValidation Failure:\n\n" + displayed_string);
-	global.validation_failure = true;
-}
-
 
 
 /**
@@ -112,8 +102,76 @@ function validate_level_data(level_data, file_path)
 		if(!validate_string(level_data.song)) display_validation_failure("Level " + string(file_path) + " leveldata.song cannot be parsed to type `String`");
 		else if(!file_exists(string(filepath_replace_last_element(file_path, level_data.song)))) display_validation_failure("Level " + string(file_path) + " Missing Resource: " + string(filepath_replace_last_element(file_path, level_data.song)));
 	
-		/* TODO: Add format validation */
+		/* TODO: Add format validation (song is .ogg) */
 	}
+}
+
+
+
+/**
+ * Validate beatdata for `hold` event based on the provided Beatmap API documentation. (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
+ * @param {struct} event      - Struct of current hold event
+ * @param {string} file_path  - File path of the beatmap (used for error messages)
+ * @param {int} event_index   - Index of the current event (used for error messages)
+ */
+function validate_event_beat(event, file_path, event_index)
+{
+	/* Validate `time` attribute exists & can be parsed to `real`. */
+	if(!variable_struct_exists(event.event_data, "time")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `time`");
+	else if(!validate_real(event.event_data.time)) display_validation_failure("Event " + string(event_index) + " beatdata.time cannot be parsed to type `Real` (Int)");
+
+
+	/* Validating that the `symbol` attribute is of type string, and is in JS_SYMBOL_LIST (see macros) */
+	if(!variable_struct_exists(event.event_data, "symbol")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `symbol`");
+	else
+	{
+		if(!validate_string(event.event_data.symbol)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol cannot be parsed to type `String`");
+		else if(!validate_string_in_list(event.event_data.symbol, JS_SYMBOL_LIST)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol not in symbol list");
+	}
+			
+	/* Validating that the `side` attribute is of type string, and is in JS_SIDE_LIST (see macros) */
+	if(!variable_struct_exists(event.event_data, "side")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `side`");
+	else
+	{
+		if(!validate_string(event.event_data.side)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol cannot be parsed to type `String`");
+		else if(!validate_string_in_list(event.event_data.side, JS_SIDE_LIST)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol not in symbol list");
+	}	
+}
+
+
+
+/**
+ * Validate beatdata for `beat` event based on the provided Beatmap API documentation. (https://github.com/tobybenjaminclark/jazzhands/wiki/Jazzhands-Beatmap-API)
+ * @param {struct} event      - Struct of current event
+ * @param {string} file_path  - File path of the beatmap (used for error messages)
+ * @param {int} event_index   - Index of the current event (used for error messages)
+ */
+function validate_event_hold(event, file_path, event_index)
+{
+	/* Validate `start_time` attribute exists & can be parsed to `real`. */
+	if(!variable_struct_exists(event.event_data, "start_time")) display_validation_failure("Event " + string(event_index) + " beatdata (`hold`) missing attribute `start_time`");
+	else if(!validate_real(event.event_data.start_time)) display_validation_failure("Event " + string(event_index) + " beatdata.start_time cannot be parsed to type `Real` (Int)");
+
+	/* Validate `end_time` attribute exists & can be parsed to `real`. */
+	if(!variable_struct_exists(event.event_data, "end_time")) display_validation_failure("Event " + string(event_index) + " beatdata (`hold`) missing attribute `end_time`");
+	else if(!validate_real(event.event_data.end_time)) display_validation_failure("Event " + string(event_index) + " beatdata.end_time cannot be parsed to type `Real` (Int)");
+
+
+	/* Validating that the `symbol` attribute is of type string, and is in JS_SYMBOL_LIST (see macros) */
+	if(!variable_struct_exists(event.event_data, "symbol")) display_validation_failure("Event " + string(event_index) + " beatdata (`hold`) missing attribute `symbol`");
+	else
+	{
+		if(!validate_string(event.event_data.symbol)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol cannot be parsed to type `String`");
+		else if(!validate_string_in_list(event.event_data.symbol, JS_SYMBOL_LIST)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol not in symbol list");
+	}
+			
+	/* Validating that the `side` attribute is of type string, and is in JS_SIDE_LIST (see macros) */
+	if(!variable_struct_exists(event.event_data, "side")) display_validation_failure("Event " + string(event_index) + " beatdata (`hold`) missing attribute `side`");
+	else
+	{
+		if(!validate_string(event.event_data.side)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol cannot be parsed to type `String`");
+		else if(!validate_string_in_list(event.event_data.side, JS_SIDE_LIST)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol not in symbol list");
+	}	
 }
 
 
@@ -128,36 +186,18 @@ function validate_event_data(event, file_path, event_index)
 {
     switch(event.event_type)
     {	
-        /* Parsing `beat` event_type */
+        /* Validating `beat` event_type */
         case "beat":
-		
-			/* Validate `time` attribute exists & can be parsed to `real`. */
-	        if(!variable_struct_exists(event.event_data, "time")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `time`");
-			else if(!validate_real(event.event_data.time)) display_validation_failure("Event " + string(event_index) + " beatdata.time cannot be parsed to type `Real` (Int)");
-
-
-			/* Validating that the `symbol` attribute is of type string, and is in JS_SYMBOL_LIST (see macros) */
-	        if(!variable_struct_exists(event.event_data, "symbol")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `symbol`");
-			else
-			{
-				if(!validate_string(event.event_data.symbol)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol cannot be parsed to type `String`");
-				else if(!validate_string_in_list(event.event_data.symbol, JS_SYMBOL_LIST)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol not in symbol list");
-			}
-			
-			/* Validating that the `side` attribute is of type string, and is in JS_SIDE_LIST (see macros) */
-	        if(!variable_struct_exists(event.event_data, "side")) display_validation_failure("Event " + string(event_index) + " beatdata (`beat`) missing attribute `side`");
-			else
-			{
-				if(!validate_string(event.event_data.side)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol cannot be parsed to type `String`");
-				else if(!validate_string_in_list(event.event_data.side, JS_SIDE_LIST)) display_validation_failure("Event " + string(event_index) + " beatdata.symbol not in symbol list");
-			}
-			
+			validate_event_beat(event, file_path, event_index)
+        break;
+					
+		/* Validating `bad_beat` event type. (This is semantically identical to `beat` event type. */			
+        case "bad_beat":
+            validate_event_beat(event, file_path, event_index)
         break;
 						
-        case "hold":
-            /* Add validation for 'hold' event data if needed */
-            break;
-						
+		case "hold":
+			validate_event_hold(event, file_path, event_index)
         default:
             /* Add validation for other event types if needed */
             break;

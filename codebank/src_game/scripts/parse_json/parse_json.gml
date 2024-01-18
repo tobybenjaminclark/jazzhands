@@ -3,7 +3,7 @@
 /// @date   14/01/2023
 
 function json_parse_from_filepath(file_path)
-{
+{	
 	/* Check file exists */
     if (!file_exists(file_path)) return undefined;
    
@@ -16,6 +16,6 @@ function json_parse_from_filepath(file_path)
 	
 	/* Return Struct/Array JSON */
     var data = json_parse(json);
-	if(data == undefined) show_message("Failed to parse JSON at " + file_path);
+	if(is_undefined(data)) show_message("Failed to parse JSON at " + file_path);
 	return data;
 }

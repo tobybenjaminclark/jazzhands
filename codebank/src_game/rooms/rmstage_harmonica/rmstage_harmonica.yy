@@ -8,6 +8,7 @@
   "inheritLayers": false,
   "instanceCreationOrder": [
     {"name":"inst_66C727E","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
+    {"name":"inst_44A11965","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -21,6 +22,9 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_66C727E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oStageSpawnerBase","path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oStageSpawnerBase","path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},"propertyId":{"name":"beatmap_path","path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},"value":"levelbank/world_harmonius/level_bazaar/beatmap.json",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":640.0,"y":256.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44A11965","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"navrmMain",},
+          ],"rotation":0.0,"scaleX":0.15392858,"scaleY":0.15392858,"x":64.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Mountains","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_679517EE","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":0.7101013,"scaleY":0.71010137,"spriteId":{"name":"sprMountains","path":"sprites/sprMountains/sprMountains.yy",},"x":2.9276733,"y":2.1504517,},
@@ -72,8 +76,8 @@
       ],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "stages",
-    "path": "folders/Rooms/stages.yy",
+    "name": "Stages & Levels",
+    "path": "folders/Rooms/Stages & Levels.yy",
   },
   "parentRoom": null,
   "physicsSettings": {
