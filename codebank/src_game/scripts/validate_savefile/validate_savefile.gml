@@ -14,16 +14,16 @@
 function validate_savefile_statistics(savefile_struct, file_path)
 {
     /* Validate Number of Beats Hit */
-    if (!variable_struct_exists(savefile_struct, "beats_hit")) display_validation_failure("User " + string(file_path) + " missing attribute `statistics.beats_hit`");
-    else if (!validate_real(savefile_struct.beats_hit)) display_validation_failure("User " + string(file_path) + ".statistics.beats_hit cannot be parsed to type `Real` (Number)");
+    if (!variable_struct_exists(savefile_struct.statistics, "beats_hit")) display_validation_failure("User " + string(file_path) + " missing attribute `statistics.beats_hit`");
+    else if (!validate_real(savefile_struct.statistics.beats_hit)) display_validation_failure("User " + string(file_path) + ".statistics.beats_hit cannot be parsed to type `Real` (Number)");
 
     /* Validate Number of Beats Missed */
-    if (!variable_struct_exists(savefile_struct, "beats_missed")) display_validation_failure("User " + string(file_path) + " missing attribute `statistics.beats_missed`");
-    else if (!validate_real(savefile_struct.beats_missed)) display_validation_failure("User " + string(file_path) + ".statistics.beats_missed cannot be parsed to type `Real` (Number)");
+    if (!variable_struct_exists(savefile_struct.statistics, "beats_missed")) display_validation_failure("User " + string(file_path) + " missing attribute `statistics.beats_missed`");
+    else if (!validate_real(savefile_struct.statistics.beats_missed)) display_validation_failure("User " + string(file_path) + ".statistics.beats_missed cannot be parsed to type `Real` (Number)");
 
     /* Validate Number of Songs Played */
-    if (!variable_struct_exists(savefile_struct, "songs_played")) display_validation_failure("User " + string(file_path) + " missing attribute `statistics.songs_played`");
-    else if (!validate_real(savefile_struct.songs_played)) display_validation_failure("User " + string(file_path) + ".statistics.songs_played cannot be parsed to type `Real` (Number)");
+    if (!variable_struct_exists(savefile_struct.statistics, "songs_played")) display_validation_failure("User " + string(file_path) + " missing attribute `statistics.songs_played`");
+    else if (!validate_real(savefile_struct.statistics.songs_played)) display_validation_failure("User " + string(file_path) + ".statistics.songs_played cannot be parsed to type `Real` (Number)");
 }
 
 

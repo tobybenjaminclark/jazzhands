@@ -41,6 +41,9 @@ function get_saves(save_directory)
  */
 function load_saves(save_directory = "userbank/*.json")
 {
+	/* Sets Selected Save */
+	global.selected_save = -1;
+	
 	/* Get the list of all saves */
 	saves = get_saves(save_directory);
 	
@@ -50,10 +53,12 @@ function load_saves(save_directory = "userbank/*.json")
 	for(var save_index = 0; save_index < array_length(saves); save_index++)
 	{
 		/* Validate & Add Current Save */
-		current_save = json_parse_from_filepath(saves[save_index])
-		if(validate_savefile(current_save, "userbank/" + saves[save_index])
+		current_save = json_parse_from_filepath("userbank/" + saves[save_index])
+		if(validate_savefile(current_save, "userbank/" + saves[save_index]))
 		{
-			global.saves[++global_save_index] = current_save;
+			global.saves[global_save_index] = current_save;
+			global_save_index++;
 		}
 	}
+	show_message(global.saves);
 }

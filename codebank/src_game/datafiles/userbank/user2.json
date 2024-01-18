@@ -1,6 +1,6 @@
 {
-    "username": "Toby Clark",
-    "hex_code": "#FFAAFF",
+    "username": "Test User",
+    "hex_code": "#AAFFAA",
     "id": 1,
     "statistics":{
         "beats_hit": 5,

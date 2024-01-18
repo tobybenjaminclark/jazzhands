@@ -15,6 +15,7 @@
     {"name":"inst_5CA6AB8B_1","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_268B55E7","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_64E6B467","path":"rooms/navrmMain/navrmMain.yy",},
+    {"name":"inst_5A364F22","path":"rooms/navrmMain/navrmMain.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -70,6 +71,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"right_trigger","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"POINTING_UP",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"rmTutorial",},
           ],"rotation":0.0,"scaleX":0.21107143,"scaleY":0.21107143,"x":549.0,"y":430.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5A364F22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSaveSelectorManager","path":"objects/oSaveSelectorManager/oSaveSelectorManager.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":704.0,},
       ],"layers":[],"properties":[
         {"name":"g_OutlineColour","type":1,"value":"#FFFFFFFF",},
         {"name":"g_OutlineRadius","type":0,"value":"3",},
