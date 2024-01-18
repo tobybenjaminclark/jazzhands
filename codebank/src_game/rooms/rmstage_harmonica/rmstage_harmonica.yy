@@ -76,8 +76,8 @@
       ],"spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "parent": {
-    "name": "stages",
-    "path": "folders/Rooms/stages.yy",
+    "name": "Stages & Levels",
+    "path": "folders/Rooms/Stages & Levels.yy",
   },
   "parentRoom": null,
   "physicsSettings": {

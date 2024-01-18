@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "gui",
-    "path": "folders/Objects/gui.yy",
+    "name": "User Interface",
+    "path": "folders/Objects/User Interface.yy",
   },
   "parentObjectId": null,
   "persistent": false,

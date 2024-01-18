@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "miscellaneous",
-    "path": "folders/Objects/miscellaneous.yy",
+    "name": "Miscellaeneous",
+    "path": "folders/Objects/Miscellaeneous.yy",
   },
   "parentObjectId": null,
   "persistent": false,

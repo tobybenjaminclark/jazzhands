@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "technostage",
-    "path": "folders/Objects/stage/technostage.yy",
+    "path": "folders/Objects/Stage Objects/technostage.yy",
   },
   "parentObjectId": {
     "name": "oStageSpawnerBase",

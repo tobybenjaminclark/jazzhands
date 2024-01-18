@@ -7,19 +7,19 @@
     },
     "events": [
         {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 4000,
+                "end_time": 5500,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
             "event_type": "beat",
             "event_data": {
                 "time": 6800,
                 "symbol": "OPEN_PALM",
-                "side": "LEFT"
-            }
-        },
-        {
-            "event_type": "hold",
-            "event_data": {
-                "start_time": 6800,
-                "end_time": 8300,
-                "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
         },
@@ -40,7 +40,7 @@
             }
         },
         {
-            "event_type": "bad_beat",
+            "event_type": "beat",
             "event_data": {
                 "time": 20400,
                 "symbol": "OPEN_PALM",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "event_type": "bad_beat",
+            "event_type": "beat",
             "event_data": {
                 "time": 24504,
                 "symbol": "CLOSED_FIST",

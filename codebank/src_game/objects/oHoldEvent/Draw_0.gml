@@ -4,7 +4,7 @@
 
 draw_self();
 
-draw_rectangle(x - 10, y, x + 10, y - (end_time / movement_factor), false);
+draw_rectangle(x - 20, (y + sprite_width), x,  (y + sprite_width) - ((end_time - start_time) / movement_factor), false);
 
 draw_set_font(fntRaananaSmall);
 draw_text(x + 10, y, symbol);

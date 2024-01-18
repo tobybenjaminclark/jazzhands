@@ -12,7 +12,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "base",
-    "path": "folders/Objects/stage/base.yy",
+    "path": "folders/Objects/Stage Objects/base.yy",
   },
   "parentObjectId": null,
   "persistent": false,

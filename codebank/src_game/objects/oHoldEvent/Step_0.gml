@@ -33,13 +33,14 @@ if (moving && !paused && !dead)
 	{
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
-			/* Hit bad beat */
-			image_blend = make_color_rgb(255, 100, 100);
+			/* Didn't hit (good) */
+			image_blend = make_color_rgb(100, 255, 100);
+
 		}
 		else
 		{
-			/* Didn't hit (good) */
-			image_blend = make_color_rgb(100, 255, 100);
+			/* Hit bad beat */
+			image_blend = make_color_rgb(255, 100, 100);
 		}
 		
 		dead = true;
