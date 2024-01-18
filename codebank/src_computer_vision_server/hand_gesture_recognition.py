@@ -11,6 +11,7 @@ from typing import Dict, List
 import numpy as np
 import threading
 import json
+import sys
 
 
 class JazzHandsGestureRecognizer():
@@ -72,9 +73,13 @@ class JazzHandsGestureRecognizer():
         # mp.tasks: mediapipe tasks API.
         # Used to load the Deep Learning model for the Gesture Recognition task and initialise the options related to the task.
 
+        self.MEDIAPIPE_PATH = self.settings["MEDIAPIPE_PATH"]
+        if getattr(sys, 'frozen', False):
+            self.MEDIAPIPE_PATH = self.settings.resource_path(self.MEDIAPIPE_PATH)
+
         options: mp.tasks.vision.GestureRecognizerOptions = mp.tasks.vision.GestureRecognizerOptions(
             base_options=mp.tasks.BaseOptions(
-                model_asset_path=self.settings["MEDIAPIPE_PATH"]
+                model_asset_path=self.MEDIAPIPE_PATH
             ),
             running_mode=mp.tasks.vision.RunningMode.LIVE_STREAM,
             result_callback=(lambda x, u1, u2: self.handle_gestures(x, queue)),

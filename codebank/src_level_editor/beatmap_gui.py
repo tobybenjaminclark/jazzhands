@@ -5,14 +5,16 @@ from typing import Tuple, Dict, List, Union
 from codebank.src_level_editor.beatmap_creator import BeatmapGenerator
 import os
 import shutil
+import sys
+
+
+
 
 class Player():
 
 
 
-    SONG_LIST_PATH: str                     # The initial path for the Choose Songs dialog to open.
     ASSET_PATH: str                         # The path where all tkinter assets are stored.
-    JSON_PATH: str                          # The initial path for the Export dialog to open.
     BACKGROUND_COLOUR: str                  # The background colour for the GUI.
 
     mixer: mixer                            # The pygame mixer which allows the music to play.
@@ -42,9 +44,10 @@ class Player():
 
         self.song_path=None
 
-        self.SONG_LIST_PATH = self.settings["SOUND_PATH"]
         self.ASSET_PATH = self.settings["ASSET_PATH"]
-        self.JSON_PATH = self.settings["JSON_PATH"]
+        if getattr(sys, 'frozen', False):
+            self.ASSET_PATH = self.settings.resource_path(self.ASSET_PATH)
+
         self.BACKGROUND_COLOUR = f"#{self.settings['GUI_BACKGROUND_COLOUR']}"
 
 
@@ -185,7 +188,7 @@ class Player():
         """
         Open a filedialog allowing the user to select a song.
         """
-        self.song_path = filedialog.askopenfilename(initialdir=self.SONG_LIST_PATH)
+        self.song_path = filedialog.askopenfilename()
         self.file_name = self.song_path.split('/')[-1]
 
         self.populate_window()
@@ -289,7 +292,7 @@ class Player():
         """
         Open a filedialog allowing the user to select a beatmap.
         """
-        beatmap_path = filedialog.askopenfilename(initialdir=self.JSON_PATH)
+        beatmap_path = filedialog.askopenfilename()
         beatmap_location = beatmap_path.rsplit('/', 1)[0]
         
         beatmap_dict = self.generator.parse_file_as_json(beatmap_path)
@@ -348,7 +351,7 @@ class Player():
     def store_event_data(self):
 
         # Prompt the user to choose a playlist folder to store the selected song.
-        current_song_folder = filedialog.askdirectory(initialdir=self.JSON_PATH)
+        current_song_folder = filedialog.askdirectory()
 
         song_name = self.name_textbox["text"]
         song_name_no_spaces = song_name.replace(" ","_")

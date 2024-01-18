@@ -50,7 +50,7 @@ class JazzhandsController():
         """
         while self.running:
             self.update_client()
-        return None
+        print("stopped running")
 
     def update_client(self) -> None:
         """
