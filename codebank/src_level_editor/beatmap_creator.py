@@ -15,7 +15,7 @@ class BeatmapGenerator():
 
         self.INDENT = int(self.settings["JSON_INDENT"])
 
-    def generate_file(self, path, events:List[Tuple[int,str,str]], file_name: str, song_name:str, description:str,background:str):
+    def generate_file(self, path, events:List[Tuple[int,str,str,str]], file_name: str, song_name:str, description:str,background:str):
         # Generate a JSON beatmap file from the given events, file name, song name, description and background.
 
         self.path=path
@@ -27,19 +27,22 @@ class BeatmapGenerator():
         new_json:Union[str,None] = self.parse_file_as_json(path)
         print(f"file contents: {new_json}")
 
-    def create_json_file(self, events:List[Tuple[int,str,str]], file_name:str, song_name:str, description:str,background:str) -> Dict[str,any]:
+    def create_json_file(self, events:List[Tuple[int,str,str,str]], file_name:str, song_name:str, description:str,background:str) -> Dict[str,any]:
         """
         Create the contents of a JazzHands beatmap from the supplied events and file_name and song_name.
         Convert the contents to json.
         Returns: the beatmap in json format.
         """
 
-        level_data: Dict[str,any] = self.create_level_data(file_name, description, background, song_name,)
+        
+
+        level_data: Dict[str,any] = self.create_level_data(file_name, description, background, song_name)
 
         event_list: List[Dict[str,any]] = []
         for event in events:
-            current_event_data: Dict[str, any] = self.create_event_data(event)
-            event: Dict[str,any] = self.create_event("beat", current_event_data)
+            beat_type = event.pop()
+            current_event_data: Dict[str, any] = self.create_event_data(event, beat_type)
+            event: Dict[str,any] = self.create_event(beat_type, current_event_data)
             event_list.append(event)
 
         level: Dict[str,any] = self.create_level(level_data, event_list)
@@ -94,16 +97,22 @@ class BeatmapGenerator():
         event_json:Dict[str,any] = json.dumps(event.__dict__)
         return json.loads(event_json)
     
-    def create_event_data(self, data_tuple:[Tuple[int,str,str]])-> Dict[str,any]:
+    def create_event_data(self, data_tuple:[Tuple[int,str,str]], beat_type)-> Dict[str,any]:
         """
         Create a EventData object with the start_time, symbol and side parameters.
         Convert the object to a JSON dictionary.
         Returns: a JSON dictionary containing the EventData attributes.
         """
 
+        event_data = None
 
+        print(beat_type)
 
-        event_data:EventData = EventData(*(data_tuple))
+        if beat_type == "hold":
+            event_data:HoldData = HoldData(*(data_tuple))
+        else:
+            event_data:EventData = EventData(*(data_tuple))
+
         event_data_json:Dict[str,any] = json.dumps(event_data.__dict__)
         return event_data_json
     
@@ -157,12 +166,29 @@ class EventData():
     Class to store EventData objects.
     """
 
-    start_time: int
+    time: int
     symbol: str
     side: str
 
     def __init__(self, time: int, symbol: str, side: str):
         self.time = time
+        self.symbol = symbol
+        self.side = side
+
+
+class HoldData():
+    """
+    Class to store HoldData objects.
+    """
+
+    start_time:int
+    end_time: int
+    symbol: str
+    side: str
+
+    def __init__(self, start_time: int, end_time:int, symbol: str, side: str):
+        self.start_time = start_time
+        self.end_time = end_time
         self.symbol = symbol
         self.side = side
 

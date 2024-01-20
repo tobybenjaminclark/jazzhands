@@ -14,27 +14,27 @@ class Player():
 
 
 
-    ASSET_PATH: str                         # The path where all tkinter assets are stored.
-    BACKGROUND_COLOUR: str                  # The background colour for the GUI.
+    ASSET_PATH: str                             # The path where all tkinter assets are stored.
+    BACKGROUND_COLOUR: str                      # The background colour for the GUI.
 
-    mixer: mixer                            # The pygame mixer which allows the music to play.
-    ispaused: bool                          # Boolean tracking whether the song is currently paused.
-    events: Dict[int, Tuple[int,str,str]]   # A dictionary storing the timestamp, name, hand of a symbol at the id.
+    mixer: mixer                                # The pygame mixer which allows the music to play.
+    ispaused: bool                              # Boolean tracking whether the song is currently paused.
+    events: Dict[int, List[str]]                # A dictionary storing the timestamp, name, hand, beat type of a symbol at the id.
 
-    song_path:str                           # The path to the chosen song.
-    file_name:str                           # The file name of the current song.
-    end_time:Label                          # The label storing the duration of the song in ms.
-    current_time:Label                      # The label storing the current time of the song in ms.
-    music_slider:Scale                      # The Scale displaying the current position in the song.
+    song_path:str                               # The path to the chosen song.
+    file_name:str                               # The file name of the current song.
+    end_time:Label                              # The label storing the duration of the song in ms.
+    current_time:Label                          # The label storing the current time of the song in ms.
+    music_slider:Scale                          # The Scale displaying the current position in the song.
 
-    closed_fist:PhotoImage                  # A PhotoImage storing the CLOSED_FIST asset to bypass garbage collection.
-    open_palm:PhotoImage                    # A PhotoImage storing the OPEN_PALM asset to bypass garbage collection.
-    pointing_up:PhotoImage                  # A PhotoImage storing the POINTING_UP asset to bypass garbage collection.
-    thumbs_down:PhotoImage                  # A PhotoImage storing the THUMBS_DOWN asset to bypass garbage collection.
-    thumbs_up:PhotoImage                    # A PhotoImage storing the THUMBS_UP asset to bypass garbage collection.
-    victory:PhotoImage                      # A PhotoImage storing the VICTORY asset to bypass garbage collection.
+    closed_fist:PhotoImage                      # A PhotoImage storing the CLOSED_FIST asset to bypass garbage collection.
+    open_palm:PhotoImage                        # A PhotoImage storing the OPEN_PALM asset to bypass garbage collection.
+    pointing_up:PhotoImage                      # A PhotoImage storing the POINTING_UP asset to bypass garbage collection.
+    thumbs_down:PhotoImage                      # A PhotoImage storing the THUMBS_DOWN asset to bypass garbage collection.
+    thumbs_up:PhotoImage                        # A PhotoImage storing the THUMBS_UP asset to bypass garbage collection.
+    victory:PhotoImage                          # A PhotoImage storing the VICTORY asset to bypass garbage collection.
 
-    command_images:List[PhotoImage]         # A list storing the images of all placed commands to bypass garbage collection.
+    command_images:List[PhotoImage]             # A list storing the images of all placed commands to bypass garbage collection.
 
     def __init__(self, settings):
 
@@ -128,28 +128,44 @@ class Player():
         self.thumbs_up:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/thumbs_up.png").subsample(2)
         self.victory:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/victory.png").subsample(2)
 
+        self.closed_fist_bad:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/closed_fist_bad.png").subsample(2)
+        self.open_palm_bad:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/open_palm_bad.png").subsample(2)
+        self.pointing_up_bad:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/pointing_up_bad.png").subsample(2)
+        self.thumbs_down_bad:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/thumbs_down_bad.png").subsample(2)
+        self.thumbs_up_bad:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/thumbs_up_bad.png").subsample(2)
+        self.victory_bad:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/victory_bad.png").subsample(2)
+
+        self.closed_fist_hold:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/closed_fist_hold.png").subsample(2)
+        self.open_palm_hold:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/open_palm_hold.png").subsample(2)
+        self.pointing_up_hold:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/pointing_up_hold.png").subsample(2)
+        self.thumbs_down_hold:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/thumbs_down_hold.png").subsample(2)
+        self.thumbs_up_hold:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/thumbs_up_hold.png").subsample(2)
+        self.victory_hold:PhotoImage = PhotoImage(file = f"{self.ASSET_PATH}/victory_hold.png").subsample(2)
+
         frame_label:Label = Label(master = selection_frame, text = 'Place a Symbol', fg = "white", bg = "#cf6b93", padx = 10)
         frame_label.pack(side="top", fill="x", expand=True)
 
         
-        closed_fist_btn:Button = Button(master = selection_frame, image = self.closed_fist, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command(self.closed_fist, "CLOSED_FIST"))
+        closed_fist_btn:Button = Button(master = selection_frame, image = self.closed_fist, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command("CLOSED_FIST"))
         closed_fist_btn.pack(side="left")
-        open_palm_btn:Button = Button(master = selection_frame, image = self.open_palm, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command(self.open_palm, "OPEN_PALM"))
+        open_palm_btn:Button = Button(master = selection_frame, image = self.open_palm, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command("OPEN_PALM"))
         open_palm_btn.pack(side="left")
-        pointing_up_btn:Button = Button(master = selection_frame, image = self.pointing_up, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command(self.pointing_up, "POINTING_UP"))
+        pointing_up_btn:Button = Button(master = selection_frame, image = self.pointing_up, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command("POINTING_UP"))
         pointing_up_btn.pack(side="left")
-        thumbs_down_btn:Button = Button(master = selection_frame, image = self.thumbs_down, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command(self.thumbs_down, "THUMBS_DOWN"))
+        thumbs_down_btn:Button = Button(master = selection_frame, image = self.thumbs_down, borderwidth = 0, relief = "flat", bg = "#cf6b93", command = lambda:self.add_command("THUMBS_DOWN"))
         thumbs_down_btn.pack(side="left")
-        thumbs_up_btn:Button = Button(master = selection_frame, image = self.thumbs_up, borderwidth = 0, relief = "flat",bg = "#cf6b93", command = lambda:self.add_command(self.thumbs_up, "THUMBS_UP"))
+        thumbs_up_btn:Button = Button(master = selection_frame, image = self.thumbs_up, borderwidth = 0, relief = "flat",bg = "#cf6b93", command = lambda:self.add_command("THUMBS_UP"))
         thumbs_up_btn.pack(side="left")
-        victory_btn:Button = Button(master = selection_frame, image = self.victory, borderwidth = 0, relief = "flat",bg = "#cf6b93", command = lambda:self.add_command(self.victory, "VICTORY"))
+        victory_btn:Button = Button(master = selection_frame, image = self.victory, borderwidth = 0, relief = "flat",bg = "#cf6b93", command = lambda:self.add_command("VICTORY"))
         victory_btn.pack(side="left")
 
         
 
         selection_frame.pack(side="left")
 
-    def add_command(self, image:PhotoImage, command:str) -> None:
+    def add_command(self, command:str) -> None:
+
+        image = self.get_image_from_command_name(command, self.beat_var.get())
         
         # Resize the image.
         image_resized:PhotoImage = image.subsample(2)
@@ -163,26 +179,30 @@ class Player():
 
 
         if(self.left_chosen.get()):
-            self.place_symbol(image_resized, self.left_canvas, command, "LEFT", slider_pos,timestamp)
+            self.place_symbol(image_resized, self.left_canvas, command, "LEFT", slider_pos,timestamp, self.beat_var.get())
         if(self.right_chosen.get()):
-            self.place_symbol(image_resized, self.right_canvas, command, "RIGHT", slider_pos,timestamp)
+            self.place_symbol(image_resized, self.right_canvas, command, "RIGHT", slider_pos,timestamp, self.beat_var.get())
+
+        print(self.beat_var.get())
 
 
-    def place_symbol(self, image:PhotoImage, canvas:Canvas, command:str, handedness:str, pos_x:float, timestamp:int) -> None:
+    def place_symbol(self, image:PhotoImage, canvas:Canvas, command:str, handedness:str, pos_x:float, timestamp:int, beat:str) -> None:
         """
         Place a symbol, image, at the current timestamp in the left or right canvas.
         """
         if pos_x == 0:
             return
         
-
         canvas_image_id:int = canvas.create_image(pos_x, canvas.winfo_height() / 2, image=image)
 
         canvas.tag_bind(canvas_image_id, '<ButtonPress-1>', lambda e:self.on_hand_click(e, canvas, f"{handedness}_{canvas_image_id}"))
 
         self.canvas_images.append(canvas_image_id)
 
-        self.events[f"{handedness}_{canvas_image_id}"] = (timestamp, command, handedness)
+        if beat == "hold":
+            self.events[f"{handedness}_{canvas_image_id}"] = [timestamp, timestamp+1000, command, handedness, beat]
+        else:
+            self.events[f"{handedness}_{canvas_image_id}"] = [timestamp, command, handedness, beat]
 
     def load_song(self) -> None:
         """
@@ -232,6 +252,26 @@ class Player():
         right_box = Checkbutton(master=combo_frame, text='Right',variable=self.right_chosen, onvalue=1, offvalue=0, fg="white", selectcolor="black", bg=self.BACKGROUND_COLOUR)
         right_box.pack(side="left")
         combo_frame.pack(side="left")
+
+        beat_frame = Frame(master = options_frame, bg=self.BACKGROUND_COLOUR)
+
+        beat_options=["beat", "hold", "bad_beat"]
+
+        self.beat_var = StringVar(beat_frame)
+        self.beat_var.set(beat_options[0])
+
+        beat_dropdown = OptionMenu(beat_frame, self.beat_var, *beat_options)
+        beat_dropdown.config(bg=self.BACKGROUND_COLOUR,fg="white",highlightthickness=0)
+        beat_dropdown.pack(side="bottom")
+
+        beat_label = Label(beat_frame, text="Beat Type:", bg=self.BACKGROUND_COLOUR, fg="white")
+        beat_label.pack(side="top")
+
+        beat_frame.pack(side="left")
+
+
+
+
 
         name_frame = Frame(master = options_frame, bg=self.BACKGROUND_COLOUR)
 
@@ -320,7 +360,7 @@ class Player():
             elif side=="RIGHT":
                 canvas = self.right_canvas
 
-            image = self.get_image_from_command_name(symbol)
+            image = self.get_image_from_command_name(symbol,event_type)
             image_resized:PhotoImage = image.subsample(2)
             self.canvas_images.append(image_resized)
 
@@ -332,21 +372,49 @@ class Player():
         self.name_textbox["text"] = beatmap_dict["level_data"]["level_name"]
 
 
-    def get_image_from_command_name(self, command:str) -> Union[PhotoImage, None]:
+    def get_image_from_command_name(self, command:str, beat_type:str) -> Union[PhotoImage, None]:
 
-        if command=="OPEN_PALM":
-            return self.open_palm
-        elif command=="CLOSED_FIST":
-            return self.closed_fist
-        elif command=="POINTING_UP":
-            return self.pointing_up
-        elif command=="THUMBS_DOWN":
-            return self.thumbs_down
-        elif command=="THUMBS_UP":
-            return self.thumbs_up
-        elif command=="VICTORY":
-            return self.victory
-        raise("Invalid command")
+        if beat_type == "beat":
+            if command=="OPEN_PALM":
+                return self.open_palm
+            elif command=="CLOSED_FIST":
+                return self.closed_fist
+            elif command=="POINTING_UP":
+                return self.pointing_up
+            elif command=="THUMBS_DOWN":
+                return self.thumbs_down
+            elif command=="THUMBS_UP":
+                return self.thumbs_up
+            elif command=="VICTORY":
+                return self.victory
+            
+        if beat_type == "bad_beat":
+            if command=="OPEN_PALM":
+                return self.open_palm_bad
+            elif command=="CLOSED_FIST":
+                return self.closed_fist_bad
+            elif command=="POINTING_UP":
+                return self.pointing_up_bad
+            elif command=="THUMBS_DOWN":
+                return self.thumbs_down_bad
+            elif command=="THUMBS_UP":
+                return self.thumbs_up_bad
+            elif command=="VICTORY":
+                return self.victory_bad
+            
+        if beat_type == "hold":
+            if command=="OPEN_PALM":
+                return self.open_palm_hold
+            elif command=="CLOSED_FIST":
+                return self.closed_fist_hold
+            elif command=="POINTING_UP":
+                return self.pointing_up_hold
+            elif command=="THUMBS_DOWN":
+                return self.thumbs_down_hold
+            elif command=="THUMBS_UP":
+                return self.thumbs_up_hold
+            elif command=="VICTORY":
+                return self.victory_hold
 
     def store_event_data(self):
 
@@ -459,12 +527,3 @@ class Player():
 
         self.populate_window()
 
-
-        
-
-
-
-if __name__ == "__main__":
-
-    player = Player()
-    player.window.mainloop()
