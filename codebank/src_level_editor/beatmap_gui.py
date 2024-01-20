@@ -350,7 +350,11 @@ class Player():
             event_type = event["event_type"]
             event_data = event["event_data"]
 
-            time = event_data["time"]
+            if(event_type == "hold"):
+                time = event_data["start_time"]
+            else:
+                time = event_data["time"]
+
             symbol = event_data["symbol"]
             side = event_data["side"]
 
@@ -365,7 +369,8 @@ class Player():
             self.canvas_images.append(image_resized)
 
             slider_pos = self.get_slider_position(time)
-            self.place_symbol(image_resized,canvas,symbol,side, slider_pos, time)
+
+            self.place_symbol(image_resized,canvas,symbol,side, slider_pos, time, event_type)
         
 
         self.description_textbox["text"] = beatmap_dict["level_data"]["description"]
@@ -418,6 +423,8 @@ class Player():
 
     def store_event_data(self):
 
+        print(f"before: {self.events}")
+
         # Prompt the user to choose a playlist folder to store the selected song.
         current_song_folder = filedialog.askdirectory()
 
@@ -446,6 +453,8 @@ class Player():
 
         
         self.generator.generate_file(json_file_path, data_arr, self.file_name, song_name, description,background)
+
+        print(f"after: {self.events}")
         
 
     def get_slider_position(self, slider_value:int):
