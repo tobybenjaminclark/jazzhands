@@ -5,6 +5,7 @@
 function json_save(saved_data, file_name)
 {
     var json_data = json_stringify(saved_data, false);
+	show_message(json_data);
     var buffer = buffer_create(string_byte_length(json_data), buffer_fixed, 1);
     buffer_write(buffer, buffer_text, json_data);
     buffer_save(buffer, file_name);

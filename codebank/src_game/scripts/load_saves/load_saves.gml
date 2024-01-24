@@ -53,6 +53,7 @@ function load_saves(save_directory = "userbank/*.json")
 	for(var save_index = 0; save_index < array_length(saves); save_index++)
 	{
 		/* Validate & Add Current Save */
+		show_message(working_directory + "userbank/" + saves[save_index]);
 		current_save = json_parse_from_filepath("userbank/" + saves[save_index])
 		if(validate_savefile(current_save, "userbank/" + saves[save_index]))
 		{
@@ -60,5 +61,4 @@ function load_saves(save_directory = "userbank/*.json")
 			global_save_index++;
 		}
 	}
-	show_message(global.saves);
 }

@@ -5,6 +5,6 @@
 step++;
 if(step > 100)
 {
-	room_goto(navrmMain);
+	room_goto(target_room);
 }
 

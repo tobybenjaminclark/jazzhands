@@ -49,8 +49,10 @@ function validate_savefile(savefile_struct, file_path)
     else if (!validate_string(savefile_struct.hex_code)) display_validation_failure("User " + string(file_path) + ".hex_code cannot be parsed to type String");
 
     /* Validate ID */
-    if (!variable_struct_exists(savefile_struct, "id")) display_validation_failure("User " + string(file_path) + " missing attribute `username`");
+	/* This has been temporarily disabled - issues relating to inbuilt field `id`.
+    if (!variable_struct_exists(savefile_struct, "id")) display_validation_failure("User " + string(file_path) + " missing attribute `id`");
     else if (!validate_real(savefile_struct.id)) display_validation_failure("User " + string(file_path) + ".username cannot be parsed to type `Real` (Number)");
+	*/
 
     /* Validating `statistics` exists, and is of type `Struct` */
     if (!variable_struct_exists(savefile_struct, "statistics")) display_validation_failure("User `" + string(file_path) + "` - missing 'statistics' attribute");
