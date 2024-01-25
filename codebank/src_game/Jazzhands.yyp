@@ -57,13 +57,13 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sounds alias","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"sprites alias","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"tutorial.json","CopyToMask":-1,"filePath":"datafiles",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"user2.json","CopyToMask":-1,"filePath":"datafiles/userbank",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"user1.json","CopyToMask":-1,"filePath":"datafiles/userbank",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"user2.json","CopyToMask":-1,"filePath":"datafiles/userbank",},
   ],
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"oTechnoBeat","path":"objects/oTechnoBeat/oTechnoBeat.yy",},},
