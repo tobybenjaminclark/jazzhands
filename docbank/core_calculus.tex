@@ -1,0 +1,206 @@
+
+% Variable Identity, Subtyping & T-Refinement
+\begin{minipage}[c]{0.1\textwidth}
+    \[
+    \frac{\sigma : \tau \in \Gamma}
+    {\Gamma\vdash\sigma:\tau} \hspace{0.25cm} \textbf{(T-Var)}
+    \]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.28\textwidth}
+    \[
+    \frac{\Gamma, x:A \vdash P \implies Q\hspace{0.2cm}True}
+    {\Gamma\vdash \{x: A|P\} \leq \{x:A|Q\} } \hspace{0.25cm} \textbf{(T-Sub)}
+    \]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.39\textwidth}
+    \[
+    \frac{      \begin{aligned}
+        &\Sigma; \Sigma\vdash B\hspace{0.4cm}
+        \Sigma; \Gamma, \sigma:B \vdash P(\sigma);
+      \end{aligned}}
+    {\Sigma;\Gamma\vdash \{ \sigma: B|P \} } \hspace{0.25cm} \textbf{(T-Ref)}
+    \]
+\end{minipage}
+\hfill
+
+
+
+% Function Subtyping Rule
+\begin{minipage}[c]{0.1\textwidth}
+    \[
+    \frac{
+        \begin{aligned}
+            &\Gamma,\Gamma\vdash f_1: \tau_1\times \ldots\times \tau_n \rightsquigarrow \tau_0 \hspace{3.6cm}\Gamma,\Gamma\vdash f_2: T_1\times \ldots\times T_n \rightsquigarrow T_0 \\
+            &\Gamma,\Gamma\vdash (\tau_1 \times \ldots \times \tau_n) \leq (T_1 \times \ldots \times T_n) \hspace{5cm} \Gamma\vdash \tau_0 \leq T_0
+        \end{aligned}
+    }
+    {\Gamma\vdash f_1 \leq f_2 } \hspace{1.15cm} \textbf{(T-FuncSub)}
+    \]
+\end{minipage}
+\hfill
+
+
+% Function Application Rule
+\begin{minipage}[c]{0.1\textwidth}
+\[
+    \frac{
+        \begin{aligned}
+            &\Gamma\vdash \tau_1\times \ldots\times \tau_n \rightsquigarrow \tau \\
+            &\Gamma\vdash a_i \leq \tau_i
+        \end{aligned}}
+    {\Gamma\vdash f \, a_1 \to a_n : \tau} \hspace{0.5cm} \textbf{(T-Func-Call)}
+\]
+\end{minipage}
+% Variable Refinement Rule
+\hfill\begin{minipage}[c]{0.44\textwidth}
+\[
+    \frac{
+        \begin{aligned}
+            &\Gamma\vdash \sigma:B \vdash P(\sigma) \\
+            &\Gamma \vdash e:B \hspace{1.5cm} \Gamma\vdash P(\sigma)
+        \end{aligned}}
+    {\Gamma\vdash e:\{ \sigma: B|P \}} \hspace{0.5cm} \textbf{(T-RefineVar)}
+\]
+\end{minipage}
+\hfill
+
+
+
+% Divide & Subtract
+\begin{minipage}[c]{0.49\textwidth}
+    \[
+    \frac{
+      \begin{aligned}
+        &\Gamma\vdash\sigma_1 : \{Num|P_1\} \hspace{0.5cm} \Gamma\vdash\sigma_2:\{Num|P_2\} \\
+        &\Gamma\vdash \{ x | P_2(x) \} \neq \{ 0 \};
+      \end{aligned}
+    }
+    {\Gamma\vdash \sigma_1 \div \sigma_2: Num|\epsilon} \hspace{0.2cm} \textbf{(T-Div)}
+    \]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.32\textwidth}
+    \[
+    \frac{\Gamma\vdash\sigma_1, \sigma_2 :Num}
+    {\Gamma\vdash \sigma_1 ** \sigma_2: Num|\epsilon} \hspace{0.2cm} \textbf{(T-Power)}
+    \]
+\end{minipage}
+\hfill
+
+
+
+% Add & Multiply
+\begin{minipage}[c]{0.3\textwidth}
+    \[
+    \frac{\Gamma\vdash\sigma_1, \sigma_2 :Num}
+    {\Gamma\vdash \sigma_1 + \sigma_2: Num|\epsilon} \hspace{0.2cm} \textbf{(T-Add)}
+    \]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+    \[
+    \frac{\Gamma\vdash\sigma_1, \sigma_2 :Num}
+    {\Gamma\vdash \sigma_1 \times \sigma_2: Num|\epsilon} \hspace{0.2cm} \textbf{(T-Mult)}
+    \]
+\end{minipage}
+\hfill
+\hfill
+\begin{minipage}[c]{0.3\textwidth}
+    \[
+    \frac{\Gamma\vdash\sigma_1, \sigma_2 :Num}
+    {\Gamma\vdash \sigma_1 - \sigma_2: Num|\epsilon} \hspace{0.2cm} \textbf{(T-Sub)}
+    \]
+\end{minipage}
+
+
+
+% Boolean & Numerical Type
+\begin{minipage}[c]{0.1\textwidth}
+    \[
+    \frac{\sigma \in \mathbb{Z}}
+    {\Gamma\vdash \sigma: Num|\epsilon} \hspace{0.2cm} \textbf{(T-Num)}
+    \]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.1\textwidth}
+  \[
+  \frac{}
+  {\Gamma\vdash False: Bool} \hspace{0.2cm} \textbf{(T-False)}
+  \]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.27\textwidth}
+  \[
+  \frac{}
+  {\Gamma\vdash True: Bool} \hspace{0.2cm} \textbf{(T-True)}
+  \]
+\end{minipage}
+
+% Boolean & Integer Definitions (with Refinement)
+\begin{minipage}[c]{0.1\textwidth}
+\[
+\frac{\Gamma\vdash\{\sigma: Num\hspace{0.1cm}|\hspace{0.1cm}(\sigma\equiv 0 \vee \sigma\equiv 1 \}}
+{\Gamma\vdash \sigma: Bool} \hspace{0.2cm} \textbf{(T-Boolean)}
+\]
+\end{minipage}
+\hfill
+\begin{minipage}[c]{0.35\textwidth}
+\[
+\frac{\Gamma\vdash\{\sigma: Num\hspace{0.1cm}|\hspace{0.1cm} \lfloor \sigma \rfloor \equiv \lceil \sigma \rceil}
+{\Gamma\vdash \sigma: Int} \hspace{0.2cm} \textbf{(T-Int)}
+\]
+\end{minipage}
+\hfill
+
+% Let & Set Assignment
+\begin{minipage}[c]{0.1\textwidth}
+\[
+    \frac{\sigma : \tau \in \Gamma \hspace{1.2cm} \sigma : \tau \in \Sigma}
+    {
+        \Gamma\vdash \textbf{let} \ \sigma \ \textbf{as} \ \tau : Statement \hspace{0.6cm}\Sigma, \Gamma \vdash \sigma : \tau
+    }
+    \hspace{0.2cm} \textbf{(T-Let)}
+\]
+\end{minipage}
+% Variable Refinement Rule
+\hfill
+\begin{minipage}[c]{0.45\textwidth}
+\[
+    \frac
+    {\Gamma\vdash\sigma:\tau_1\hspace{0.6cm}\Gamma\vdash e:\tau_2\hspace{0.6cm}\Gamma\vdash\tau_1 \leq \tau_2}
+    {\Gamma\vdash \textbf{set} \ \sigma \ \textbf{as} \ e : Statement} 
+    \hspace{0.2cm} \textbf{(T-Set)}
+\]
+\end{minipage}
+\hfill
+
+% Trycast Rule
+\begin{minipage}[c]{0.5\textwidth}
+\[
+    \frac
+    {
+        \Sigma; \Gamma\vdash \sigma_1:\{B|P_1\}\hspace{0.5cm}\Gamma\vdash\sigma_2:\{B|P_2\}
+    }
+    {
+        \Gamma\vdash \textbf{trycast} \ \sigma_1 \ \textbf{into} \ \tau_2 : Statement
+    }
+    \hspace{0.2cm} \textbf{(T-Trycast)}
+\]
+\end{minipage}\hfill
+% IfElse Rule**
+\begin{minipage}[c]{0.47\textwidth}
+\[
+    \frac
+    {
+        \Sigma; \Gamma\vdash e: Bool\hspace{0.5cm}\Gamma\vdash\rho_1, \rho_2: Prog
+    }
+    {
+        \Gamma\vdash \textbf{if} \ e \ \textbf{then} \ \rho_1 \ \textbf{else} \ \rho_2 : Statement
+    }
+    \hspace{0.2cm} \textbf{(T-IfElse)}
+\]
+\end{minipage}
+
+
