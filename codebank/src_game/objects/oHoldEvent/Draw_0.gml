@@ -4,7 +4,8 @@
 
 draw_self();
 
-if(colliding) draw_set_color(c_blue);
+if(colliding) draw_set_color(c_green);
+else if(missed) draw_set_color(c_red);
 else draw_set_color(c_white);
 draw_rectangle(x - 20, (y + sprite_width), x,  (y + sprite_width) - ((end_time - start_time) / movement_factor), false);
 

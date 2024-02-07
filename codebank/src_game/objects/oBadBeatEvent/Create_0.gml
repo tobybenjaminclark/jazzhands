@@ -19,13 +19,4 @@ else if (side == "RIGHT") x = x + side_offset;
 y = (parent.kill_line - (sprite_height / 2)) - ((current_time + time) - current_time)
 
 /* Red to symbolize bad */
-image_blend = make_color_rgb(100, 200, 100);
-
-
-
-
-
-
-
-
-
+image_blend = make_color_rgb(255, 100, 100);

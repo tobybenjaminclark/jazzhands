@@ -24,39 +24,37 @@ if (parent.start_time != 0 && !set)
 /* Move Symbol if moving & not paused */
 if (moving && !paused && !dead)
 {
-	
 	/* Moving Logic */
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 	
 	if((y + sprite_width) - ((end_time - start_time) / movement_factor) <= parent.kill_line && (y + sprite_width) >= parent.kill_line)
 	{
-		colliding = true;
+		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
+		{
+			if(missed == false) colliding = true;
+			else colliding = false;
+		}
+		else
+		{
+			colliding = false;
+			missed = true;
+		}
 	}
 	else
 	{
 		colliding = false;	
 	}
-	
-	/* Symbol Death Transition */
-    if ((y + sprite_width) - ((end_time - start_time) / movement_factor) >= parent.kill_line)
-	{
-		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
-		{
-			/* Didn't hit (good) */
-			image_blend = make_color_rgb(100, 255, 100);
 
-		}
-		else
-		{
-			/* Hit bad beat */
-			image_blend = make_color_rgb(255, 100, 100);
-		}
-		
-		dead = true;
-	}
-	/* TODO: Score Logic */
 }
 
+
+/* Symbol Death Transition */
+if ((y + sprite_width) - ((end_time - start_time) / movement_factor) >= parent.kill_line)
+{	
+	if(!missed) image_blend = make_color_rgb(100, 255, 100);
+	else if(missed) image_blend = make_color_rgb(255, 100, 100);
+	dead = true;
+}
 
 
 /* Symbol Death Logic */
