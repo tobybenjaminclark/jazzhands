@@ -127,6 +127,7 @@ class JazzHandsGestureRecognizer():
         # Fix for macOS (uncomment to break macOS support, at your demise.)
         # cv2.imshow("frame", self.frame)
         # cv2.waitKey(1)
+        time.sleep(0.01)
 
         return None
 
