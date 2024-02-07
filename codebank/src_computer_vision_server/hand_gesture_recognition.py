@@ -37,20 +37,28 @@ class JazzHandsGestureRecognizer():
         """
         Create and start the gesture recognition thread.
         """
-        self.thread = self.create_thread()
-        self.thread.start()
-
+        self.create_thread()
+        
     def create_thread(self) -> threading.Thread:
         """
         Create the gesture recognition thread.
         """
 
+
+
         # ',' used in thread args to convert the single argument to a tuple.
-        gesture_recognition_thread: threading.Thread
-        gesture_recognition_thread = threading.Thread(
+        self.thread: threading.Thread
+        self.thread = threading.Thread(
             target=self.begin_retrieval, args=(self.stop_event,)
         )
-        return gesture_recognition_thread
+        self.thread.start()
+
+        self.calibration_thread: threading.Thread
+        self.calibration_thread = threading.Thread(
+            target=self.handle_camera
+        )
+        self.calibration_thread.start()
+
 
     def stop_thread(self) -> None:
         """
@@ -97,25 +105,26 @@ class JazzHandsGestureRecognizer():
             cap: the cv2.VideoCapture instance retrieving live data from the webcam.
         """
 
+        
         # Read each frame from the webcam
 
-        frame: np.array  # a numpy array containing the current image data received from the webcam.
+        self.frame: np.array  # a numpy array containing the current image data received from the webcam.
         valid_frame: bool  # a boolean defining whether the image returned is valid.
         (
             valid_frame,
-            frame,
+            self.frame,
         ) = cap.read()
 
         # valid_frame = false implies there is an error in reading images from the webcam.
         if not valid_frame:
             return None
-
-        mp_image: mp.Image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame)
+        
+        mp_image: mp.Image = mp.Image(image_format=mp.ImageFormat.SRGB, data=self.frame)
         recognizer.recognize_async(mp_image, int(time.time() * 1000))
 
         # Display the frame in OpenCV.
         # Fix for macOS (uncomment to break macOS support, at your demise.)
-        # cv2.imshow("frame", frame)
+        cv2.imshow("frame", self.frame)
         cv2.waitKey(1)
 
         return None
@@ -191,3 +200,29 @@ class JazzHandsGestureRecognizer():
             self.receive_image_data(recognizer, cap)
 
         return None
+
+    # need a thing to say whether the camera is too dark or too cluttered
+    # this should call when no hands have been detected for a while (5 seconds?)
+    
+
+    def handle_camera(self) -> None:
+        """
+        Handles camera calibration to detect if the surroundings are too dark etc.
+        """
+
+        while True:
+
+            print(self.is_image_too_dark)
+
+            darkness_data = json.dumps({"Too_Dark": self.is_image_too_dark()})
+            self.gesture_queue.put(darkness_data)
+
+            time.sleep(5)
+
+        
+        
+    def is_image_too_dark(self) -> bool:
+
+        THRESHOLD = int(self.settings["THRESHOLD"])
+        is_light = np.mean(self.frame) > THRESHOLD
+        return False if is_light else True

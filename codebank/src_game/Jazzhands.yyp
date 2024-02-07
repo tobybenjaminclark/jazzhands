@@ -55,6 +55,14 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"snd_cord.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_cord",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"beatmap.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_level",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"snd_level.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_level",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"beatmap.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_fight_the_monsters",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"snd_fight-the-monsters.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_fight_the_monsters",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"beatmap.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_journey",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"snd_journey.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_journey",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"beatmap.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_the_not_so_common_man",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"snd_the-not-so-common-man.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_the_not_so_common_man",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"beatmap.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_the_shut_down",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"snd_the-shut-down.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_techno/level_the_shut_down",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"objects alias","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"options alias","CopyToMask":-1,"filePath":"datafiles",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"rooms alias","CopyToMask":-1,"filePath":"datafiles",},
@@ -69,7 +77,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.11.1.129",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"fntGroovy","path":"fonts/fntGroovy/fntGroovy.yy",},},

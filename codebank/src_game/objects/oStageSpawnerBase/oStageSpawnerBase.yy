@@ -29,7 +29,7 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"beatmap_path","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"levelbank/world_harmonius/level_bazaar/beatmap.json","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"beatmap_path","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"levelbank/world_techno/level_fight_the_monsters/beatmap.json","varType":2,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_open_palm","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolOpenPalmBase","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_closed_fist","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolClosedFistBase","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprite_victory","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"sprSymbolVictoryBase","varType":5,},
@@ -42,6 +42,7 @@
       ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oBeatEvent","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"class_bad_beat_event","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oBadBeatEvent","varType":5,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"class_hold_event","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"oHoldEvent","varType":5,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"variable_name1","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"0","varType":0,},
   ],
   "solid": false,
   "spriteId": null,
