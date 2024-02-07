@@ -10,6 +10,7 @@ paused = false;
 set = false;
 moving = false;
 dead = false;
+colliding = false;	
 
 // Set x offset based on each side
 if (side == "LEFT") x = x - side_offset;

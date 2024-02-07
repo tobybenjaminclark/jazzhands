@@ -5,13 +5,10 @@
 /* If there is a queued room */
 if(global.queued_room != -1)
 {
-	room_goto(global.queued_room)
-	global.queued_room = -1;
-	/*
+
 	transitioning = true;
 	next_room = global.queued_room;
 	global.queued_room = -1;
-	*/
 }
 
 /* If transitioning to a new room */

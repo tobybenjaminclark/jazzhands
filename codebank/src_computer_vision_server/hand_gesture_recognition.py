@@ -29,6 +29,8 @@ class JazzHandsGestureRecognizer():
         # Retrieve the settings.ini declarations.
         self.settings = settings
 
+        self.frame = None
+
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event: threading.Event = threading.Event()
         self.gesture_queue = Queue()
@@ -44,8 +46,6 @@ class JazzHandsGestureRecognizer():
         Create the gesture recognition thread.
         """
 
-
-
         # ',' used in thread args to convert the single argument to a tuple.
         self.thread: threading.Thread
         self.thread = threading.Thread(
@@ -53,11 +53,11 @@ class JazzHandsGestureRecognizer():
         )
         self.thread.start()
 
-        self.calibration_thread: threading.Thread
-        self.calibration_thread = threading.Thread(
-            target=self.handle_camera
-        )
-        self.calibration_thread.start()
+        # self.calibration_thread: threading.Thread
+        # self.calibration_thread = threading.Thread(
+        #     target=self.handle_camera
+        # )
+        # self.calibration_thread.start()
 
 
     def stop_thread(self) -> None:
@@ -117,6 +117,7 @@ class JazzHandsGestureRecognizer():
 
         # valid_frame = false implies there is an error in reading images from the webcam.
         if not valid_frame:
+            print("not valid frame!!!!!!!!!!!!!!!!!!!!!")
             return None
         
         mp_image: mp.Image = mp.Image(image_format=mp.ImageFormat.SRGB, data=self.frame)
@@ -124,8 +125,8 @@ class JazzHandsGestureRecognizer():
 
         # Display the frame in OpenCV.
         # Fix for macOS (uncomment to break macOS support, at your demise.)
-        cv2.imshow("frame", self.frame)
-        cv2.waitKey(1)
+        # cv2.imshow("frame", self.frame)
+        # cv2.waitKey(1)
 
         return None
 
@@ -222,7 +223,8 @@ class JazzHandsGestureRecognizer():
         
         
     def is_image_too_dark(self) -> bool:
-
-        THRESHOLD = int(self.settings["THRESHOLD"])
-        is_light = np.mean(self.frame) > THRESHOLD
-        return False if is_light else True
+        if(self.frame is not None):
+            THRESHOLD = int(self.settings["THRESHOLD"])
+            is_light = np.mean(self.frame) > THRESHOLD
+            return False if is_light else True
+        return False

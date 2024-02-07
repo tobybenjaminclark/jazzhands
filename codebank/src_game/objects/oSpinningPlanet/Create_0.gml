@@ -13,5 +13,6 @@ ignore = false;
 is_stopper = false;
 text_alpha = 0.0;
 
+
 // Inherit the parent event
 event_inherited();
