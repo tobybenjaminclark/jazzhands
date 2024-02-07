@@ -8,6 +8,8 @@ paused = false;
 unpaused_time = 0;
 paused_time = 0;
 
+show_message(beatmap_path)
+
 /* Parse JSON from supplied beatmap path */
 beatmap_structure = json_parse_from_filepath(beatmap_path);
 if(beatmap_structure == undefined)
