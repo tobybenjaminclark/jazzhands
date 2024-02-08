@@ -51,7 +51,11 @@ if (moving && !paused && !dead)
 /* Symbol Death Transition */
 if ((y + sprite_width) - ((end_time - start_time) / movement_factor) >= parent.kill_line)
 {	
-	if(!missed) image_blend = make_color_rgb(100, 255, 100);
+	if(!missed)
+	{
+		image_blend = make_color_rgb(100, 255, 100);
+		parent.level_score += 100;
+	}
 	else if(missed) image_blend = make_color_rgb(255, 100, 100);
 	dead = true;
 }

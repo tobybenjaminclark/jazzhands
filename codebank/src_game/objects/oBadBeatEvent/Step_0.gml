@@ -39,6 +39,7 @@ if (moving && !paused && !dead)
 		else
 		{
 			/* Didn't hit (good) */
+			parent.level_score += 100;
 			image_blend = make_color_rgb(100, 255, 100);
 		}
 		

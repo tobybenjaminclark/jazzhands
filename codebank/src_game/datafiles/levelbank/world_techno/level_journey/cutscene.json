@@ -1,0 +1,29 @@
+{
+    "name": "cutscene1",
+    "frames": [
+        {
+            "background": "cutscenedata/img_1.jpg",
+            "foreground": "cutscenedata/player_1.png",
+            "heading": "ALIEN",
+            "body": "Wenomechainsama"
+        },
+        {
+            "background": "cutscenedata/img_2.jpg",
+            "foreground": "cutscenedata/player_2.png",
+            "heading": "PREGNANT WOMAN",
+            "body": "Tumajarbisaun"
+        },
+        {
+            "background": "cutscenedata/img_3.jpg",
+            "foreground": "cutscenedata/player_1.png",
+            "heading": "ALIEN",
+            "body": "Wifenlooof"
+        },
+        {
+            "background": "cutscenedata/img_4.jpg",
+            "foreground": "cutscenedata/player_2.png",
+            "heading": "PREGNANT WOMAN",
+            "body": "Eselifterbraun"
+        }
+    ]
+}

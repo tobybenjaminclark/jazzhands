@@ -2,6 +2,9 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
+/* Score */
+level_score = 0;
+
 /* Started */
 start_time = 0;
 paused = false;
