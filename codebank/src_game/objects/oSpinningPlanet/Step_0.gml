@@ -50,11 +50,6 @@ if(parent.moving)
 }
 
 
-// Inherit the parent event
-/// @description State-Based Control Architecture
-/// @author Toby Benjamin Clark
-/// @date   12/01/2023
-
 /* Handle CV Button Trigger */
 // Change state to speeding if not already.
 if (global.left_hand == left_trigger			/* <-- Left Hand Matches */

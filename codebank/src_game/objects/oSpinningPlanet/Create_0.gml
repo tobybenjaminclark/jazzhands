@@ -14,6 +14,7 @@ ignore = false;
 is_stopper = false;
 text_alpha = 0.0;
 
+start_angle = 0;
 
 // Initial Hover (set to false)
 hover = false;
