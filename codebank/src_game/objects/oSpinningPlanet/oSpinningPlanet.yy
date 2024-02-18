@@ -14,7 +14,9 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":13,"eventType":9,"isDnD":false,},
   ],
   "managed": true,
-  "overriddenProperties": [],
+  "overriddenProperties": [
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"spin_speed","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"4",},
+  ],
   "parent": {
     "name": "User Interface",
     "path": "folders/Objects/User Interface.yy",

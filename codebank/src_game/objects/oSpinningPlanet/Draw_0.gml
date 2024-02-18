@@ -17,7 +17,6 @@ if(text_alpha != 0)
 	draw_text(x - 100, y + 25, description);
 	
 	
-	
 	// Draw Level Headers
 	var index = -1;
 	for (var angle = start_angle; angle < start_angle + 91; angle += 30)
@@ -32,18 +31,9 @@ if(text_alpha != 0)
 			draw_text(px + 30, py, levels[index]);
 		}
 	}
-	
 	draw_set_alpha(1);
 }
 
 
-
-
 draw_text(x, y - 30, string(start_angle));
-
-
-
-
-
-
 

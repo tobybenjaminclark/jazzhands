@@ -8,6 +8,7 @@ enum directions
 }
 
 have_queued_room = false;
+dir = "NONE";
 
 // Ignore Y Max
 ignore = false;

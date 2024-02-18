@@ -93,3 +93,18 @@ switch(state)
 	case state_spin_button.stopped:
 		break;
 }
+
+/* Handle Planet Angles */
+switch(dir)
+{
+	case "NONE":
+		break;
+	case "UP":
+		if(start_angle mod 30 == 0) dir = "NONE";
+		else start_angle++;
+		break;
+	case "DOWN":
+		if(start_angle mod 30 == 0) dir = "NONE";
+		else start_angle--;
+		break;
+}
