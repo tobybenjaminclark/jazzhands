@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function viewport_setup()
 {
-	var base_w = 1024;
-	var base_h = 768;
+	var base_w = 1920;
+	var base_h = 1080;
 	var max_w = display_get_width();
 	var max_h = display_get_height();
 	var aspect = display_get_width() / display_get_height();

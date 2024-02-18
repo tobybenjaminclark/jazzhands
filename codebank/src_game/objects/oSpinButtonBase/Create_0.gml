@@ -16,6 +16,9 @@ enum state_spin_button
 	stopped
 }
 
+// Initial Hover (set to false)
+hover = false;
+
 // Setting the initial state & making note of the initial spin speed.
 initial_spin_speed = spin_speed;
 state = state_spin_button.spinning;
