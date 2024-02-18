@@ -46,3 +46,20 @@ switch(state)
 		break;
 }
 
+
+/* Hover logic */
+if(hover)
+{
+	image_xscale += 0.02;
+	image_yscale += 0.02;
+}
+else
+{
+	image_xscale -= 0.02;
+	image_yscale -= 0.02;
+}
+
+if(image_xscale < initial_xscale) image_xscale = initial_xscale
+if(image_yscale < initial_yscale) image_yscale = initial_yscale
+if(image_xscale > hover_xscale) image_xscale = hover_xscale
+if(image_yscale > hover_yscale) image_yscale = hover_yscale

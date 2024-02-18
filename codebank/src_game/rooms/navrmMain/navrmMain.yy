@@ -45,7 +45,7 @@
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2208.0,"y":1248.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5CA6AB8B_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelData","path":"objects/oLabel/oLabel.yy",},"value":"options",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1312.0,"y":544.0,},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1888.0,"y":1280.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64E6B467","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelData","path":"objects/oLabel/oLabel.yy",},"value":"tutorial",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabel/oLabel.yy",},"value":"fntRaananaSmall",},
@@ -61,7 +61,7 @@
         {"name":"g_GlowGamma","type":0,"value":"0.3",},
         {"name":"g_GlowAlpha","type":0,"value":"1",},
       ],"userdefinedDepth":false,"visible":true,},
-    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":400,"effectEnabled":true,"effectType":"_filter_outline","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
+    {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":400,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_20EAA6C0_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"rmstage_harmonica",},
           ],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":2240.0,"y":1056.0,},
@@ -83,11 +83,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"right_trigger","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"POINTING_UP",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"value":"rmSaveCreator",},
           ],"rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":2528.0,"y":1056.0,},
-      ],"layers":[],"properties":[
-        {"name":"g_OutlineColour","type":1,"value":"#FFFFFFFF",},
-        {"name":"g_OutlineRadius","type":0,"value":"1.05",},
-        {"name":"g_OutlinePixelScale","type":0,"value":"1",},
-      ],"userdefinedDepth":false,"visible":true,},
+      ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMREffectLayer","resourceVersion":"1.0","name":"DiscEffectLayer","depth":500,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[
         {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},
         {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},
