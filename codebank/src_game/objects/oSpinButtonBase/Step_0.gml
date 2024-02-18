@@ -46,7 +46,6 @@ switch(state)
 		break;
 }
 
-
 /* Hover logic */
 if(hover)
 {
