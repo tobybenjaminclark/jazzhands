@@ -26,6 +26,21 @@ descriptions =
 	"Planet o' the shantys.",
 ]
 
+harmonius_levels = 
+[
+	HARMONIUS_1,
+	HARMONIUS_2,
+	HARMONIUS_3,
+	HARMONIUS_4
+]
+harmonius_names = 
+[
+	"Bazaar",
+	"Book",
+	"Cord",
+	"Level"
+]
+
 /*
  * Spawn Planets & Set Initial Variables
  * This isn't great, rewite at some point.
@@ -44,6 +59,8 @@ for(i = 0; i < 5; i++;)
 	inst.image_index = i mod 5;
 	inst.spin_speed = 0.3;
 	inst.title = titles[i];
+	inst.levels = harmonius_levels;
+	inst.names = harmonius_names;
 	inst.description = descriptions[i];
 	angle_step += 50;
 }

@@ -7,6 +7,7 @@ enum directions
 	clockwise,
 }
 
+have_queued_room = false;
 
 // Ignore Y Max
 ignore = false;

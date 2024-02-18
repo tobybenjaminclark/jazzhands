@@ -15,8 +15,18 @@ if(text_alpha != 0)
 	draw_text(x + 70, y - 25, title);
 	draw_set_font(fntRaananaSmall);
 	draw_text(x + 70, y + 25, description);
+	
+		
+	for (var i = 0; i < array_length(levels); i++)
+	{
+		draw_text(x, y + ((i + 1) * 50), levels[i]);
+	}
+	
 	draw_set_alpha(1);
+
 }
+
+
 
 
 

@@ -75,10 +75,10 @@ switch(state)
 	// Speeding State: Increase speed + Scale
 	case state_spin_button.speeding:
 		
-		if(!have_queued_room && spin_speed > trigger_room_start_speed)
+		if(!have_queued_room && spin_speed > speed_maximum_amp)
 		{
 			have_queued_room = true;
-			global.queued_room = next_room;
+			show_message("Start level");
 		}
 	
 		spin_speed += speed_addition;
