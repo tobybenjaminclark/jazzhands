@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "get_hex_colour",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Miscellaneous",
-    "path": "folders/Scripts/Miscellaneous.yy",
+  "$GMScript":"",
+  "%Name":"get_hex_colour",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_hex_colour",
+  "parent":{
+    "name":"Miscellaneous",
+    "path":"folders/Scripts/Miscellaneous.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

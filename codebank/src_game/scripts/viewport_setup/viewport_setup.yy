@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "viewport_setup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Miscellaneous",
-    "path": "folders/Scripts/Miscellaneous.yy",
+  "$GMScript":"",
+  "%Name":"viewport_setup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"viewport_setup",
+  "parent":{
+    "name":"Miscellaneous",
+    "path":"folders/Scripts/Miscellaneous.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
