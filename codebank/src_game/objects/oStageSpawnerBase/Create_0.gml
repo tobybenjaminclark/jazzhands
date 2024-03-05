@@ -11,6 +11,11 @@ paused = false;
 unpaused_time = 0;
 paused_time = 0;
 
+/* Get Global Beatmap Path */
+if(global.current_beatmap != undefined)
+{
+	beatmap_path = global.current_beatmap;
+}
 show_message(beatmap_path)
 
 /* Parse JSON from supplied beatmap path */

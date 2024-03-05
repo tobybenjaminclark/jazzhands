@@ -44,6 +44,7 @@
     {"name":"sprRecordCover","order":9,"path":"sprites/sprRecordCover/sprRecordCover.yy",},
     {"name":"logo_pallette","order":1,"path":"sprites/logo_pallette/logo_pallette.yy",},
     {"name":"create_new_save","order":3,"path":"scripts/create_new_save/create_new_save.yy",},
+    {"name":"sprGlow","order":10,"path":"sprites/sprGlow/sprGlow.yy",},
     {"name":"sprColorSelector","order":8,"path":"sprites/sprColorSelector/sprColorSelector.yy",},
     {"name":"sprPlanetRecord1","order":5,"path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},
     {"name":"navrmMain","order":2,"path":"rooms/navrmMain/navrmMain.yy",},

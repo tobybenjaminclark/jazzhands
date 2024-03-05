@@ -22,12 +22,12 @@ if(parent.moving)
 	if(angle_step == 360) angle_step = 0;
 	
 	/* Update position using 2D vector from parent position */
-	x = parent.x + lengthdir_x(500, angle_step);
-	y = (parent.y + lengthdir_y(200, angle_step));
+	x = parent.x + lengthdir_x(800, angle_step);
+	y = (parent.y + lengthdir_y(400, angle_step));
 	
 	/* Update image scale depenent on depth (enhances background/foreground) */
-	image_yscale = (-0.10 + 0.4 * (logistic_curve(y_min, y_max, y)))
-	image_xscale = (-0.10 + 0.4 * (logistic_curve(y_min, y_max, y)))
+	image_yscale = (-0.10 + 0.8 * (logistic_curve(y_min, y_max, y)))
+	image_xscale = (-0.10 + 0.8 * (logistic_curve(y_min, y_max, y)))
 	
 	/* Change layer dependent on position, so that central object occludes background planets */
 	if(y > y_mid) self.layer = layer_get_id("ForegroundInstances");
@@ -50,6 +50,61 @@ if(parent.moving)
 }
 
 
-// Inherit the parent event
-event_inherited();
+/* Handle CV Button Trigger */
+// Change state to speeding if not already.
+if (global.left_hand == left_trigger			/* <-- Left Hand Matches */
+	&& global.right_hand == right_trigger	    /* <-- Right Hand Matches */
+	&& state == state_spin_button.spinning)		/* <-- Not already triggered */
+{
+	state = state_spin_button.speeding;
+}
 
+// Switch dependent on button state.
+switch(state)
+{
+	// Spin State : Keep spinning.
+	case state_spin_button.spinning:
+		image_angle +=  spin_speed;
+		break;
+		
+	// Speeding State: Increase speed + Scale
+	case state_spin_button.speeding:
+		
+		if(!have_queued_room && spin_speed > speed_maximum_amp)
+		{
+			have_queued_room = true;
+			show_message("Start level");
+		}
+	
+		spin_speed += speed_addition;
+		image_xscale *= scale_modifier;
+		image_yscale *= scale_modifier;
+		
+		// Check if maximum speed has been reached.
+		if(spin_speed >= initial_spin_speed * speed_maximum_amp) 
+		{	
+			spin_speed = 0;
+			state = state_spin_button.stopped;
+		}
+		image_angle +=  spin_speed;
+		break;
+	
+	// Stopped State : Switch to next room.
+	case state_spin_button.stopped:
+		break;
+}
+
+/* Handle Planet Angles */
+switch(dir)
+{
+	case "NONE":
+		break;
+	case "UP":
+		if(start_angle mod 30 == 0) dir = "NONE";
+		else start_angle++;
+		break;
+	case "DOWN":
+		if(start_angle mod 30 == 0) dir = "NONE";
+		else start_angle--;
+		break;
+}

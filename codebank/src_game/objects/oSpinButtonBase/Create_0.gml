@@ -16,6 +16,9 @@ enum state_spin_button
 	stopped
 }
 
+// Initial Hover (set to false)
+hover = false;
+
 // Setting the initial state & making note of the initial spin speed.
 initial_spin_speed = spin_speed;
 state = state_spin_button.spinning;
@@ -23,6 +26,8 @@ state = state_spin_button.spinning;
 // Setting initial object scales.
 initial_xscale = image_xscale;
 initial_yscale = image_yscale;
+hover_xscale = image_xscale * 1.25;
+hover_yscale = image_yscale * 1.25;
 
 // For Room Transition
 have_queued_room = false;

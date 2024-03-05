@@ -109,6 +109,7 @@
     {"id":{"name":"sprRecordCover","path":"sprites/sprRecordCover/sprRecordCover.yy",},},
     {"id":{"name":"logo_pallette","path":"sprites/logo_pallette/logo_pallette.yy",},},
     {"id":{"name":"create_new_save","path":"scripts/create_new_save/create_new_save.yy",},},
+    {"id":{"name":"sprGlow","path":"sprites/sprGlow/sprGlow.yy",},},
     {"id":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},},
     {"id":{"name":"sprColorSelector","path":"sprites/sprColorSelector/sprColorSelector.yy",},},
     {"id":{"name":"sprPlanetRecord1","path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},},
