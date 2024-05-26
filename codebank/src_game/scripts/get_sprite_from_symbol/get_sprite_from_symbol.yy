@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "get_sprite_from_symbol",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Miscellaneous",
-    "path": "folders/Scripts/Miscellaneous.yy",
+  "$GMScript":"",
+  "%Name":"get_sprite_from_symbol",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"get_sprite_from_symbol",
+  "parent":{
+    "name":"Miscellaneous",
+    "path":"folders/Scripts/Miscellaneous.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

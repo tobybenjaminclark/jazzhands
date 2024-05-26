@@ -24,7 +24,6 @@ function cutscene_initialise_components(frame_index, json_path)
 		foreground_path = cutscene_get_foreground_path(json_struct.frames[frame_index]);
 		frame_heading = cutscene_get_heading(json_struct.frames[frame_index]);
 		frame_body = cutscene_get_body(json_struct.frames[frame_index]);
-	
 	}
 	else
 	{

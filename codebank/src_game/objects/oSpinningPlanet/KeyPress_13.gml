@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Go to level
+/// @author Toby Benjamin Clark
+/// @date   18/02/24
 
 if(is_stopper)
 {

@@ -1,5 +1,6 @@
-/// @description Move up to previous planet
-// You can write your code in this editor
+/// @description Move Moons
+/// @author Toby Benjamin Clark
+/// @date   18/02/24
 
 if(is_stopper && start_angle < 0)
 {

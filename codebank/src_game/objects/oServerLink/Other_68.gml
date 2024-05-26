@@ -20,8 +20,10 @@ if(n_id == server_socket)
         var cmd_type = buffer_read(t_buffer, buffer_string);
 
         // Original string
-        var originalString = string(cmd_type);
+        originalString = string(cmd_type);
 
+		try
+		{
         jsonData = json_parse(originalString)
 
         // Check if the struct has left variable
@@ -35,6 +37,11 @@ if(n_id == server_socket)
         {
             global.right_hand = string_upper(jsonData.Right);
         }
+		
+		}
+		catch(e)
+		{
+		}
 
 
         show_debug_message(jsonData)

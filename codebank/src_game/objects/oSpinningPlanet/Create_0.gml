@@ -1,5 +1,6 @@
-/// @description Subclass Event for oSpinning Planet
-// You can write your code in this editor
+/// @description Create
+/// @author Toby Benjamin Clark
+/// @date   18/02/24
 
 enum directions
 {
@@ -27,3 +28,12 @@ state = state_spin_button.spinning;
 // Setting initial object scales.
 initial_xscale = image_xscale;
 initial_yscale = image_yscale;
+
+level_objects = []
+for(var level_index = 0; level_index < array_length(levels); level_index++)
+{
+	json = json_parse_from_filepath(levels[level_index]);
+	if(validate_beatmap(json, levels[level_index]))level_objects[level_index] = json;
+	else show_message("Failed to load story level")
+}
+

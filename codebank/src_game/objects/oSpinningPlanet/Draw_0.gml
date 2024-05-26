@@ -1,4 +1,4 @@
-/// @description Display Planetary Text
+/// @description Display Planetary Text & Render Subplanets
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
@@ -28,7 +28,10 @@ if(text_alpha != 0)
 		if(angle == 0)
 		{
 			draw_set_halign(fa_left);
-			draw_text(px + 30, py, levels[index]);
+			draw_set_font(fntRaanana);
+			draw_text(px + 30, py - 10, level_objects[index].level_data.level_name);
+			draw_set_font(fntRaananaSmall)
+			draw_text(px + 30, py + 35, level_objects[index].level_data.description);
 		}
 	}
 	draw_set_alpha(1);

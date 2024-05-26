@@ -2,6 +2,7 @@
 /// @author Toby Benjamin Clark
 /// @date   16/01/2023
 
+originalString = ""
 client_socket = network_create_socket(network_socket_tcp);
 global.left_hand = "NONE";
 global.right_hand = "NONE";

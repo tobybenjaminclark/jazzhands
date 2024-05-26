@@ -6,8 +6,8 @@ frame_index++;
 
 if(frame_index >= num_frames)
 {
-	show_message("cutscene finished :)");
-	// global.queued_room = next_room;
+	cutscene_delete_components();
+	instance_destroy(self);
 	return;
 }
 

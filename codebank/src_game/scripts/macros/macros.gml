@@ -11,3 +11,8 @@
 #macro HARMONIUS_2 "levelbank/world_harmonius/level_book/beatmap.json"
 #macro HARMONIUS_3 "levelbank/world_harmonius/level_cord/beatmap.json"
 #macro HARMONIUS_4 "levelbank/world_harmonius/level_level/beatmap.json"
+
+#macro ELECTRONOVA_1 "levelbank/world_techno/level_fight_the_monsters/beatmap.json"
+#macro ELECTRONOVA_2 "levelbank/world_techno/level_journey/beatmap.json"
+#macro ELECTRONOVA_3 "levelbank/world_techno/level_the_not_so_common_man/beatmap.json"
+#macro ELECTRONOVA_4 "levelbank/world_techno/level_the_shut_down/beatmap.json"
