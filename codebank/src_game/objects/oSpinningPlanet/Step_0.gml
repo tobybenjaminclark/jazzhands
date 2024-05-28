@@ -17,8 +17,8 @@ if(parent.moving)
 	is_stopper = false;
 	
 	/* Increment/Deincrement `angle_step` dependent on direction. Normalise to 360 */
-	if(parent.planetary_movement == directions.clockwise) angle_step -= 0.4;
-	else if(parent.planetary_movement == directions.counter_clockwise) angle_step += 0.4;
+	if(parent.planetary_movement == directions.clockwise) angle_step -= 0.8;
+	else if(parent.planetary_movement == directions.counter_clockwise) angle_step += 0.8;
 	if(angle_step == 360) angle_step = 0;
 	
 	/* Update position using 2D vector from parent position */

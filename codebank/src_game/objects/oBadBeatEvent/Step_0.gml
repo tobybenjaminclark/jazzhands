@@ -53,11 +53,15 @@ if (moving && !paused && !dead)
 /* Symbol Death Logic */
 if(dead)
 {
+	if(image_xscale > 0.3){image_xscale -= 0.005;}
+	if(image_yscale > 0.3){image_yscale -= 0.005;}
+	if(image_alpha > 0) image_alpha -= 0.001;
+	
 	moving = false;
 	y = y - 1;
 	if(x>room_width/2) x += 1;
 	else x -= 1;
-	if((x<0 || x>room_width) && (y<0 || y>room_height))
+	if((x < 0 || x > room_width) && (y < 0 || y > room_height))
 	{
 		instance_destroy(self);
 	}

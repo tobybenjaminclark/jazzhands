@@ -6,7 +6,7 @@ function cutscene_queue(file_path)
 function cutscene_start(file_path, next_room)
 {
 	// global.queued_room = rmCutscene;
-	cutscene_controller = instance_create_layer(0,0, "Instances", oCSController,
+	cutscene_controller = instance_create_layer(0,0, "Cutscene", oCSController,
 	{
 		file_path: file_path,
 		next_room: next_room
@@ -33,20 +33,20 @@ function cutscene_initialise_components(frame_index, json_path)
 
 
 	// create the objects for the components of the cutscreen
-	cutscene_text = instance_create_layer(room_width/2,room_height/2, "instances", oCSText,
+	cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSText,
 	{
 		heading: frame_heading,
 		body: frame_body
 	});
 
 	foreground_path = filepath_replace_last_element(json_path, foreground_path);
-	cutscene_foreground = instance_create_layer(0,0, "Instances", oCSForeground,
+	cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
 	{
 		path: foreground_path
 	});
 
 	background_path = filepath_replace_last_element(json_path, background_path);
-	cutscene_background = instance_create_layer(0,0, "Instances", oCSBackground,
+	cutscene_background = instance_create_layer(0,0, "CutsceneBackground", oCSBackground,
 	{
 		path: background_path
 	});
@@ -56,8 +56,8 @@ function cutscene_initialise_components(frame_index, json_path)
 function cutscene_delete_components()
 {
 	instance_destroy(cutscene_foreground);
-	instance_destroy(cutscene_text);
 	instance_destroy(cutscene_background);
+	instance_destroy(cutscene_text);
 }
 
 

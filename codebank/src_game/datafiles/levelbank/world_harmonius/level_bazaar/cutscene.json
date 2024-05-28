@@ -1,0 +1,72 @@
+{
+    "name": "cutscene1",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Greetings, traveller. You have landed on the shores of Harmonius, a once vibrant planet in the cosmic orchestra. I am Monad, a humble philosopher among the Maoi."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Traveller (You)",
+            "body": "Harmonius... It's beautiful, but why is it so silent?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "It is the work of the Grand Composer. Long ago, this world was alive with uplifting beats. But the Grand Composer grew envious and silenced us all."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Traveller (You)",
+            "body": "That's terrible... Is there anything I can do to help?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Indeed! We possess a Celestial Amp, a device capable of restoring our lost melody. But to wield it, you must convince our leader, the Elder Maoi, to entrust it to you."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Traveller (You)",
+            "body": "The Elder Maoi? Sounds like Yoda. Where can I find him?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "With eyes that have witnessed the birth and death of stars, the Elder Maoi stands atop the tallest peak of Harmonius, contemplating the mysteries of the universe. Seek his wisdom, and perhaps he will aid you in your quest to silence the Grand Composer's tyranny."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Traveller (You)",
+            "body": "That's terrible. Is there anything I can do to help? I'll try my best to save your planet. But may I ask, who gave you the name Monad?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Ah, my name? Well, you could say I'm a 'functional' philosopher, deeply rooted in the principles of order and abstraction. A monad encapsulates values and sequences operations in a structured manner, and I strive to distill the essence of existence into coherent patterns of thought."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Traveller (You)",
+            "body": "So you're like the monad of this world's wisdom?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Precisely! In a universe of chaos, I strive to be an unwavering thread of reason. Now brave traveller, set forth to restore the melody of Harmonius!"
+        }
+
+    ]
+}

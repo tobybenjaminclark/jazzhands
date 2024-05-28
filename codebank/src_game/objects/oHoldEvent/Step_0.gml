@@ -38,6 +38,7 @@ if (moving && !paused && !dead)
 		{
 			colliding = false;
 			missed = true;
+			dead = true;
 		}
 	}
 	else
@@ -64,6 +65,10 @@ if ((y + sprite_width) - ((end_time - start_time) / movement_factor) >= parent.k
 /* Symbol Death Logic */
 if(dead)
 {
+	if(image_xscale > 0.2){image_xscale -= 0.02;}
+	if(image_yscale > 0.2){image_yscale -= 0.02;}
+	if(image_alpha > 0) image_alpha -= 0.005;
+
 	moving = false;
 	y = y - 1;
 	if(x>room_width/2) x += 1;

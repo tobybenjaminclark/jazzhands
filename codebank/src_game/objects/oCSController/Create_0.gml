@@ -3,11 +3,9 @@
 /// @date   08/02/2023
 
 // load the cutscene json file
-
+global.in_cutscene = true;
 json_struct = json_parse_from_filepath(file_path);
-
 num_frames =  array_length(json_struct.frames);
-
 frame_index = 0;
 
 cutscene_initialise_components(frame_index, file_path);

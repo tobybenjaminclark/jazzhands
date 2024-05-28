@@ -4,8 +4,19 @@
 
 
 // increment the letter to draw
-if(text_index == string_length(body))
+if(floor(show_index) == string_length(body))
 {
 	return;
 }
-text_index+=0.5;
+else
+{
+	draw_set_font(fntCutsceneText);
+	
+	if(string_char_at(body, floor(show_index)) == " "){
+		show_index += 0.2;	
+	}
+	else{
+		audio_play_sound(snd_metronome, 0, false, random_range(0.0, 0.3), 0, random_range(0.3, 0.8));
+		show_index += 0.5;
+	}
+}

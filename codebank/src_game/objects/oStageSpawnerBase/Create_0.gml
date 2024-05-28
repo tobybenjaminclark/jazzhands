@@ -10,6 +10,7 @@ start_time = 0;
 paused = false;
 unpaused_time = 0;
 paused_time = 0;
+watched_cutscene = false;
 
 /* Get Global Beatmap Path */
 if(global.current_beatmap != undefined)
@@ -49,7 +50,9 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				time: real(beatmap_structure.events[event_index].event_data.time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
-				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol))
+				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
+				image_xscale: 0.6,
+				image_yscale: 0.6
 			});
 		break;
 		
@@ -59,7 +62,9 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				time: real(beatmap_structure.events[event_index].event_data.time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
-				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol))
+				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
+				image_xscale: 0.6,
+				image_yscale: 0.6
 			});
 		break;
 		
@@ -70,7 +75,9 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				end_time: real(beatmap_structure.events[event_index].event_data.end_time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
-				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol))
+				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
+				image_xscale: 0.6,
+				image_yscale: 0.6
 			});
 		break;
 		

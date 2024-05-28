@@ -38,5 +38,3 @@ if(text_alpha != 0)
 }
 
 
-draw_text(x, y - 30, string(start_angle));
-

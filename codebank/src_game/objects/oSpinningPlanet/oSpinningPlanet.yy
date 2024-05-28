@@ -15,7 +15,7 @@
   "managed":true,
   "name":"oSpinningPlanet",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"spin_speed","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"spin_speed","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"12",},
   ],
   "parent":{
     "name":"User Interface",

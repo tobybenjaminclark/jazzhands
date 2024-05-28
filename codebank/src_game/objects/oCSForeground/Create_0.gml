@@ -4,3 +4,7 @@
 
 
 sprite = sprite_add(path, 1, true, true, 0, 0);
+sprite_index = sprite;
+
+x = room_width - sprite_width;
+y = room_height - sprite_height;

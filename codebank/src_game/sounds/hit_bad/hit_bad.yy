@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"hit_bad",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.952,
+  "name":"hit_bad",
+  "parent":{
+    "name":"beats",
+    "path":"folders/Sounds/beats.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"hit_bad.mp3",
+  "type":0,
+  "volume":1.0,
+}

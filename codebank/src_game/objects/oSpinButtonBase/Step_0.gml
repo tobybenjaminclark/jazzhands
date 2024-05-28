@@ -25,6 +25,7 @@ switch(state)
 		if(!have_queued_room && spin_speed > trigger_room_start_speed)
 		{
 			have_queued_room = true;
+			audio_play_sound(sound, 0, false);
 			global.queued_room = next_room;
 		}
 	
