@@ -29,4 +29,5 @@ draw_sprite_ext(sprite_index, 0, x, 0, scale_uniform, scale_uniform, 0, c_white,
 
 draw_set_font(fntTiny);
 draw_set_color(c_gray);
+draw_set_halign(fa_left);
 draw_text(10, display_get_gui_height() - 22, "<Space> to skip.");

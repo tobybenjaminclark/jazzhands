@@ -4,6 +4,7 @@
 
 /* Score */
 level_score = 0;
+started = false;
 
 /* Started */
 start_time = 0;

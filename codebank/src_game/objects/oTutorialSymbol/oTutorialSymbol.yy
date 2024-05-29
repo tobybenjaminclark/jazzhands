@@ -3,13 +3,14 @@
   "%Name":"oTutorialSymbol",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oTutorialSymbol",
   "overriddenProperties":[],
   "parent":{
-    "name":"tutorial",
-    "path":"folders/Objects/Miscellaeneous/tutorial.yy",
+    "name":"Tutorial",
+    "path":"folders/Objects/Miscellaeneous/Tutorial.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,6 +28,9 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"symbol","filters":[],"listItems":[],"multiselect":false,"name":"symbol","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"OPEN_PALM","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"spr","filters":[
+        "GMSprite",
+      ],"listItems":[],"multiselect":false,"name":"spr","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"sprUnknownSymbol","path":"sprites/sprUnknownSymbol/sprUnknownSymbol.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"sprUnknownSymbol","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

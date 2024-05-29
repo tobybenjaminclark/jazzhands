@@ -12,9 +12,9 @@ if(text_alpha != 0)
 	draw_set_alpha(text_alpha);
 	draw_set_halign(fa_right);
 	draw_set_font(fntRaanana);
-	draw_text(x - 125, y + 5, title);
+	draw_text(x - 135, y + 5, title);
 	draw_set_font(fntRaananaSmall);
-	draw_text(x - 125, y + 65, description);
+	draw_text(x - 135, y + 65, description);
 	
 	
 	// Draw Level Headers
