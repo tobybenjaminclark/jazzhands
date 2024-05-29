@@ -36,19 +36,22 @@ function cutscene_initialise_components(frame_index, json_path)
 	cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSText,
 	{
 		heading: frame_heading,
-		body: frame_body
+		body: frame_body,
+		parent: self
 	});
 
 	foreground_path = filepath_replace_last_element(json_path, foreground_path);
 	cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
 	{
-		path: foreground_path
+		path: foreground_path,
+		parent: self
 	});
 
 	background_path = filepath_replace_last_element(json_path, background_path);
 	cutscene_background = instance_create_layer(0,0, "CutsceneBackground", oCSBackground,
 	{
-		path: background_path
+		path: background_path,
+		parent: self
 	});
 
 }

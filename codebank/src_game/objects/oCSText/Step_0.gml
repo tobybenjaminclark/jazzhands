@@ -17,6 +17,6 @@ else
 	}
 	else{
 		audio_play_sound(snd_metronome, 0, false, random_range(0.0, 0.3), 0, random_range(0.3, 0.8));
-		show_index += 0.5;
+		show_index += 1;
 	}
 }

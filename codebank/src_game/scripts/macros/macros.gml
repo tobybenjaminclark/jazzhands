@@ -19,3 +19,8 @@ global.in_cutscene = false;
 #macro ELECTRONOVA_2 "levelbank/world_techno/level_journey/beatmap.json"
 #macro ELECTRONOVA_3 "levelbank/world_techno/level_the_not_so_common_man/beatmap.json"
 #macro ELECTRONOVA_4 "levelbank/world_techno/level_the_shut_down/beatmap.json"
+
+#macro PRE_CUTSCENE 1
+#macro CUTSCENE_ENTER 2
+#macro CUTSCENE_DISPLAY 3
+#macro CUTSCENE_EXIT 4

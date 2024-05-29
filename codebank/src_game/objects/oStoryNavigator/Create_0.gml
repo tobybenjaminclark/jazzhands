@@ -19,11 +19,11 @@ titles =
 /* Setting Planet Descriptions */
 descriptions = 
 [
-	"Planet of harmony, peace and symphony.",
-	"Planet of electronic & techno vibes.",
-	"Planet of harder music.",
-	"Planet of skrillex.",
-	"Planet o' the shantys.",
+	"Home of the Maoi",
+	"Electrofunktor Habitat",
+	"Rock & Metal",
+	"Beats & Peaks",
+	"Shanty Town",
 ]
 
 harmonius_levels = 
