@@ -2,11 +2,11 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
-/* Score */
+/* Score Variables */
 level_score = 0;
 started = false;
 
-/* Started */
+/* Started Variables */
 start_time = 0;
 paused = false;
 unpaused_time = 0;
@@ -18,10 +18,23 @@ if(global.current_beatmap != undefined)
 {
 	beatmap_path = global.current_beatmap;
 }
-show_message(beatmap_path)
+
+/* For start (get background for intro scene) */
+intro_delay = INTRO_DELAY;
+cutscene_file = filepath_replace_last_element(beatmap_path, "cutscene.json");
+json_struct = json_parse_from_filepath(cutscene_file);
+if(variable_struct_exists(json_struct, "frames"))
+{
+	background_path = cutscene_get_background_path(json_struct.frames[0]);
+}
+background_path = filepath_replace_last_element(cutscene_file, background_path);
+background_sprite = sprite_add(background_path, 1, true, true, 0, 0);
 
 /* Parse JSON from supplied beatmap path */
 beatmap_structure = json_parse_from_filepath(beatmap_path);
+level_name = beatmap_structure.level_data.level_name;
+level_description = beatmap_structure.level_data.description;
+
 if(beatmap_structure == undefined)
 {
 	global.queued_room = navrmMain;
@@ -86,3 +99,4 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		break;
 	}
 }
+

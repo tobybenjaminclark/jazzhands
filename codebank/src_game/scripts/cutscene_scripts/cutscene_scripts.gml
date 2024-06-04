@@ -15,9 +15,7 @@ function cutscene_start(file_path, next_room)
 
 function cutscene_initialise_components(frame_index, json_path)
 {
-	
-// retrieve values of components of the cutscene from json file
-
+	// retrieve values of components of the cutscene from json file
 	if(variable_struct_exists(json_struct, "frames"))
 	{
 		background_path = cutscene_get_background_path(json_struct.frames[frame_index]);
@@ -34,26 +32,25 @@ function cutscene_initialise_components(frame_index, json_path)
 
 	// create the objects for the components of the cutscreen
 	cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSText,
-	{
-		heading: frame_heading,
-		body: frame_body,
-		parent: self
-	});
+		{
+			heading: frame_heading,
+			body: frame_body,
+			parent: self
+		});
 
 	foreground_path = filepath_replace_last_element(json_path, foreground_path);
 	cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
-	{
-		path: foreground_path,
-		parent: self
-	});
+		{
+			path: foreground_path,
+			parent: self
+		});
 
 	background_path = filepath_replace_last_element(json_path, background_path);
 	cutscene_background = instance_create_layer(0,0, "CutsceneBackground", oCSBackground,
-	{
-		path: background_path,
-		parent: self
-	});
-
+		{
+			path: background_path,
+			parent: self
+		});
 }
 
 function cutscene_delete_components()

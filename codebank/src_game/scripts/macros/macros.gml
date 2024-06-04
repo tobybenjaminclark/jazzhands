@@ -1,10 +1,11 @@
-
+	
 // Globals
 global.in_cutscene = false;
 
 // Symbols
 #macro JS_SYMBOL_LIST ["OPEN_PALM", "CLOSED_FIST", "POINTING_UP", "THUMBS_UP", "THUMBS_DOWN", "VICTORY"]
 #macro JS_SIDE_LIST ["LEFT", "RIGHT"]
+#macro INTRO_DELAY 120
 
 // Random?
 #macro MAX_SAVEFILE_NAME_LENGTH 12

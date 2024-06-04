@@ -35,6 +35,7 @@
   "ResourceOrderSettings":[
     {"name":"fntCutsceneHeading","order":5,"path":"fonts/fntCutsceneHeading/fntCutsceneHeading.yy",},
     {"name":"fntCutsceneText","order":6,"path":"fonts/fntCutsceneText/fntCutsceneText.yy",},
+    {"name":"fntCutsceneTiny","order":10,"path":"fonts/fntCutsceneTiny/fntCutsceneTiny.yy",},
     {"name":"fntDebug","order":3,"path":"fonts/fntDebug/fntDebug.yy",},
     {"name":"fntGroovy","order":2,"path":"fonts/fntGroovy/fntGroovy.yy",},
     {"name":"fntMenuTitle","order":8,"path":"fonts/fntMenuTitle/fntMenuTitle.yy",},
@@ -43,6 +44,7 @@
     {"name":"fntScore","order":4,"path":"fonts/fntScore/fntScore.yy",},
     {"name":"fntTiny","order":7,"path":"fonts/fntTiny/fntTiny.yy",},
     {"name":"oBadBeatEvent","order":2,"path":"objects/oBadBeatEvent/oBadBeatEvent.yy",},
+    {"name":"oBlackBox","order":11,"path":"objects/oBlackBox/oBlackBox.yy",},
     {"name":"oCharacter","order":14,"path":"objects/oCharacter/oCharacter.yy",},
     {"name":"oColourDisc","order":9,"path":"objects/oColourDisc/oColourDisc.yy",},
     {"name":"oColourSelector","order":7,"path":"objects/oColourSelector/oColourSelector.yy",},
@@ -109,6 +111,7 @@
     {"name":"sprLabel","order":2,"path":"sprites/sprLabel/sprLabel.yy",},
     {"name":"sprMoon","order":3,"path":"sprites/sprMoon/sprMoon.yy",},
     {"name":"sprMountains","order":4,"path":"sprites/sprMountains/sprMountains.yy",},
+    {"name":"sprPallette","order":2,"path":"sprites/sprPallette/sprPallette.yy",},
     {"name":"sprPlanetRecord1","order":5,"path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},
     {"name":"sprRecord","order":6,"path":"sprites/sprRecord/sprRecord.yy",},
     {"name":"sprRecordCover","order":9,"path":"sprites/sprRecordCover/sprRecordCover.yy",},

@@ -2,6 +2,7 @@
 
 
 draw_set_font(fntScore);
+draw_set_halign(fa_center);
 draw_set_alpha(0.5 + (0.5 * (timer / room_speed)));
 
 draw_set_valign(fa_center);
