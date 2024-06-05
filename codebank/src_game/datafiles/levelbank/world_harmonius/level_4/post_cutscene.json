@@ -1,0 +1,89 @@
+{
+    "name": "The Great Wave",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Feel the vibrations, Elder Maoi. Together, we will overcome the Grand Composer's tyranny."
+        }, 
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "The rhythm of Harmonius prevails! Let us drown out the silence with our music!"
+        }, 
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Yes! Feel the power of groove, Grand Composer! Your reign ends now!"
+        }, 
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "The chiptune beats of Harmonius shall prevail!!!!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We did it! The Grand Composer's evil music is repelled!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Traveller, you have brought light to our world once more. We are forever grateful."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, Elder Maoi. But my ship... it's broken. I need parts to repair it if I am to continue my journey."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Ah, I understand. Fear not, for nearby lies Electronova, a planet renowned for its technological prowess. Their expertise will surely aid you in repairing your vessel."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Electronova... I've heard of it. How can I reach there?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Allow us to assist you, traveller. We shall guide you to the shores where the Great Wave awaits. It is a cosmic vessel that sails the celestial currents, capable of transporting you swiftly to Electronova."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, Elder Maoi. Your kindness and guidance are greatly appreciated."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "It is our pleasure, traveller. May the rhythms of Harmonius guide you on your journey, and may you find the aid you seek on Electronova."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Farewell, for now. I shall return, bringing with me the echoes of our shared triumph."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Safe travels, brave traveller. Harmonius will always welcome you with open arms."
+        }
+]
+}

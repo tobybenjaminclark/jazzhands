@@ -2,9 +2,11 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
+
 /* Score Variables */
 level_score = 0;
 started = false;
+
 
 /* Started Variables */
 start_time = 0;
@@ -13,51 +15,57 @@ unpaused_time = 0;
 paused_time = 0;
 watched_cutscene = false;
 
+alt_start_time = start_time;
+last_time = alt_start_time;
+blip_x = 0;
+
 /* Get Global Beatmap Path */
-if(global.current_beatmap != undefined)
-{
+if(global.current_beatmap != undefined){
 	beatmap_path = global.current_beatmap;
 }
+
 
 /* For start (get background for intro scene) */
 intro_delay = INTRO_DELAY;
 cutscene_file = filepath_replace_last_element(beatmap_path, "cutscene.json");
 json_struct = json_parse_from_filepath(cutscene_file);
-if(variable_struct_exists(json_struct, "frames"))
-{
+if(variable_struct_exists(json_struct, "frames")){
 	background_path = cutscene_get_background_path(json_struct.frames[0]);
 }
+
+
 background_path = filepath_replace_last_element(cutscene_file, background_path);
 background_sprite = sprite_add(background_path, 1, true, true, 0, 0);
+
 
 /* Parse JSON from supplied beatmap path */
 beatmap_structure = json_parse_from_filepath(beatmap_path);
 level_name = beatmap_structure.level_data.level_name;
 level_description = beatmap_structure.level_data.description;
 
-if(beatmap_structure == undefined)
-{
+
+if(beatmap_structure == undefined){
 	global.queued_room = navrmMain;
 	exit;
 }
 
+
 /* Validate Beatmap using `validate_beatmap` function. */
 var beatmap_valid = validate_beatmap(beatmap_structure, beatmap_path);
-if(!beatmap_valid)
-{
+if(!beatmap_valid){
 	global.queued_room = navrmMain;
 	exit;
 }
+
 
 /* Load Song */
 sound = audio_create_stream(filepath_replace_last_element(beatmap_path, beatmap_structure.level_data.song));
 
+
 /* Create Beat Events */
-for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++)
-{
+for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++){
 	var reference_to_this = self;
-	switch(beatmap_structure.events[event_index].event_type)
-	{
+	switch(beatmap_structure.events[event_index].event_type){
 		case "beat":
 			var inst = instance_create_layer(x,y,layer, class_beat_event,{
 				parent: reference_to_this,

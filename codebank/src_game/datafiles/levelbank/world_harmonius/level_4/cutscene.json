@@ -1,0 +1,77 @@
+{
+    "name": "Melodious Crest",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Traveller, behold Melodious Crest, the dwelling of the Elder Maoi, guardian of the Celestial Amp."
+        },    
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/funktor.png",
+            "heading": "Funktor",
+            "body": "Elder Maoi, we bring before you a traveller of remarkable groove, seeking to restore the lost harmony of Harmonius."
+        },  
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Greetings, traveller. Your arrival stirs hope within me, yet I am burdened by doubt. The Grand Composer's silence has weighed heavily upon our world, and I fear the repercussions of wielding such power."
+        },  
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Elder Maoi, I understand your apprehension. But the silence cannot persist. Harmonius must reclaim its melody, and I am here to ensure that."
+        },  
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Your words carry conviction, but actions speak louder. Prove to me that you possess the true essence of groove, the heartbeat of our world."
+        },        
+	{
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Elder Maoi, the traveller's groove has already resonated with the very essence of Harmonius. He is the one destined to wield the Celestial Amp."
+        },  
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/funktor.png",
+            "heading": "Funktor",
+            "body": "Please, Elder Maoi, trust in his ability to restore the harmony we've lost."
+        },  
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Elder Maoi",
+            "body": "Very well. Traveller, the Celestial Amp is a tool of great power. Use it wisely and with reverence for the harmony of Harmonius."
+        }, 
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, Elder Maoi. I accept this responsibility with humility and determination."
+        },  
+	{
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "The time has come, traveller. With the Celestial Amp in your hands, you possess the means to confront the Grand Composer and bring back the symphony of Harmonius."
+        },  
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/funktor.png",
+            "heading": "Funktor",
+            "body": "We place our faith in you. Go forth and reclaim the melody that binds us all."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Grand Composer, your reign of silence ends now. With the Celestial Amp, I shall restore the harmony of Harmonius, and your tyranny shall crumble before the might of GROOVE!!!!!!"
+        } 
+]
+}

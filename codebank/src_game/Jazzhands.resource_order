@@ -112,6 +112,7 @@
     {"name":"sprMoon","order":3,"path":"sprites/sprMoon/sprMoon.yy",},
     {"name":"sprMountains","order":4,"path":"sprites/sprMountains/sprMountains.yy",},
     {"name":"sprPallette","order":2,"path":"sprites/sprPallette/sprPallette.yy",},
+    {"name":"sprPaused","order":11,"path":"sprites/sprPaused/sprPaused.yy",},
     {"name":"sprPlanetRecord1","order":5,"path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},
     {"name":"sprRecord","order":6,"path":"sprites/sprRecord/sprRecord.yy",},
     {"name":"sprRecordCover","order":9,"path":"sprites/sprRecordCover/sprRecordCover.yy",},

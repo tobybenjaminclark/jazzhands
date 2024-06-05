@@ -11,10 +11,10 @@ global.in_cutscene = false;
 #macro MAX_SAVEFILE_NAME_LENGTH 12
 
 // Story Level Beatmap Paths
-#macro HARMONIUS_1 "levelbank/world_harmonius/level_bazaar/beatmap.json"
-#macro HARMONIUS_2 "levelbank/world_harmonius/level_book/beatmap.json"
-#macro HARMONIUS_3 "levelbank/world_harmonius/level_cord/beatmap.json"
-#macro HARMONIUS_4 "levelbank/world_harmonius/level_level/beatmap.json"
+#macro HARMONIUS_1 "levelbank/world_harmonius/level_1/beatmap.json"
+#macro HARMONIUS_2 "levelbank/world_harmonius/level_2/beatmap.json"
+#macro HARMONIUS_3 "levelbank/world_harmonius/level_3/beatmap.json"
+#macro HARMONIUS_4 "levelbank/world_harmonius/level_4/beatmap.json"
 
 #macro ELECTRONOVA_1 "levelbank/world_techno/level_fight_the_monsters/beatmap.json"
 #macro ELECTRONOVA_2 "levelbank/world_techno/level_journey/beatmap.json"

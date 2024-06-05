@@ -21,7 +21,6 @@ var scale_uniform = min(scale_w, scale_h);
 
 // Draw the sprite stretched uniformly to fit the room dimensions
 draw_sprite_ext(sprite_index, 0, x, 0, scale_uniform, scale_uniform, 0, c_white, 1);
-
 draw_set_font(fntTiny);
 draw_set_color(c_gray);
 draw_set_halign(fa_left);
