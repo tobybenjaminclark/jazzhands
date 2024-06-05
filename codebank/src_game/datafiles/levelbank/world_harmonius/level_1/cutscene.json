@@ -9,7 +9,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Harmonius... It's beautiful, but why is it so silent?"
         },
@@ -21,7 +21,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "That's terrible... Is there anything I can do to help?"
         },
@@ -33,7 +33,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "The Elder Maoi? Where can I find him?"
         },
@@ -45,7 +45,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "I'll try my best to save your planet. But may I ask, who gave you the name Monad?"
         },
@@ -57,7 +57,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "So you're like the monad of this world's wisdom?"
         },
@@ -69,7 +69,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Interesting. So, how exactly do I scale this mountain?"
         },
@@ -81,7 +81,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Challenge accepted, Monad. Throw the vibes my way!"
         }
