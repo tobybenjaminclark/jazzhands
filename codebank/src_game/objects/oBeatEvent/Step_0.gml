@@ -8,7 +8,7 @@ if (paused && !parent.paused)
 {
         paused = false;
         target_time += (parent.unpaused_time - parent.paused_time);
-}
+} 
 
 
 /* Game Start Logic */
@@ -59,7 +59,7 @@ if (moving && !paused && !dead)
 		dead = true;
 	}
 	/* TODO: Score Logic */
-}
+}	
 
 
 
