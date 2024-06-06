@@ -52,6 +52,7 @@ if (moving && !paused && !dead)
 		}
 		else
 		{
+			ds_list_clear(parent.combo_list);
 			image_blend = make_color_rgb(255, 100, 100);
 		}
 		

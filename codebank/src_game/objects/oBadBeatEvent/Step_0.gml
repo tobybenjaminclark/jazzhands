@@ -34,6 +34,7 @@ if (moving && !paused && !dead)
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
 			/* Hit bad beat */
+			ds_list_clear(parent.combo_list);
 			image_blend = make_color_rgb(255, 100, 100);
 		}
 		else
