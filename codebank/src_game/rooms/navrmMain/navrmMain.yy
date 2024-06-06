@@ -16,6 +16,7 @@
     {"name":"inst_64E6B467","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_5A364F22","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_3A873689","path":"rooms/navrmMain/navrmMain.yy",},
+    {"name":"inst_41CF4295","path":"rooms/navrmMain/navrmMain.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -56,6 +57,10 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelData","path":"objects/oLabel/oLabel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Editor",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabel/oLabel.yy",},"resource":{"name":"fntRaanana","path":"fonts/fntRaanana/fntRaanana.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntRaanana",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2752.0,"y":1248.0,},
+        {"$GMRInstance":"","%Name":"inst_41CF4295","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41CF4295","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabelRight/oLabelRight.yy",},"resource":{"name":"fntCutsceneHeading","path":"fonts/fntCutsceneHeading/fntCutsceneHeading.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntCutsceneHeading",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelData","path":"objects/oLabelRight/oLabelRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"v1.0.0",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2464.0,"y":832.0,},
       ],"layers":[],"name":"Text","properties":[
         {"name":"g_GlowRadius","type":0,"value":"795",},
         {"name":"g_GlowQuality","type":0,"value":"5.35",},
