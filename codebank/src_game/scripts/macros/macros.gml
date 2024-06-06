@@ -25,3 +25,7 @@ global.in_cutscene = false;
 #macro CUTSCENE_ENTER 2
 #macro CUTSCENE_DISPLAY 3
 #macro CUTSCENE_EXIT 4
+
+#macro COMBO_BEAT 1
+#macro COMBO_ANTIBEAT 2
+#macro COMBO_HOLD 3

@@ -127,3 +127,14 @@ else{
 }
 draw_set_halign(fa_right);
 draw_text(inset + width, _y, _ev);
+
+
+
+/* Combohit Stuff */
+draw_set_halign(fa_right);
+var combostring = "";
+for(var _i = 0; _i < ds_list_size(combo_list); _i++){
+	combostring = combostring + " " + string(combo_list[| _i]);
+}
+draw_text(room_width - inset, room_height - inset, combostring); 
+draw_text(room_width - inset, room_height - (inset + 25), "Combo: x" + string(ds_list_size(combo_list)));

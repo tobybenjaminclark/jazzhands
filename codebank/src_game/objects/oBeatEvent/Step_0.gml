@@ -46,6 +46,7 @@ if (moving && !paused && !dead)
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
 			audio_play_sound(snd_metronome, 0, false);
+			ds_list_add(parent.combo_list, COMBO_BEAT);
 			parent.level_score += 100;
 			image_blend = make_color_rgb(100, 255, 100);
 		}

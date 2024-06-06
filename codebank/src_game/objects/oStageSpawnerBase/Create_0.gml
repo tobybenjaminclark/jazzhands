@@ -19,6 +19,9 @@ alt_start_time = start_time;
 last_time = alt_start_time;
 blip_x = 0;
 
+/* Chain (combo list) */
+combo_list = ds_list_create();
+
 /* Get Global Beatmap Path */
 if(global.current_beatmap != undefined){
 	beatmap_path = global.current_beatmap;

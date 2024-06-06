@@ -40,6 +40,7 @@ if (moving && !paused && !dead)
 		{
 			/* Didn't hit (good) */
 			parent.level_score += 100;
+			ds_list_add(parent.combo_list, COMBO_ANTIBEAT);
 			image_blend = make_color_rgb(100, 255, 100);
 		}
 		
