@@ -2,6 +2,9 @@
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
 
+/* Particles */
+
+
 /* Game Pause Logic */
 if (parent.paused) paused = true;
 if (paused && !parent.paused)
@@ -45,6 +48,7 @@ if (moving && !paused && !dead)
 	{
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
+			part_particles_create(_ps, x, y, _ptype2, 25);
 			audio_play_sound(snd_metronome, 0, false);
 			ds_list_add(parent.combo_list, COMBO_BEAT);
 			parent.level_score += 100;
@@ -52,6 +56,8 @@ if (moving && !paused && !dead)
 		}
 		else
 		{
+			part_particles_create(_ps, x, y, _ptype1, 25);
+			audio_play_sound(snd_vibrate, 0, false);
 			ds_list_clear(parent.combo_list);
 			image_blend = make_color_rgb(255, 100, 100);
 		}

@@ -100,6 +100,7 @@
     {"name":"snd_ping_low","order":2,"path":"sounds/snd_ping_low/snd_ping_low.yy",},
     {"name":"snd_plop","order":6,"path":"sounds/snd_plop/snd_plop.yy",},
     {"name":"snd_record_scratch","order":8,"path":"sounds/snd_record_scratch/snd_record_scratch.yy",},
+    {"name":"snd_vibrate","order":11,"path":"sounds/snd_vibrate/snd_vibrate.yy",},
     {"name":"logo_pallette","order":1,"path":"sprites/logo_pallette/logo_pallette.yy",},
     {"name":"spr_beach","order":12,"path":"sprites/spr_beach/spr_beach.yy",},
     {"name":"spr_black_box","order":13,"path":"sprites/spr_black_box/spr_black_box.yy",},
