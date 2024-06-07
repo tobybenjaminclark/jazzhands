@@ -180,6 +180,7 @@
     {"id":{"name":"navrmMain","path":"rooms/navrmMain/navrmMain.yy",},},
     {"id":{"name":"navrmStory","path":"rooms/navrmStory/navrmStory.yy",},},
     {"id":{"name":"rmCutscene","path":"rooms/rmCutscene/rmCutscene.yy",},},
+    {"id":{"name":"rmFreemode","path":"rooms/rmFreemode/rmFreemode.yy",},},
     {"id":{"name":"rmInitialize","path":"rooms/rmInitialize/rmInitialize.yy",},},
     {"id":{"name":"rmOptions","path":"rooms/rmOptions/rmOptions.yy",},},
     {"id":{"name":"rmSaveCreator","path":"rooms/rmSaveCreator/rmSaveCreator.yy",},},
@@ -259,6 +260,7 @@
     {"roomId":{"name":"rmSaveCreator","path":"rooms/rmSaveCreator/rmSaveCreator.yy",},},
     {"roomId":{"name":"rmCutscene","path":"rooms/rmCutscene/rmCutscene.yy",},},
     {"roomId":{"name":"rmOptions","path":"rooms/rmOptions/rmOptions.yy",},},
+    {"roomId":{"name":"rmFreemode","path":"rooms/rmFreemode/rmFreemode.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

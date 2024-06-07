@@ -77,6 +77,7 @@
     {"name":"ps_mouse","order":1,"path":"particles/ps_mouse/ps_mouse.yy",},
     {"name":"navrmMain","order":2,"path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"rmCutscene","order":7,"path":"rooms/rmCutscene/rmCutscene.yy",},
+    {"name":"rmFreemode","order":9,"path":"rooms/rmFreemode/rmFreemode.yy",},
     {"name":"rmInitialize","order":3,"path":"rooms/rmInitialize/rmInitialize.yy",},
     {"name":"rmOptions","order":8,"path":"rooms/rmOptions/rmOptions.yy",},
     {"name":"rmSaveCreator","order":6,"path":"rooms/rmSaveCreator/rmSaveCreator.yy",},
