@@ -120,6 +120,7 @@
     {"name":"sprLabel","order":2,"path":"sprites/sprLabel/sprLabel.yy",},
     {"name":"sprMoon","order":3,"path":"sprites/sprMoon/sprMoon.yy",},
     {"name":"sprMountains","order":4,"path":"sprites/sprMountains/sprMountains.yy",},
+    {"name":"sprOptionsPalle","order":3,"path":"sprites/sprOptionsPalle/sprOptionsPalle.yy",},
     {"name":"sprPadlock","order":12,"path":"sprites/sprPadlock/sprPadlock.yy",},
     {"name":"sprPallette","order":2,"path":"sprites/sprPallette/sprPallette.yy",},
     {"name":"sprPaused","order":11,"path":"sprites/sprPaused/sprPaused.yy",},

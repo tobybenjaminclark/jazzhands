@@ -229,6 +229,7 @@
     {"id":{"name":"sprLabel","path":"sprites/sprLabel/sprLabel.yy",},},
     {"id":{"name":"sprMoon","path":"sprites/sprMoon/sprMoon.yy",},},
     {"id":{"name":"sprMountains","path":"sprites/sprMountains/sprMountains.yy",},},
+    {"id":{"name":"sprOptionsPalle","path":"sprites/sprOptionsPalle/sprOptionsPalle.yy",},},
     {"id":{"name":"sprPadlock","path":"sprites/sprPadlock/sprPadlock.yy",},},
     {"id":{"name":"sprPallette","path":"sprites/sprPallette/sprPallette.yy",},},
     {"id":{"name":"sprPaused","path":"sprites/sprPaused/sprPaused.yy",},},
