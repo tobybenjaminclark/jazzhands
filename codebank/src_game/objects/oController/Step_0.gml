@@ -3,8 +3,8 @@
 /// @date   12/01/2023
 
 step++;
-if(step > 100)
+if(step > 200)
 {
-	room_goto(target_room);
+	global.queued_room = navrmMain;
 }
 
