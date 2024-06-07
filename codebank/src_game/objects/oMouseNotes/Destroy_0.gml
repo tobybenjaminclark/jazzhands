@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Destroys Particle System
+/// @author Toby Benjamin Clark
+/// @date   07/06/2024
 
 /* Destroy the particle system */
 part_emitter_destroy(_ps, _pemit1);

@@ -31,14 +31,18 @@ if(global.current_beatmap != undefined){
 /* For start (get background for intro scene) */
 intro_delay = INTRO_DELAY;
 cutscene_file = filepath_replace_last_element(beatmap_path, "cutscene.json");
-json_struct = json_parse_from_filepath(cutscene_file);
-if(variable_struct_exists(json_struct, "frames")){
-	background_path = cutscene_get_background_path(json_struct.frames[0]);
+if(file_exists(cutscene_file)){
+	json_struct = json_parse_from_filepath(cutscene_file);
+	if(variable_struct_exists(json_struct, "frames")){
+		var _background_path = cutscene_get_background_path(json_struct.frames[0]);
+	}
+	var _background_path = filepath_replace_last_element(cutscene_file, _background_path);
+	background_sprite = sprite_add(_background_path, 1, true, true, 0, 0);	
+}
+else{
+	background_sprite = spr_black_box;
 }
 
-
-background_path = filepath_replace_last_element(cutscene_file, background_path);
-background_sprite = sprite_add(background_path, 1, true, true, 0, 0);
 
 
 /* Parse JSON from supplied beatmap path */

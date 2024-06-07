@@ -1,6 +1,6 @@
-/// @description Update the emitter position to trail behind the mouse
-
-
+/// @description Updates Emitter Position to Mouse
+/// @author Toby Benjamin Clark
+/// @date   07/06/2024
 
 /* Update the position of the emitter to the mouse's current position */
 if(mouse_x != pmx and mouse_y != pmy){

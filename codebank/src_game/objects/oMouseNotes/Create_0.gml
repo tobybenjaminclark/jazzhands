@@ -1,10 +1,12 @@
-/// @description Create and configure particle system that trails behind the mouse
+/// @description Defines Particle System for Mouse Trail
+/// @author Toby Benjamin Clark
+/// @date   07/06/2024
 
-// Create the particle system
+/* Create the particle system */
 _ps = part_system_create();
 part_system_draw_order(_ps, true);
 
-// Create the particle type
+/* Create the particle type */
 _ptype1 = part_type_create();
 part_type_sprite(_ptype1, spr_semiquaver, false, true, true);
 part_type_size(_ptype1, 1, 1.5, -0.02, 0);
@@ -18,7 +20,7 @@ part_type_alpha3(_ptype1, 1, 0.7, 0);
 part_type_blend(_ptype1, false);
 part_type_life(_ptype1, 55, 55);
 
-// Create the emitter
+/* Create the emitter */
 _pemit1 = part_emitter_create(_ps);
 part_emitter_region(_ps, _pemit1, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
 part_emitter_stream(_ps, _pemit1, _ptype1, 1);

@@ -5,7 +5,15 @@ intro_delay--;
 if(intro_delay == 0){
 	instance_create_layer(x, y, "Instances", oSpinner);
 	cutscene = filepath_replace_last_element(beatmap_path, "cutscene.json");
-	cutscene_start(cutscene, room);
-	global.in_cutscene = true;
-	watched_cutscene = true;	
+	
+	if file_exists(cutscene){
+		cutscene_start(cutscene, room);
+		global.in_cutscene = true;
+		watched_cutscene = true;
+	}
+	else{
+		global.in_cutscene = false;
+		watched_cutscene = true;
+	}
+		
 }
