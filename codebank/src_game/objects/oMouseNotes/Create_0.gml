@@ -5,7 +5,7 @@ _ps = part_system_create();
 part_system_draw_order(_ps, true);
 
 // Create the particle type
-var _ptype1 = part_type_create();
+_ptype1 = part_type_create();
 part_type_sprite(_ptype1, spr_semiquaver, false, true, true);
 part_type_size(_ptype1, 1, 1.5, -0.02, 0);
 part_type_scale(_ptype1, 1, 1);
