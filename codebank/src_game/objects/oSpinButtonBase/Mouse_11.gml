@@ -3,11 +3,4 @@
 
 hover= false;
 spin_speed = initial_spin_speed;
-
-
-
-
-
-
-
-
+window_set_cursor(cr_default);

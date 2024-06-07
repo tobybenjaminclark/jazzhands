@@ -3,7 +3,6 @@
 /// @date   14/01/2023
 
 /* Find Savefile */
-
 global.selected_colour = 0;
 
 step = 0;
@@ -18,3 +17,5 @@ else
 	target_room = navrmMain;
 }
 
+/* Set Mouse Cursor */
+window_set_cursor(cr_default);
