@@ -48,7 +48,8 @@ if (moving && !paused && !dead)
 	{
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
-			part_particles_create(_ps, x, y, _ptype2, 25);
+			/* Hit (Good!) */
+			part_particles_create(_ps, x, y, _ptype2, 30);
 			audio_play_sound(snd_metronome, 0, false);
 			ds_list_add(parent.combo_list, COMBO_BEAT);
 			parent.level_score += 100;
@@ -56,6 +57,7 @@ if (moving && !paused && !dead)
 		}
 		else
 		{
+			/* Fail */
 			part_particles_create(_ps, x, y, _ptype1, 25);
 			audio_play_sound(snd_vibrate, 0, false);
 			ds_list_clear(parent.combo_list);
@@ -64,7 +66,6 @@ if (moving && !paused && !dead)
 		
 		dead = true;
 	}
-	/* TODO: Score Logic */
 }	
 
 
