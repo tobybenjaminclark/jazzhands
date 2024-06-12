@@ -7,7 +7,7 @@
     },
     "events": [
         {
-            "event_type": "beat",
+            "event_type": "randombeat",
             "event_data": {
                 "time": 6800,
                 "symbol": "OPEN_PALM",

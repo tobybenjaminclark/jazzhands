@@ -10,8 +10,8 @@
   "name":"oBeatEvent",
   "overriddenProperties":[],
   "parent":{
-    "name":"base",
-    "path":"folders/Objects/Stage Objects/base.yy",
+    "name":"Base",
+    "path":"folders/Objects/Stage Objects/Base.yy",
   },
   "parentObjectId":null,
   "persistent":false,

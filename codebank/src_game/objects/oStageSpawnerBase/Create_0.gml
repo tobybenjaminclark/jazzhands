@@ -85,6 +85,18 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 			});
 		break;
 		
+		case "randombeat":
+			var inst = instance_create_layer(x,y,layer, class_randombeat_event,{
+				parent: reference_to_this,
+				time: real(beatmap_structure.events[event_index].event_data.time),
+				side: string(beatmap_structure.events[event_index].event_data.side),
+				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
+				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
+				image_xscale: 0.6,
+				image_yscale: 0.6
+			});
+		break;
+		
 		case "bad_beat":
 			var inst = instance_create_layer(x,y,layer, class_bad_beat_event,{
 				parent: reference_to_this,

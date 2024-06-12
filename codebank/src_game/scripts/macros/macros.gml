@@ -29,3 +29,5 @@ global.in_cutscene = false;
 #macro COMBO_BEAT 1
 #macro COMBO_ANTIBEAT 2
 #macro COMBO_HOLD 3
+
+#macro RANDOMBEAT_SAFEZONE_OFFSET 400

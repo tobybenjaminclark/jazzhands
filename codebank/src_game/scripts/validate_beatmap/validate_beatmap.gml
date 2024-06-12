@@ -189,16 +189,21 @@ function validate_event_data(event, file_path, event_index)
         /* Validating `beat` event_type */
         case "beat":
 			validate_event_beat(event, file_path, event_index)
-        break;
+			break;
+		
+		/* Validating `randombeat` event type */
+		case "randombeat":
+			validate_event_beat(event, file_path, event_index)
+			break;
 					
 		/* Validating `bad_beat` event type. (This is semantically identical to `beat` event type. */			
         case "bad_beat":
             validate_event_beat(event, file_path, event_index)
-        break;
+			break;
 						
 		case "hold":
 			validate_event_hold(event, file_path, event_index)
-        default:
+		default:
             /* Add validation for other event types if needed */
             break;
     }

@@ -6,8 +6,8 @@
   "name":"oTechnoBeat",
   "overriddenProperties":[],
   "parent":{
-    "name":"technostage",
-    "path":"folders/Objects/Stage Objects/technostage.yy",
+    "name":"Technostage",
+    "path":"folders/Objects/Stage Objects/Technostage.yy",
   },
   "parentObjectId":{
     "name":"oBeatEvent",

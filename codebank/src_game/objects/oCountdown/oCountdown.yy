@@ -10,8 +10,8 @@
   "name":"oCountdown",
   "overriddenProperties":[],
   "parent":{
-    "name":"base",
-    "path":"folders/Objects/Stage Objects/base.yy",
+    "name":"Base",
+    "path":"folders/Objects/Stage Objects/Base.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"snd","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"snd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"snd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

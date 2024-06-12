@@ -11,6 +11,8 @@ set = false;
 moving = false;
 dead = false;
 
+image_blend = c_red;
+
 colliding = false;	
 missed = false;
 
