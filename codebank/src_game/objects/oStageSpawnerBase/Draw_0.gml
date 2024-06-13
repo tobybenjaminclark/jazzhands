@@ -11,6 +11,7 @@ catch(e){
 }
 
 
+draw_text(x, y, string(global.score_multiplier));
 
 /* Pre intro draw */
 if(intro_delay > 0) {

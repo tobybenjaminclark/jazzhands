@@ -17,3 +17,7 @@ if(intro_delay == 0){
 	}
 		
 }
+
+if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP"){
+	global.score_multiplier = 10;	
+}

@@ -52,7 +52,7 @@ if (moving && !paused && !dead)
 			part_particles_create(_ps, x, y, _ptype2, 30);
 			audio_play_sound(snd_metronome, 0, false);
 			ds_list_add(parent.combo_list, COMBO_BEAT);
-			parent.level_score += 100;
+			parent.level_score += (100 * global.score_multiplier);
 			image_blend = make_color_rgb(100, 255, 100);
 		}
 		else

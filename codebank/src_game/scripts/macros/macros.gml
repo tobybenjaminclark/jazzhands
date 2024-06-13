@@ -1,6 +1,7 @@
 	
 // Globals
 global.in_cutscene = false;
+global.score_multiplier = 1;
 
 // Symbols
 #macro JS_SYMBOL_LIST ["OPEN_PALM", "CLOSED_FIST", "POINTING_UP", "THUMBS_UP", "THUMBS_DOWN", "VICTORY"]

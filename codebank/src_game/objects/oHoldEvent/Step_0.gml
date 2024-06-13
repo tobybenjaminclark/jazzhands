@@ -55,7 +55,7 @@ if ((y + sprite_width) - ((end_time - start_time) / movement_factor) >= parent.k
 	if(!missed)
 	{
 		image_blend = make_color_rgb(100, 255, 100);
-		parent.level_score += 100;
+		parent.level_score += (100 * global.score_multiplier);
 		ds_list_add(parent.combo_list, COMBO_HOLD);
 	}
 	else if(missed){
