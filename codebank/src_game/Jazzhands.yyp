@@ -176,6 +176,7 @@
     {"id":{"name":"oTextInput","path":"objects/oTextInput/oTextInput.yy",},},
     {"id":{"name":"oTutorialManager","path":"objects/oTutorialManager/oTutorialManager.yy",},},
     {"id":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},},
+    {"id":{"name":"ps_colornotes","path":"particles/ps_colornotes/ps_colornotes.yy",},},
     {"id":{"name":"ps_death","path":"particles/ps_death/ps_death.yy",},},
     {"id":{"name":"ps_mouse","path":"particles/ps_mouse/ps_mouse.yy",},},
     {"id":{"name":"navrmMain","path":"rooms/navrmMain/navrmMain.yy",},},

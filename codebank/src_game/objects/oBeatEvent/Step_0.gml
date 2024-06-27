@@ -27,6 +27,8 @@ if (parent.start_time != 0 && !set)
 /* Move Symbol if moving & not paused */
 if (moving && !paused && !dead)
 {
+	/* Emit movement particles */
+	if(random(1) > 0.6 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
 	
 	/* Moving Logic */
 	// sx = starting x
