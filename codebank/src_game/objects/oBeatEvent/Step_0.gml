@@ -3,6 +3,26 @@
 /// @date   14/01/2023
 
 /* Particles */
+// Define variables for smooth rotation
+var target_angle = 0;
+var easing = 0.3; // Adjust the easing value for desired smoothness
+
+if (rotation_direction == 1) {
+    target_angle = 20;
+} else {
+    target_angle = -20;
+}
+
+// Smoothly adjust the image_angle towards the target_angle
+var delta_angle = target_angle - image_angle;
+image_angle += delta_angle * easing;
+
+// Check if rotation direction needs to be changed
+if (rotation_direction == 1 && image_angle >= 20) {
+    rotation_direction = 0;
+} else if (rotation_direction == 0 && image_angle <= -20) {
+    rotation_direction = 1;
+}
 
 
 /* Game Pause Logic */
@@ -27,6 +47,7 @@ if (parent.start_time != 0 && !set)
 /* Move Symbol if moving & not paused */
 if (moving && !paused && !dead)
 {
+	
 	/* Emit movement particles */
 	if(random(1) > 0.6 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
 	

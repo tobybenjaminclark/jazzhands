@@ -59,6 +59,7 @@ paused = false;
 set = false;
 moving = false;
 dead = false;
+rotation_direction = 1;
 
 /* Set x offset based on each side */
 tx = x - side_offset;
