@@ -24,6 +24,8 @@ if (parent.start_time != 0 && !set)
 /* Move Symbol if moving & not paused */
 if (moving && !paused && !dead)
 {
+	/* Emit movement particles */
+	if(random(1) > 0.6 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
 	
 	/* Moving Logic */
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);

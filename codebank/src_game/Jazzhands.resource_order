@@ -75,6 +75,7 @@
     {"name":"oTechnoBeat","order":1,"path":"objects/oTechnoBeat/oTechnoBeat.yy",},
     {"name":"oTextInput","order":8,"path":"objects/oTextInput/oTextInput.yy",},
     {"name":"oTutorialManager","order":1,"path":"objects/oTutorialManager/oTutorialManager.yy",},
+    {"name":"ps_badnotes","order":3,"path":"particles/ps_badnotes/ps_badnotes.yy",},
     {"name":"ps_colornotes","order":2,"path":"particles/ps_colornotes/ps_colornotes.yy",},
     {"name":"ps_mouse","order":1,"path":"particles/ps_mouse/ps_mouse.yy",},
     {"name":"navrmMain","order":2,"path":"rooms/navrmMain/navrmMain.yy",},
