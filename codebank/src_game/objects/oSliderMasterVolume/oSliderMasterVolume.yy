@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"o_slider_scale",
+  "%Name":"oSliderMasterVolume",
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"o_slider_scale",
+  "name":"oSliderMasterVolume",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
