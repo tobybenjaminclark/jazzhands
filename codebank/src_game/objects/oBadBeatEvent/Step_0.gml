@@ -4,16 +4,14 @@
 
 /* Game Pause Logic */
 if (parent.paused) paused = true;
-if (paused && !parent.paused)
-{
+if (paused && !parent.paused){
         paused = false;
         target_time += (parent.unpaused_time - parent.paused_time);
 }
 
 
 /* Game Start Logic */
-if (parent.start_time != 0 && !set)
-{
+if (parent.start_time != 0 && !set){
     set = true;
     start_time = parent.start_time;
     target_time = start_time + time;
@@ -24,8 +22,11 @@ if (parent.start_time != 0 && !set)
 /* Move Symbol if moving & not paused */
 if (moving && !paused && !dead)
 {
+	/* Rotate constantly */
+	image_angle += 1;
+	
 	/* Emit movement particles */
-	if(random(1) > 0.6 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
+	if(random(1) > 0.8 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
 	
 	/* Moving Logic */
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);

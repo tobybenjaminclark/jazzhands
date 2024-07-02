@@ -14,6 +14,7 @@
     {"name":"inst_1914350","path":"rooms/navrmStory/navrmStory.yy",},
     {"name":"inst_49FA1114","path":"rooms/navrmStory/navrmStory.yy",},
     {"name":"inst_77B9E157","path":"rooms/navrmStory/navrmStory.yy",},
+    {"name":"inst_34F1A267","path":"rooms/navrmStory/navrmStory.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -47,6 +48,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabelRight/oLabelRight.yy",},"resource":{"name":"fntRaananaSmall","path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntRaananaSmall",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelData","path":"objects/oLabelRight/oLabelRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Story Mode",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3744.0,"y":1984.0,},
+        {"$GMRInstance":"","%Name":"inst_34F1A267","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_34F1A267","objectId":{"name":"oMouseNotes","path":"objects/oMouseNotes/oMouseNotes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-64.0,"y":128.0,},
       ],"layers":[],"name":"Text","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"Vignette","depth":200,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Vignette","properties":[
         {"name":"g_VignetteEdges","type":0,"value":"0.85",},
