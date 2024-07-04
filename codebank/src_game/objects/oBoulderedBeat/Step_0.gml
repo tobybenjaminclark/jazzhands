@@ -17,6 +17,9 @@ if (rotation_direction == 1) {
 var delta_angle = target_angle - image_angle;
 image_angle += delta_angle * easing;
 
+// Rotate Boulder
+boulder_rot = (boulder_rot + 1) % 360
+
 // Check if rotation direction needs to be changed
 if (rotation_direction == 1 && image_angle >= 10) {
     rotation_direction = 0;

@@ -8,5 +8,5 @@ draw_self();
 draw_set_color(c_red);
 
 if(boulder){
-	draw_rectangle(x - 20, y - 20, x + 20, y + 20, false);
+	draw_sprite_ext(sprBoulder, 0, x, y, 1, 1, boulder_rot, c_white, 1);
 }

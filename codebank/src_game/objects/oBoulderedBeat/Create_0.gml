@@ -53,6 +53,8 @@ part_type_life(_ptype2, 80, 80);
 
 /* Initial Variable Setup */
 boulder = true;
+boulder_rot = 0;
+
 start_time = 0;
 target_time = 0;
 movement_factor = 6;
