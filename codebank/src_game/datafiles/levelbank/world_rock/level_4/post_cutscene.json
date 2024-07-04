@@ -1,0 +1,77 @@
+{
+    "name": "Rock On!!!",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/lightningfist.png",
+            "heading": "Lightningfist",
+            "body": "You have proven yourself, brave traveller. The rock spirit within you is undeniable. The Thunderstone awakens, and with it, the heart of Ampiforia beats once more!!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We did it, Gnork! Ampiforia's rock spirit is alive again!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "You’ve got the true spirit of a rock legend."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Look, the Thunderstone is moving!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "It's rolling to the side... revealing something."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "What's this? Another celestial amp?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "Perhaps this amp is a symbol of your victory, and the key to spreading the rock spirit throughout the galaxy..."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/goliath.png",
+            "heading": "Goliath",
+            "body": "Your journey has inspired us all. The resonance of your music has shattered the chains of silence. Ampiforia shall once again echo with the sounds of rock."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/lightningfist.png",
+            "heading": "Lightningfist",
+            "body": "Take the celestial amp, traveller. It will aid you in your quest to restore harmony across the stars. Remember the power of rock that brought us together."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, Lightningfist. Thank you, Gnork. And thank you, Goliaths. Together, we’ve made Ampiforia rock again. Now, it's time to bring this spirit to the next world - Grooveon!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "Safe travels, my friend. And remember, wherever you go, let the music guide you."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Rock on, Gnork. Rock on, Ampiforia. To Grooveon I go!!!"
+        }
+    ]
+}

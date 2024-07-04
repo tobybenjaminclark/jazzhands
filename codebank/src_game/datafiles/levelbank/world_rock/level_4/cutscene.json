@@ -1,0 +1,59 @@
+{
+    "name": "Rock of Thunder",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "Prepare yourselves, travellers. Lightningfist awaits, and he won't go down without a fight."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We're ready for whatever he throws at us. Let's bring the thunder back to Ampiforia!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/lightningfist.png",
+            "heading": "Lightningfist",
+            "body": "So, the brave travellers seek to awaken the Thunderstone. But do you truly possess the rock spirit worthy of such power?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "We'll prove our worth in the language we know best: rock music!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/lightningfist.png",
+            "heading": "Lightningfist",
+            "body": "You may have the audacity to challenge me, but the Thunderstone is mine to protect. I will not relinquish its power so easily."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "Your stubbornness won't stop us, Lightningfist. Ampiforia needs the Thunderstone to thrive once more."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "If we don't awaken the Thunderstone, the rock spirit of Ampiforia will remain dormant forever!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/lightningfist.png",
+            "heading": "Lightningfist",
+            "body": "Then prove to me that you are worthy. Show me the strength of your rock spirit in battle, and perhaps I will reconsider."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "Very well, Lightningfist. Let the music decide our fate."
+        },
+    ]
+}

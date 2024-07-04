@@ -17,10 +17,15 @@ global.score_multiplier = 1;
 #macro HARMONIUS_3 "levelbank/world_harmonius/level_3/beatmap.json"
 #macro HARMONIUS_4 "levelbank/world_harmonius/level_4/beatmap.json"
 
-#macro ELECTRONOVA_1 "levelbank/world_techno/level_fight_the_monsters/beatmap.json"
-#macro ELECTRONOVA_2 "levelbank/world_techno/level_journey/beatmap.json"
-#macro ELECTRONOVA_3 "levelbank/world_techno/level_the_not_so_common_man/beatmap.json"
-#macro ELECTRONOVA_4 "levelbank/world_techno/level_the_shut_down/beatmap.json"
+#macro ELECTRONOVA_1 "levelbank/world_techno/level_1/beatmap.json"
+#macro ELECTRONOVA_2 "levelbank/world_techno/level_2/beatmap.json"
+#macro ELECTRONOVA_3 "levelbank/world_techno/level_3/beatmap.json"
+#macro ELECTRONOVA_4 "levelbank/world_techno/level_4/beatmap.json"
+
+#macro AMPLIFORIA_1 "levelbank/world_rock/level_1/beatmap.json"
+#macro AMPLIFORIA_2 "levelbank/world_rock/level_2/beatmap.json"
+#macro AMPLIFORIA_3 "levelbank/world_rock/level_3/beatmap.json"
+#macro AMPLIFORIA_4 "levelbank/world_rock/level_4/beatmap.json"
 
 #macro PRE_CUTSCENE 1
 #macro CUTSCENE_ENTER 2

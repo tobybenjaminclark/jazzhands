@@ -1,0 +1,47 @@
+{
+    "name": "Conquer the Goliaths!",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "This is the entrance, traveller. The Goliaths are the wardens here, sworn to protect the Thunderstone's resting place."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "They don't look too friendly. How do we get past them?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "We’ll need to prove our worth. Goliaths respect strength and rhythm. If we can show them our true rock spirit, they might let us through."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Alright, let's do this."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/gnork.png",
+            "heading": "Gnork",
+            "body": "Hail, Wardens! We come seeking the Thunderstone to reignite the heart of Ampiforia. Let us prove our worth through the power of rock!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/goliath.png",
+            "heading": "Goliath",
+            "body": "PROVE YOUR WORTH, AND YOU MAY PASS. FAIL, AND YOU SHALL BE TURNED AWAY."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Let's show them what we’ve got, Gnork!"
+        }
+    ]
+}

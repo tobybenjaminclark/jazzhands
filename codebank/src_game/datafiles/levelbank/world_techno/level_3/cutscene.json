@@ -1,0 +1,71 @@
+{
+    "name": "Circuitus Conundrum",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon",
+            "body": "WHAT... IS THIS FEELING? MY CIRCUITS... THEY REMEMBER."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "That's it! Let the music guide you back to harmony."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon",
+            "body": "I... I REMEMBER. THE MUSIC, THE UNITY. HOW COULD WE HAVE FORGOTTEN?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "That's the power of the groove. Now, can you help us repair the Rhythm Core?"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon",
+            "body": "YES, BUT THE CORE IS DAMAGED. YOU WILL NEED THE EXPERTISE OF OUR LEAD ENGINEER, CIRCUITUS. HE IS STILL UNDER THE GRAND COMPOSER'S INFLUENCE. CONVINCING HIM WILL NOT BE EASY."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "WE HAVE COME THIS FAR. WE WILL FIND A WAY TO REACH CIRCUITUS."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/circuitus.png",
+            "heading": "Circuitus",
+            "body": "WHO DARES ENTER MY DOMAIN? YOU SEEK TO REPAIR THE RHYTHM CORE? FOOLS. THE GRAND COMPOSER HAS REWRITTEN OUR DESTINY. SILENCE IS OUR NEW ORDER."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Circuitus, listen to me. Electronova is dying without its music. The silence is not your destiny. Let me show you what you've forgotten."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/circuitus.png",
+            "heading": "Circuitus",
+            "body": "I NEED NO REMINDERS. LEAVE NOW OR FACE MY WRATH."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "CIRCUITUS, REMEMBER THE HARMONY WE ONCE SHARED. THE RHYTHM CORE WAS YOUR GREATEST CREATION. DO NOT LET THE GRAND COMPOSER'S INTERFERENCE ERASE YOUR LEGACY."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Circuitus, feel the groove. Let it awaken your true self."
+        }
+    ]
+}

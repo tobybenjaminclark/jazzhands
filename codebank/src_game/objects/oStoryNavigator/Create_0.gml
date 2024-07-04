@@ -41,6 +41,21 @@ harmonius_names =
 	"Level"
 ]
 
+rock_levels = 
+[
+	AMPLIFORIA_1,
+	AMPLIFORIA_2,
+	AMPLIFORIA_3,
+	AMPLIFORIA_4
+]
+rock_names = 
+[
+	"level 1",
+	"level 2",
+	"level 3",
+	"level 4"
+]
+
 techno_levels = 
 [
 	ELECTRONOVA_1,
@@ -70,9 +85,12 @@ for (var i = 0; i < 5; i++;)
 		_levels = harmonius_levels;
 		_names = harmonius_names;
 	}
-	else{
+	else if(i == 1){
 		_levels = techno_levels;
 		_names = techno_names;
+	} else{
+		_levels = rock_levels;
+		_names = rock_names;
 	}
 	
     var inst = instance_create_layer(x - 100, y - 100, "BackgroundInstances", oSpinningPlanet,

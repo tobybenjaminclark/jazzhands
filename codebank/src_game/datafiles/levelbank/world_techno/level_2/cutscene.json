@@ -1,0 +1,89 @@
+{
+    "name": "Fuseon Fury",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Alright Diode, let's find those Fuseon Sentinels and get that Rhythm Core."
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "ACTIVATING LOCATOR CHIP. FOLLOW ME, SPECIMEN."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon Sentinel",
+            "body": "HALT! WHO DARES APPROACH THE DOMAIN OF THE FUSEONS?"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Hello! I'm a traveller seeking the Rhythm Core to restore harmony to Electronova."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon Sentinel",
+            "body": "HA! RESTORE HARMONY? YOU MUST BE DELUSIONAL. WE ARE AT WAR WITH THE DIODES. THE GRAND COMPOSER HAS GIVEN US NEW PURPOSE. WE WILL NOT RELINQUISH THE RHYTHM CORE."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "War? But your world is silent and dying. Don't you miss the music, the energy, the life?"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon Sentinel",
+            "body": "WE HAVE A NEW MASTER NOW. THE GRAND COMPOSER'S WILL IS ABSOLUTE. SILENCE IS OUR NEW SONG."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "FUSEON, REMEMBER WHO WE ARE. WE WERE ONCE ONE WITH THE BEAT, CREATORS OF RHYTHM AND SOUND. DO NOT LET THE GRAND COMPOSER'S INTERFERENCE DECEIVE YOU."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Listen, Fuseon. I can feel the beat within you, buried but not gone. Let me show you the power of groove, the spirit of Electronova. If you feel nothing, we'll leave in peace."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/fuseon.png",
+            "heading": "Fuseon Sentinel",
+            "body": "YOU SPEAK BOLDLY, TRAVELLER. BUT WORDS ALONE WILL NOT SWAY ME."
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Then let's not speak. Let's groove!"
+        }
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Player, another new beat has appeared on the system!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "This one's funky. The RANDOM BEAT mixes it up for a while, throwing random gestures. It stabilises at the last moment!"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Keep your eyes sharp, Player. Watch out for those random beats!"
+        },
+    ]
+}

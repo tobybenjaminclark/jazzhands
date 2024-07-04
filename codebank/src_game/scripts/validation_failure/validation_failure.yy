@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"validation_failure",
   "isCompatibility":false,
   "isDnD":false,
