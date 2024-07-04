@@ -195,6 +195,11 @@ function validate_event_data(event, file_path, event_index)
 		case "randombeat":
 			validate_event_beat(event, file_path, event_index)
 			break;
+			
+		/* Validating `bouldered_beat` event type */
+		case "bouldered_beat":
+			validate_event_beat(event, file_path, event_index)
+			break;
 					
 		/* Validating `bad_beat` event type. (This is semantically identical to `beat` event type. */			
         case "bad_beat":

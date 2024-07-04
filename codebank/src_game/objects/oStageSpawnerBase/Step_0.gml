@@ -18,6 +18,14 @@ if(intro_delay == 0){
 		
 }
 
+if(global.left_hand == "THUMB_DOWN" && global.right_hand == "THUMB_DOWN" and spawned_powerball == false){
+	instance_create_layer(x, y, "Instances", oPowerball);
+	spawned_powerball = true;	
+}
+else{
+	spawned_powerball = false;	
+}
+
 if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP"){
 	global.score_multiplier = 10;	
 }

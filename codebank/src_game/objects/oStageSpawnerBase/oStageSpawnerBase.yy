@@ -47,6 +47,7 @@
     {"$GMObjectProperty":"v1","%Name":"class_bad_beat_event","filters":[],"listItems":[],"multiselect":false,"name":"class_bad_beat_event","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oBadBeatEvent","path":"objects/oBadBeatEvent/oBadBeatEvent.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oBadBeatEvent","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"class_hold_event","filters":[],"listItems":[],"multiselect":false,"name":"class_hold_event","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oHoldEvent","path":"objects/oHoldEvent/oHoldEvent.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oHoldEvent","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"class_randombeat_event","filters":[],"listItems":[],"multiselect":false,"name":"class_randombeat_event","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oRandombeatEvent","path":"objects/oRandombeatEvent/oRandombeatEvent.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oRandombeatEvent","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"class_bouldered_beat_event","filters":[],"listItems":[],"multiselect":false,"name":"class_bouldered_beat_event","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"oBoulderedBeat","path":"objects/oBoulderedBeat/oBoulderedBeat.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"oBoulderedBeat","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -1,0 +1,116 @@
+/// @description Handles Beat Behaviour
+/// @author Toby Benjamin Clark
+/// @date   14/01/2023
+
+/* Particles */
+// Define variables for smooth rotation
+var target_angle = 0;
+var easing = 0.45; // Adjust the easing value for desired smoothness
+
+if (rotation_direction == 1) {
+    target_angle = 10;
+} else {
+    target_angle = -10;
+}
+
+// Smoothly adjust the image_angle towards the target_angle
+var delta_angle = target_angle - image_angle;
+image_angle += delta_angle * easing;
+
+// Check if rotation direction needs to be changed
+if (rotation_direction == 1 && image_angle >= 10) {
+    rotation_direction = 0;
+} else if (rotation_direction == 0 && image_angle <= -10) {
+    rotation_direction = 1;
+}
+
+
+/* Game Pause Logic */
+if (parent.paused) paused = true;
+if (paused && !parent.paused)
+{
+        paused = false;
+        target_time += (parent.unpaused_time - parent.paused_time);
+} 
+
+
+/* Game Start Logic */
+if (parent.start_time != 0 && !set)
+{
+    set = true;
+    start_time = parent.start_time;
+    target_time = start_time + time;
+    moving = true;
+}
+
+
+/* Move Symbol if moving & not paused */
+if (moving && !paused && !dead)
+{
+	
+	/* Emit movement particles */
+	if(random(1) > 0.8 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
+	
+	/* Moving Logic */
+	// sx = starting x
+	// tx = final x
+	// Ensure current_time is within the bounds of 0 to target_time
+	var clamped_time = clamp(current_time, 0, target_time);
+
+	// Calculate the interpolation factor (a value between 0 and 1)
+	var t = clamped_time / target_time;
+
+	// Interpolate between sx and tx
+	x = lerp(sx, tx, t);
+	
+	
+    y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
+	
+	/* Symbol Death Transition */
+    if (y >= (parent.kill_line) || current_time >= target_time)
+	{
+		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol) and boulder == false)
+		{
+			/* Hit (Good!) */
+			part_particles_create(_ps, x, y, _ptype2, 30);
+			audio_play_sound(snd_metronome, 0, false);
+			ds_list_add(parent.combo_list, COMBO_BEAT);
+			parent.level_score += (100 * global.score_multiplier);
+			image_blend = make_color_rgb(100, 255, 100);
+		}
+		else
+		{
+			/* Fail */
+			part_particles_create(_ps, x, y, _ptype1, 25);
+			audio_play_sound(snd_vibrate, 0, false);
+			ds_list_clear(parent.combo_list);
+			image_blend = make_color_rgb(255, 100, 100);
+		}
+		
+		dead = true;
+	}
+}	
+
+
+
+/* Symbol Death Logic */
+if(dead)
+{
+	if(image_xscale > 0.2){image_xscale -= 0.02;}
+	if(image_yscale > 0.2){image_yscale -= 0.02;}
+	if(image_alpha > 0) image_alpha -= 0.005;
+	
+	moving = false;
+	y = y - 1;
+	if(x>room_width/2) x += 1;
+	else x -= 1;
+	if((x<0 || x>room_width) && (y<0 || y>room_height))
+	{
+		instance_destroy(self);
+	}
+}
+
+
+
+
+

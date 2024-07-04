@@ -23,7 +23,7 @@
             }
         },
         {
-            "event_type": "beat",
+            "event_type": "bouldered_beat",
             "event_data": {
                 "time": 13600,
                 "symbol": "CLOSED_FIST",
