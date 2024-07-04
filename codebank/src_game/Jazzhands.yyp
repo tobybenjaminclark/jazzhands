@@ -265,6 +265,7 @@
     {"id":{"name":"snd_ping_low","path":"sounds/snd_ping_low/snd_ping_low.yy",},},
     {"id":{"name":"snd_plop","path":"sounds/snd_plop/snd_plop.yy",},},
     {"id":{"name":"snd_record_scratch","path":"sounds/snd_record_scratch/snd_record_scratch.yy",},},
+    {"id":{"name":"snd_rock_destroy","path":"sounds/snd_rock_destroy/snd_rock_destroy.yy",},},
     {"id":{"name":"snd_vibrate","path":"sounds/snd_vibrate/snd_vibrate.yy",},},
     {"id":{"name":"logo_large","path":"sprites/logo_large/logo_large.yy",},},
     {"id":{"name":"logo_pallette","path":"sprites/logo_pallette/logo_pallette.yy",},},

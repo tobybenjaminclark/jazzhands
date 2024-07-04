@@ -2,6 +2,10 @@
 // You can write your code in this editor
 
 if(boulder == true){
+	
+	audio_play_sound(snd_rock_destroy, 1, false);
+	
+	// Copy pasted boilerplate from the particle system editor.
 	//ps_boulderexplode
 	var _ps = part_system_create();
 	part_system_draw_order(_ps, true);

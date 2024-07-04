@@ -115,6 +115,7 @@
     {"name":"snd_ping_low","order":2,"path":"sounds/snd_ping_low/snd_ping_low.yy",},
     {"name":"snd_plop","order":6,"path":"sounds/snd_plop/snd_plop.yy",},
     {"name":"snd_record_scratch","order":8,"path":"sounds/snd_record_scratch/snd_record_scratch.yy",},
+    {"name":"snd_rock_destroy","order":12,"path":"sounds/snd_rock_destroy/snd_rock_destroy.yy",},
     {"name":"snd_vibrate","order":11,"path":"sounds/snd_vibrate/snd_vibrate.yy",},
     {"name":"logo_pallette","order":1,"path":"sprites/logo_pallette/logo_pallette.yy",},
     {"name":"s_slider_bar","order":16,"path":"sprites/s_slider_bar/s_slider_bar.yy",},
