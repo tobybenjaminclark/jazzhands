@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"emit_rocks",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"emit_rocks",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

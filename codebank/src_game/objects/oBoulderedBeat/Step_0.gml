@@ -27,6 +27,18 @@ if (rotation_direction == 1 && image_angle >= 10) {
     rotation_direction = 1;
 }
 
+// Handle respositioning
+if(y + sprite_height > 0 && has_horizontal_shifted == false){
+	if (side == "LEFT"){
+		x = (room_width div 2) - 540;
+		sx = x;
+	}
+	else if (side == "RIGHT"){
+		x = (room_width div 2) + 540;
+		sx = x;
+	}
+	has_horizontal_shifted = true;
+}
 
 /* Game Pause Logic */
 if (parent.paused) paused = true;
@@ -54,14 +66,20 @@ if (moving && !paused && !dead)
 	/* Emit movement particles */
 	if(random(1) > 0.8 && y >= -32) part_particles_create(_ps2, x, y, _ptype12, 1);
 	
-	/* Moving Logic */
+	/* Horizontal Moving Logic */
 	// sx = starting x
 	// tx = final x
+	// Define the time at which the symbol should start moving
+	var activation_time = target_time - 5000;  // Example: start moving when 90% of target_time is reached
+
 	// Ensure current_time is within the bounds of 0 to target_time
 	var clamped_time = clamp(current_time, 0, target_time);
 
-	// Calculate the interpolation factor (a value between 0 and 1)
-	var t = clamped_time / target_time;
+	// Calculate the interpolation factor (a value between 0 and 1), starting from activation_time
+	var t = 0;
+	if (clamped_time >= activation_time) {
+	    t = (clamped_time - activation_time) / (target_time - activation_time);
+	}
 
 	// Interpolate between sx and tx
 	x = lerp(sx, tx, t);
@@ -85,6 +103,14 @@ if (moving && !paused && !dead)
 		{
 			/* Fail */
 			part_particles_create(_ps, x, y, _ptype1, 25);
+			
+			if(boulder == true){
+	
+				audio_play_sound(snd_rock_destroy, 1, false);
+				emit_rocks(x, y);
+				boulder = false;
+			}
+			
 			audio_play_sound(snd_vibrate, 0, false);
 			ds_list_clear(parent.combo_list);
 			image_blend = make_color_rgb(255, 100, 100);

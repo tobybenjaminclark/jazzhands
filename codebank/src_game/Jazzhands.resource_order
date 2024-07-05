@@ -100,6 +100,7 @@
     {"name":"rmTutorial","order":5,"path":"rooms/rmTutorial/rmTutorial.yy",},
     {"name":"create_new_save","order":3,"path":"scripts/create_new_save/create_new_save.yy",},
     {"name":"cutscene_scripts","order":4,"path":"scripts/cutscene_scripts/cutscene_scripts.yy",},
+    {"name":"emit_rocks","order":5,"path":"scripts/emit_rocks/emit_rocks.yy",},
     {"name":"get_hex_colour","order":4,"path":"scripts/get_hex_colour/get_hex_colour.yy",},
     {"name":"import_wav","order":1,"path":"scripts/import_wav/import_wav.yy",},
     {"name":"load_saves","order":2,"path":"scripts/load_saves/load_saves.yy",},

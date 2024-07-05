@@ -63,16 +63,17 @@ set = false;
 moving = false;
 dead = false;
 rotation_direction = 1;
+has_horizontal_shifted = false;
 
 /* Set x offset based on each side */
 tx = x - side_offset;
 if (side == "LEFT"){
 	tx = x - side_offset;
-	x = x - side_offset * 16;
+	x = x - side_offset * 32;
 }
 else if (side == "RIGHT"){
 	tx = x + side_offset;
-	x = x + side_offset * 16;
+	x = x + side_offset * 32;
 }
 
 sx = x;

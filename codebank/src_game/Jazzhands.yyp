@@ -246,6 +246,7 @@
     {"id":{"name":"rmTutorial","path":"rooms/rmTutorial/rmTutorial.yy",},},
     {"id":{"name":"create_new_save","path":"scripts/create_new_save/create_new_save.yy",},},
     {"id":{"name":"cutscene_scripts","path":"scripts/cutscene_scripts/cutscene_scripts.yy",},},
+    {"id":{"name":"emit_rocks","path":"scripts/emit_rocks/emit_rocks.yy",},},
     {"id":{"name":"get_hex_colour","path":"scripts/get_hex_colour/get_hex_colour.yy",},},
     {"id":{"name":"get_sprite_from_symbol","path":"scripts/get_sprite_from_symbol/get_sprite_from_symbol.yy",},},
     {"id":{"name":"import_wav","path":"scripts/import_wav/import_wav.yy",},},
