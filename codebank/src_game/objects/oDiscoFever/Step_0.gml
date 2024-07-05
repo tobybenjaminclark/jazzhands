@@ -1,4 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-image_angle += 3;
+var multiplier = 1;
+with(oStageSpawnerBase){
+	multiplier += (level_score/100);	
+}
+
+image_angle += multiplier;

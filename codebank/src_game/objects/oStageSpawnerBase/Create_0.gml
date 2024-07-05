@@ -74,7 +74,7 @@ sound = audio_create_stream(filepath_replace_last_element(beatmap_path, beatmap_
 /* Create Beat Events */
 for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++){
 	var reference_to_this = self;
-	var lyr = "SuperGlowLayer"
+	var lyr = "Instances"
 	switch(beatmap_structure.events[event_index].event_type){
 		case "beat":
 			var inst = instance_create_layer(x,y,lyr, class_beat_event,{
