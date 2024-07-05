@@ -15,8 +15,6 @@ with(oStageSpawnerBase){
 }
 if (_return) return;
 
-draw_self();
-draw_set_font(fntDebug);
 
 
 var _left_hand = 0;

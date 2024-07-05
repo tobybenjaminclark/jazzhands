@@ -10,9 +10,6 @@ try{
 catch(e){
 }
 
-
-draw_text(x, y, string(global.score_multiplier));
-
 /* Pre intro draw */
 if(intro_delay > 0) {
     var x_scale = room_width / sprite_get_width(background_sprite);
