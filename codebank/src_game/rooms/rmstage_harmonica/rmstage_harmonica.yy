@@ -22,6 +22,7 @@
     {"name":"inst_1E8FD411","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
     {"name":"inst_35D453C4","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
     {"name":"inst_294325B","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
+    {"name":"inst_355F15E0","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -65,10 +66,11 @@
         {"$GMRInstance":"v1","%Name":"inst_1E8FD411","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E8FD411","objectId":{"name":"oConsoleLight","path":"objects/oConsoleLight/oConsoleLight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.797024,"scaleY":0.7506118,"x":918.0,"y":774.057,},
         {"$GMRInstance":"v1","%Name":"inst_35D453C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35D453C4","objectId":{"name":"oConsoleLightWeird1","path":"objects/oConsoleLightWeird1/oConsoleLightWeird1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.805597,"scaleY":0.7931646,"x":982.0,"y":773.057,},
         {"$GMRInstance":"v1","%Name":"inst_294325B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_294325B","objectId":{"name":"oConsoleLightWeird1","path":"objects/oConsoleLightWeird1/oConsoleLightWeird1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-0.77263,"scaleY":0.7931646,"x":931.3093,"y":773.057,},
+        {"$GMRInstance":"v1","%Name":"inst_355F15E0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_355F15E0","objectId":{"name":"oDiscoFever","path":"objects/oDiscoFever/oDiscoFever.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":953.0,"y":471.0,},
       ],"layers":[],"name":"SuperGlowLayer","properties":[
-        {"name":"g_GlowRadius","type":0,"value":"1024",},
+        {"name":"g_GlowRadius","type":0,"value":"833",},
         {"name":"g_GlowQuality","type":0,"value":"5",},
-        {"name":"g_GlowIntensity","type":0,"value":"0.725",},
+        {"name":"g_GlowIntensity","type":0,"value":"0.525",},
         {"name":"g_GlowGamma","type":0,"value":"0.65",},
         {"name":"g_GlowAlpha","type":0,"value":"1",},
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
