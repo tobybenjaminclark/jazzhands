@@ -284,6 +284,7 @@
     {"id":{"name":"sprCharacter","path":"sprites/sprCharacter/sprCharacter.yy",},},
     {"id":{"name":"sprCogRecord","path":"sprites/sprCogRecord/sprCogRecord.yy",},},
     {"id":{"name":"sprColorSelector","path":"sprites/sprColorSelector/sprColorSelector.yy",},},
+    {"id":{"name":"sprConsoleBase","path":"sprites/sprConsoleBase/sprConsoleBase.yy",},},
     {"id":{"name":"sprConsoleCenter","path":"sprites/sprConsoleCenter/sprConsoleCenter.yy",},},
     {"id":{"name":"sprConsoleLight","path":"sprites/sprConsoleLight/sprConsoleLight.yy",},},
     {"id":{"name":"sprController","path":"sprites/sprController/sprController.yy",},},

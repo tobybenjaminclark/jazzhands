@@ -1,9 +1,12 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
 if(global.in_cutscene){
 	return;	
 }
+
+draw_self();
 
 var _killline = 0;
 var _return = false;
@@ -41,7 +44,7 @@ switch(global.left_hand)
 	default:
 		_left_hand = sprUnknownSymbol;
 }		
-draw_sprite(_left_hand, 0, x - 100, _killline);
+draw_sprite_ext(_left_hand, 0, x - 154, _killline - 25, 0.7, 0.7, 0, c_white, 1);
 
 var _left_hand = 0;
 switch(global.right_hand)
@@ -67,4 +70,4 @@ switch(global.right_hand)
 	default:
 		_left_hand = sprUnknownSymbol;
 }		
-draw_sprite(_left_hand, 0, x + 100, _killline);
+draw_sprite_ext(_left_hand, 0, x + 154, _killline - 25, 0.7, 0.7, 0, c_white, 1);

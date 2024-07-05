@@ -74,9 +74,10 @@ sound = audio_create_stream(filepath_replace_last_element(beatmap_path, beatmap_
 /* Create Beat Events */
 for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++){
 	var reference_to_this = self;
+	var lyr = "SuperGlowLayer"
 	switch(beatmap_structure.events[event_index].event_type){
 		case "beat":
-			var inst = instance_create_layer(x,y,layer, class_beat_event,{
+			var inst = instance_create_layer(x,y,lyr, class_beat_event,{
 				parent: reference_to_this,
 				time: real(beatmap_structure.events[event_index].event_data.time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
@@ -88,7 +89,7 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		break;
 		
 		case "randombeat":
-			var inst = instance_create_layer(x,y,layer, class_randombeat_event,{
+			var inst = instance_create_layer(x,y,lyr, class_randombeat_event,{
 				parent: reference_to_this,
 				time: real(beatmap_structure.events[event_index].event_data.time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
@@ -100,7 +101,7 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		break;
 		
 		case "bouldered_beat":
-			var inst = instance_create_layer(x,y,layer, class_bouldered_beat_event,{
+			var inst = instance_create_layer(x,y,lyr, class_bouldered_beat_event,{
 				parent: reference_to_this,
 				time: real(beatmap_structure.events[event_index].event_data.time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
@@ -112,7 +113,7 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		break;
 		
 		case "bad_beat":
-			var inst = instance_create_layer(x,y,layer, class_bad_beat_event,{
+			var inst = instance_create_layer(x,y,lyr, class_bad_beat_event,{
 				parent: reference_to_this,
 				time: real(beatmap_structure.events[event_index].event_data.time),
 				side: string(beatmap_structure.events[event_index].event_data.side),
@@ -124,7 +125,7 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		break;
 		
 		case "hold":
-			var inst = instance_create_layer(x,y,layer, class_hold_event,{
+			var inst = instance_create_layer(x,y,lyr, class_hold_event,{
 				parent: reference_to_this,
 				start_time: real(beatmap_structure.events[event_index].event_data.start_time),
 				end_time: real(beatmap_structure.events[event_index].event_data.end_time),

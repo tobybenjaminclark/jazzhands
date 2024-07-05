@@ -8,8 +8,8 @@
   "name":"oCharacter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Base",
+    "path":"folders/Objects/Stage Objects/Base.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprCharacter",
-    "path":"sprites/sprCharacter/sprCharacter.yy",
+    "name":"sprConsoleBase",
+    "path":"sprites/sprConsoleBase/sprConsoleBase.yy",
   },
   "spriteMaskId":null,
   "visible":true,
