@@ -38,16 +38,7 @@ if(intro_delay > 0) {
 
 
 
-/* Draw game (if in game) */
-if(!global.in_cutscene && !paused && watched_cutscene == true){
-	draw_set_font(fntScore);
-	// draw_text(x, y, string(paused_time) + "::" + string(unpaused_time) + " -> " + string(paused_time - unpaused_time));
-	
-	draw_text(x, y+420, string(level_score));
-	
-	draw_set_font(fntRaananaSmall);
-	draw_text(x, y+450, "Power");
-}
+
 
 
 
