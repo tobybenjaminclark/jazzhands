@@ -13,11 +13,7 @@ with(oStageSpawnerBase){
 	watched_cut = watched_cutscene;
 }
 
-
-/* Draw game (if in game) */
-if(!global.in_cutscene && !psd && watched_cut == true){
-	draw_set_halign(fa_center);
-}
-else if(psd){
-		
-}
+draw_set_font(fntAlarmClock);
+draw_set_halign(fa_center);
+draw_set_color(#f8c53a)
+draw_text(x, y + 70, string(lvl_score));

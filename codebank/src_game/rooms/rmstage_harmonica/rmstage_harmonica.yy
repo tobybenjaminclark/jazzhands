@@ -23,6 +23,7 @@
     {"name":"inst_35D453C4","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
     {"name":"inst_294325B","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
     {"name":"inst_355F15E0","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
+    {"name":"inst_69E9F093","path":"rooms/rmstage_harmonica/rmstage_harmonica.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -66,6 +67,7 @@
         {"$GMRInstance":"v1","%Name":"inst_1E8FD411","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1E8FD411","objectId":{"name":"oConsoleLight","path":"objects/oConsoleLight/oConsoleLight.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.797024,"scaleY":0.7506118,"x":918.0,"y":774.057,},
         {"$GMRInstance":"v1","%Name":"inst_35D453C4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35D453C4","objectId":{"name":"oConsoleLightWeird1","path":"objects/oConsoleLightWeird1/oConsoleLightWeird1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.805597,"scaleY":0.7931646,"x":982.0,"y":773.057,},
         {"$GMRInstance":"v1","%Name":"inst_294325B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_294325B","objectId":{"name":"oConsoleLightWeird1","path":"objects/oConsoleLightWeird1/oConsoleLightWeird1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-0.77263,"scaleY":0.7931646,"x":931.3093,"y":773.057,},
+        {"$GMRInstance":"v1","%Name":"inst_69E9F093","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_69E9F093","objectId":{"name":"oPower","path":"objects/oPower/oPower.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.8610481,"scaleY":0.86104816,"x":959.56946,"y":240.70157,},
       ],"layers":[],"name":"SuperGlowLayer","properties":[
         {"name":"g_GlowRadius","type":0,"value":"1024",},
         {"name":"g_GlowQuality","type":0,"value":"5.7",},

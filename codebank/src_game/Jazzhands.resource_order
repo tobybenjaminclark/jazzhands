@@ -35,6 +35,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fntAlarmClock","order":11,"path":"fonts/fntAlarmClock/fntAlarmClock.yy",},
     {"name":"fntCutsceneHeading","order":5,"path":"fonts/fntCutsceneHeading/fntCutsceneHeading.yy",},
     {"name":"fntCutsceneText","order":6,"path":"fonts/fntCutsceneText/fntCutsceneText.yy",},
     {"name":"fntCutsceneTiny","order":10,"path":"fonts/fntCutsceneTiny/fntCutsceneTiny.yy",},
@@ -67,6 +68,7 @@
     {"name":"oLabelRight","order":8,"path":"objects/oLabelRight/oLabelRight.yy",},
     {"name":"oMouseNotes","order":12,"path":"objects/oMouseNotes/oMouseNotes.yy",},
     {"name":"oPixelateReduce","order":13,"path":"objects/oPixelateReduce/oPixelateReduce.yy",},
+    {"name":"oPower","order":13,"path":"objects/oPower/oPower.yy",},
     {"name":"oPowerball","order":7,"path":"objects/oPowerball/oPowerball.yy",},
     {"name":"oRadio","order":2,"path":"objects/oRadio/oRadio.yy",},
     {"name":"oRandombeatEvent","order":5,"path":"objects/oRandombeatEvent/oRandombeatEvent.yy",},
@@ -151,6 +153,7 @@
     {"name":"sprPallette","order":2,"path":"sprites/sprPallette/sprPallette.yy",},
     {"name":"sprPaused","order":11,"path":"sprites/sprPaused/sprPaused.yy",},
     {"name":"sprPlanetRecord1","order":5,"path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},
+    {"name":"sprPower","order":4,"path":"sprites/sprPower/sprPower.yy",},
     {"name":"sprRecord","order":6,"path":"sprites/sprRecord/sprRecord.yy",},
     {"name":"sprRecordCover","order":9,"path":"sprites/sprRecordCover/sprRecordCover.yy",},
     {"name":"sprRockPallette","order":1,"path":"sprites/sprRockPallette/sprRockPallette.yy",},

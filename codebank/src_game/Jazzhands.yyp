@@ -171,6 +171,7 @@
   },
   "name":"Jazzhands",
   "resources":[
+    {"id":{"name":"fntAlarmClock","path":"fonts/fntAlarmClock/fntAlarmClock.yy",},},
     {"id":{"name":"fntCutsceneHeading","path":"fonts/fntCutsceneHeading/fntCutsceneHeading.yy",},},
     {"id":{"name":"fntCutsceneText","path":"fonts/fntCutsceneText/fntCutsceneText.yy",},},
     {"id":{"name":"fntCutsceneTiny","path":"fonts/fntCutsceneTiny/fntCutsceneTiny.yy",},},
@@ -207,6 +208,7 @@
     {"id":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},},
     {"id":{"name":"oMouseNotes","path":"objects/oMouseNotes/oMouseNotes.yy",},},
     {"id":{"name":"oPixelateReduce","path":"objects/oPixelateReduce/oPixelateReduce.yy",},},
+    {"id":{"name":"oPower","path":"objects/oPower/oPower.yy",},},
     {"id":{"name":"oPowerball","path":"objects/oPowerball/oPowerball.yy",},},
     {"id":{"name":"oRadio","path":"objects/oRadio/oRadio.yy",},},
     {"id":{"name":"oRandombeatEvent","path":"objects/oRandombeatEvent/oRandombeatEvent.yy",},},
@@ -303,6 +305,7 @@
     {"id":{"name":"sprPallette","path":"sprites/sprPallette/sprPallette.yy",},},
     {"id":{"name":"sprPaused","path":"sprites/sprPaused/sprPaused.yy",},},
     {"id":{"name":"sprPlanetRecord1","path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},},
+    {"id":{"name":"sprPower","path":"sprites/sprPower/sprPower.yy",},},
     {"id":{"name":"sprRadio","path":"sprites/sprRadio/sprRadio.yy",},},
     {"id":{"name":"sprRecord","path":"sprites/sprRecord/sprRecord.yy",},},
     {"id":{"name":"sprRecordCover","path":"sprites/sprRecordCover/sprRecordCover.yy",},},
