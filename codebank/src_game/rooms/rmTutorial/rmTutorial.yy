@@ -10,6 +10,7 @@
     {"name":"inst_7038B01D","path":"rooms/rmTutorial/rmTutorial.yy",},
     {"name":"inst_13C55595","path":"rooms/rmTutorial/rmTutorial.yy",},
     {"name":"inst_41F5E619","path":"rooms/rmTutorial/rmTutorial.yy",},
+    {"name":"inst_4385B188","path":"rooms/rmTutorial/rmTutorial.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -35,15 +36,16 @@
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_12634979","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_12634979","objectId":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"propertyId":{"name":"spr","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"resource":{"name":"sprSymbolOpenPalmBase","path":"sprites/sprSymbolOpenPalmBase/sprSymbolOpenPalmBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprSymbolOpenPalmBase",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.74999994,"scaleY":0.74999994,"x":224.0,"y":416.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.74999994,"scaleY":0.74999994,"x":544.0,"y":288.0,},
         {"$GMRInstance":"v1","%Name":"inst_7038B01D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7038B01D","objectId":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"propertyId":{"name":"symbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"CLOSED_FIST",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"propertyId":{"name":"spr","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},"resource":{"name":"sprSymbolClosedFistBase","path":"sprites/sprSymbolClosedFistBase/sprSymbolClosedFistBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sprSymbolClosedFistBase",},
-          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.74999994,"scaleY":0.74999994,"x":352.0,"y":416.0,},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.74999994,"scaleY":0.74999994,"x":800.0,"y":288.0,},
         {"$GMRInstance":"v1","%Name":"inst_41F5E619","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41F5E619","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelData","path":"objects/oLabel/oLabel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Tutorial",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabel/oLabel.yy",},"resource":{"name":"fntRaananaTiny","path":"fonts/fntRaananaTiny/fntRaananaTiny.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntRaananaTiny",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.61956173,"scaleY":0.6286119,"x":682.38043,"y":113.0,},
+        {"$GMRInstance":"v1","%Name":"inst_4385B188","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4385B188","objectId":{"name":"oTutorialCharacter","path":"objects/oTutorialCharacter/oTutorialCharacter.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.628329,"scaleY":0.62832904,"x":672.0,"y":576.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"DiscEffectLayer","depth":600,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"DiscEffectLayer","properties":[
         {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},
@@ -113,7 +115,7 @@
         {"name":"g_CloudShadeFade","type":0,"value":"31",},
         {"name":"g_CloudTexture","type":2,"value":"_filter_clouds_texture",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4282646528,"depth":1200,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4288256409,"depth":1200,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"sprBar","path":"sprites/sprBar/sprBar.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"rmTutorial",
   "parent":{
