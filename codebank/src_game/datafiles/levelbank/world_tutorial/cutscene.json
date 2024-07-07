@@ -23,13 +23,13 @@
             "background": "cutscenedata/bar.png",
             "foreground": "cutscenedata/player_mojo.png",
             "heading": "Mojo",
-            "body": "This newfound technology can be touchy, so stay cool and patient with it. Once you got the flow, you'll be rollin' solo like a boss in no time..."
+            "body": "The beatdeck will project what gesture it thinks each hand is throwing, try to keep 'em up at head height, about shoulders-width apart and in plain view."
         },
         {
             "background": "cutscenedata/bar.png",
             "foreground": "cutscenedata/player_mojo.png",
             "heading": "Mojo",
-            "body": "Alright, let's get this show on the road! Throw up both hands, keep 'em shoulder-width apart, palms open and facing the camera. Let's see what you got!"
+            "body": "This newfound technology can be touchy, so stay cool and patient with it. Once you got the flow, you'll be rollin' solo like a boss in no time... let's get this show on the road! Throw up both hands, keep 'em shoulder-width apart, palms open and facing the camera."
         }
     ]
 }
