@@ -30,13 +30,26 @@ paused = false;
 set = false;
 moving = false;
 dead = false;
+rotation_direction = 1;
+has_horizontal_shifted = false;
 
-// Set x offset based on each side
-if (side == "LEFT") x = x - side_offset;
-else if (side == "RIGHT") x = x + side_offset;
+/* Set x offset based on each side */
+tx = x - side_offset;
+if (side == "LEFT"){
+	tx = x - side_offset;
+	x = x - side_offset * 32;
+}
+else if (side == "RIGHT"){
+	tx = x + side_offset;
+	x = x + side_offset * 32;
+}
+
+sx = x;
+sy = y;
 
 /* Initial Y Position */
 y = (parent.kill_line - (sprite_height / 2)) - ((current_time + time) - current_time)
+
 
 /* Red to symbolize bad */
 image_blend = make_color_rgb(255, 100, 100);
