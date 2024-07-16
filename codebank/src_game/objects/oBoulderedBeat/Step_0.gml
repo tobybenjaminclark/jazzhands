@@ -98,6 +98,7 @@ if (moving && !paused && !dead)
 			ds_list_add(parent.combo_list, COMBO_BEAT);
 			parent.level_score += (100 * global.score_multiplier);
 			image_blend = make_color_rgb(100, 255, 100);
+			hit_beat_lights(side, c_lime);
 		}
 		else
 		{
@@ -114,6 +115,7 @@ if (moving && !paused && !dead)
 			audio_play_sound(snd_vibrate, 0, false);
 			ds_list_clear(parent.combo_list);
 			image_blend = make_color_rgb(255, 100, 100);
+			hit_beat_lights(side, c_red);
 		}
 		
 		dead = true;
