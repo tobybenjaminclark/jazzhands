@@ -35,7 +35,7 @@
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"parent","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"symbol","filters":[],"listItems":[],"multiselect":false,"name":"symbol","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"None","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"side_offset","filters":[],"listItems":[],"multiselect":false,"name":"side_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"side_offset","filters":[],"listItems":[],"multiselect":false,"name":"side_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"152","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

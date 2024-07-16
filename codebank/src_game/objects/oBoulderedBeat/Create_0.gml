@@ -55,6 +55,8 @@ part_type_life(_ptype2, 80, 80);
 boulder = true;
 boulder_rot = 0;
 
+
+/* Initial Variable Setup */
 start_time = 0;
 target_time = 0;
 movement_factor = 6;
@@ -81,8 +83,6 @@ sy = y;
 
 /* Initial Y Position */
 y = (parent.kill_line - (sprite_height / 2)) - ((current_time + time) - current_time)
-
-
 
 
 

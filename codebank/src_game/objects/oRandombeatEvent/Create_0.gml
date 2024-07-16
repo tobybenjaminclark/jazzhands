@@ -56,6 +56,9 @@ part_type_alpha3(_ptype2, 1, 1, 1);
 part_type_blend(_ptype2, false);
 part_type_life(_ptype2, 80, 80);
 
+original_sprite = sprite_index;
+time_since_last_symbol_change = 10;
+
 /* Initial Variable Setup */
 start_time = 0;
 target_time = 0;
@@ -64,19 +67,18 @@ paused = false;
 set = false;
 moving = false;
 dead = false;
-
-original_sprite = sprite_index;
-time_since_last_symbol_change = 10;
+rotation_direction = 1;
+has_horizontal_shifted = false;
 
 /* Set x offset based on each side */
 tx = x - side_offset;
 if (side == "LEFT"){
 	tx = x - side_offset;
-	x = x - side_offset * 16;
+	x = x - side_offset * 32;
 }
 else if (side == "RIGHT"){
 	tx = x + side_offset;
-	x = x + side_offset * 16;
+	x = x + side_offset * 32;
 }
 
 sx = x;

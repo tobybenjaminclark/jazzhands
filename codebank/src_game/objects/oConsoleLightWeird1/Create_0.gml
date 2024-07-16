@@ -1,6 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+flash_timer = 0;
+flash_color = c_red;
+
 if(random(1) > 0.3){
 	image_blend = c_aqua;	
 }
@@ -10,3 +13,5 @@ else if(random(1) > 0.3){
 else{
 	image_blend = c_purple;	
 }
+
+original_color = image_blend;

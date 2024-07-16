@@ -82,7 +82,6 @@ if (moving && !paused && !dead)
 	// Interpolate between sx and tx
 	x = lerp(sx, tx, t);
 	
-	
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 	
 	/* Symbol Death Transition */
