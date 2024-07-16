@@ -29,6 +29,11 @@ switch(tutorial_state){
 				text_object = instance_create_layer(x, y, "Instances", oScreenText, {heading: "Mojo", body: "This newfound technology can be touchy, so stay cool and patient with it. Once you got the flow, you'll be rollin' solo like a boss in no time! let's get this show on the road! Throw up both hands, keep 'em shoulder-width apart, palms open and facing the camera."})
 				tutorial_substate = 5;
 				break;
+			case 6:
+				instance_destroy(text_object);
+				text_object = instance_create_layer(x, y, "Instances", oScreenText, {heading: "Mojo", body: "Great job!"})
+				tutorial_substate = 7;
+				break;
 				
 			default:
 				break;
