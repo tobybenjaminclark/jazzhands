@@ -4,14 +4,14 @@
 flash_timer = 0;
 flash_color = c_red;
 
-if(random(1) > 0.3){
-	image_blend = c_aqua;	
+if(type == -1){
+	image_blend = c_orange;	
 }
-else if(random(1) > 0.3){
-	image_blend = c_orange;
+else if(type == 1){
+	image_blend = c_purple;	
 }
 else{
-	image_blend = c_purple;	
+	image_blend = c_dkgray;
 }
 
 original_color = image_blend;
