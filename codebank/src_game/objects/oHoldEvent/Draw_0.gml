@@ -11,7 +11,15 @@ if(colliding) draw_set_color(c_green);
 else if(missed) draw_set_color(c_red);
 else draw_set_color(c_white);
 draw_set_alpha(0.4)
-//draw_rectangle(x - 10, (y + sprite_width), x + 10,  (y + sprite_width) - ((end_time - start_time) / movement_factor), false);
+
+draw_line(x, y, lx, ly);
+draw_line(x + 1, y, lx + 1, ly);
+draw_line(x - 1, y, lx - 1, ly);
+draw_line(x + 2, y, lx + 2, ly);
+draw_line(x - 2, y, lx - 2, ly);
+draw_line(x + 3, y, lx + 3, ly);
+draw_line(x - 3, y, lx - 3, ly);
+
 draw_set_alpha(1)
 
 draw_set_color(c_white);
