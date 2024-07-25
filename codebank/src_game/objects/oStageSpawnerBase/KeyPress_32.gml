@@ -9,6 +9,8 @@ if(watched_cutscene && (!global.in_cutscene) && started == false){
 	start_time = current_time + 3000;
 	alt_start_time = start_time;
 	started = true;
+	
+	end_time = start_time + (sound_len * 1000)
 }
 
 

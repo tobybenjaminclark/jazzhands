@@ -14,7 +14,7 @@ paused = false;
 unpaused_time = 0;
 paused_time = 0;
 watched_cutscene = false;
-
+has_shown_end_screen = false;
 alt_start_time = start_time;
 last_time = alt_start_time;
 blip_x = 0;
@@ -69,6 +69,8 @@ if(!beatmap_valid){
 
 /* Load Song */
 sound = audio_create_stream(filepath_replace_last_element(beatmap_path, beatmap_structure.level_data.song));
+sound_len = audio_sound_length(sound);
+end_time = current_time + 60000
 
 
 /* Create Beat Events */
