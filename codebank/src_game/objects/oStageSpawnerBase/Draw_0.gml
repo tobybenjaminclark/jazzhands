@@ -30,7 +30,7 @@ if(intro_delay > 0) {
     
     draw_set_font(fntCutsceneHeading);
     draw_set_halign(fa_center);
-    draw_text(room_width div 2, (room_height div 2) + 250, level_description);
+    draw_text(room_width div 2, (room_height div 2) + 280, level_description);
     
     draw_set_color(c_white);
     draw_line(0, (room_height div 2) + 70, room_width, (room_height div 2) + 70);

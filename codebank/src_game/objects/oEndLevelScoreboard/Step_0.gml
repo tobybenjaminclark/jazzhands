@@ -2,7 +2,16 @@
 // You can write your code in this editor
 
 /* Increment current step */
+current_step++;
 
-if(iaccuracy_display < iaccuracy && current_step % 15 == 0){
-	iaccuracy_display += 1;
+/* increment display step (if u can) */
+if(current_step % 50 == 0){
+	display_step += 1;	
+}
+
+
+if(display_step >= 4){
+	if(iaccuracy_display < iaccuracy && current_step % 20 == 0){
+		iaccuracy_display += 1;
+	}
 }
