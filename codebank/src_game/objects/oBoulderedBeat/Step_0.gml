@@ -93,6 +93,7 @@ if (moving && !paused && !dead)
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol) and boulder == false)
 		{
 			/* Hit (Good!) */
+			global.hit_beats += 1;
 			part_particles_create(_ps, x, y, _ptype2, 30);
 			audio_play_sound(snd_metronome, 0, false);
 			ds_list_add(parent.combo_list, COMBO_BEAT);

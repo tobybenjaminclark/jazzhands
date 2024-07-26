@@ -97,6 +97,7 @@ if (moving && !paused && !dead)
 		else
 		{
 			/* Didn't hit (good) */
+			global.hit_beats += 1;
 			parent.level_score += (100 * global.score_multiplier);
 			ds_list_add(parent.combo_list, COMBO_ANTIBEAT);
 			image_blend = make_color_rgb(100, 255, 100);

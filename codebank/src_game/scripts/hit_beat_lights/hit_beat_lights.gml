@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function hit_beat_lights(side, color)
 {
+	
 	with(oConsoleLight){
 		if(type == -1 && side == "LEFT"){
 			flash_timer = 10;

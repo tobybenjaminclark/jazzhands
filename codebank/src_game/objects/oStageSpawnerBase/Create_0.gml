@@ -6,6 +6,7 @@
 /* Score Variables */
 level_score = 0;
 started = false;
+global.hit_beats = 0;
 
 
 /* Started Variables */
@@ -73,10 +74,13 @@ sound_len = audio_sound_length(sound);
 end_time = current_time + 60000
 
 
+global.total_beats = 0;
+
 /* Create Beat Events */
 for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++){
 	var reference_to_this = self;
 	var lyr = "Instances"
+	global.total_beats += 1;
 	switch(beatmap_structure.events[event_index].event_type){
 		case "beat":
 			var inst = instance_create_layer(x,y,lyr, class_beat_event,{
