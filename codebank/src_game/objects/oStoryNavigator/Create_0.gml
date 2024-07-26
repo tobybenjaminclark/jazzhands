@@ -103,7 +103,7 @@ for (var i = 0; i < 5; i++;)
         y_min: (y + lengthdir_y(400, 90)),
         y_mid: ( (y + lengthdir_y(400, 270)) + (y + lengthdir_y(400, 90))) / 2,
         image_index: i mod 5,
-        spin_speed: 2,
+        spin_speed: 0.5,
         title: titles[i],
         levels: _levels,
         names: _names,

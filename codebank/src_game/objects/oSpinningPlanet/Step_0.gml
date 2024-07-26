@@ -26,8 +26,8 @@ if(parent.moving)
 	y = (parent.y + lengthdir_y(400, angle_step));
 	
 	/* Update image scale depenent on depth (enhances background/foreground) */
-	image_yscale = (-0.10 + 0.8 * (logistic_curve(y_min, y_max, y)))
-	image_xscale = (-0.10 + 0.8 * (logistic_curve(y_min, y_max, y)))
+	image_yscale = (-0.10 + 0.6 * (logistic_curve(y_min, y_max, y)))
+	image_xscale = (-0.10 + 0.6 * (logistic_curve(y_min, y_max, y)))
 	
 	/* Change layer dependent on position, so that central object occludes background planets */
 	if(y > y_mid) self.layer = layer_get_id("ForegroundInstances");

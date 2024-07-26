@@ -71,7 +71,7 @@ if(!beatmap_valid){
 /* Load Song */
 sound = audio_create_stream(filepath_replace_last_element(beatmap_path, beatmap_structure.level_data.song));
 sound_len = audio_sound_length(sound);
-end_time = current_time + 60000
+end_time = current_time + 99999999999999;
 
 
 global.total_beats = 0;
