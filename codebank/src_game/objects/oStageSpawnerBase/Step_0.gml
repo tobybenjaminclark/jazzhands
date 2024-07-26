@@ -34,6 +34,6 @@ if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP"){
 /* End of song! */
 if(current_time > end_time && !has_shown_end_screen){
 	has_shown_end_screen = true;
-	audio_play_sound(level_win, 1, false);
-	instance_create_layer(x, y, "Instances", oEndLevelDisplay);	
+	var _s = self;
+	instance_create_layer(x, y, "InstancesNoGlow", oEndLevelScoreboard, {parent: _s});	
 }

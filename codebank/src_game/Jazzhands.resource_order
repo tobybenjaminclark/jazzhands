@@ -65,6 +65,7 @@
     {"name":"oCSText","order":3,"path":"objects/oCSText/oCSText.yy",},
     {"name":"oDiscoFever","order":12,"path":"objects/oDiscoFever/oDiscoFever.yy",},
     {"name":"oEndLevelDisplay","order":14,"path":"objects/oEndLevelDisplay/oEndLevelDisplay.yy",},
+    {"name":"oEndLevelScoreboard","order":15,"path":"objects/oEndLevelScoreboard/oEndLevelScoreboard.yy",},
     {"name":"oHoldEvent","order":3,"path":"objects/oHoldEvent/oHoldEvent.yy",},
     {"name":"oLabel","order":1,"path":"objects/oLabel/oLabel.yy",},
     {"name":"oLabelLeft","order":7,"path":"objects/oLabelLeft/oLabelLeft.yy",},

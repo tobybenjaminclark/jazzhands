@@ -207,6 +207,7 @@
     {"id":{"name":"oCSText","path":"objects/oCSText/oCSText.yy",},},
     {"id":{"name":"oDiscoFever","path":"objects/oDiscoFever/oDiscoFever.yy",},},
     {"id":{"name":"oEndLevelDisplay","path":"objects/oEndLevelDisplay/oEndLevelDisplay.yy",},},
+    {"id":{"name":"oEndLevelScoreboard","path":"objects/oEndLevelScoreboard/oEndLevelScoreboard.yy",},},
     {"id":{"name":"oHoldEvent","path":"objects/oHoldEvent/oHoldEvent.yy",},},
     {"id":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},},
     {"id":{"name":"oLabelLeft","path":"objects/oLabelLeft/oLabelLeft.yy",},},
