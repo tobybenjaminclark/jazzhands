@@ -13,5 +13,15 @@ if(current_step % 50 == 0){
 if(display_step >= 4){
 	if(iaccuracy_display < iaccuracy && current_step % 3 == 0){
 		iaccuracy_display += 1;
+		_p = 1;
+		if(iaccuracy_display > pass_accuracy) _p = 2;
+		audio_play_sound(snd_metronome, 0, false, 0.5, 0, _p);
+	}
+	else if(iaccuracy_display >= iaccuracy && !has_played_end_accuracy_seq){
+		has_played_end_accuracy_seq = true;
+		if(iaccuracy >= pass_accuracy){
+			audio_play_sound(sndWinLevel, 0, false);
+		}
+		else audio_play_sound(sndLoseLevel, 0, false);
 	}
 }

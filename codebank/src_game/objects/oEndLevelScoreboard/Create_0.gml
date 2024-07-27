@@ -4,7 +4,7 @@
 /* Log current step */
 current_step = 0;
 pass_accuracy = 60;
-
+has_played_end_accuracy_seq = false;
 display_step = 0;
 
 /* Calculate accuracy etc... determine if the player won or failed? */

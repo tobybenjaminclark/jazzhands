@@ -5,7 +5,7 @@ draw_set_color(c_black);
 draw_rectangle(0, 0, room_width, room_height, false);
 
 draw_set_color(c_white);
-draw_set_font(fntMenuTitle);
+draw_set_font(fntScoreboard);
 draw_set_halign(fa_center);
 draw_text(room_width div 2, 100, parent.beatmap_structure.level_data.level_name);
 draw_text(room_width div 2, 300, "Level Complete");

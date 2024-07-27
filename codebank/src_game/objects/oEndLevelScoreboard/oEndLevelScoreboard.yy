@@ -10,8 +10,8 @@
   "name":"oEndLevelScoreboard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Base",
-    "path":"folders/Objects/Stage Objects/Base.yy",
+    "name":"EndOfLevel",
+    "path":"folders/Objects/Stage Objects/Base/EndOfLevel.yy",
   },
   "parentObjectId":null,
   "persistent":false,
