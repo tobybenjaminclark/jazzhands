@@ -14,27 +14,6 @@
             "heading": "Traveller",
             "body": "Everyone has a place in the universal symphony, Discord. Now, let's place the final amp and complete our mission.",
             "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "The ground, it's shaking! The planet is falling out of balance!!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "The Grand Composer's reign is coming to an end. With all four platforms united, it's finally time to face him and bring true harmony to the universe.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Let's groove, Traveller. The final stage awaits, and the universe is ready to hear our beat!",
-            "type": "dialogue"
         }
     ]
 }
