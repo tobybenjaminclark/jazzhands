@@ -141,6 +141,7 @@ for (var i = 0; i < 5; i++;)
         image_index: i mod 5,
         spin_speed: 0.5,
         title: titles[i],
+		world: i,
         levels: _levels,
         names: _names,
         description: descriptions[i]

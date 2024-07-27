@@ -13,6 +13,7 @@ if(is_stopper)
 		if(angle == 0) break;
 	}
 	global.current_beatmap = levels[index];
+	global.current_level = "W" + string(world) + "-L" + string(index);
 	
 	global.queued_room = rmstage_harmonica;
 }

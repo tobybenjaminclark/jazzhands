@@ -10,7 +10,7 @@ display_step = -1;
 
 /* Calculate accuracy etc... determine if the player won or failed? */
 accuracy = global.hit_beats / global.total_beats; 
-iaccuracy = round(accuracy * 100) * 5
+iaccuracy = round(accuracy * 100);
 
 iaccuracy_display = 0;
 

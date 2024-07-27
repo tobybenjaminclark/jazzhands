@@ -2,6 +2,7 @@
 // Globals
 global.in_cutscene = false;
 global.score_multiplier = 1;
+global.current_level = "";
 
 // Cutscene types
 #macro CS_NONE 1
