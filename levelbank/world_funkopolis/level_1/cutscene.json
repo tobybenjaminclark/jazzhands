@@ -1,0 +1,54 @@
+{
+    "name": "Disco Fighter",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/zapp.png",
+            "heading": "Zapp",
+            "body": "Boogie on down to funky town! The name's Zapp, welcome to Funkopolis.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Hello Zapp! We're here to save your planet from the Grand Composer's tyrrany!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/zapp.png",
+            "heading": "Zapp",
+            "body": "Aw yeah, it's about time! But I must warn you, the Grand Composer has strengthened his grip in our land. You'll need to up the groove to defeat him!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Man, I have the perfect thing! Player, your funk training has reached the point to unleash Disco Fever!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Hit two thumbs up to amplify your groove energy!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thanks Mojo! Zapp, I'll do whatever it takes to save your planet.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/zapp.png",
+            "heading": "Zapp",
+            "body": "Show me the groove!",
+            "type": "dialogue"
+        }
+    ]
+}

@@ -1,0 +1,280 @@
+{
+    "level_data": {
+        "level_name": "Space Junk",
+        "description": "Your path to the Grand Composer has been blocked!",
+        "background": "FUNKOPOLIS",
+        "song": "snd_rocket_racer.ogg"
+    },
+    "events": [
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 4200,
+                "end_time": 5200,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 4200,
+                "end_time": 5200,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 8014,
+                "end_time": 9914,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 9814,
+                "end_time": 11814,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 11883,
+                "end_time": 13183,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 14083,
+                "end_time": 15183,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 15926,
+                "symbol": "VICTORY",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 15926,
+                "symbol": "VICTORY",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 18066,
+                "symbol": "POINTING_UP",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 18066,
+                "symbol": "POINTING_UP",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "bad_beat",
+            "event_data": {
+                "time": 19993,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 21063,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 22091,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "bad_beat",
+            "event_data": {
+                "time": 23042,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 24192,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 24192,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "bad_beat",
+            "event_data": {
+                "time": 26076,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "bad_beat",
+            "event_data": {
+                "time": 26076,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 27898,
+                "end_time": 29998,
+                "symbol": "VICTORY",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 27898,
+                "end_time": 29998,
+                "symbol": "VICTORY",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 30003,
+                "end_time": 31803,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 30003,
+                "end_time": 31803,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 32085,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 33085,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 34185,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 36580,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 37580,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 38580,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 40142,
+                "end_time": 41642,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 40142,
+                "end_time": 41642,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 44142,
+                "end_time": 45642,
+                "symbol": "VICTORY",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "hold",
+            "event_data": {
+                "start_time": 44142,
+                "end_time": 45642,
+                "symbol": "VICTORY",
+                "side": "RIGHT"
+            }
+        }
+    ]
+}

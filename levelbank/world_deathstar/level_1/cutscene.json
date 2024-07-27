@@ -1,0 +1,75 @@
+{
+    "name": "Crashing Drums",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We made it! But all that space junk made it a bumpy ride...",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Wow, the Grand Composer created this whole planet? He must be planning something sinister.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "I can see a platform over there, let's check it out!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/crescendo.png",
+            "heading": "Crescendo",
+            "body": "Greetings, troublemaker, I am Crescendo. What brings you to this planet?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We're here to stop the Grand Composer from silencing the Universe!!!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/crescendo.png",
+            "heading": "Crescendo",
+            "body": "Such bold intentions. But you are too late, the hub is almost complete. Our Silence Amplifiers are priming, almost ready to deploy.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We're not here to be part of some cosmic symphony where we don't have a voice!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Yeah, we groove to our own beat. No one's turning down our volume!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/crescendo.png",
+            "heading": "Crescendo",
+            "body": "Very well. The first trial awaits you here, on the Platform of Crescendo. Are you ready?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We were born ready. Bring it on!",
+            "type": "dialogue"
+        }
+    ]
+}

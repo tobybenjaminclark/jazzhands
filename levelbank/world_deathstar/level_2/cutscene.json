@@ -1,0 +1,75 @@
+{
+    "name": "Stifling Shadows",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/crescendo.png",
+            "heading": "Crescendo",
+            "body": "I have seen the light.. The Grand Composer must be stopped!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Player, rip out the Silence Amplifier and replace it with a Celestial Amp! We can reforge this planet with the harmony of our friends!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Brilliant, Mojo! Quick, let's destroy the other amps before the planet is activated!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/nox.png",
+            "heading": "Nox",
+            "body": "I am Nox, the guardian of this platform. What brings you to my domain?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We’re here to break the Grand Composer's hold over the universe. Crescendo has joined us, and now it's your turn to see the truth!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/nox.png",
+            "heading": "Nox",
+            "body": "The truth? The Grand Composer's vision brings order to chaos, a perfect harmony. You seek to disrupt that balance?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "It's not harmony if it stifles our voices and forces us into silence. We bring a different kind of harmony, one that's free and diverse.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Yeah, your beats are strong, Nox, but they need to flow with the universe, not against it!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/nox.png",
+            "heading": "Nox",
+            "body": "Bold words. Prove to me that your rhythm is strong enough to challenge mine. Face the Trial of Shadows, and we shall see who truly understands harmony.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Challenge accepted. Let's show Nox what we've got, Mojo!",
+            "type": "dialogue"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "name": "Space Junk",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/moxie.png",
+            "heading": "Moxie",
+            "body": "That was amazing! I can feel the evil hum lessen on our planet. I think you scared him off!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thanks Moxie! Now you are free to groove without hesitation!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/moxie.png",
+            "heading": "Moxie",
+            "body": "Here is the Celestial Amp, use it wisely.",
+            "type": "dialogue"
+        },
+        {
+        "background": "cutscenedata/background.png",
+        "foreground": "cutscenedata/amp.png",
+        "heading": "Celestial Amp",
+        "body": "This is the fourth amp I've been given! I don't think I can hold any more...",
+        "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Let's go to the Grand Composer's new planet! We have enough power to defeat him once and for all...",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/ozzy.png",
+            "heading": "Ozzy",
+            "body": "But how will you fly there? The space junk has blocked your exit!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Player, we can use the Boulder power to destroy the junk with ease!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Brilliant, Mojo! Let's remove this evil junk from the atmosphere.",
+            "type": "dialogue"
+        }
+    ]
+}

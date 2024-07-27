@@ -1,0 +1,82 @@
+{
+    "name": "Crash Landing",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "Well, that wasn't part of the plan. You okay, Mojo?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "I think so... but something feels off. My mojo... it's like it's gone.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "What do you mean gone? You're the funkiest being in the galaxy! Maybe it’s just the crash shock.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "No, this is different. I can't feel the rhythm, the groove... it's like I've been unplugged from the funk.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "That hum... do you hear it? It’s everywhere. It's messing with our systems.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "The sound waves... they’re blocking my mojo power.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "So, what do we do now? We can’t stay here forever, and we sure can’t perform with our tech busted.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "We fix the ship, get my mojo back, and find out what's really going on here. But first, we need to explore this place. There’s gotta be someone who can help us out.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "Guess I’ll have to take your place on stage for now. I might not have your groove, but I can still hold a beat.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "You’ve got heart, Player. That’s what counts. Let's get to it then!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": " Alright, let’s go. And Mojo, we’re getting your mojo back, no matter what!!",
+            "type": "dialogue"
+        }
+    ]
+}
