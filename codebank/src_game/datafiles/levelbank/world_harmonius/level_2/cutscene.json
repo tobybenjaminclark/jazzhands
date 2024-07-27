@@ -5,49 +5,92 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
-            "body": "Impressive, traveller! Your groove is unparalleled. You have proven yourself worthy. Let us proceed to the Elder Maoi."
+            "body": "Impressive, traveller! Your groove is unparalleled. You have proven yourself worthy. Let us proceed to the Elder Maoi.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Thank you, Monad. Lead the way."
+            "body": "Thank you, Monad. Lead the way.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
-            "body": "Follow me closely. Our path takes us through a sacred grove known as the Rhythmic Sanctuary, where the functional guardian Funktor resides."
+            "body": "Follow me closely. Our path takes us through a sacred grove known as the Rhythmic Sanctuary, where the functional guardian Funktor resides.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
-            "body": "Greetings, Funktor. We seek passage to the Elder Maoi. This traveller has proven his worthiness."
+            "body": "Greetings, Funktor. We seek passage to the Elder Maoi. This traveller has proven his worthiness.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/funktor.png",
             "heading": "Funktor",
-            "body": "Monad, you know I must protect the path. The Grand Composer's deceit knows no bounds. How can I be sure this traveller is not in league with him?"
+            "body": "Monad, you know I must protect the path. The Grand Composer's deceit knows no bounds. How can I be sure this traveller is not in league with him?",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "I understand your concern, Funktor. I come only to free you from tyranny, and restore Harmonius to its former glory."
+            "body": "I understand your concern, Funktor. We come only to free you from tyranny, and restore Harmonius to its former glory.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/funktor.png",
             "heading": "Funktor",
-            "body": "Words are easy to speak. Prove your intentions with your groove. Show me that your soul resonates with the true essence of funk."
+            "body": "Words are easy to speak. Prove your intentions with your groove. Show me that your soul resonates with the true essence of funk.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Very well. Prepare to witness the groove that will free this world!"
+            "body": "Very well. Prepare to witness the groove that will free this world!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/tutorial_background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Alright, Player, you’ve got the basic beats down. Now, it’s time to take it up a notch. Let’s talk about hold beats. This one’s all about maintaining that groove for a longer stretch!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/tutorial_background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Here’s the deal: when you see a hold beat cue, you’re gonna keep your hand in position until the beat ends. It’s like sustaining a note in a song. Feel the music, and let it guide you.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/tutorial_background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Hold your hand steady, feel the beat pulse through you. When it ends, you can drop your hand.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/tutorial_background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Remember, Player, it’s all about staying in sync with the beat and feeling that groove. When the hold beat hits, you gotta sustain that energy. Keep practicing, and soon you’ll be holding those beats like a true master of funk.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/tutorial_background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "You’ve got this, Player! Let’s keep that groove going and bring the funk back to the galaxy!",
+            "type": "dialogue"
         }
     ]
 }

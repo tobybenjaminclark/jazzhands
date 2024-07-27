@@ -3,7 +3,7 @@
         "level_name": "Journey to the Elder Maoi",
         "description": "the Traveller's curiosity unearths Harmonius's past!",
         "background": "TUTORIAL",
-        "song": "snd_bazaar.ogg"
+        "song": "snd_cluster.ogg"
     },
     "events": [
         {

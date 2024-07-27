@@ -1,0 +1,33 @@
+{
+    "name": "Space Junk",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "I think we've cleared a path.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/moxie.png",
+            "heading": "Moxie",
+            "body": "Thank you for freeing our planet, I wish you the best of luck!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/ozzy.png",
+            "heading": "Ozzy",
+            "body": "I feel so much better now that the space junk has been destroyed!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, friends. Soon, the Grand Composer will be silenced...",
+            "type": "dialogue"
+        }
+    ]
+}

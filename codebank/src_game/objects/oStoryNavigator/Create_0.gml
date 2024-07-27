@@ -71,6 +71,36 @@ techno_names =
 	"Techno4"
 ]
 
+funk_levels = 
+[
+	FUNKOPOLOIS_1,
+	FUNKOPOLOIS_2,
+	FUNKOPOLOIS_3,
+	FUNKOPOLOIS_4
+]
+funk_names = 
+[
+	"funk1",
+	"funk2",
+	"funk3",
+	"funk4"
+]
+
+deathstar_levels = 
+[
+	DEATHSTAR_1,
+	DEATHSTAR_2,
+	DEATHSTAR_3,
+	DEATHSTAR_4
+]
+deathstar_names = 
+[
+	"ds1",
+	"ds2",
+	"ds3",
+	"ds4"
+]
+
 /*
  * Spawn Planets & Set Initial Variables
  * This isn't great, rewite at some point.
@@ -88,9 +118,15 @@ for (var i = 0; i < 5; i++;)
 	else if(i == 1){
 		_levels = techno_levels;
 		_names = techno_names;
-	} else{
+	} else if(i == 2){
 		_levels = rock_levels;
 		_names = rock_names;
+	} else if(i == 3){
+		_levels = funk_levels;
+		_names = funk_names;
+	} else {
+		_levels = deathstar_levels;
+		_names = deathstar_names;
 	}
 	
     var inst = instance_create_layer(x - 100, y - 100, "BackgroundInstances", oSpinningPlanet,

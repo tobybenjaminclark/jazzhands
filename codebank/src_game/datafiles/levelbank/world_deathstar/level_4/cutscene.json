@@ -1,0 +1,75 @@
+{
+    "name": "Chiming Chaos",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/solstice.png",
+            "heading": "Solstice",
+            "body": "Your light... it's more vibrant and harmonious than I imagined!!!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "That's the spirit, Solstice! Let's place down the amp, only one left to go!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Now, let's head to the final platform.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "This place... it's the complete opposite of Solstice's platform. Pure chaos.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/discord.png",
+            "heading": "Discord",
+            "body": "I am Discord, the guardian of this platform. Why do you dare to step into my domain?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Discord, we’re here to free the universe from the Grand Composer’s control. Crescendo, Nox, and Solstice have all joined us. Now it's your turn to see the power of our harmony!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/discord.png",
+            "heading": "Discord",
+            "body": "Joined you? Those weaklings. The Grand Composer’s harmony is a lie, but so is your so-called freedom. Only chaos is truly honest.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Chaos without purpose is just noise, Discord. We bring a harmony that embraces all rhythms, even yours.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/discord.png",
+            "heading": "Discord",
+            "body": "Hah! Prove to me that your so-called groove can tame the chaos of my domain.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Challenge accepted, Discord. Let's show him what we've got, Mojo!",
+            "type": "dialogue"
+        }
+    ]
+}

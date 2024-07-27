@@ -38,10 +38,6 @@ if(intro_delay > 0) {
 
 
 
-
-
-
-
 /* Draw paused if paused */
 else if(!global.in_cutscene && paused){
 	draw_set_font(fntScore);
@@ -78,7 +74,7 @@ if(!global.in_cutscene && !paused && watched_cutscene == true){
 	{
 		blip_x = ((current_time - alt_start_time) / (audio_sound_length(sound)*1000));
 	}
-	var _x = inset + (blip_x * width);
+	var _x = inset + (min(blip_x, 1) * width);
 	var _y = room_height - inset - (thickness div 2);
 	draw_circle(_x, _y, _r, false);
 

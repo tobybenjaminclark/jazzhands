@@ -1,0 +1,61 @@
+{
+    "name": "Jiving Rebels",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/zapp.png",
+            "heading": "Zapp",
+            "body": "Whoa, friends! Your funk is unparalleled. Let's head on down to Jive Junction and gain recruits!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/ozzy.png",
+            "heading": "Ozzy",
+            "body": "Hey dudes, it's about time you came! This is Jive Junction, a place for people to come together and make music without the Grand Composer's knowledge.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Nice, don't let him kill your groove!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/ozzy.png",
+            "heading": "Ozzy",
+            "body": "We wanted to warn you about the Grand Composer's new plan.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "New plan? What new plan?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/ozzy.png",
+            "heading": "Ozzy",
+            "body": "We've noticed space junk is starting to pile up in the sky of Funktopolis. If you look out into the sky, you can see a new planet forming.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/zapp.png",
+            "heading": "Zapp",
+            "body": "The Grand Composer is making a new planet to amplify his silence across the whole Universe!!!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "This can't possibly be! We must put a stop to this. Rockers of Jive Junction, stand with me and groove!!!",
+            "type": "dialogue"
+        }
+    ]
+}

@@ -5,85 +5,106 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Feel the vibrations, Elder Maoi. Together, we will overcome the Grand Composer's tyranny."
-        }, 
+            "body": "Feel the vibrations, Elder Maoi. Together, we will overcome the Grand Composer's tyranny.",
+            "type": "dialogue"
+        },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
             "heading": "Elder Maoi",
-            "body": "The rhythm of Harmonius prevails! Let us drown out the silence with our music!"
-        }, 
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Yes! Feel the power of groove, Grand Composer! Your reign ends now!"
-        }, 
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/elder.png",
-            "heading": "Elder Maoi",
-            "body": "The chiptune beats of Harmonius shall prevail!!!!"
+            "body": "The rhythm of Harmonius prevails! Let us drown out the silence with our music!",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "We did it! The Grand Composer's evil music is repelled!"
+            "body": "Yes! Feel the power of groove, Grand Composer! Your reign ends now!",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
             "heading": "Elder Maoi",
-            "body": "Traveller, you have brought light to our world once more. We are forever grateful."
+            "body": "The chiptune beats of Harmonius shall prevail!!!!",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Thank you, Elder Maoi. But my ship... it's broken. I need parts to repair it if I am to continue my journey."
+            "body": "We did it! The Grand Composer's evil music is repelled!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "I can feel the Mojo inside me growing...",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
             "heading": "Elder Maoi",
-            "body": "Ah, I understand. Fear not, for nearby lies Electronova, a planet renowned for its technological prowess. Their expertise will surely aid you in repairing your vessel."
+            "body": "Traveller, you have brought light to our world once more. We are forever grateful.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Electronova... I've heard of it. How can I reach there?"
+            "body": "Thank you, Elder Maoi. But my ship... it's broken. I need parts to repair it if I am to continue my journey.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
             "heading": "Elder Maoi",
-            "body": "Allow us to assist you, traveller. We shall guide you to the shores where the Great Wave awaits. It is a cosmic vessel that sails the celestial currents, capable of transporting you swiftly to Electronova."
+            "body": "Ah, I understand. Fear not, for nearby lies Electronova, a planet renowned for its technological prowess. Their expertise will surely aid you in repairing your vessel.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Thank you, Elder Maoi. Your kindness and guidance are greatly appreciated."
+            "body": "Electronova... How can we reach there?",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
             "heading": "Elder Maoi",
-            "body": "It is our pleasure, traveller. May the rhythms of Harmonius guide you on your journey, and may you find the aid you seek on Electronova."
+            "body": "Allow us to assist you, traveller. We shall guide you to the shores where the Great Wave awaits. It is a cosmic vessel that sails the celestial currents, capable of transporting you swiftly to Electronova.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Farewell, for now. I shall return, bringing with me the echoes of our shared triumph."
+            "body": "Thank you, Elder Maoi. Your kindness and guidance are greatly appreciated.",
+            "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
             "heading": "Elder Maoi",
-            "body": "Safe travels, brave traveller. Harmonius will always welcome you with open arms."
+            "body": "It is our pleasure, traveller. Take with you the Celestial Amp, it may prove helpful in future battles.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/amp.png",
+            "heading": "Celestial Amp",
+            "body": "I don't know what this is for, but Elder Maoi thinks it might be helpful...",
+            "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Farewell, for now. We shall return, bringing with us the echoes of our shared triumph.",
+            "type": "dialogue"
         }
-]
+    ]
 }

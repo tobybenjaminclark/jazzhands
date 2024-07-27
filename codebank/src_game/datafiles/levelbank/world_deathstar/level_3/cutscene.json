@@ -1,0 +1,96 @@
+{
+    "name": "Summer Solstice",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/nox.png",
+            "heading": "Nox",
+            "body": "Your rhythm... it's undeniable. Perhaps the Grand Composer's vision isn't the only path to harmony.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We all have our own unique beats to contribute to the universe. Now, let's replace another amp and face the next challenge.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Nox, Keep rocking with us, and the universe will never fall silent!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/nox.png",
+            "heading": "Nox",
+            "body": "Go forth, my friends. Solstice awaits you on the next platform. May your music bring light to the darkness.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "This place... it's so different from the others. It's like walking into a sun.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "That must be Solstice’s influence. Let's find her and bring the groove to this platform.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/solstice.png",
+            "heading": "Solstice",
+            "body": "I am Solstice, the radiant guardian of this platform. Why do you intrude upon my domain?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Solstice, we’re here to free the universe from the Grand Composer’s control. Crescendo and Nox have joined us. Now it's your turn to see the light of our cause!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/solstice.png",
+            "heading": "Solstice",
+            "body": "Joined you? Their convictions must have been weak to falter so easily. The Grand Composer’s harmony is absolute!!!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Solstice, true harmony embraces every voice, every rhythm.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Your light is strong, but it's gotta blend with the universe's beat, not overshadow it!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/solstice.png",
+            "heading": "Solstice",
+            "body": "Prove to me that your light can shine as brightly as mine.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We’re ready, Solstice. Let’s show her the power of our groove, Mojo!",
+            "type": "dialogue"
+        }
+    ]
+}

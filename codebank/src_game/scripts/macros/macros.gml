@@ -17,15 +17,25 @@ global.score_multiplier = 1;
 #macro HARMONIUS_3 "levelbank/world_harmonius/level_3/beatmap.json"
 #macro HARMONIUS_4 "levelbank/world_harmonius/level_4/beatmap.json"
 
-#macro ELECTRONOVA_1 "levelbank/world_techno/level_1/beatmap.json"
-#macro ELECTRONOVA_2 "levelbank/world_techno/level_2/beatmap.json"
-#macro ELECTRONOVA_3 "levelbank/world_techno/level_3/beatmap.json"
-#macro ELECTRONOVA_4 "levelbank/world_techno/level_4/beatmap.json"
+#macro ELECTRONOVA_1 "levelbank/world_electronova/level_1/beatmap.json"
+#macro ELECTRONOVA_2 "levelbank/world_electronova/level_2/beatmap.json"
+#macro ELECTRONOVA_3 "levelbank/world_electronova/level_3/beatmap.json"
+#macro ELECTRONOVA_4 "levelbank/world_electronova/level_4/beatmap.json"
 
-#macro AMPLIFORIA_1 "levelbank/world_rock/level_1/beatmap.json"
-#macro AMPLIFORIA_2 "levelbank/world_rock/level_2/beatmap.json"
-#macro AMPLIFORIA_3 "levelbank/world_rock/level_3/beatmap.json"
-#macro AMPLIFORIA_4 "levelbank/world_rock/level_4/beatmap.json"
+#macro AMPLIFORIA_1 "levelbank/world_ampliforia/level_1/beatmap.json"
+#macro AMPLIFORIA_2 "levelbank/world_ampliforia/level_2/beatmap.json"
+#macro AMPLIFORIA_3 "levelbank/world_ampliforia/level_3/beatmap.json"
+#macro AMPLIFORIA_4 "levelbank/world_ampliforia/level_4/beatmap.json"
+
+#macro FUNKOPOLOIS_1 "levelbank/world_funkopolis/level_1/beatmap.json"
+#macro FUNKOPOLOIS_2 "levelbank/world_funkopolis/level_2/beatmap.json"
+#macro FUNKOPOLOIS_3 "levelbank/world_funkopolis/level_3/beatmap.json"
+#macro FUNKOPOLOIS_4 "levelbank/world_funkopolis/level_4/beatmap.json"
+
+#macro DEATHSTAR_1 "levelbank/world_deathstar/level_1/beatmap.json"
+#macro DEATHSTAR_2 "levelbank/world_deathstar/level_2/beatmap.json"
+#macro DEATHSTAR_3 "levelbank/world_deathstar/level_3/beatmap.json"
+#macro DEATHSTAR_4 "levelbank/world_deathstar/level_4/beatmap.json"
 
 #macro PRE_CUTSCENE 1
 #macro CUTSCENE_ENTER 2

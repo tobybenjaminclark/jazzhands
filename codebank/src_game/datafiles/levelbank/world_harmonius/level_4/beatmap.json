@@ -3,7 +3,7 @@
         "level_name": "Melodious Crest",
         "description": "Prove yourself to the mystical Elder Maoi!",
         "background": "TUTORIAL",
-        "song": "snd_bazaar.ogg"
+        "song": "snd_cord.ogg"
     },
     "events": [
         {

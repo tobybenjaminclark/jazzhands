@@ -1,13 +1,13 @@
 {
     "level_data": {
-        "level_name": "The Melody of the Maoi",
-        "description": "Enter the tranquil shores of Harmonius, a cosmic symphony waiting to be restored.",
+        "level_name": "Rhythic Sanctuary",
+        "description": "Conquer Funktor's trials to earn passage to the Elder Maoi!",
         "background": "TUTORIAL",
         "song": "snd_bazaar.ogg"
     },
     "events": [
         {
-            "event_type": "randombeat",
+            "event_type": "beat",
             "event_data": {
                 "time": 6800,
                 "symbol": "OPEN_PALM",
@@ -23,7 +23,7 @@
             }
         },
         {
-            "event_type": "bouldered_beat",
+            "event_type": "beat",
             "event_data": {
                 "time": 13600,
                 "symbol": "CLOSED_FIST",
