@@ -64,7 +64,7 @@
   "name":"rmstage_rock",
   "parent":{
     "name":"Stages & Levels",
-    "path":"folders/Paths/Rooms/Stages & Levels.yy",
+    "path":"folders/Rooms/Stages & Levels.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

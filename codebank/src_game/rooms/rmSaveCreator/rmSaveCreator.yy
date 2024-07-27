@@ -147,7 +147,7 @@
   "name":"rmSaveCreator",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Paths/Rooms.yy",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

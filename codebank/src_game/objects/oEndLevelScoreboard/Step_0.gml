@@ -4,6 +4,8 @@
 /* Increment current step */
 current_step++;
 
+if(bg_alpha < 1) bg_alpha += 0.02;
+
 /* increment display step (if u can) */
 if(current_step % 50 == 0){
 	display_step += 1;	
