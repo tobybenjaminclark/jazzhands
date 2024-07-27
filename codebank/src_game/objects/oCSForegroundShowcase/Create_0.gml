@@ -5,6 +5,7 @@
 
 
 // Load the sprite
+audio_play_sound(sndItemShowcase, 0, false);
 sprite = sprite_add(path, 1, false, true, 0, 0);
 rot = 0;
 

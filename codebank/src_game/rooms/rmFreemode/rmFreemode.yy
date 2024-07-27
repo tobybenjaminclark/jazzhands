@@ -20,7 +20,7 @@
   "name":"rmFreemode",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Paths/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

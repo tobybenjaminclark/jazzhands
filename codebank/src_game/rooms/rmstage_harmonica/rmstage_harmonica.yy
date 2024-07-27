@@ -105,7 +105,7 @@
   "name":"rmstage_harmonica",
   "parent":{
     "name":"Stages & Levels",
-    "path":"folders/Rooms/Stages & Levels.yy",
+    "path":"folders/Paths/Rooms/Stages & Levels.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

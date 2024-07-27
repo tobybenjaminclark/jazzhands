@@ -16,5 +16,5 @@ var scale_h = room_h / sprite_height;
 var scale_uniform = min(scale_w, scale_h);
 
 if(scale < scale_uniform){
-	scale += 0.02;	
+	scale += 0.01;	
 }
