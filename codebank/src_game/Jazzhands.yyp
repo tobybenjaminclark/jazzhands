@@ -403,6 +403,7 @@
     {"id":{"name":"sprHands","path":"sprites/sprHands/sprHands.yy",},},
     {"id":{"name":"Sprite31","path":"sprites/Sprite31/Sprite31.yy",},},
     {"id":{"name":"sprLabel","path":"sprites/sprLabel/sprLabel.yy",},},
+    {"id":{"name":"sprLightRays","path":"sprites/sprLightRays/sprLightRays.yy",},},
     {"id":{"name":"sprMojo","path":"sprites/sprMojo/sprMojo.yy",},},
     {"id":{"name":"sprMoon","path":"sprites/sprMoon/sprMoon.yy",},},
     {"id":{"name":"sprMountains","path":"sprites/sprMountains/sprMountains.yy",},},

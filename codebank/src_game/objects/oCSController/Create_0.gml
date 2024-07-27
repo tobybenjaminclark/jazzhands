@@ -2,6 +2,7 @@
 /// @author Amber Swarbrick
 /// @date   08/02/2023
 
+audio_stop_all();
 state = PRE_CUTSCENE;
 
 // Load the cutscene json file

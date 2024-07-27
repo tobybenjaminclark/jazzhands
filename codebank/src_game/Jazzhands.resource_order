@@ -156,6 +156,7 @@
     {"name":"sprGlow","order":10,"path":"sprites/sprGlow/sprGlow.yy",},
     {"name":"Sprite31","order":15,"path":"sprites/Sprite31/Sprite31.yy",},
     {"name":"sprLabel","order":2,"path":"sprites/sprLabel/sprLabel.yy",},
+    {"name":"sprLightRays","order":17,"path":"sprites/sprLightRays/sprLightRays.yy",},
     {"name":"sprMojo","order":21,"path":"sprites/sprMojo/sprMojo.yy",},
     {"name":"sprMoon","order":3,"path":"sprites/sprMoon/sprMoon.yy",},
     {"name":"sprMountains","order":4,"path":"sprites/sprMountains/sprMountains.yy",},
