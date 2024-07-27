@@ -62,6 +62,7 @@
     {"name":"oCountdown","order":4,"path":"objects/oCountdown/oCountdown.yy",},
     {"name":"oCSController","order":1,"path":"objects/oCSController/oCSController.yy",},
     {"name":"oCSForeground","order":2,"path":"objects/oCSForeground/oCSForeground.yy",},
+    {"name":"oCSForegroundShowcase","order":4,"path":"objects/oCSForegroundShowcase/oCSForegroundShowcase.yy",},
     {"name":"oCSText","order":3,"path":"objects/oCSText/oCSText.yy",},
     {"name":"oDiscoFever","order":12,"path":"objects/oDiscoFever/oDiscoFever.yy",},
     {"name":"oEndLevelDisplay","order":14,"path":"objects/oEndLevelDisplay/oEndLevelDisplay.yy",},

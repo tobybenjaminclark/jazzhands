@@ -9,7 +9,7 @@ if(current_step % 50 == 0){
 	display_step += 1;	
 }
 
-
+/* iAccuracy (integer accuracy) */
 if(display_step >= 4){
 	if(iaccuracy_display < iaccuracy && current_step % 3 == 0){
 		iaccuracy_display += 1;

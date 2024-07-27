@@ -3,6 +3,11 @@
 global.in_cutscene = false;
 global.score_multiplier = 1;
 
+// Cutscene types
+#macro CS_NONE 1
+#macro CS_DIALOGUE 2
+#macro CS_SHOWCASE 3
+
 // Symbols
 #macro JS_SYMBOL_LIST ["OPEN_PALM", "CLOSED_FIST", "POINTING_UP", "THUMBS_UP", "THUMBS_DOWN", "VICTORY"]
 #macro JS_SIDE_LIST ["LEFT", "RIGHT"]

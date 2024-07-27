@@ -295,6 +295,7 @@
     {"id":{"name":"oCSBackground","path":"objects/oCSBackground/oCSBackground.yy",},},
     {"id":{"name":"oCSController","path":"objects/oCSController/oCSController.yy",},},
     {"id":{"name":"oCSForeground","path":"objects/oCSForeground/oCSForeground.yy",},},
+    {"id":{"name":"oCSForegroundShowcase","path":"objects/oCSForegroundShowcase/oCSForegroundShowcase.yy",},},
     {"id":{"name":"oCSText","path":"objects/oCSText/oCSText.yy",},},
     {"id":{"name":"oDiscoFever","path":"objects/oDiscoFever/oDiscoFever.yy",},},
     {"id":{"name":"oEndLevelDisplay","path":"objects/oEndLevelDisplay/oEndLevelDisplay.yy",},},

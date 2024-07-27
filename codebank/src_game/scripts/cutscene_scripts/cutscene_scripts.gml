@@ -15,9 +15,13 @@ function cutscene_start(file_path, next_room)
 
 function cutscene_initialise_components(frame_index, json_path)
 {
+	var _type = CS_NONE;
 	// retrieve values of components of the cutscene from json file
 	if(variable_struct_exists(json_struct, "frames"))
-	{
+	{	
+		if(json_struct.frames[frame_index].type == "dialogue") _type = CS_DIALOGUE;
+		else if(json_struct.frames[frame_index].type == "showcase") _type = CS_SHOWCASE;
+		
 		background_path = cutscene_get_background_path(json_struct.frames[frame_index]);
 		foreground_path = cutscene_get_foreground_path(json_struct.frames[frame_index]);
 		frame_heading = cutscene_get_heading(json_struct.frames[frame_index]);
@@ -38,12 +42,22 @@ function cutscene_initialise_components(frame_index, json_path)
 			parent: self
 		});
 
+	/* Make Foreground */
 	foreground_path = filepath_replace_last_element(json_path, foreground_path);
-	cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
+	if(_type == CS_SHOWCASE){
+		cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForegroundShowcase,
 		{
 			path: foreground_path,
 			parent: self
 		});
+	}
+	else{
+		cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
+			{
+				path: foreground_path,
+				parent: self
+			});
+	}
 
 	background_path = filepath_replace_last_element(json_path, background_path);
 	cutscene_background = instance_create_layer(0,0, "CutsceneBackground", oCSBackground,
