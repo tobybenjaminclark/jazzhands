@@ -9,6 +9,30 @@ if(bg_alpha < 1) bg_alpha += 0.02;
 /* increment display step (if u can) */
 if(current_step % 50 == 0){
 	display_step += 1;	
+	switch(display_step){
+		case 0:
+			/* first */
+			audio_play_sound(ping_hard, 0, false);
+			break;
+		case 1:
+			/* total beats */
+			audio_play_sound(ping_medium, 0, false);
+			break;
+		case 2:
+			if(accuracy <= 0.5) audio_play_sound(sndNegative, 0, false);
+			else audio_play_sound(sndPositive, 0, false);
+			break;
+		case 3:
+			if(accuracy <= 0.5) audio_play_sound(sndNegative, 0, false);
+			else audio_play_sound(sndPositive, 0, false);
+			break;
+		case 4:
+			/* accuracy */
+			audio_play_sound(ping_medium, 0, false);
+			break
+		default:
+			break;
+	}
 }
 
 /* iAccuracy (integer accuracy) */

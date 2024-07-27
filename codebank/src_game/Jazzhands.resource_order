@@ -139,6 +139,8 @@
     {"name":"snd_vibrate","order":11,"path":"sounds/snd_vibrate/snd_vibrate.yy",},
     {"name":"sndItemShowcase","order":14,"path":"sounds/sndItemShowcase/sndItemShowcase.yy",},
     {"name":"sndLoseLevel","order":16,"path":"sounds/sndLoseLevel/sndLoseLevel.yy",},
+    {"name":"sndNegative","order":19,"path":"sounds/sndNegative/sndNegative.yy",},
+    {"name":"sndPositive","order":18,"path":"sounds/sndPositive/sndPositive.yy",},
     {"name":"sndWinLevel","order":15,"path":"sounds/sndWinLevel/sndWinLevel.yy",},
     {"name":"logo_pallette","order":1,"path":"sprites/logo_pallette/logo_pallette.yy",},
     {"name":"s_slider_bar","order":16,"path":"sprites/s_slider_bar/s_slider_bar.yy",},

@@ -384,6 +384,8 @@
     {"id":{"name":"snd_vibrate","path":"sounds/snd_vibrate/snd_vibrate.yy",},},
     {"id":{"name":"sndItemShowcase","path":"sounds/sndItemShowcase/sndItemShowcase.yy",},},
     {"id":{"name":"sndLoseLevel","path":"sounds/sndLoseLevel/sndLoseLevel.yy",},},
+    {"id":{"name":"sndNegative","path":"sounds/sndNegative/sndNegative.yy",},},
+    {"id":{"name":"sndPositive","path":"sounds/sndPositive/sndPositive.yy",},},
     {"id":{"name":"sndWinLevel","path":"sounds/sndWinLevel/sndWinLevel.yy",},},
     {"id":{"name":"logo_large","path":"sprites/logo_large/logo_large.yy",},},
     {"id":{"name":"logo_pallette","path":"sprites/logo_pallette/logo_pallette.yy",},},
