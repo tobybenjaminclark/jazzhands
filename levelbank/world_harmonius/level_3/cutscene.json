@@ -1,102 +1,74 @@
 {
-    "name": "Journey to the Elder Maoi",
+    "name": "Rhythic Sanctuary",
     "frames": [
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/funktor.png",
-            "heading": "Funktor",
-            "body": "Traveller, your groove is extraordinary. You have our trust. Let us move forward...",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Impressive, traveller! Your groove is unparalleled. You have proven yourself worthy. Let us proceed to the Elder Maoi.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, Monad. Lead the way.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Follow me closely. Our path takes us through a sacred grove known as the Rhythmic Sanctuary, where the functional guardian Funktor resides.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
-            "body": "As we climb, let me tell you more about Harmonius. Long ago, Harmonius was a silent void in the cosmos. The celestial Maoi, known as Primus, discovered the primal rhythm that resonated through the void. From this rhythm, he crafted the fundamental notes that birthed our world. The lineage of Primus continued, each Maoi adding layers to the symphony that shaped Harmonius.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Wow! So Harmonious was birthed from pure groove... Tell me more!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Primus's son, Secundus, inherited his father's gift and expanded upon it. He introduced the concept of harmony, creating intricate patterns that interwove with Primus's primal rhythm. Under Secundus's guidance, the Maoi learned to balance individual melodies with the collective harmony, bringing a new dimension to our world.",
+            "body": "Greetings, Funktor. We seek passage to the Elder Maoi. This traveller has proven his worthiness.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/funktor.png",
             "heading": "Funktor",
-            "body": "After Secundus, Tertius rose to prominence. He was a visionary who saw the potential of collaboration. He invited other beings from across the cosmos, each with their unique sounds, to join our symphony. Harmonius became a melting pot of melodies, each contributing to the grand symphony. This is whom we call the Elder Maoi.",
+            "body": "Monad, you know I must protect the path. The Grand Composer's deceit knows no bounds. How can I be sure this traveller is not in league with him?",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "But if the Elder Maoi is so powerful, why has he not fought against the Grand Composer?",
+            "body": "I understand your concern, Funktor. We come only to free you from tyranny, and restore Harmonius to its former glory.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/funktor.png",
             "heading": "Funktor",
-            "body": "Unfortunately, the Grand Composer's silence has saddened him: he has lost all hope. Although, he holds the knowledge and wisdom to wield the Celestial Amp properly. With it, we can bring back the lost harmony and overthrow the Grand Composer's tyranny.",
+            "body": "Words are easy to speak. Prove your intentions with your groove. Show me that your soul resonates with the true essence of funk.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "We are determined help you bring back the harmony!",
+            "body": "Very well. Prepare to witness the groove that will free this world!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Traveller, we have journeyed far, and the climb takes its toll on us. We must rest, but you, with your boundless groove, can continue.",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Player, I've upgraded the Beat Deck! A new beat has been added to the system...",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/funktor.png",
-            "heading": "Funktor",
-            "body": "Indeed. We can go no further without your help. Please, lend us your vibe energy so we may regain our strength!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Of course, my friends. Take my energy, and let's restore the groove together.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/tutorial_background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Alright, Player, you’ve nailed the basics and the hold beats. Now, let’s talk about bad beats. These are the beats you gotta avoid, like dodging a bad vibe on the dance floor.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/tutorial_background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "When a bad beat comes up, you gotta resist the urge to groove on that beat. It’s all about control and timing.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/tutorial_background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "You got this, Player! Channel the groove!!!!",
+            "foreground": "cutscenedata/holdbeat.png",
+            "heading": "Hold Beat",
+            "body": "When a Hold Beat appears, keep those hands still and maintain the symbol for the duration of the beat!",
             "type": "dialogue"
         }
     ]
