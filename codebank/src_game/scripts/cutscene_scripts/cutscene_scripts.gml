@@ -35,12 +35,7 @@ function cutscene_initialise_components(frame_index, json_path)
 
 
 	// create the objects for the components of the cutscreen
-	cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSText,
-		{
-			heading: frame_heading,
-			body: frame_body,
-			parent: self
-		});
+
 
 	/* Make Foreground */
 	foreground_path = filepath_replace_last_element(json_path, foreground_path);
@@ -50,6 +45,13 @@ function cutscene_initialise_components(frame_index, json_path)
 			path: foreground_path,
 			parent: self
 		});
+		
+		cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSTextShowcase,
+		{
+			heading: frame_heading,
+			body: frame_body,
+			parent: self
+		});
 	}
 	else{
 		cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
@@ -57,6 +59,13 @@ function cutscene_initialise_components(frame_index, json_path)
 				path: foreground_path,
 				parent: self
 			});
+		
+		cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSText,
+		{
+			heading: frame_heading,
+			body: frame_body,
+			parent: self
+		});
 	}
 
 	background_path = filepath_replace_last_element(json_path, background_path);

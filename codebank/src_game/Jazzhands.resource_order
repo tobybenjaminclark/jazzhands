@@ -64,6 +64,7 @@
     {"name":"oCSForeground","order":2,"path":"objects/oCSForeground/oCSForeground.yy",},
     {"name":"oCSForegroundShowcase","order":4,"path":"objects/oCSForegroundShowcase/oCSForegroundShowcase.yy",},
     {"name":"oCSText","order":3,"path":"objects/oCSText/oCSText.yy",},
+    {"name":"oCSTextShowcase","order":5,"path":"objects/oCSTextShowcase/oCSTextShowcase.yy",},
     {"name":"oDiscoFever","order":12,"path":"objects/oDiscoFever/oDiscoFever.yy",},
     {"name":"oEndLevelDisplay","order":14,"path":"objects/oEndLevelDisplay/oEndLevelDisplay.yy",},
     {"name":"oEndLevelScoreboard","order":15,"path":"objects/oEndLevelScoreboard/oEndLevelScoreboard.yy",},
