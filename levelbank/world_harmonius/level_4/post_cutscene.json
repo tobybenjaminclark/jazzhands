@@ -5,34 +5,6 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Feel the vibrations, Elder Maoi. Together, we will overcome the Grand Composer's tyranny.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/elder.png",
-            "heading": "Elder Maoi",
-            "body": "The rhythm of Harmonius prevails! Let us drown out the silence with our music!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Yes! Feel the power of groove, Grand Composer! Your reign ends now!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/elder.png",
-            "heading": "Elder Maoi",
-            "body": "The chiptune beats of Harmonius shall prevail!!!!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
             "body": "We did it! The Grand Composer's evil music is repelled!",
             "type": "dialogue"
         },
@@ -54,7 +26,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Thank you, Elder Maoi. But my ship... it's broken. I need parts to repair it if I am to continue my journey.",
+            "body": "Thank you, Elder Maoi. But our ship... it's broken. We need parts to repair it if we are to continue my journey.",
             "type": "dialogue"
         },
         {
@@ -95,8 +67,8 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/amp.png",
-            "heading": "Celestial Amp",
-            "body": "I don't know what this is for, but Elder Maoi thinks it might be helpful...",
+            "heading": "You've received a Celestial Amp!",
+            "body": "In the sunkissed world of Harmonious, where the Elder Maoi watches over sandy shores, the Celestial Amp is a magical artifact of immense musical power. Crafted from enchanted coral and shimmering shells, it amplifies melodies with the island’s natural rhythms. This mystical amplifier turns simple tunes into grand symphonies, resonating through the ocean waves and the ancient stone guardians, connecting the music to the very essence of the island.",
             "type": "showcase"
         },
         {
