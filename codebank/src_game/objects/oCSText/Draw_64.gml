@@ -8,7 +8,7 @@
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_white);
-draw_set_font(fntCutsceneHeading);
+draw_set_font(fntLevelNameSmall);
 draw_text(20, (display_get_gui_height() div 2) + 80, heading);
 
 // create body visible
@@ -20,4 +20,4 @@ for(var i = 1; i <= show_index; i++)
 	body_visible = body_visible + string_char_at(body, i);
 }
 
-draw_text(20, (display_get_gui_height() div 2) + 120, body_visible);
+draw_text(20, (display_get_gui_height() div 2) + 130, body_visible);

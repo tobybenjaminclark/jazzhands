@@ -23,15 +23,19 @@ if(intro_delay > 0) {
     var _ysc = (room_height / 2) / _sh;
     draw_sprite_ext(spr_black_box, 0, -10, (room_height div 2) + 70, _xsc, _ysc, 0, c_white, 0.85);
 	
-	draw_set_halign(fa_center);
+	draw_set_halign(fa_left);
 	
     draw_set_color(c_white);
-    draw_set_font(fntScore);
-    draw_text(room_width div 2, (room_height div 2) + 196, level_name);
+    draw_set_font(fntScoreboard);
+    draw_text(100, (room_height div 2) + 196, level_name);
     
-    draw_set_font(fntCutsceneHeading);
-    draw_set_halign(fa_center);
-    draw_text(room_width div 2, (room_height div 2) + 280, level_description);
+    draw_set_font(fntLevelNameSmall);
+    draw_set_halign(fa_left);
+    draw_text(100, (room_height div 2) + 280, level_description);
+	
+	draw_set_font(fntScoreboard);
+	draw_set_halign(fa_right)
+	draw_text(room_width - 100,(room_height div 2) + 196, global.current_level);
     
     draw_set_color(c_white);
     draw_line(0, (room_height div 2) + 70, room_width, (room_height div 2) + 70);
