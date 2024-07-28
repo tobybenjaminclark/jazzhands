@@ -4,7 +4,17 @@
 /* Increment current step */
 current_step++;
 
-if(bg_alpha < 1) bg_alpha += 0.02;
+if(bg_alpha < 1) {
+	bg_alpha += 0.02;
+	var _a = bg_alpha;
+	with(oLabel){image_alpha = 1 - _a}
+	with(oSpinningDisc){image_alpha = 1 - _a}
+}
+else if(bg_alpha == 1){
+	bg_alpha += 1;
+	with(oLabel){instance_destroy();}
+	with(oSpinningDisc){instance_destroy();}
+}
 
 /* increment display step (if u can) */
 if(current_step % 50 == 0){

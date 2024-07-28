@@ -1,6 +1,7 @@
 /// @description Handles Debug Drawing
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
+/// Edited throughout tho.
 
 try{
 	draw_set_halign(fa_right);
@@ -47,7 +48,7 @@ else if(!global.in_cutscene && paused){
 
 
 /* Draw Music Bar */
-if(!global.in_cutscene && !paused && watched_cutscene == true){
+if(!global.in_cutscene && !paused && watched_cutscene == true && current_time < end_time){
 	draw_set_color(c_white);
 	var inset = 70;
 	var width = 500;
