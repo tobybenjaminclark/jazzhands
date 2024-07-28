@@ -11,10 +11,12 @@ if(text_alpha != 0)
 {
 	draw_set_alpha(text_alpha);
 	
-	/* Draw Selector */	
+	/* Draw Planet */	
 	draw_set_halign(fa_right);
-	draw_set_font(fntRaanana);
+	
+	draw_set_font(fntLevelName);
 	draw_text(x - 135, y + 5, title);
+	
 	draw_set_font(fntRaananaSmall);
 	draw_text(x - 135, y + 65, description);
 	
@@ -29,12 +31,18 @@ if(text_alpha != 0)
 		draw_sprite_ext(sprPlanetRecord1, 0, px, py, 0.12, 0.12, 0, c_white, text_alpha);
 		if(angle == 0)
 		{
+			/* Draw planet selector */
 			draw_sprite_ext(sprPlanetSelector, 0, px, py, 0.1, 0.1, 0, c_white, text_alpha);
+			
+			/* Draw 'Moons' (levels) */
 			draw_set_halign(fa_left);
-			draw_set_font(fntRaanana);
-			draw_text(px + 30, py - 10, level_objects[index].level_data.level_name);
-			draw_set_font(fntRaananaSmall)
-			draw_text(px + 30, py + 35, level_objects[index].level_data.description);
+			
+			draw_set_font(fntRaananaSmall);
+			draw_text(px + 70, py - 60, "W" + string(world) + "-L" + string(index + 1));
+			
+			draw_set_font(fntLevelName);
+			draw_text(px + 70, py - 10, level_objects[index].level_data.level_name);
+
 		}
 	}
 	draw_set_alpha(1);
