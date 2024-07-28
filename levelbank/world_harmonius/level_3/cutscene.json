@@ -69,7 +69,7 @@
             "foreground": "cutscenedata/holdbeat.png",
             "heading": "Hold Beat",
             "body": "When a Hold Beat appears, keep those hands still and maintain the symbol for the duration of the beat!",
-            "type": "dialogue"
+            "type": "showcase"
         }
     ]
 }

@@ -60,11 +60,13 @@
         {
             "background": "cutscenedata/space.png",
             "heading": "Space",
+            "foreground": "cutscenedata/traveller.png",
             "body": "Somewhere in another universe...",
-            "type": "showcase"
+            "type": "scene"
         },
         {
-            "background": "cutscenedata/traveller.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
             "body": "My head hurts... Are we still alive?",
             "type": "dialogue"
@@ -77,7 +79,8 @@
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/traveller.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
             "body": "Theseoid is intact... It must have been reassembled at a quantum level. But if each piece of the ship has been replaced, is it still the same ship?",
             "type": "dialogue"
@@ -90,7 +93,8 @@
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/traveller.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
             "body": "Strange... Computer, provide a detailed report on Galaxy Jazzus IV.",
             "type": "dialogue"
@@ -174,7 +178,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/player.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
             "body": "Well, that wasn't part of the plan. You okay, Mojo?",
             "type": "dialogue"
@@ -188,9 +192,9 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/player.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
-            "body": "What do you mean gone? You're the funkiest being in the galaxy! Maybe it’s just the crash shock.",
+            "body": "What do you mean gone? You're the funkiest being in the galaxy! Maybe it's just the crash shock.",
             "type": "dialogue"
         },
         {
@@ -202,51 +206,51 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/player.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
-            "body": "That hum... do you hear it? It’s everywhere. It's messing with our systems. The beat deck is malfunctioning too!",
+            "body": "That hum... do you hear it? It's everywhere. It's messing with our systems. The beat deck is malfunctioning too!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "The sound waves... they’re blocking my mojo power.",
+            "body": "The sound waves... they're blocking my mojo power.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/player.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
-            "body": "So, what do we do now? We can’t stay here forever, and we sure can’t perform with our tech busted.",
+            "body": "So, what do we do now? We can't stay here forever, and we sure can't perform with our tech busted.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "We fix the ship, get my mojo back, and find out what's really going on here. There’s gotta be someone who can help us out.",
+            "body": "We fix the ship, get my mojo back, and find out what's really going on here. There's gotta be someone who can help us out.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/player.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
-            "body": "Guess I’ll have to take your place on stage for now. I might not have your groove, but I can still hold a beat.",
+            "body": "Guess I'll have to take your place on stage for now. I might not have your groove, but I can still hold a beat.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "You’ve got heart, Player. I'll work on repairing the Beat Deck. But first, let's see your groove!",
+            "body": "You've got heart, Player. I'll work on repairing the Beat Deck. But first, let's see your groove!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/player.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
-            "body": " Alright, let’s go. And Mojo, we’re getting your mojo back, no matter what!!",
+            "body": " Alright, let's go. And Mojo, we're getting your mojo back, no matter what!!",
             "type": "dialogue"
         }
     ]

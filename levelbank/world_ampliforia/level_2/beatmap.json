@@ -1,7 +1,7 @@
 {
     "level_data": {
-        "level_name": "level_sapper",
-        "description": "rock lvl 2",
+        "level_name": "Conquer the Goliaths!",
+        "description": "Prove your rock spirit to the Goliaths blocking your path.",
         "background": "ROCK",
         "song": "snd_sapper.ogg"
     },

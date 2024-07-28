@@ -1,7 +1,7 @@
 {
     "level_data": {
-        "level_name": "level_kicker",
-        "description": "rock lvl 1",
+        "level_name": "A Hero's Welcome",
+        "description": "Welcome to Ampliforia, land of rock tunes.",
         "background": "ROCK",
         "song": "snd_kicker.ogg"
     },

@@ -12,14 +12,14 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "ACTIVATING LOCATOR CHIP. FOLLOW ME, SPECIMEN.",
+            "body": "Activating Locator Chip. Follow me, specimen.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
             "heading": "Fuseon Sentinel",
-            "body": "HALT! WHO DARES APPROACH THE DOMAIN OF THE FUSEONS?",
+            "body": "Halt! Who dares approach the domain of the Fuseons?",
             "type": "dialogue"
         },
         {
@@ -33,7 +33,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
             "heading": "Fuseon Sentinel",
-            "body": "HA! RESTORE HARMONY? YOU MUST BE DELUSIONAL. WE ARE AT WAR WITH THE DIODES. THE GRAND COMPOSER HAS GIVEN US NEW PURPOSE. WE WILL NOT RELINQUISH THE RHYTHM CORE.",
+            "body": "Ha! Restore harmony? You must be delusional. We are at war with the Diodes. The Grand Composer has given us new purpose. We will not relinquish the Rhythm Core.",
             "type": "dialogue"
         },
         {
@@ -47,14 +47,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
             "heading": "Fuseon Sentinel",
-            "body": "WE HAVE A NEW MASTER NOW. THE GRAND COMPOSER'S WILL IS ABSOLUTE. SILENCE IS OUR NEW SONG.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/diode.png",
-            "heading": "Diode",
-            "body": "FUSEON, REMEMBER WHO WE ARE. WE WERE ONCE ONE WITH THE BEAT, CREATORS OF RHYTHM AND SOUND. DO NOT LET THE GRAND COMPOSER'S INTERFERENCE DECEIVE YOU.",
+            "body": "We have a new master now. The Grand Composer's will is absolute. Silence is our new song.",
             "type": "dialogue"
         },
         {
@@ -68,7 +61,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
             "heading": "Fuseon Sentinel",
-            "body": "YOU SPEAK BOLDLY, TRAVELLER. BUT WORDS ALONE WILL NOT SWAY ME.",
+            "body": "Words alone will not sway me.",
             "type": "dialogue"
         },
         {
@@ -82,22 +75,15 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Player, another new beat has appeared on the system!",
+            "body": "Player, another new beat has appeared on the Beat Deck!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "This one's funky. The RANDOM BEAT mixes it up for a while, throwing random gestures. It stabilises at the last moment!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Keep your eyes sharp, Player. Watch out for those random beats!",
-            "type": "dialogue"
+            "foreground": "cutscenedata/randombeat.png",
+            "heading": "Random Beat",
+            "body": "A random beat mixes it up for a while, throwing random gestures. It stabilises at the last moment!",
+            "type": "showcase"
         }
     ]
 }

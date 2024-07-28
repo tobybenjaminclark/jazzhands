@@ -5,14 +5,14 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
             "heading": "Gnork",
-            "body": "Hail, brave traveller! What brings you to the barren lands of Ampiforia?",
+            "body": "Hail, brave traveller! What brings you to the barren lands of Ampliforia?",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "I’m on a mission to stop the Grand Composer and restore harmony to the galaxy!",
+            "heading": "Traveller",
+            "body": "I'm on a mission to stop the Grand Composer and restore harmony to the galaxy!",
             "type": "dialogue"
         },
         {
@@ -25,8 +25,8 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "Nice to meet you, Gnork. What happened to Ampiforia?",
+            "heading": "Traveller",
+            "body": "Nice to meet you, Gnork. What happened to Ampliforia?",
             "type": "dialogue"
         },
         {
@@ -39,7 +39,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
+            "heading": "Traveller",
             "body": "What kind of hope?",
             "type": "dialogue"
         },
@@ -53,7 +53,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
+            "heading": "Traveller",
             "body": "Where can I find this Thunderstone?",
             "type": "dialogue"
         },
@@ -61,14 +61,14 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
             "heading": "Gnork",
-            "body": "The Thunderstone is hidden deep within Core Cavern. It’s guarded by the fierce warrior, Lightningfist. He once fed on the rebel energy of the Thunderstone, and now lies waiting for its resurgence.",
+            "body": "The Thunderstone is hidden deep within Core Cavern. It's guarded by the fierce warrior, Lightningfist. He once fed on the rebel energy of the Thunderstone, and now lies waiting for its resurgence.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "I'll do anything it takes for Ampiforia to rock again.",
+            "heading": "Traveller",
+            "body": "I'll do anything it takes for Ampliforia to rock again.",
             "type": "dialogue"
         },
         {
@@ -82,15 +82,15 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Hey Player! Another symbol just dropped...",
+            "body": "Hey Player! Another symbol just dropped on the Beat Deck...",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
+            "foreground": "cutscenedata/peace.png",
+            "heading": "Peace",
             "body": "When the PEACE symbol appears, raise your index and middle fingers and chill out!",
-            "type": "dialogue"
+            "type": "showcase"
         }
     ]
 }

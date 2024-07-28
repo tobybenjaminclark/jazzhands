@@ -40,14 +40,14 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Discord, we’re here to free the universe from the Grand Composer’s control. Crescendo, Nox, and Solstice have all joined us. Now it's your turn to see the power of our harmony!",
+            "body": "Discord, we're here to free the universe from the Grand Composer's control. Crescendo, Nox, and Solstice have all joined us. Now it's your turn to see the power of our harmony!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/discord.png",
             "heading": "Discord",
-            "body": "Joined you? Those weaklings. The Grand Composer’s harmony is a lie, but so is your so-called freedom. Only chaos is truly honest.",
+            "body": "Joined you? Those weaklings. The Grand Composer's harmony is a lie, but so is your so-called freedom. Only chaos is truly honest.",
             "type": "dialogue"
         },
         {

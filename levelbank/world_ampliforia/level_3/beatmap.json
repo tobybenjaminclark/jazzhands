@@ -1,7 +1,7 @@
 {
     "level_data": {
-        "level_name": "level_trashtalka",
-        "description": "rock lvl 2",
+        "level_name": "Boulder Barrier",
+        "description": "Use your new ability to destroy a boulder blocking your path!",
         "background": "ROCK",
         "song": "snd_trashtalka.ogg"
     },
