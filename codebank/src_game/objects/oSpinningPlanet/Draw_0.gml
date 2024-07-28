@@ -10,6 +10,8 @@ draw_self();
 if(text_alpha != 0)
 {
 	draw_set_alpha(text_alpha);
+	
+	/* Draw Selector */	
 	draw_set_halign(fa_right);
 	draw_set_font(fntRaanana);
 	draw_text(x - 135, y + 5, title);
@@ -27,6 +29,7 @@ if(text_alpha != 0)
 		draw_sprite_ext(sprPlanetRecord1, 0, px, py, 0.12, 0.12, 0, c_white, text_alpha);
 		if(angle == 0)
 		{
+			draw_sprite_ext(sprPlanetSelector, 0, px, py, 0.1, 0.1, 0, c_white, text_alpha);
 			draw_set_halign(fa_left);
 			draw_set_font(fntRaanana);
 			draw_text(px + 30, py - 10, level_objects[index].level_data.level_name);

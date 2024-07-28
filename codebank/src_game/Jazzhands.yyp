@@ -427,6 +427,7 @@
     {"id":{"name":"sprPallette","path":"sprites/sprPallette/sprPallette.yy",},},
     {"id":{"name":"sprPaused","path":"sprites/sprPaused/sprPaused.yy",},},
     {"id":{"name":"sprPlanetRecord1","path":"sprites/sprPlanetRecord1/sprPlanetRecord1.yy",},},
+    {"id":{"name":"sprPlanetSelector","path":"sprites/sprPlanetSelector/sprPlanetSelector.yy",},},
     {"id":{"name":"sprPower","path":"sprites/sprPower/sprPower.yy",},},
     {"id":{"name":"sprRadio","path":"sprites/sprRadio/sprRadio.yy",},},
     {"id":{"name":"sprRecord","path":"sprites/sprRecord/sprRecord.yy",},},
