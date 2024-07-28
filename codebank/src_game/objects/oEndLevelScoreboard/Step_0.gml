@@ -32,9 +32,20 @@ if(current_step % 50 == 0){
 			break
 		case 5:
 			/* post cutscene */
-			if(has_post_cutscene){
-				instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDiscCutscene, {cutscene_path: post_cutscene_path, depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
+			if(accuracy >= pass_accuracy)
+			{
+				if(has_post_cutscene){
+					instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDiscCutscene, {cutscene_path: post_cutscene_path, depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
+				}
+				else if(!has_post_cutscene){
+					instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
+				}
 			}
+			else {
+				instance_create_layer(room_width div 2 + 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
+				instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
+			}
+			
 			audio_play_sound(ping_medium, 0, false);
 			break
 		default:

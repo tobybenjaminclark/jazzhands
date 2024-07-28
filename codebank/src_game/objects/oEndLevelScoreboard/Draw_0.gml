@@ -77,12 +77,22 @@ if(display_step >= 4)
 }
 
 if(display_step >= 5){
-	if(has_post_cutscene) {
-		draw_set_halign(fa_left);
-		draw_text(room_width div 2 - 350, 700, "Watch End Scene & Return To Menu");
+	if(accuracy >= pass_accuracy){
+		if(has_post_cutscene) {
+			draw_set_halign(fa_left);
+			draw_text(room_width div 2 - 370, 700, "Watch End Scene & Return To Menu");
+		}
+		if(!has_post_cutscene) {
+			draw_set_halign(fa_left);
+			draw_text(room_width div 2 - 370, 700, "Return to Menu");
+		}
 	}
-	if(!has_post_cutscene) {
-		draw_text(room_width div 2 + _o, 600, "NO POST CUTSCENE");
+	else{
+		draw_set_halign(fa_left);
+		draw_text(room_width div 2 - 370, 700, "Return to Menu");
+		
+		draw_set_halign(fa_right);
+		draw_text(room_width div 2 + 370, 700, "Retry Level");
 	}
 	
 }
