@@ -12,7 +12,7 @@ function create_new_save(username)
 	statistics_struct.beats_hit = 0;
 	statistics_struct.beats_missed = 0;
 	statistics_struct.songs_played = 0;
-	statistics_struct.player_level = 1;
+	statistics_struct.player_level = START_LEVEL;
 	
 	/* Create the Save Struct & assign base values */
 	var save_struct = {};

@@ -36,8 +36,8 @@ if(current_step % 50 == 0){
 			{
 				/* Update save file (success!) */
 				var _s = json_parse_from_filepath("userbank/" + "PLAYER.json")
-				if (_s.statistics.player_level < global.numerical_level){
-					_s.statistics.player_level = global.numerical_level;
+				if (_s.statistics.player_level <= global.numerical_level){
+					_s.statistics.player_level = global.numerical_level + 1;
 					json_save(_s, "userbank/PLAYER.json");
 				}
 				

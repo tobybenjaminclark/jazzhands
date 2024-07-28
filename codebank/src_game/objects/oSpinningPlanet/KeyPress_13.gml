@@ -15,7 +15,7 @@ if(is_stopper)
 	/* Can the player play this level? */
 	if(player_level < (4 * (world) + index + 1)){
 		/* Cannot play! */
-		audio_play_sound(snd_rock_destroy, 0, false);
+		audio_play_sound(sndNegative, 0, false);
 		return;
 	}
 	else{
