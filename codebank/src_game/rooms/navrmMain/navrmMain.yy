@@ -16,7 +16,6 @@
     {"name":"inst_64E6B467","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_3A873689","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_41CF4295","path":"rooms/navrmMain/navrmMain.yy",},
-    {"name":"inst_5A364F22","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_4B0688DD","path":"rooms/navrmMain/navrmMain.yy",},
   ],
   "isDnd":false,
@@ -86,7 +85,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"right_trigger","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"POINTING_UP",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"next_room","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resource":{"name":"rmTutorial","path":"rooms/rmTutorial/rmTutorial.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rmTutorial",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":1088.0,"y":1056.0,},
-        {"$GMRInstance":"v1","%Name":"inst_5A364F22","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5A364F22","objectId":{"name":"oSaveSelectorManager","path":"objects/oSaveSelectorManager/oSaveSelectorManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":1880.0,"y":1952.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"DiscEffectLayer","depth":500,"effectEnabled":true,"effectType":"_filter_twist_blur","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"DiscEffectLayer","properties":[
         {"name":"g_TwistBlurCenter","type":0,"value":"0.5",},

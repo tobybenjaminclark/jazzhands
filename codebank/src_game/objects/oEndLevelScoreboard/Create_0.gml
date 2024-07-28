@@ -13,12 +13,13 @@ if parent.has_post_cutscene {
 /* Log current step */
 bg_alpha = 0;
 current_step = 0;
-pass_accuracy = 60;
+pass_accuracy = 0.60;
 has_played_end_accuracy_seq = false;
 display_step = -1;
 
 /* Calculate accuracy etc... determine if the player won or failed? */
 accuracy = global.hit_beats / global.total_beats; 
+accuracy = 0.99;
 iaccuracy = round(accuracy * 100);
 
 iaccuracy_display = 0;

@@ -2,6 +2,15 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
+
+/* scale selector */
+if(selector_growing) selector_scale += 0.02;
+else selector_scale -= 0.02;
+
+if(selector_scale == 0) selector_growing = true
+else if(selector_scale == 1) selector_growing = false;
+
+
 /* If this planet hasn't stopped the movment, hide the text */
 if(!is_stopper && text_alpha > 0) text_alpha -= 0.05
 

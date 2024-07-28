@@ -147,5 +147,5 @@ for (var i = 0; i < 5; i++;)
         description: descriptions[i]
     });
 
-    angle_step += 50;
+    angle_step += 60;
 }

@@ -34,6 +34,13 @@ if(current_step % 50 == 0){
 			/* post cutscene */
 			if(accuracy >= pass_accuracy)
 			{
+				/* Update save file (success!) */
+				var _s = json_parse_from_filepath("userbank/" + "PLAYER.json")
+				if (_s.statistics.player_level < global.numerical_level){
+					_s.statistics.player_level = global.numerical_level;
+					json_save(_s, "userbank/PLAYER.json");
+				}
+				
 				if(has_post_cutscene){
 					instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDiscCutscene, {cutscene_path: post_cutscene_path, depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
 				}

@@ -8,6 +8,14 @@ enum directions
 	clockwise,
 }
 
+/* Get player level */
+var _s = json_parse_from_filepath("userbank/" + "PLAYER.json")
+player_level = _s.statistics.player_level;
+
+/* Selector scale */
+selector_scale = 0;
+selector_growing = true;
+
 have_queued_room = false;
 dir = "NONE";
 
