@@ -17,6 +17,7 @@ else
 			cutscene_delete_components();
 			instance_destroy(self);
 			global.in_cutscene = false;
+			audio_stop_all();
 			instance_create_layer(x, y, "Instances", oSpinner);
 			return;
 		}
