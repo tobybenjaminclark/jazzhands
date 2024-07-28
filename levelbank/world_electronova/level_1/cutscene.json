@@ -5,13 +5,13 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "INTRUDER DETECTED. SCANNING... GREETINGS SPECIMEN. I AM DIODE, GUARDIAN OF COMPLEX 0x2A.",
+            "body": "Intruder detected. Scanning... Greetings specimen. I am Diode, guardian of Complex 0x2A.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
+            "heading": "Traveller",
             "body": "Hello Diode! Your planet looks beautiful, but what happened to it?",
             "type": "dialogue"
         },
@@ -19,13 +19,13 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "PLANET: ELECTRONOVA. STATUS: SILENT.\nELECTRONOVA ONCED THRIVED WITH THE ENERGY OF TECHNO MUSIC. DIODES AND FUSEONS WORKED TOGETHER TO POWER THE BEATS. BUT THE GRAND COMPOSER'S INTERFERENCE JAMMED OUR SIGNAL AND SHORTED OUR CIRCUITS, LEAVING ELECTRONOVA IN PERPETUAL SILENCE.",
+            "body": "Planet: Electronova. Status: Silent. Electronova once thrived with the energy of techno music. Diodes and Fuseons worked together to power the beats. But the Grand Composer's interference jammed our signal and shorted our circuits, leaving Electronova in perpetual silence.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
+            "heading": "Traveller",
             "body": "Don't worry Diode, I'm here to restore your harmony. I rode the great wave from Harmonious, and Monad told me I might find parts here to repair my ship.",
             "type": "dialogue"
         },
@@ -33,13 +33,13 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "YOUR MISSION ALIGNS WITH OUR NEEDS. MOTHER BOARD WILL PROVIDE THE PARTS YOU REQUIRE.",
+            "body": "Your mission aligns with our needs. Mother Board will provide the parts you require.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
+            "heading": "Traveller",
             "body": "Great! Where can I find this Mother Board?",
             "type": "dialogue"
         },
@@ -47,13 +47,13 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "MOTHER BOARD IS LOCATED IN THE CENTRAL HUB, BUT HER CIRCUITS ARE DORMANT. YOU MUST MEND HER BROKEN RHYTHM CORE, A TASK THAT ONLY THE BEST TECHNO JAMMERS CAN ACCOMPLISH.",
+            "body": "Mother Board is located in the Central Hub, but her circuits are dormant. You must mend her broken Rhythm Core, a task that only the best techno jammers can accomplish.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
-            "heading": "Traveller (You)",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
             "body": "Sounds like a challenge, but I'm ready. Where is the Rhythm Core?",
             "type": "dialogue"
         },
@@ -61,13 +61,13 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "THE RHYTHM CORE IS GUARDED BY THE FUSEON SENTINELS. THEIR POSITION IS WRITTEN ON MY LOCATOR CHIP. BUT IT REQUIRES A BLAST OF TECHNO POWER TO JUMPSTART.",
+            "body": "The Rhythm Core is guarded by the Fuseon Sentinels. Their position is written on my Locator Chip. But it requires a blast of techno power to jumpstart.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
+            "heading": "Traveller",
             "body": "Stand still Diode, I can handle this.",
             "type": "dialogue"
         },
@@ -75,22 +75,15 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Player! A new symbol has appeared on the system!",
+            "body": "Player! A new symbol has appeared on the Beat Deck!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
+            "foreground": "cutscenedata/pointingup.png",
+            "heading": "Pointing Up",
             "body": "When the beat appears, raise your index finger to the sky!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Let's see your groove!",
-            "type": "dialogue"
+            "type": "showcase"
         }
     ]
 }

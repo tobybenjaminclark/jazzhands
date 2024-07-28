@@ -47,7 +47,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Let’s give it everything we’ve got!",
+            "body": "Let's give it everything we've got!",
             "type": "dialogue"
         }
     ]

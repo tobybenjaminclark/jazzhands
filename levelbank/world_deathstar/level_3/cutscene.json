@@ -40,7 +40,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "That must be Solstice’s influence. Let's find her and bring the groove to this platform.",
+            "body": "That must be Solstice's influence. Let's find her and bring the groove to this platform.",
             "type": "dialogue"
         },
         {
@@ -54,14 +54,14 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Solstice, we’re here to free the universe from the Grand Composer’s control. Crescendo and Nox have joined us. Now it's your turn to see the light of our cause!",
+            "body": "Solstice, we're here to free the universe from the Grand Composer's control. Crescendo and Nox have joined us. Now it's your turn to see the light of our cause!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/solstice.png",
             "heading": "Solstice",
-            "body": "Joined you? Their convictions must have been weak to falter so easily. The Grand Composer’s harmony is absolute!!!",
+            "body": "Joined you? Their convictions must have been weak to falter so easily. The Grand Composer's harmony is absolute!!!",
             "type": "dialogue"
         },
         {
@@ -89,7 +89,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "We’re ready, Solstice. Let’s show her the power of our groove, Mojo!",
+            "body": "We're ready, Solstice. Let's show her the power of our groove, Mojo!",
             "type": "dialogue"
         }
     ]

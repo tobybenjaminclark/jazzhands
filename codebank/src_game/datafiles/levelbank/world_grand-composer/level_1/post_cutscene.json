@@ -1,0 +1,61 @@
+{
+    "name": "Harmony is Restored",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/discord.png",
+            "heading": "Space",
+            "body": "As Mojo and Player commence their epic dual with the Grand Composer, a bright light floods the galaxy!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/discord.png",
+            "heading": "Space",
+            "body": "Defeated by the immense power of their song, the Grand Composer combusts, spreading his energy across the galaxy.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We did it! The Grand Composer has been defeated!!!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Zowie! My mojo, it has come back!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Now that we have saved the galaxy, we can return to our World Tour! With you as my trusty engineer, our boundless groove is unstoppable.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "But Mojo, I'm as powerful as you now! Maybe we could negotiate a... dual act?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "But my fans, they expect me in the spotlight! You may have groove, but at the end of the day you're just an engineer.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Oh yeah? Then maybe we should have a... GROOVE OFF!!!!",
+            "type": "dialogue"
+        }
+    ]
+}

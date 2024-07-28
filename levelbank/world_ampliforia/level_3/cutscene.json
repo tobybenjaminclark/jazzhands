@@ -26,7 +26,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/goliath.png",
             "heading": "Goliath",
-            "body": "Then let us descend into the depths of these caverns, where the heartbeat of Ampiforia lies dormant. Our feet shall echo the rhythm of our music, and together, we shall awaken the Thunderstone!",
+            "body": "Then let us descend into the depths of these caverns, where the heartbeat of Ampliforia lies dormant. Our feet shall echo the rhythm of our music, and together, we shall awaken the Thunderstone!",
             "type": "dialogue"
         },
         {
@@ -61,8 +61,15 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Player, you can break the boulders with funk! Hit two thumbs up to activate the power!",
+            "body": "Player, a new ability has appeared on the Beat Deck!",
             "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/boulderpower.png",
+            "heading": "Boulder Power",
+            "body": "You can break the boulders with funk! Hit two thumbs down to activate the power!",
+            "type": "showcase"
         }
     ]
 }

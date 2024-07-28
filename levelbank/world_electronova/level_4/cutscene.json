@@ -5,77 +5,49 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/circuitus.png",
             "heading": "Circuitus",
-            "body": "YES... YES, I REMEMBER NOW. I AM CIRCUITUS, MASTER OF THE RHYTHM CORE. I WILL HELP YOU.",
+            "body": "Yes... Yes, I remember now. I am Circuitus, master of the Rhythm Core. I will help you, friends.",
             "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/rhythmcore.png",
+            "heading": "Rhythm Core",
+            "body": "The Rhythm Core is Mother Board's heartbeat, a powerful device generating the planet's techno energy. Encased in a futuristic shell with rotating rings and a glowing crystalline center, it enhances the planet's techno music.",
+            "type": "showcase"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/circuitus.png",
             "heading": "Circuitus",
-            "body": "THE RHYTHM CORE IS REPAIRED. BUT TO FULLY REACTIVATE IT, WE NEED TO CREATE A HARMONIC CONVERGENCE. THE FINAL STEP MUST BE PERFORMED AT THE CENTRAL HUB.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
-            "heading": "Diode",
-            "body": "MOTHER BOARD AWAITS US THERE. LET US GO, TRAVELLER, AND BRING BACK THE MUSIC TO ELECTRONOVA.",
+            "body": "The Rhythm Core is repaired. But to fully reactivate it, we need to create a Harmonic Convergence. The final step must be performed at the Central Hub.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "HERE WE ARE, THE CENTRAL HUB. MOTHER BOARD AWAITS.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "She's impressive. But we need to bring her back online. What's the next step, Circuitus?",
+            "body": "Here we are, The Central Hub. Mother Board awaits.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/circuitus.png",
             "heading": "Circuitus",
-            "body": "TO REACTIVATE MOTHER BOARD, WE MUST CHANNEL THE RHYTHM CORE'S ENERGY INTO HER MAINFRAME. THIS REQUIRES A HARMONIC CONVERGENCE. BOTH DIODES AND FUSEONS MUST SYNCHRONIZE THEIR BEATS IN PERFECT HARMONY.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "How do we achieve this convergence?",
+            "body": "To reactivate Mother Board, we must channel the Rhythm Core's energy into her mainframe. This requires a harmonic convergence. Both diodes and fuseons must synchronize their brats in perfect harmony.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
-            "body": "THE DIODES AND FUSEONS MUST UNITE, EACH PLAYING THEIR PART IN A SYMPHONY OF SOUND. BUT YEARS OF SILENCE HAVE MADE THIS DIFFICULT.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/circuitus.png",
-            "heading": "Circuitus",
-            "body": "IT'S TRUE. WE MUST GUIDE THEM BACK TO THEIR ROOTS, TO THE BEATS THAT ONCE UNITED US.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background2.png",
-            "foreground": "cutscenedata/diode.png",
-            "heading": "Diode",
-            "body": "FELLOW DIODES, REMEMBER THE RHYTHM THAT ONCE FLOWED THROUGH OUR CIRCUITS. LET US JOIN TOGETHER AND REVIVE THE BEATS OF ELECTRONOVA!",
+            "body": "Fellow Diodes, remember the rhythm that once flowed through our circuits. Let us join together and revive the beats of Electronova!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
             "heading": "Fuseon",
-            "body": "FUSEONS, THE TRAVELLER HAS AWAKENED US TO THE POWER OF GROOVE. LET US UNITE WITH OUR DIODE BRETHREN AND BRING BACK THE MUSIC!",
+            "body": "Fuseons, the traveller has awakened us to the power of groove. Let us unite with our Diode brethren and bring back the music!",
             "type": "dialogue"
         },
         {

@@ -31,24 +31,10 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
+            "foreground": "cutscenedata/discofever.png",
+            "heading": "Disco Fever",
             "body": "Hit two thumbs up to amplify your groove energy!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Thanks Mojo! Zapp, I'll do whatever it takes to save your planet.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/zapp.png",
-            "heading": "Zapp",
-            "body": "Show me the groove!",
-            "type": "dialogue"
+            "type": "showcase"
         }
     ]
 }

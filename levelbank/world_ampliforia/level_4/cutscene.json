@@ -12,7 +12,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "We're ready for whatever he throws at us. Let's bring the thunder back to Ampiforia!",
+            "body": "We're ready for whatever he throws at us. Let's bring the thunder back to Ampliforia!",
             "type": "dialogue"
         },
         {
@@ -40,14 +40,14 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
             "heading": "Gnork",
-            "body": "Your stubbornness won't stop us, Lightningfist. Ampiforia needs the Thunderstone to thrive once more.",
+            "body": "Your stubbornness won't stop us, Lightningfist. Ampliforia needs the Thunderstone to thrive once more.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "If we don't awaken the Thunderstone, the rock spirit of Ampiforia will remain dormant forever!",
+            "body": "If we don't awaken the Thunderstone, the rock spirit of Ampliforia will remain dormant forever!",
             "type": "dialogue"
         },
         {
