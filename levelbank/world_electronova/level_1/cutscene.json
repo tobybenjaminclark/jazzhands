@@ -10,7 +10,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Hello Diode! Your planet looks beautiful, but what happened to it?",
             "type": "dialogue"
@@ -24,7 +24,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Don't worry Diode, I'm here to restore your harmony. I rode the great wave from Harmonious, and Monad told me I might find parts here to repair my ship.",
             "type": "dialogue"
@@ -38,7 +38,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Great! Where can I find this Mother Board?",
             "type": "dialogue"
@@ -66,7 +66,7 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
+            "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller (You)",
             "body": "Stand still Diode, I can handle this.",
             "type": "dialogue"
