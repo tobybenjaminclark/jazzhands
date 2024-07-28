@@ -39,14 +39,14 @@ cutscene_file = filepath_replace_last_element(beatmap_path, "cutscene.json");
 post_cutscene_path = filepath_replace_last_element(beatmap_path, "post_cutscene.json");
 if(file_exists(post_cutscene_path)) has_post_cutscene = true;
 
-
+/* Draw intro bg */
 if(file_exists(cutscene_file)){
 	json_struct = json_parse_from_filepath(cutscene_file);
 	if(variable_struct_exists(json_struct, "frames")){
 		var _background_path = cutscene_get_background_path(json_struct.frames[0]);
 	}
 	var _background_path = filepath_replace_last_element(cutscene_file, _background_path);
-	background_sprite = sprite_add(_background_path, 1, true, true, 0, 0);	
+	background_sprite = sprite_add(_background_path, 1, false, true, 0, 0);	
 }
 else{
 	background_sprite = spr_black_box;

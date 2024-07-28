@@ -180,6 +180,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
+	    "sound_effect": "cutscenedata/explosion.ogg",
             "body": "Well, that wasn't part of the plan. You okay, Mojo?",
             "type": "dialogue"
         },

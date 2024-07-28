@@ -219,6 +219,7 @@
     {"$GMIncludedFile":"","%Name":"backstage.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"backstage.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"black_white_galaxy.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"black_white_galaxy.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"computer.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"computer.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"explosion.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"explosion.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"galaxy_1.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"galaxy_1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"grand_composer_1.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"grand_composer_1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"grand_composer_2.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"grand_composer_2.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

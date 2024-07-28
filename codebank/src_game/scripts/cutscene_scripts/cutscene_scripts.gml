@@ -69,10 +69,20 @@ function cutscene_initialise_components(frame_index, json_path)
 	}
 
 	background_path = filepath_replace_last_element(json_path, background_path);
+	
+	/* Audio */
+	if(struct_exists(json_struct.frames[frame_index], "sound_effect")){
+		snd_path = filepath_replace_last_element(json_path, json_struct.frames[frame_index].sound_effect);
+	}
+	else {
+		snd_path = "";	
+	}
+	
 	cutscene_background = instance_create_layer(0,0, "CutsceneBackground", oCSBackground,
 		{
 			path: background_path,
-			parent: self
+			parent: self,
+			audio_path: snd_path
 		});
 }
 
