@@ -52,8 +52,6 @@ else{
 	background_sprite = spr_black_box;
 }
 
-
-
 /* Parse JSON from supplied beatmap path */
 beatmap_structure = json_parse_from_filepath(beatmap_path);
 level_name = beatmap_structure.level_data.level_name;

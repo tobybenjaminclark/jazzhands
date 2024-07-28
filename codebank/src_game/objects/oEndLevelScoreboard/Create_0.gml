@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 /* Check for post cutscene */
+has_played_post_cutscene = false;
 has_post_cutscene = false;
 post_cutscene_path = "";
 if parent.has_post_cutscene {
