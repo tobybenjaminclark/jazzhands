@@ -42,7 +42,7 @@ if(current_step % 50 == 0){
 				}
 			}
 			else {
-				instance_create_layer(room_width div 2 + 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
+				instance_create_layer(room_width div 2 + 460, 700, "InstancesNoGlow", oSpinningDisc, {next_room: rmstage_harmonica, depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
 				instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2});
 			}
 			

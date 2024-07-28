@@ -24,7 +24,7 @@ if(text_alpha != 0)
 		index++;
 		px = x + lengthdir_x(230, angle);
 		py = y + lengthdir_y(230, angle);
-		draw_sprite_ext(sprPlanetRecord1, 0, px, py, 0.2, 0.2, 0, c_white, text_alpha);
+		draw_sprite_ext(sprPlanetRecord1, 0, px, py, 0.12, 0.12, 0, c_white, text_alpha);
 		if(angle == 0)
 		{
 			draw_set_halign(fa_left);
