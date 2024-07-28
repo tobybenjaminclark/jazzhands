@@ -89,6 +89,7 @@
     {"name":"oSpinner","order":9,"path":"objects/oSpinner/oSpinner.yy",},
     {"name":"oSpinningCog","order":1,"path":"objects/oSpinningCog/oSpinningCog.yy",},
     {"name":"oSpinningDisc","order":2,"path":"objects/oSpinningDisc/oSpinningDisc.yy",},
+    {"name":"oSpinningDiscCutscene","order":16,"path":"objects/oSpinningDiscCutscene/oSpinningDiscCutscene.yy",},
     {"name":"oSpinningPlanet","order":3,"path":"objects/oSpinningPlanet/oSpinningPlanet.yy",},
     {"name":"oSpriteDisplay","order":2,"path":"objects/oSpriteDisplay/oSpriteDisplay.yy",},
     {"name":"oStageSpawnerBase","order":1,"path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},

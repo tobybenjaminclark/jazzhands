@@ -329,6 +329,7 @@
     {"id":{"name":"oSpinner","path":"objects/oSpinner/oSpinner.yy",},},
     {"id":{"name":"oSpinningCog","path":"objects/oSpinningCog/oSpinningCog.yy",},},
     {"id":{"name":"oSpinningDisc","path":"objects/oSpinningDisc/oSpinningDisc.yy",},},
+    {"id":{"name":"oSpinningDiscCutscene","path":"objects/oSpinningDiscCutscene/oSpinningDiscCutscene.yy",},},
     {"id":{"name":"oSpinningPlanet","path":"objects/oSpinningPlanet/oSpinningPlanet.yy",},},
     {"id":{"name":"oSpriteDisplay","path":"objects/oSpriteDisplay/oSpriteDisplay.yy",},},
     {"id":{"name":"oStageSpawnerBase","path":"objects/oStageSpawnerBase/oStageSpawnerBase.yy",},},

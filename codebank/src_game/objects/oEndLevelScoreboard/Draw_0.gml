@@ -77,12 +77,13 @@ if(display_step >= 4)
 }
 
 if(display_step >= 5){
-	if(has_post_cutscene && !has_played_post_cutscene){
-		has_played_post_cutscene = true;
-		cutscene_start(post_cutscene_path, room);
+	if(has_post_cutscene) {
+		draw_set_halign(fa_left);
+		draw_text(room_width div 2 - 350, 700, "Watch End Scene & Return To Menu");
 	}
-	else {
+	if(!has_post_cutscene) {
 		draw_text(room_width div 2 + _o, 600, "NO POST CUTSCENE");
 	}
+	
 }
 
