@@ -3,23 +3,9 @@
     "frames": [
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/motherboard_asleep.png",
-            "heading": "Mother Board",
-            "body": "...",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/motherboard_alive.png",
             "heading": "Mother Board",
-            "body": "SYSTEMS REACTIVATED. HARMONIC CONVERGENCE SUCCESSFUL.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
-            "heading": "Diode",
-            "body": "WELCOME BACK, MOTHER BOARD.",
+            "body": "Systems Reactivated. Harmonic Convergence successful.",
             "type": "dialogue"
         },
         {
@@ -33,35 +19,28 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/motherboard_alive.png",
             "heading": "Mother Board",
-            "body": "THANK YOU, TRAVELLER. YOUR EFFORTS HAVE RESTORED THE BEAT TO ELECTRONOVA. YOU HAVE AWAKENED US FROM OUR SILENCE AND BROUGHT BACK OUR RHYTHM.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "It was a team effort. Diode, Circuitus, and everyone else played their part.",
+            "body": "Thank you, traveller. Your efforts have restored the beat to Electronova. You have awakened us from our silence and brought back our rhythm.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/motherboard_alive.png",
             "heading": "Mother Board",
-            "body": "YOUR HUMILITY IS ADMIRABLE. THE TECHNO POWER RESURGENCE IS NOW IN FULL EFFECT. THE GRAND COMPOSER'S INFLUENCE WILL BE PURGED FROM OUR SYSTEMS.",
+            "body": "The techno power resurgence is now in full effect. The Grand Composer's influence will be purged from our systems.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/motherboard_alive.png",
             "heading": "Mother Board",
-            "body": "AS A TOKEN OF OUR GRATITUDE, I WILL ASSIST YOU IN REPAIRING YOUR SHIP. ALSO, TAKE THIS CELESTIAL AMP TO AID YOU ON YOUR JOURNEY.",
+            "body": "As a token of gratitude, I will assist you in repairing your ship. Also, take this Celestial Amp to aid you on your journey.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/amp.png",
-            "heading": "Celestial Amp",
-            "body": "Another amp from Mother Board? I wonder what their purpose is...",
+            "heading": "You received a Celestial Amp!",
+            "body": "Forged from advanced alloys and intricate circuitry, the Celestial Amp of Electronova amplifies beats with the planet's powerful techno rhythms. This futuristic amplifier transforms simple tunes into grand electronic symphonies, connecting the music to the very core of Electronova's technological essence.",
             "type": "showcase"
         },
         {
@@ -75,14 +54,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/motherboard_alive.png",
             "heading": "Mother Board",
-            "body": "YOUR JOURNEY IS FAR FROM OVER, TRAVELLER. BEYOND THE WAVES LIES AMPIFORIA, HOME TO THE ROCK PEOPLE. THEY, TOO, MAY NEED YOUR AID.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Ampiforia, huh? Sounds like my kind of adventure. I'll head there next.",
+            "body": "Your journey is far from over, traveller. Beyond the waves lies Ampliforia, home to the rock gods. They, too, may need your aid.",
             "type": "dialogue"
         }
     ]
