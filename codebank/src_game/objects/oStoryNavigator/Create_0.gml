@@ -4,7 +4,7 @@
 
 /* Initial Variables */
 moving = true;
-planetary_movement = directions.counter_clockwise
+planetary_movement = directions.clockwise
 
 /* Setting Planet Titles */
 titles = 
