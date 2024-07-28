@@ -30,6 +30,10 @@ if(current_step % 50 == 0){
 			/* accuracy */
 			audio_play_sound(ping_medium, 0, false);
 			break
+		case 5:
+			/* post cutscene */
+			audio_play_sound(ping_medium, 0, false);
+			break
 		default:
 			break;
 	}

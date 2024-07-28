@@ -1,102 +1,252 @@
 {
-    "name": "The Melody of the Maoi",
+    "name": "Crash Landing",
     "frames": [
         {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Greetings, travellers. You have landed on the shores of Harmonius, a once vibrant planet in the cosmic orchestra. I am Monad, a humble philosopher among the Maoi.",
+            "background": "cutscenedata/backstage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "The crowd's going wild... I think they want an encore!",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
+            "background": "cutscenedata/backstage.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "Harmonius... It's beautiful, but why is it so silent?",
+            "heading": "Traveller",
+            "body": "I've already packed up all of the gear. We need to hurry, or we'll be late to our gig on Mars!",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "It is the work of the Grand Composer. Long ago, this world was alive with uplifting beats. But the Grand Composer grew envious and silenced us all.",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: Vessel Theseoid is en route to Mars. Estimated time of arrival: 8 hours, 13 minutes. All systems are functioning within normal parameters. Cruise control initiated.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Zowie! I'm so pumped from that set. The crowd loved me!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "That's terrible... Is there anything we can do to help?",
+            "heading": "Traveller",
+            "body": "What a great show, Mojo! You've earned a well-deserved break. Meanwhile, I've upgraded the Beat Deck for your next gig - your funk levels will be through the roof!",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Indeed! We possess a Celestial Amp, a device capable of restoring our lost melody. But to wield it, you must convince our leader, the Elder Maoi, to entrust it to you.",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "What would I do without my trusty engineer? Now, time for a snooze...",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: Imminent wormhole detected. Probability of successful traversal: 0%. Initiating death sequence. Clearing search history.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "The Elder Maoi? Where can we find him?",
+            "heading": "Traveller",
+            "body": "NOOOOOOOOOOOOOOOOOO!!!!!",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "With eyes that have witnessed the birth and death of stars, the Elder Maoi stands atop the tallest peak of Harmonius, contemplating the mysteries of the universe. Seek his wisdom, and perhaps he will aid you in your quest to silence the Grand Composer's tyranny.",
+            "background": "cutscenedata/space.png",
+            "heading": "Space",
+            "body": "Somewhere in another universe...",
+            "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "My head hurts... Are we still alive?",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "More importantly... How are we going to get to our gig???",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Theseoid is intact... It must have been reassembled at a quantum level. But if each piece of the ship has been replaced, is it still the same ship?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: We have reached Galaxy Jazzus IV.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Strange... Computer, provide a detailed report on Galaxy Jazzus IV.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/galaxy_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "On Galaxy Jazzus IV... A cosmic orchestra sang in perfect harmony.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/galaxy_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Each planet contributing a unique melody, each note blending into a beautiful song.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "There emerged a being of unparalleled musical talent, The Grand Composer.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "His baton, shimmering with celestial light, echoed a cosmic groove through the void!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_2.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "But as the ages wore on, and eons had passed, the Grand Composer's admiration twisted into envy.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_2.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "His baton, once creating wonderful music, now enforced silence.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/black_white_galaxy.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "He stifled the planets' voices, and an ominous hum dominated the galaxy.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/black_white_galaxy.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "The cosmic orchestra has since remained silent, awaiting the day that they may sing again...",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: Unauthorized energy surge detected. Malicious energy is disrupting control systems.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
             "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "I'll try my best to save your planet. But may I ask, who gave you the name Monad?",
+            "heading": "Traveller",
+            "body": "Mojo, can you feel that? A powerful hum is disrupting our navigation...",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Warning: Critical failure in control systems. Initiating crash landing procedures. Brace for impact.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Ah, my name? Well, you could say I'm a 'functional' philosopher, deeply rooted in the principles of order and abstraction. A monad encapsulates values and sequences operations in a structured manner, and I strive to distill the essence of existence into coherent patterns of thought.",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "Well, that wasn't part of the plan. You okay, Mojo?",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "So you're like the monad of this world's wisdom?",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "I think so... but something feels off. My mojo... it's like it's gone.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Precisely! In a universe of chaos, I strive to be an unwavering thread of reason. Now brave traveller, set forth to restore the melody of Harmonius!",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "What do you mean gone? You're the funkiest being in the galaxy! Maybe it’s just the crash shock.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "Interesting. So, how exactly do we scale this mountain?",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "No, this is different. I can't feel the rhythm, the groove... it's like I've been unplugged from the funk.",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
-            "heading": "Monad",
-            "body": "Before venturing to the Elder, you must first show me that you are worthy of his presence. Prove to me that you can handle the divine vibes, and I will guide you atop the mountain myself.",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "That hum... do you hear it? It’s everywhere. It's messing with our systems. The beat deck is malfunctioning too!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller (You)",
-            "body": "Challenge accepted, Monad. Throw the vibes our way!",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "The sound waves... they’re blocking my mojo power.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "So, what do we do now? We can’t stay here forever, and we sure can’t perform with our tech busted.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "We fix the ship, get my mojo back, and find out what's really going on here. There’s gotta be someone who can help us out.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": "Guess I’ll have to take your place on stage for now. I might not have your groove, but I can still hold a beat.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "You’ve got heart, Player. I'll work on repairing the Beat Deck. But first, let's see your groove!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/player.png",
+            "heading": "Player",
+            "body": " Alright, let’s go. And Mojo, we’re getting your mojo back, no matter what!!",
             "type": "dialogue"
         }
     ]

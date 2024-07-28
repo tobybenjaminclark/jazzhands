@@ -1,9 +1,9 @@
 {
     "level_data": {
-        "level_name": "Journey to the Elder Maoi",
-        "description": "the Traveller's curiosity unearths Harmonius's past!",
+        "level_name": "Rhythic Sanctuary",
+        "description": "Conquer Funktor's trials to earn passage to the Elder Maoi!",
         "background": "TUTORIAL",
-        "song": "snd_cluster.ogg"
+        "song": "snd_bazaar.ogg"
     },
     "events": [
         {

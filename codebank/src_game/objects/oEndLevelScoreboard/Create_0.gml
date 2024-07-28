@@ -1,6 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/* Check for post cutscene */
+has_post_cutscene = false;
+post_cutscene_path = "";
+if parent.has_post_cutscene {
+	has_post_cutscene = true;
+	post_cutscene_path = parent.post_cutscene_path;
+}
+
 /* Log current step */
 bg_alpha = 0;
 current_step = 0;

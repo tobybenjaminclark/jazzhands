@@ -23,11 +23,11 @@
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/amp.png",
-            "heading": "You've recieved a Celestial Amp!",
-            "body": "This is the fourth amp I've been given! I don't think I can hold any more...",
-            "type": "showcase"
+        "background": "cutscenedata/background.png",
+        "foreground": "cutscenedata/amp.png",
+        "heading": "Celestial Amp",
+        "body": "This is the fourth amp I've been given! I don't think I can hold any more...",
+        "type": "showcase"
         },
         {
             "background": "cutscenedata/background.png",

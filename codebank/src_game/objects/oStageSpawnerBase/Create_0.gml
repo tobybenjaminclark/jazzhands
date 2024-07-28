@@ -19,7 +19,7 @@ has_shown_end_screen = false;
 alt_start_time = start_time;
 last_time = alt_start_time;
 blip_x = 0;
-
+has_post_cutscene = false;
 spawned_powerball = false;
 
 /* Chain (combo list) */
@@ -34,6 +34,12 @@ if(global.current_beatmap != undefined){
 /* For start (get background for intro scene) */
 intro_delay = INTRO_DELAY;
 cutscene_file = filepath_replace_last_element(beatmap_path, "cutscene.json");
+
+/* Check for post cutscene */
+post_cutscene_path = filepath_replace_last_element(beatmap_path, "post_cutscene.json");
+if(file_exists(post_cutscene_path)) has_post_cutscene = true;
+
+
 if(file_exists(cutscene_file)){
 	json_struct = json_parse_from_filepath(cutscene_file);
 	if(variable_struct_exists(json_struct, "frames")){

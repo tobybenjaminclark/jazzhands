@@ -76,4 +76,12 @@ if(display_step >= 4)
 	}
 }
 
+if(display_step >= 5){
+	if(has_post_cutscene){
+		draw_text(room_width div 2 + _o, 600, "Play post cutscene");
+	}
+	else {
+		draw_text(room_width div 2 + _o, 600, "NO POST CUTSCENE");
+	}
+}
 

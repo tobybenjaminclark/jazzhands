@@ -2,6 +2,13 @@
     "name": "Melodious Crest",
     "frames": [
         {
+            "background": "cutscenedata/background0.png",
+            "foreground": "cutscenedata/funktor.png",
+            "heading": "Funktor",
+            "body": "Traveller, your groove is extraordinary. You have our trust. Let us move forward...",
+            "type": "dialogue"
+        },
+        {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
