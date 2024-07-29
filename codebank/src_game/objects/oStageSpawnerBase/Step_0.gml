@@ -23,15 +23,21 @@ if(keyboard_check_pressed(vk_space) and spawned_powerball == false){
 	
 	var _x = x;
 	var _y = y + 300;
-	
+	var _created = false;
 	/* Spawn powerball for each bouldered beat on the screen */
 	with(oBoulderedBeat){
 		if(x > 0 and x < room_width and y > 0 and y < room_width){
 			var _self = self;
+			_created = true;
 			instance_create_layer(_x, _y, "Instances", oPowerball, {target: _self});
 		}
 	}
+	
+	if(_created) audio_play_sound(sndLaser, 0, false);
 	spawned_powerball = true;
+	
+	/* comment to disable (breaks game when enabled) */
+	spawned_powerball = false;
 }
 else{
 	spawned_powerball = false;

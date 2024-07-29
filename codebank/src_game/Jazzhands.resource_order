@@ -142,6 +142,7 @@
     {"name":"snd_rock_destroy","order":12,"path":"sounds/snd_rock_destroy/snd_rock_destroy.yy",},
     {"name":"snd_vibrate","order":11,"path":"sounds/snd_vibrate/snd_vibrate.yy",},
     {"name":"sndItemShowcase","order":14,"path":"sounds/sndItemShowcase/sndItemShowcase.yy",},
+    {"name":"sndLaser","order":20,"path":"sounds/sndLaser/sndLaser.yy",},
     {"name":"sndLoseLevel","order":16,"path":"sounds/sndLoseLevel/sndLoseLevel.yy",},
     {"name":"sndNegative","order":19,"path":"sounds/sndNegative/sndNegative.yy",},
     {"name":"sndPositive","order":18,"path":"sounds/sndPositive/sndPositive.yy",},

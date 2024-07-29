@@ -406,6 +406,7 @@
     {"id":{"name":"snd_rock_destroy","path":"sounds/snd_rock_destroy/snd_rock_destroy.yy",},},
     {"id":{"name":"snd_vibrate","path":"sounds/snd_vibrate/snd_vibrate.yy",},},
     {"id":{"name":"sndItemShowcase","path":"sounds/sndItemShowcase/sndItemShowcase.yy",},},
+    {"id":{"name":"sndLaser","path":"sounds/sndLaser/sndLaser.yy",},},
     {"id":{"name":"sndLoseLevel","path":"sounds/sndLoseLevel/sndLoseLevel.yy",},},
     {"id":{"name":"sndNegative","path":"sounds/sndNegative/sndNegative.yy",},},
     {"id":{"name":"sndPositive","path":"sounds/sndPositive/sndPositive.yy",},},
