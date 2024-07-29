@@ -7,7 +7,7 @@
     },
     "events": [
         {
-            "event_type": "beat",
+            "event_type": "bouldered_beat",
             "event_data": {
                 "time": 6800,
                 "symbol": "OPEN_PALM",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "event_type": "beat",
+            "event_type": "bouldered_beat",
             "event_data": {
                 "time": 6800,
                 "symbol": "OPEN_PALM",
