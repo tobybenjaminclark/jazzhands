@@ -26,14 +26,28 @@ if(keyboard_check_pressed(vk_space) and spawned_powerball == false){
 	var _created = false;
 	/* Spawn powerball for each bouldered beat on the screen */
 	with(oBoulderedBeat){
-		if(x > 0 and x < room_width and y > 0 and y < room_width){
+		if(x > 0 and x < room_width and y > 0 and y < room_width and boulder){
 			var _self = self;
 			_created = true;
-			instance_create_layer(_x, _y, "Instances", oPowerball, {target: _self});
+			
+			if(x > room_width div 2){
+				/* Spawn right */
+				instance_create_layer(_x + 154, _y, "Instances", oPowerball, {target: _self});
+			}	
+			else{
+				/* Spawn left */
+				instance_create_layer(_x - 154, _y, "Instances", oPowerball, {target: _self});
+			}
+			
 		}
 	}
 	
-	if(_created) audio_play_sound(sndLaser, 0, false);
+	if(_created) {
+		audio_play_sound(sndLaser, 0, false);
+		hit_beat_lights("LEFT", c_aqua);
+		hit_beat_lights("RIGHT", c_aqua);
+	}
+	
 	spawned_powerball = true;
 	
 	/* comment to disable (breaks game when enabled) */
