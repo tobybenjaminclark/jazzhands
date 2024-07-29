@@ -1,4 +1,4 @@
-/// @description Maps Sprites to Symbols
+	/// @description Maps Sprites to Symbols
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
 
