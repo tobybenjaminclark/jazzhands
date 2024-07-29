@@ -33,6 +33,9 @@ dead = false;
 rotation_direction = 1;
 has_horizontal_shifted = false;
 
+/* Flip side (makes the game easier?) */
+if (side == "LEFT") {image_xscale = -image_xscale;}
+
 /* Set x offset based on each side */
 tx = x - side_offset;
 if (side == "LEFT"){

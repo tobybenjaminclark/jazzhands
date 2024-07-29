@@ -55,7 +55,6 @@ part_type_life(_ptype2, 80, 80);
 boulder = true;
 boulder_rot = 0;
 
-
 /* Initial Variable Setup */
 start_time = 0;
 target_time = 0;
@@ -66,6 +65,9 @@ moving = false;
 dead = false;
 rotation_direction = 1;
 has_horizontal_shifted = false;
+
+/* Flip side (makes the game easier?) */
+if (side == "LEFT") {image_xscale = -image_xscale;}
 
 /* Set x offset based on each side */
 tx = x - side_offset;

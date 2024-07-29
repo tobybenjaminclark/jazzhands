@@ -20,11 +20,6 @@ part_type_alpha3(_ptype12, 0.322, 0.42, 0.588);
 part_type_blend(_ptype12, false);
 part_type_life(_ptype12, 80, 80);
 
-
-
-
-
-
 /* PS */
 _ps = part_system_create();
 part_system_draw_order(_ps, true);
@@ -69,6 +64,9 @@ moving = false;
 dead = false;
 rotation_direction = 1;
 has_horizontal_shifted = false;
+
+/* Flip side (makes the game easier?) */
+if (side == "LEFT") {image_xscale = -image_xscale;}
 
 /* Set x offset based on each side */
 tx = x - side_offset;
