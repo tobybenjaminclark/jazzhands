@@ -5,7 +5,7 @@ global.score_multiplier = 1;
 global.current_level = "";
 
 // Start Level
-#macro START_LEVEL 1
+#macro START_LEVEL 200
 
 // Cutscene types
 #macro CS_NONE 1
