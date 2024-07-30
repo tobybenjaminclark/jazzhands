@@ -16,6 +16,9 @@ enum state_spin_button
 	stopped
 }
 
+// Initial alpha
+image_alpha = initial_alpha;
+
 // Initial Hover (set to false)
 hover = false;
 

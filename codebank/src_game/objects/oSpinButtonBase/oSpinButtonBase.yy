@@ -41,6 +41,7 @@
     {"$GMObjectProperty":"v1","%Name":"left_trigger","filters":[],"listItems":[],"multiselect":false,"name":"left_trigger","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Left Hand Trigger","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"right_trigger","filters":[],"listItems":[],"multiselect":false,"name":"right_trigger","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Right Hand Trigger","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"sound","filters":[],"listItems":[],"multiselect":false,"name":"sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"ping_medium","path":"sounds/ping_medium/ping_medium.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"ping_medium","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"initial_alpha","filters":[],"listItems":[],"multiselect":false,"name":"initial_alpha","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
