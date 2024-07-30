@@ -9,11 +9,11 @@ planetary_movement = directions.clockwise
 /* Setting Planet Titles */
 titles = 
 [
-	"Symphonya",
+	"Harmonius",
 	"Electronova",
 	"Ampliforia",
-	"Dropopolis",
-	"Maritune",
+	"Funkopolis",
+	"Doomsphere",
 ]
 
 /* Setting Planet Descriptions */
@@ -22,8 +22,8 @@ descriptions =
 	"Home of the Maoi",
 	"Electrofunktor Habitat",
 	"Rock & Metal",
-	"Beats & Peaks",
-	"Shanty Town",
+	"Get Groovy",
+	"...",
 ]
 
 harmonius_levels = 

@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/* Increment alphas */
+if(an1 < 1 && display_step >= 0) an1 = an1 + alpha_increase;
+if(a0 < 1 && display_step >= 1) a0 = a0 + alpha_increase;
+if(a1 < 1 && display_step >= 2) a1 = a1 + alpha_increase;
+if(a2 < 1 && display_step >= 3) a2 = a2 + alpha_increase;
+if(a3 < 1 && display_step >= 4) a3 = a3 + alpha_increase;
+if(a4 < 1 && display_step >= 5) a4 = a4 + alpha_increase;
+if(a5 < 1 && display_step >= 6) a5 = a5 + alpha_increase;
+
 /* Increment current step */
 current_step++;
 
@@ -18,29 +27,42 @@ else if(bg_alpha == 1){
 
 /* increment display step (if u can) */
 if(current_step % 50 == 0){
-	display_step += 1;	
 	switch(display_step){
+		case -1:
+			display_step += 1;
+			break;
 		case 0:
 			/* first */
+			display_step += 1;	
 			audio_play_sound(ping_hard, 0, false);
 			break;
 		case 1:
 			/* total beats */
+			display_step += 1;	
 			audio_play_sound(ping_medium, 0, false);
 			break;
 		case 2:
+			display_step += 1;	
 			if(accuracy <= 0.5) audio_play_sound(sndNegative, 0, false);
 			else audio_play_sound(sndPositive, 0, false);
 			break;
 		case 3:
+			display_step += 1;	
 			if(accuracy <= 0.5) audio_play_sound(sndNegative, 0, false);
 			else audio_play_sound(sndPositive, 0, false);
 			break;
+			
 		case 4:
-			/* accuracy */
-			audio_play_sound(ping_medium, 0, false);
-			break
+			/* accuracy (only progress if bar is full) */
+			if(iaccuracy_display >= iaccuracy){
+				display_step += 1;
+				audio_play_sound(ping_medium, 0, false);
+			}
+			break;
+			
 		case 5:
+			display_step += 1;
+			
 			/* post cutscene */
 			if(accuracy >= pass_accuracy)
 			{
@@ -64,7 +86,7 @@ if(current_step % 50 == 0){
 			}
 			
 			audio_play_sound(ping_medium, 0, false);
-			break
+			break;
 		default:
 			break;
 	}

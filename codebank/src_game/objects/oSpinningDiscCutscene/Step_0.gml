@@ -2,6 +2,9 @@
 /// @author Toby Benjamin Clark
 /// @date   12/01/2023
 
+/* Grow alpha */
+if(image_alpha < 1) {image_alpha += 0.025};
+
 /* Handle CV Button Trigger */
 // Change state to speeding if not already.
 if (global.left_hand == left_trigger			/* <-- Left Hand Matches */

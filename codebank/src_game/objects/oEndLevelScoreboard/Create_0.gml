@@ -1,6 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+/* Setting alphas */
+an1 = 0;
+a0 = 0;
+a1 = 0;
+a2 = 0;
+a3 = 0;
+a4 = 0;
+a5 = 0;
+alpha_increase = 0.025;
+
 /* Check for post cutscene */
 has_played_post_cutscene = false;
 has_post_cutscene = false;
@@ -19,6 +29,7 @@ display_step = -1;
 
 /* Calculate accuracy etc... determine if the player won or failed? */
 accuracy = global.hit_beats / global.total_beats; 
+accuracy = 0.8
 iaccuracy = round(accuracy * 100);
 
 iaccuracy_display = 0;
