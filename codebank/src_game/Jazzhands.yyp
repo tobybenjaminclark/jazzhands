@@ -361,6 +361,7 @@
     {"id":{"name":"ps_boulderexplode","path":"particles/ps_boulderexplode/ps_boulderexplode.yy",},},
     {"id":{"name":"ps_colornotes","path":"particles/ps_colornotes/ps_colornotes.yy",},},
     {"id":{"name":"ps_death","path":"particles/ps_death/ps_death.yy",},},
+    {"id":{"name":"ps_greennote","path":"particles/ps_greennote/ps_greennote.yy",},},
     {"id":{"name":"ps_mouse","path":"particles/ps_mouse/ps_mouse.yy",},},
     {"id":{"name":"ps_powerball","path":"particles/ps_powerball/ps_powerball.yy",},},
     {"id":{"name":"navrmMain","path":"rooms/navrmMain/navrmMain.yy",},},

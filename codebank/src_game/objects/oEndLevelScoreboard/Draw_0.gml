@@ -83,6 +83,7 @@ if(display_step >= 4)
 
 	/* Draw dots */
 	for (var _i = 0; _i < iaccuracy_display; _i++){	
+		if(is_green){draw_set_color(c_lime);}
 		draw_circle(room_width div 2 - (50 * (_r + _o)) + _i * (_r + _o), 550, _r div 2, false); 	
 	}
 }

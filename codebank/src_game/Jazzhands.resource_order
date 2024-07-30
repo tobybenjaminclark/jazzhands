@@ -105,6 +105,7 @@
     {"name":"ps_badnotes","order":3,"path":"particles/ps_badnotes/ps_badnotes.yy",},
     {"name":"ps_boulderexplode","order":4,"path":"particles/ps_boulderexplode/ps_boulderexplode.yy",},
     {"name":"ps_colornotes","order":2,"path":"particles/ps_colornotes/ps_colornotes.yy",},
+    {"name":"ps_greennote","order":6,"path":"particles/ps_greennote/ps_greennote.yy",},
     {"name":"ps_mouse","order":1,"path":"particles/ps_mouse/ps_mouse.yy",},
     {"name":"ps_powerball","order":5,"path":"particles/ps_powerball/ps_powerball.yy",},
     {"name":"navrmMain","order":2,"path":"rooms/navrmMain/navrmMain.yy",},
