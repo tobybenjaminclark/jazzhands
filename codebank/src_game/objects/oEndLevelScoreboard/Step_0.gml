@@ -9,6 +9,7 @@ if(a2 < 1 && display_step >= 3) a2 = a2 + alpha_increase;
 if(a3 < 1 && display_step >= 4) a3 = a3 + alpha_increase;
 if(a4 < 1 && display_step >= 5) a4 = a4 + alpha_increase;
 if(a5 < 1 && display_step >= 6) a5 = a5 + alpha_increase;
+if(a6 < 1 && display_step >= 7) a6 = a6 + alpha_increase;
 
 /* Increment current step */
 current_step++;
@@ -59,8 +60,12 @@ if(current_step % 50 == 0){
 				audio_play_sound(ping_medium, 0, false);
 			}
 			break;
-			
 		case 5:
+			display_step += 1;
+			if(accuracy <= 0.5) audio_play_sound(sndNegative, 0, false);
+			else audio_play_sound(sndPositive, 0, false);
+			break;
+		case 6:
 			display_step += 1;
 			
 			/* post cutscene */
@@ -74,15 +79,15 @@ if(current_step % 50 == 0){
 				}
 				
 				if(has_post_cutscene){
-					instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDiscCutscene, {cutscene_path: post_cutscene_path, depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
+					instance_create_layer(room_width div 2 - 460, 775, "InstancesNoGlow", oSpinningDiscCutscene, {cutscene_path: post_cutscene_path, depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
 				}
 				else if(!has_post_cutscene){
-					instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
+					instance_create_layer(room_width div 2 - 460, 775, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
 				}
 			}
 			else {
-				instance_create_layer(room_width div 2 + 460, 700, "InstancesNoGlow", oSpinningDisc, {next_room: rmstage_harmonica, depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
-				instance_create_layer(room_width div 2 - 460, 700, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
+				instance_create_layer(room_width div 2 + 460, 775, "InstancesNoGlow", oSpinningDisc, {next_room: rmstage_harmonica, depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
+				instance_create_layer(room_width div 2 - 460, 775, "InstancesNoGlow", oSpinningDisc, {depth: -1000, image_xscale: 0.2, image_yscale: 0.2, initial_alpha: 0});
 			}
 			
 			audio_play_sound(ping_medium, 0, false);

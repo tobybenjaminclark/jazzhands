@@ -9,6 +9,7 @@ a2 = 0;
 a3 = 0;
 a4 = 0;
 a5 = 0;
+a6 = 0;
 alpha_increase = 0.025;
 
 /* Style accuracy */

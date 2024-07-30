@@ -88,20 +88,31 @@ if(display_step >= 4)
 	}
 }
 
-if(display_step >= 5){
+/* Draw beats hit */
+if(display_step >= 5) {
+
+	draw_set_alpha(a5);
+	draw_set_color(c_white);
+	draw_set_halign(fa_left)
+	draw_text(room_width div 2 - 500, 600, "Grade");
+	draw_set_halign(fa_right)
+	draw_text(room_width div 2 + 500, 600, "SS");
+}
+
+if(display_step >= 6){
 	
 	draw_set_color(c_white);
-	draw_set_alpha(a5);
+	draw_set_alpha(a6);
 	draw_set_font(fntLevelNameSmall);
 	
 	if(accuracy >= pass_accuracy){
 		if(has_post_cutscene) {
 			draw_set_halign(fa_left);
-			draw_text(room_width div 2 - 380, 675, "Watch End Scene & Return To Menu");
+			draw_text(room_width div 2 - 380, 750, "Watch End Scene & Return To Menu");
 		}
 		if(!has_post_cutscene) {
 			draw_set_halign(fa_left);
-			draw_text(room_width div 2 - 380, 675, "Return to Menu");
+			draw_text(room_width div 2 - 380, 750, "Return to Menu");
 		}
 	}
 	else{
