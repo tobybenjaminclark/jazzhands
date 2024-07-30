@@ -18,12 +18,13 @@ if(intro_delay == 0){
 		
 }
 
-// if((global.left_hand == "THUMB_DOWN" && global.right_hand == "THUMB_DOWN") and spawned_powerball == false){
-if(keyboard_check_pressed(vk_space) and spawned_powerball == false){
+// if((global.left_hand == "THUMB_DOWN" && global.right_hand == "THUMB_DOWN" && !paused) and spawned_powerball == false){
+if(keyboard_check_pressed(vk_space) and spawned_powerball == false && !paused){
 	
 	var _x = x;
 	var _y = y + 300;
 	var _created = false;
+	var _cont = self;
 	/* Spawn powerball for each bouldered beat on the screen */
 	with(oBoulderedBeat){
 		if(x > 0 and x < room_width and y > 0 and y < room_width and boulder){
@@ -31,10 +32,10 @@ if(keyboard_check_pressed(vk_space) and spawned_powerball == false){
 			_created = true;
 			
 			if(x > room_width div 2){ /* Spawn right */
-				instance_create_layer(_x + 154, _y, "Instances", oPowerball, {target: _self});
+				instance_create_layer(_x + 154, _y, "Instances", oPowerball, {target: _self, parent: _cont});
 			}	
 			else{ /* Spawn left */
-				instance_create_layer(_x - 154, _y, "Instances", oPowerball, {target: _self});
+				instance_create_layer(_x - 154, _y, "Instances", oPowerball, {target: _self, parent: _cont});
 			}
 			
 		}
@@ -55,8 +56,8 @@ else{
 	spawned_powerball = false;
 }
 
-// if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP"){
-if(keyboard_check_pressed(vk_down)){
+// if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP" && !paused){
+if(keyboard_check_pressed(vk_down) && !paused){
 	if(global.disco_mode == false){
 		global.disco_mode = true;
 		global.score_multiplier = 10;		

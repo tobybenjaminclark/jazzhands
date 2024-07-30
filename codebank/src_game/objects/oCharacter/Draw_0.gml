@@ -10,7 +10,11 @@ draw_self();
 
 var _killline = 0;
 var _return = false;
+var _end_time = -1;
+var _is_paused = false;
 with(oStageSpawnerBase){
+	_end_time = end_time;
+	_is_paused = paused
 	if(intro_delay >= 0){
 		_return = true;
 	}
@@ -18,7 +22,7 @@ with(oStageSpawnerBase){
 }
 if (_return) return;
 
-
+if(current_time >= _end_time && !_is_paused) {return;}
 
 var _left_hand = 0;
 switch(global.left_hand)
@@ -72,6 +76,7 @@ switch(global.right_hand)
 }		
 draw_sprite_ext(_left_hand, 0, x + 154, _killline - 25, 0.7, 0.7, 0, c_white, 1);
 
+draw_set_halign(fa_center);
 draw_set_font(fntLevelName);
 draw_text(x, y + 80, string(global.score_multiplier) + "x");
 draw_set_font(fntLevelNameSmall);

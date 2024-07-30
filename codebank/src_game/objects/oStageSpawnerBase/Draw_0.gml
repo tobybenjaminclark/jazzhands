@@ -45,14 +45,16 @@ if(intro_delay > 0) {
 
 /* Draw paused if paused */
 else if(!global.in_cutscene && paused){
-	draw_set_font(fntScore);
-	draw_text(x, y+10, "Paused");
+	draw_set_font(fntLevelName);
+	draw_set_color(c_white);
+	draw_set_halign(fa_center);
+	draw_text(room_width div 2, room_height div 2 + 30, "PAUSED");
 }
 
 
 
 /* Draw Music Bar */
-if(!global.in_cutscene && !paused && watched_cutscene == true && current_time < end_time){
+if(!global.in_cutscene && watched_cutscene == true && current_time < end_time){
 	draw_set_color(c_white);
 	var inset = 70;
 	var width = 500;
