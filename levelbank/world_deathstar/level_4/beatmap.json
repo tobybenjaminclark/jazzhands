@@ -3,7 +3,7 @@
         "level_name": "Chiming Chaos",
         "description": "Face Discord, Master of Chaos.",
         "background": "DEATHSTAR",
-        "song": "snd_cyborg_sentinel.ogg"
+        "song": "snd_zone_protector.ogg"
     },
     "events": [
         {

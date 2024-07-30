@@ -1,10 +1,12 @@
 {
     "name": "Rhythic Sanctuary",
+    "sound_loop": "cutscenedata/bongo_and_drum.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
+            "sound_effect": "cutscenedata/om.ogg",
             "body": "Impressive, traveller! Your groove is unparalleled. You have proven yourself worthy. Let us proceed to the Elder Maoi.",
             "type": "dialogue"
         },
@@ -33,6 +35,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/funktor.png",
             "heading": "Funktor",
+            "sound_effect": "cutscenedata/funktor_om.ogg",
             "body": "Monad, you know I must protect the path. The Grand Composer's deceit knows no bounds. How can I be sure this traveller is not in league with him?",
             "type": "dialogue"
         },
@@ -67,6 +70,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/holdbeat.png",
+            "sound_effect": "cutscenedata/item.ogg",
             "heading": "Hold Beat",
             "body": "When a Hold Beat appears, keep those hands still and maintain the symbol for the duration of the beat!",
             "type": "showcase"

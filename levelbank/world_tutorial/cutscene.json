@@ -1,0 +1,35 @@
+{
+    "name": "cutscene1",
+    "frames": [
+        {
+            "background": "cutscenedata/bar.png",
+            "foreground": "cutscenedata/player_mojo.png",
+            "heading": "Mojo",
+            "body": "Welcome to Jazzhands! The rhythm game with no buttons, no sticks, just straight-up hand gestures and groove, ya feel me?" 
+        },
+        {
+            "background": "cutscenedata/bar.png",
+            "foreground": "cutscenedata/player_mojo.png",
+            "heading": "Mojo",
+            "body": "The game works using computer vision on your device's camera - make sure your spot's clean and clear, and the webcam got a good view of you and your hands."
+        },
+        {
+            "background": "cutscenedata/bar.png",
+            "foreground": "cutscenedata/player_mojo.png",
+            "heading": "Mojo",
+            "body": "If you wanna make this work the best, wear somethin' simple and keep your background plain and well-lit. Ain't nobody tryna see all that extra clutter..."
+        },
+        {
+            "background": "cutscenedata/bar.png",
+            "foreground": "cutscenedata/player_mojo.png",
+            "heading": "Mojo",
+            "body": "The beatdeck will project what gesture it thinks each hand is throwing, try to keep 'em up at head height, about shoulders-width apart and in plain view."
+        },
+        {
+            "background": "cutscenedata/bar.png",
+            "foreground": "cutscenedata/player_mojo.png",
+            "heading": "Mojo",
+            "body": "This newfound technology can be touchy, so stay cool and patient with it. Once you got the flow, you'll be rollin' solo like a boss in no time... let's get this show on the road! Throw up both hands, keep 'em shoulder-width apart, palms open and facing the camera."
+        }
+    ]
+}
