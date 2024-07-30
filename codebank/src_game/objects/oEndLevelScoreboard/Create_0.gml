@@ -36,6 +36,16 @@ accuracy = global.hit_beats / global.total_beats;
 accuracy = 0.8
 iaccuracy = round(accuracy * 100);
 
+/* Calculate Grade */
+grade = "F";
+if(iaccuracy >= 60)  grade = "D";
+if(iaccuracy >= 70)  grade = "C";
+if(iaccuracy >= 80)  grade = "B";
+if(iaccuracy >= 90)  grade = "A";
+if(iaccuracy >= 95)  grade = "S";
+if(iaccuracy >= 100) grade = "SS";
+
+
 iaccuracy_display = 0;
 
 audio_play_sound(level_win, 1, false);
