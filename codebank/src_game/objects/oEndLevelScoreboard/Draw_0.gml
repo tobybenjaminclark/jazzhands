@@ -73,10 +73,6 @@ if(display_step >= 4)
 	draw_set_halign(fa_right);
 	draw_text(room_width div 2 + _o, 475, string(iaccuracy_display) + "%");
 
-	/* Set accuracy color */
-	if(iaccuracy_display < pass_accuracy){draw_set_color(c_red);}
-	if(iaccuracy_display >= pass_accuracy){draw_set_color(c_lime);}
-	
 	/* Draw dot holes */
 	var _r = 7;
 	var _o = 3;
@@ -86,13 +82,14 @@ if(display_step >= 4)
 	}
 
 	/* Draw dots */
-	for (var _i = 0; _i < iaccuracy_display; _i++){
+	for (var _i = 0; _i < iaccuracy_display; _i++){	
 		draw_circle(room_width div 2 - (50 * (_r + _o)) + _i * (_r + _o), 550, _r div 2, false); 	
 	}
 }
 
 if(display_step >= 5){
-
+	
+	draw_set_color(c_white);
 	draw_set_alpha(a5);
 	draw_set_font(fntLevelNameSmall);
 	
