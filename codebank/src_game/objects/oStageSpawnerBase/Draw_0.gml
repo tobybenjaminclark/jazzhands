@@ -68,7 +68,7 @@ if(!global.in_cutscene && !paused && watched_cutscene == true && current_time < 
 	/* Draw Caption */
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_top);
-	draw_set_font(fntCutsceneTiny);
+	draw_set_font(fntLevelNameTiny);
 	var sound_string = string(audio_sound_length(sound) div 60) + ":" + string(round(audio_sound_length(sound) mod 60));
 	draw_text(inset - (thickness div 2) + width, room_height + bar_height - inset + 3, sound_string);
 	draw_text(inset - (thickness div 2), room_height + bar_height - inset + 3, "0:00");
@@ -90,7 +90,7 @@ if(!global.in_cutscene && !paused && watched_cutscene == true && current_time < 
 	draw_sprite_ext(sprRecord, 0, _x, _y, _s, _s, paused ? 0 : (0 - (intro_delay * 2)) mod 360, c_white, 1);
 	draw_set_halign(fa_left);
 	draw_set_valign(fa_middle);
-	draw_set_font(fntCutsceneText);
+	draw_set_font(fntLevelNameTiny);
 	draw_text(_x + ((sprite_get_width(sprRecord) div 2) * _s), _y, level_name);
 
 	if(paused){draw_sprite(sprPaused, 0, _x, _y)}

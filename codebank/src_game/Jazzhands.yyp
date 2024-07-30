@@ -293,6 +293,7 @@
     {"id":{"name":"fntGroovy","path":"fonts/fntGroovy/fntGroovy.yy",},},
     {"id":{"name":"fntLevelName","path":"fonts/fntLevelName/fntLevelName.yy",},},
     {"id":{"name":"fntLevelNameSmall","path":"fonts/fntLevelNameSmall/fntLevelNameSmall.yy",},},
+    {"id":{"name":"fntLevelNameTiny","path":"fonts/fntLevelNameTiny/fntLevelNameTiny.yy",},},
     {"id":{"name":"fntMenuTitle","path":"fonts/fntMenuTitle/fntMenuTitle.yy",},},
     {"id":{"name":"fntRaanana","path":"fonts/fntRaanana/fntRaanana.yy",},},
     {"id":{"name":"fntRaananaSmall","path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},},

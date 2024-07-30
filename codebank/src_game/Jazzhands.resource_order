@@ -46,6 +46,7 @@
     {"name":"fntDebug","order":3,"path":"fonts/fntDebug/fntDebug.yy",},
     {"name":"fntGroovy","order":2,"path":"fonts/fntGroovy/fntGroovy.yy",},
     {"name":"fntLevelNameSmall","order":1,"path":"fonts/fntLevelNameSmall/fntLevelNameSmall.yy",},
+    {"name":"fntLevelNameTiny","order":2,"path":"fonts/fntLevelNameTiny/fntLevelNameTiny.yy",},
     {"name":"fntMenuTitle","order":8,"path":"fonts/fntMenuTitle/fntMenuTitle.yy",},
     {"name":"fntRaananaSmall","order":1,"path":"fonts/fntRaananaSmall/fntRaananaSmall.yy",},
     {"name":"fntRaananaTiny","order":9,"path":"fonts/fntRaananaTiny/fntRaananaTiny.yy",},

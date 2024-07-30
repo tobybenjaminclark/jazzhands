@@ -71,3 +71,8 @@ switch(global.right_hand)
 		_left_hand = sprUnknownSymbol;
 }		
 draw_sprite_ext(_left_hand, 0, x + 154, _killline - 25, 0.7, 0.7, 0, c_white, 1);
+
+draw_set_font(fntLevelName);
+draw_text(x, y + 80, string(global.score_multiplier) + "x");
+draw_set_font(fntLevelNameSmall);
+draw_text(x, y + 135, "Multiplier");

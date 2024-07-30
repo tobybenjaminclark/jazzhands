@@ -6,6 +6,7 @@
 /* Score Variables */
 level_score = 0;
 started = false;
+global.disco_mode = false;
 global.hit_beats = 0;
 
 

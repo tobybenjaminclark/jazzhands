@@ -30,12 +30,10 @@ if(keyboard_check_pressed(vk_space) and spawned_powerball == false){
 			var _self = self;
 			_created = true;
 			
-			if(x > room_width div 2){
-				/* Spawn right */
+			if(x > room_width div 2){ /* Spawn right */
 				instance_create_layer(_x + 154, _y, "Instances", oPowerball, {target: _self});
 			}	
-			else{
-				/* Spawn left */
+			else{ /* Spawn left */
 				instance_create_layer(_x - 154, _y, "Instances", oPowerball, {target: _self});
 			}
 			
@@ -57,8 +55,12 @@ else{
 	spawned_powerball = false;
 }
 
-if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP"){
-	global.score_multiplier = 10;	
+// if(global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP"){
+if(keyboard_check_pressed(vk_down)){
+	if(global.disco_mode == false){
+		global.disco_mode = true;
+		global.score_multiplier = 10;		
+	}
 }
 
 
