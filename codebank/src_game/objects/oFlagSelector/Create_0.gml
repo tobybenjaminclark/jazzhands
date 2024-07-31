@@ -3,7 +3,7 @@ global.countries = ds_map_create();
 
 // Parse JSON data into a map
 try {
-	var parsed_json = json_parse_from_filepath("languages/codes.json");
+	parsed_json = json_parse_from_filepath("languages/codes.json");
 }
 catch(e){
 	show_message(string(e));	
@@ -16,6 +16,7 @@ if(parsed_json == undefined){
 }
 
 // Load each flag image and store its information
+selected_language = "";
 country_codes = variable_struct_get_names(parsed_json);
 var country_count = array_length(country_codes);
 
