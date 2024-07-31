@@ -1,10 +1,12 @@
 {
     "name": "Harmonic Convergence",
+    "sound_loop":"cutscenedata/musiclast.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/circuitus.png",
             "heading": "Circuitus",
+            "sound_effect":"cutscenedata/circuitus.ogg",
             "body": "Yes... Yes, I remember now. I am Circuitus, master of the Rhythm Core. I will help you, friends.",
             "type": "dialogue"
         },
@@ -12,6 +14,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/rhythmcore.png",
             "heading": "Rhythm Core",
+            "sound_effect": "cutscenedata/core.ogg",
             "body": "The Rhythm Core is Mother Board's heartbeat, a powerful device generating the planet's techno energy. Encased in a futuristic shell with rotating rings and a glowing crystalline center, it enhances the planet's techno music.",
             "type": "showcase"
         },
@@ -25,6 +28,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/diode.png",
+            "sound_effect":"cutscenedata/diode.ogg",
             "heading": "Diode",
             "body": "Here we are, The Central Hub. Mother Board awaits.",
             "type": "dialogue"
@@ -47,6 +51,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
             "heading": "Fuseon",
+            "sound_effect":"cutscenedata/fuseon.ogg",
             "body": "Fuseons, the traveller has awakened us to the power of groove. Let us unite with our Diode brethren and bring back the music!",
             "type": "dialogue"
         },
