@@ -1,10 +1,12 @@
 {
     "name": "STATUS: Success",
+    "sound_loop":"cutscenedata/musiclast.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/motherboard_alive.png",
             "heading": "Mother Board",
+            "sound_effect":"cutscenedata/motherboard.ogg",
             "body": "Systems Reactivated. Harmonic Convergence successful.",
             "type": "dialogue"
         },
@@ -39,6 +41,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/amp.png",
+            "sound_effect": "cutscenedata/amp.ogg",
             "heading": "You received a Celestial Amp!",
             "body": "Forged from advanced alloys and intricate circuitry, the Celestial Amp of Electronova amplifies beats with the planet's powerful techno rhythms. This futuristic amplifier transforms simple tunes into grand electronic symphonies, connecting the music to the very core of Electronova's technological essence.",
             "type": "showcase"

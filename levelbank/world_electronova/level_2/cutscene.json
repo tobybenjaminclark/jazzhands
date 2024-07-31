@@ -1,5 +1,6 @@
 {
     "name": "Fuseon Fury",
+    "sound_loop":"cutscenedata/music1.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
@@ -11,6 +12,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
+            "sound_effect": "cutscenedata/diode.ogg",
             "heading": "Diode",
             "body": "Activating Locator Chip. Follow me, specimen.",
             "type": "dialogue"
@@ -18,6 +20,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/fuseon.png",
+            "sound_effect": "cutscenedata/fuseon.ogg",
             "heading": "Fuseon Sentinel",
             "body": "Halt! Who dares approach the domain of the Fuseons?",
             "type": "dialogue"
@@ -81,6 +84,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/randombeat.png",
+            "sound_effect": "cutscenedata/item.ogg",
             "heading": "Random Beat",
             "body": "A random beat mixes it up for a while, throwing random gestures. It stabilises at the last moment!",
             "type": "showcase"
