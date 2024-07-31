@@ -16,6 +16,7 @@ function json_parse_from_filepath(file_path)
 	
 	/* Return Struct/Array JSON */
     var data = json_parse(json);
-	if(is_undefined(data)) show_message("Failed to parse JSON at " + file_path);
+	if(is_undefined(data) || data == undefined) {show_message("Failed to parse JSON at " + file_path);}
+	
 	return data;
 }
