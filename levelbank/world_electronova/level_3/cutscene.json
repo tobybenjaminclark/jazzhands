@@ -1,9 +1,11 @@
 {
     "name": "Circuitus Conundrum",
+    "sound_loop":"cutscenedata/music3.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/fuseon.png",
+            "sound_effect": "cutscenedata/fuseon.ogg",
             "heading": "Fuseon",
             "body": "What... is this feeling? My circuits.. They remember.",
             "type": "dialogue"
@@ -25,6 +27,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/diode.png",
+            "sound_effect": "cutscenedata/diode.ogg",
             "heading": "Diode",
             "body": "We have come this far. We will find a way to reach Circuitus!",
             "type": "dialogue"
@@ -32,6 +35,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/circuitus.png",
+            "sound_effect": "cutscenedata/circuitus.ogg",
             "heading": "Circuitus",
             "body": "Who dares enter my domain? You seek to repair the Rhythm Core? Fools. The Grand Composer has rewritten our destiny. Silence is our new order.",
             "type": "dialogue"
