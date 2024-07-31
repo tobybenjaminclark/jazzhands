@@ -1,8 +1,10 @@
 {
     "name": "Welcome to Electronova!",
+    "sound_loop": "cutscenedata/music4.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
+            "sound_effect":"cutscenedata/diode.ogg",
             "foreground": "cutscenedata/diode.png",
             "heading": "Diode",
             "body": "Intruder detected. Scanning... Greetings specimen. I am Diode, guardian of Complex 0x2A.",
@@ -45,10 +47,11 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/diode.png",
+            "foreground": "cutscenedata/motherboard_asleep.png",
+            "sound_effect": "cutscenedata/motherboard.ogg",
             "heading": "Diode",
             "body": "Mother Board is located in the Central Hub, but her circuits are dormant. You must mend her broken Rhythm Core, a task that only the best techno jammers can accomplish.",
-            "type": "dialogue"
+            "type": "showcase"
         },
         {
             "background": "cutscenedata/background.png",
@@ -81,6 +84,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/pointingup.png",
+            "sound_effect": "cutscenedata/item.ogg",
             "heading": "Pointing Up",
             "body": "When the beat appears, raise your index finger to the sky!",
             "type": "showcase"
