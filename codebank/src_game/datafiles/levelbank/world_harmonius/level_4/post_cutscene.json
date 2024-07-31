@@ -1,5 +1,6 @@
 {
     "name": "The Great Wave",
+    "sound_loop": "cutscenedata/percussion_spirit_drums.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
@@ -18,6 +19,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
+            "sound_effect": "cutscenedata/low_om.ogg",
             "heading": "Elder Maoi",
             "body": "Traveller, you have brought light to our world once more. We are forever grateful.",
             "type": "dialogue"
@@ -67,6 +69,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/amp.png",
+            "sound_effect": "cutscenedata/item.ogg",
             "heading": "You've received a Celestial Amp!",
             "body": "In the sunkissed world of Harmonius, where the Elder Maoi watches over sandy shores, the Celestial Amp is a magical artifact of immense musical power. Crafted from enchanted coral and shimmering shells, it amplifies melodies with the island's natural rhythms. This mystical amplifier turns simple tunes into grand symphonies, resonating through the ocean waves and the ancient stone guardians, connecting the music to the very essence of the island.",
             "type": "showcase"

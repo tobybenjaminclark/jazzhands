@@ -1,11 +1,12 @@
 {
     "name": "Crash Landing",
-    "sound_loop": "cutscenedata/explosion.ogg",
+    "sound_loop": "cutscenedata/bongo2.ogg",
     "frames": [
         {
             "background": "cutscenedata/backstage.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
+            "sound_effect": "cutscenedata/crowd.ogg",
             "body": "The crowd's going wild... I think they want an encore!",
             "type": "dialogue"
         },
@@ -55,6 +56,7 @@
             "background": "cutscenedata/ship.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
+            "sound_effect": "cutscenedata/wormhole.ogg",
             "body": "NOOOOOOOOOOOOOOOOOO!!!!!",
             "type": "dialogue"
         },
@@ -174,6 +176,7 @@
             "background": "cutscenedata/ship.png",
             "foreground": "cutscenedata/computer.png",
             "heading": "Computer",
+            "sound_effect": "cutscenedata/explosion.ogg",
             "body": "Warning: Critical failure in control systems. Initiating crash landing procedures. Brace for impact.",
             "type": "dialogue"
         },
@@ -181,7 +184,6 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Player",
-	    "sound_effect": "cutscenedata/explosion.ogg",
             "body": "Well, that wasn't part of the plan. You okay, Mojo?",
             "type": "dialogue"
         },

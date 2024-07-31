@@ -1,9 +1,11 @@
 {
-    "name": "Melodious Crest",
+    "name": "Melodius Crest",
+    "sound_loop": "cutscenedata/percussion_spirit_drums.ogg",
     "frames": [
         {
             "background": "cutscenedata/background0.png",
             "foreground": "cutscenedata/funktor.png",
+            "sound_effect": "cutscenedata/funktor_om.ogg",
             "heading": "Funktor",
             "body": "Traveller, your groove is extraordinary. You have our trust. Let us move forward...",
             "type": "dialogue"
@@ -11,6 +13,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/maoi.png",
+            "sound_effect": "cutscenedata/om.ogg",
             "heading": "Monad",
             "body": "Traveller, behold Melodious Crest, the dwelling of the Elder Maoi, guardian of the Celestial Amp.",
             "type": "dialogue"
@@ -25,6 +28,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/elder.png",
+            "sound_effect": "cutscenedata/low_om.ogg",
             "heading": "Elder Maoi",
             "body": "Greetings, traveller. Your arrival stirs hope within me, yet I am burdened by doubt. The Grand Composer's silence has weighed heavily upon our world, and I fear the repercussions of wielding such power.",
             "type": "dialogue"
