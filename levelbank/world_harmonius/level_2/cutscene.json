@@ -1,10 +1,12 @@
 {
     "name": "The Melody of the Maoi",
+    "sound_loop": "cutscenedata/tribal_drums.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/maoi.png",
             "heading": "Monad",
+            "sound_effect": "cutscenedata/om.ogg",
             "body": "Greetings, travellers. You have landed on the shores of Harmonius, a once vibrant planet in the cosmic orchestra. I am Monad, a humble philosopher among the Maoi. I heard your song, and it inspired me.",
             "type": "dialogue"
         },
@@ -12,7 +14,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Harmonius... It's beautiful, but why is it so silent?",
+            "body": "Harmonius... It's beautiful, but what happened?",
             "type": "dialogue"
         },
         {
@@ -45,10 +47,11 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/maoi.png",
+            "foreground": "cutscenedata/elder.png",
             "heading": "Monad",
+            "sound_effect": "cutscenedata/low_om.ogg",
             "body": "With eyes that have witnessed the birth and death of stars, the Elder Maoi stands atop the tallest peak of Harmonius, contemplating the mysteries of the universe. Seek his wisdom, and perhaps he will aid you in your quest to silence the Grand Composer's tyranny.",
-            "type": "dialogue"
+            "type": "showcase"
         },
         {
             "background": "cutscenedata/background.png",
