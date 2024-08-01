@@ -57,11 +57,23 @@ if (moving && !paused && !dead)
 		_t = (clamped_time - activation_time) / (target_time2 - activation_time);
 	}
 
-	// Interpolate between sx and tx
-	x = lerp(sx, tx, t);
+	/* Hack fucking fix, god forbid this stays in the game */
+	if t < 1 {
+		nx = lerp(sx, tx, t);
+		change_in_x = nx - x;
+		x = nx;
+	}
+	else {x = x + change_in_x;}
+	
+	/* Yet another Hack fucking fix, god forbid this stays in the game */
+	if _t < 1 {
+		nlx = lerp(sx, tx, _t);
+		change_in_lx = nlx - lx;
+		lx = nlx;
+	}
+	else{nlx = nlx + change_in_lx;}
 	
 	
-	lx = lerp(sx, tx, _t);
 	ly = (parent.kill_line - (sprite_height / 2)) - ((target_time2 - current_time) / movement_factor);
 	
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
