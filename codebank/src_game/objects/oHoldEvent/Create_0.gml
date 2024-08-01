@@ -18,7 +18,7 @@ image_blend = c_red;
 
 colliding = false;	
 missed = false;
-
+has_played_hit_sound = false;
 rotation_direction = 1;
 has_horizontal_shifted = false;
 

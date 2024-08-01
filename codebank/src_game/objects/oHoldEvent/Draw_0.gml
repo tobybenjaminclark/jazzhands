@@ -3,27 +3,27 @@
 /// @date   14/01/2023
 
 
-var _scale = 0.4;
+// Colors
+if(colliding) {draw_set_color(c_green);}
+else if(missed) {draw_set_color(c_red);}
+else {draw_set_color(c_white);}
 
-var hw = sprite_width div 2;
-var hh = sprite_height div 2;
+var _scale = 0.5;
+
+var hw = (sprite_width div 2);
+var hh = (sprite_height div 2);
+var hws = hw * _scale;
 
 // Draw bottom sprite
-draw_line(x - hw, y - hh, x + hw, y - hh);
-draw_sprite_ext(sprite_index, 0, x, y, _scale, _scale, 0, image_blend, 1);
+draw_line(x - hws, y - hh, x + hws, y - hh);
+draw_line(x - hws, y - hh + 1, x + hws, y - hh + 1);
+draw_sprite_ext(sprite_index, 0, x, y + 10, _scale, _scale, 0, draw_get_color(), 1);
 
 // Draw top sprite
-draw_sprite_ext(sprite_index, 0, lx, ly, _scale, _scale, 0, image_blend, 1);
-draw_line(lx - hw, ly + hh, lx + hw, ly + hh);
+draw_sprite_ext(sprite_index, 0, lx, ly - 10, _scale, _scale, 0, draw_get_color(), 1);
+draw_line(lx - hws, ly + hh, lx + hws, ly + hh);
+draw_line(lx - hws, ly + hh + 1, lx + hws, ly + hh + 1);
 
-// Draw Debugs
-draw_text(x, y, "X Y");
-draw_text(lx, ly, "LX LY");
-
-// Collision Drawing
-if(colliding) draw_set_color(c_green);
-else if(missed) draw_set_color(c_red);
-else draw_set_color(c_white);
 draw_set_alpha(0.4)
 
 var ay = y - sprite_height div 2;
@@ -40,6 +40,8 @@ draw_line(x - 3, ay, lx - 3, by);
 draw_set_alpha(1)
 draw_line(x + 4, ay, lx + 4, by);
 draw_line(x - 4, ay, lx - 4, by);
+draw_line(x + 5, ay, lx + 5, by);
+draw_line(x - 5, ay, lx - 5, by);
 
 draw_set_alpha(1)
 
