@@ -1,9 +1,19 @@
 {
     "name": "Rock of Thunder",
+    "sound_loop":"cutscenedata/music4.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "sound_effect": "cutscenedata/rocks.ogg",
+            "body": "We cleared a path!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
+            "sound_effect": "cutscenedata/gnork.ogg",
             "heading": "Gnork",
             "body": "Prepare yourselves, travellers. Lightningfist awaits, and he won't go down without a fight.",
             "type": "dialogue"
@@ -18,6 +28,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/lightningfist.png",
+            "sound_effect": "cutscenedata/lightningfist.ogg",
             "heading": "Lightningfist",
             "body": "So, the brave travellers seek to awaken the Thunderstone. But do you truly possess the rock spirit worthy of such power?",
             "type": "dialogue"

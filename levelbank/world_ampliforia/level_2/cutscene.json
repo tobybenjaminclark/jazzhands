@@ -1,9 +1,11 @@
 {
     "name": "Conquer the Goliaths!",
+    "sound_loop": "cutscenedata/music2.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
+            "sound_effect": "cutscenedata/gnork.ogg",
             "heading": "Gnork",
             "body": "This is the entrance, traveller. The Goliaths are the wardens here, sworn to protect the Thunderstone's resting place.",
             "type": "dialogue"
@@ -39,6 +41,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/goliath.png",
+            "sound_effect":"cutscenedata/guardians.ogg",
             "heading": "Goliath",
             "body": "Prove your worth, and you may pass. Fail, and you shall be turned away.",
             "type": "dialogue"
