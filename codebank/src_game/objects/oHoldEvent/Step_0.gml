@@ -48,7 +48,8 @@ if (moving && !paused && !dead)
 
 	// Ensure current_time is within the bounds of 0 to target_time
 	var clamped_time = clamp(current_time, 0, target_time);
-
+	clamped_time = current_time;
+	
 	// Calculate the interpolation factor (a value between 0 and 1), starting from activation_time
 	var t = 0;
 	var _t = 0;
@@ -58,21 +59,8 @@ if (moving && !paused && !dead)
 	}
 
 	/* Hack fucking fix, god forbid this stays in the game */
-	if t < 1 {
-		nx = lerp(sx, tx, t);
-		change_in_x = nx - x;
-		x = nx;
-	}
-	else {x = x + change_in_x;}
-	
-	/* Yet another Hack fucking fix, god forbid this stays in the game */
-	if _t < 1 {
-		nlx = lerp(sx, tx, _t);
-		change_in_lx = nlx - lx;
-		lx = nlx;
-	}
-	else{nlx = nlx + change_in_lx;}
-	
+	x = lerp(sx, tx, t);
+	lx = lerp(sx, tx, _t);
 	
 	ly = (parent.kill_line - (sprite_height / 2)) - ((target_time2 - current_time) / movement_factor);
 	
