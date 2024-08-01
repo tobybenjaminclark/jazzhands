@@ -66,7 +66,7 @@ if (moving && !paused && !dead)
 	
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 
-	if((y + sprite_width) - ((end_time - start_time) / movement_factor) <= parent.kill_line && (y + sprite_width) >= parent.kill_line)
+	if(ly <= parent.kill_line && y >= parent.kill_line)
 	{
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
@@ -89,7 +89,7 @@ if (moving && !paused && !dead)
 
 
 /* Symbol Death Transition */
-if ((y + sprite_width) - ((end_time - start_time) / movement_factor) >= parent.kill_line)
+if (ly >= parent.kill_line)
 {	
 	if(!missed)
 	{
