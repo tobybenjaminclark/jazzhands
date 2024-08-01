@@ -63,6 +63,7 @@ if (moving && !paused && !dead)
 	
 	lx = lerp(sx, tx, _t);
 	ly = (parent.kill_line - (sprite_height / 2)) - ((target_time2 - current_time) / movement_factor);
+	
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 
 	if((y + sprite_width) - ((end_time - start_time) / movement_factor) <= parent.kill_line && (y + sprite_width) >= parent.kill_line)

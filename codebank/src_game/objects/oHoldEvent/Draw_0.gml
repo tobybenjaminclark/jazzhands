@@ -4,21 +4,42 @@
 
 
 var _scale = 0.4;
-draw_sprite_ext(sprite_index, 0, x, (y + sprite_width), _scale, _scale, 0, image_blend, 1);
-draw_sprite_ext(sprite_index, 0, lx, ly + sprite_width, _scale, _scale, 0, image_blend, 1);
 
+var hw = sprite_width div 2;
+var hh = sprite_height div 2;
+
+// Draw bottom sprite
+draw_line(x - hw, y - hh, x + hw, y - hh);
+draw_sprite_ext(sprite_index, 0, x, y, _scale, _scale, 0, image_blend, 1);
+
+// Draw top sprite
+draw_sprite_ext(sprite_index, 0, lx, ly, _scale, _scale, 0, image_blend, 1);
+draw_line(lx - hw, ly + hh, lx + hw, ly + hh);
+
+// Draw Debugs
+draw_text(x, y, "X Y");
+draw_text(lx, ly, "LX LY");
+
+// Collision Drawing
 if(colliding) draw_set_color(c_green);
 else if(missed) draw_set_color(c_red);
 else draw_set_color(c_white);
 draw_set_alpha(0.4)
 
-draw_line(x, y, lx, ly);
-draw_line(x + 1, y, lx + 1, ly);
-draw_line(x - 1, y, lx - 1, ly);
-draw_line(x + 2, y, lx + 2, ly);
-draw_line(x - 2, y, lx - 2, ly);
-draw_line(x + 3, y, lx + 3, ly);
-draw_line(x - 3, y, lx - 3, ly);
+var ay = y - sprite_height div 2;
+var by = ly + sprite_height div 2;
+
+draw_line(x, ay, lx, by);
+draw_line(x + 1, ay, lx + 1, by);
+draw_line(x - 1, ay, lx - 1, by);
+draw_line(x + 2, ay, lx + 2, by);
+draw_line(x - 2, ay, lx - 2, by);
+draw_line(x + 3, ay, lx + 3, by);
+draw_line(x - 3, ay, lx - 3, by);
+
+draw_set_alpha(1)
+draw_line(x + 4, ay, lx + 4, by);
+draw_line(x - 4, ay, lx - 4, by);
 
 draw_set_alpha(1)
 

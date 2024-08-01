@@ -13,7 +13,7 @@ if(watched_cutscene && (!global.in_cutscene) && started == false){
 	end_time = start_time + (sound_len * 1000)
 	
 	/* Skip level (switch comment to enable...) */
-	end_time = start_time + 1000;
+	// end_time = start_time + 1000;
 }
 
 
