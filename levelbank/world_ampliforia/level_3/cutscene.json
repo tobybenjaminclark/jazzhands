@@ -1,10 +1,12 @@
 {
     "name": "Boulder Barrier",
+    "sound_loop":"cutscenedata/music3.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/goliath.png",
             "heading": "Goliath",
+            "sound_effect": "cutscenedata/guardians.ogg",
             "body": "The resonance of your music speaks to our very souls. We Goliaths have longed for the return of the rock spirit, and now, we shall aid you in your quest.",
             "type": "dialogue"
         },
@@ -40,6 +42,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/gnork.png",
             "heading": "Gnork",
+            "sound_effect": "cutscenedata/gnork.ogg",
             "body": "That's the spirit! Let our melodies pierce through the shadows and guide us to our destination!",
             "type": "dialogue"
         },
@@ -68,6 +71,7 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/boulderpower.png",
             "heading": "Boulder Power",
+            "sound_effect":"cutscenedata/item.ogg",
             "body": "You can break the boulders with funk! Hit two thumbs down to activate the power!",
             "type": "showcase"
         }

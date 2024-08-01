@@ -1,9 +1,11 @@
 {
     "name": "A Hero's Welcome",
+    "sound_loop":"cutscenedata/music1.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
+            "sound_effect":"cutscenedata/gnork.ogg",
             "heading": "Gnork",
             "body": "Hail, brave traveller! What brings you to the barren lands of Ampliforia?",
             "type": "dialogue"
@@ -45,10 +47,11 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/gnork.png",
+            "foreground": "cutscenedata/thunderstone.png",
+            "sound_effect":"cutscenedata/thunderstone.ogg",
             "heading": "Gnork",
             "body": "Deep in the mines lies the beating heart of our planet, a legendary jewel called the Thunderstone. It's dormant now; only the most hardcore rock musician can bring back its power and refuel our rock spirit.",
-            "type": "dialogue"
+            "type": "showcase"
         },
         {
             "background": "cutscenedata/background.png",
@@ -59,10 +62,11 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/gnork.png",
+            "foreground": "cutscenedata/lightningfist.png",
+            "sound_effect": "cutscenedata/lightningfist.ogg",
             "heading": "Gnork",
             "body": "The Thunderstone is hidden deep within Core Cavern. It's guarded by the fierce warrior, Lightningfist. He once fed on the rebel energy of the Thunderstone, and now lies waiting for its resurgence.",
-            "type": "dialogue"
+            "type": "showcase"
         },
         {
             "background": "cutscenedata/background.png",
@@ -88,6 +92,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/peace.png",
+            "sound_effect": "cutscenedata/item.ogg",
             "heading": "Peace",
             "body": "When the PEACE symbol appears, raise your index and middle fingers and chill out!",
             "type": "showcase"
