@@ -1,10 +1,12 @@
 {
     "name": "Rock On!!!",
+    "sound_loop":"cutscenedata/music4.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/lightningfist.png",
             "heading": "Lightningfist",
+            "sound_effect": "cutscenedata/lightningfist.ogg",
             "body": "You have proven yourself, brave traveller. The rock spirit within you is undeniable. The Thunderstone awakens, and with it, the heart of Ampliforia beats once more!!",
             "type": "dialogue"
         },
@@ -18,6 +20,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
+            "sound_effect":"cutscenedata/gnork.ogg",
             "heading": "Gnork",
             "body": "You've got the true spirit of a rock legend.",
             "type": "dialogue"
@@ -33,6 +36,7 @@
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/gnork.png",
             "heading": "Gnork",
+            "sound_effect":"cutscenedata/boulder.ogg",
             "body": "It's rolling to the side... revealing something.",
             "type": "dialogue"
         },
@@ -46,6 +50,7 @@
         {
         "background": "cutscenedata/background.png",
         "foreground": "cutscenedata/amp.png",
+        "sound_effect":"cutscenedata/amp.ogg",
         "heading": "You received a Celestial Amp!",
         "body": "In the rugged world of Ampliforia, the Celestial Amp is a legendary artifact of immense sonic power. Forged from molten metals and infused with the essence of thunderous rock anthems, it amplifies riffs with the planet's raw, untamed energy. This mighty amplifier transforms simple tunes into epic rock symphonies, connecting the music to the very heart of Ampliforia's hardcore soul.",
         "type": "showcase"
