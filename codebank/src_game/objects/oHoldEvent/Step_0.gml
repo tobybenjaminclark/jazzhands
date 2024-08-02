@@ -109,19 +109,16 @@ if (ly >= parent.kill_line)
 
 /* Symbol Death Logic */
 if(dead)
-{
-	if(image_xscale > 0.2){image_xscale -= 0.02;}
-	if(image_yscale > 0.2){image_yscale -= 0.02;}
-	if(image_alpha > 0) image_alpha -= 0.005;
-	
+{	
 	ly = ly - 1;
-	if(x>room_width/2) lx += 1;
-	else lx -= 1;
+	if(x>room_width/2) lx += 3;
+	else lx -= 3;
 	
 	moving = false;
 	y = y - 1;
-	if(x>room_width/2) x += 1;
-	else x -= 1;
+	if(x>room_width/2) x += 3;
+	else x -= 3;
+	
 	if((x<0 || x>room_width) && (y<0 || y>room_height))
 	{
 		instance_destroy(self);

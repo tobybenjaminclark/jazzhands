@@ -79,11 +79,10 @@ function cutscene_initialise_components(frame_index, json_path)
 
 	background_path = filepath_replace_last_element(json_path, background_path);
 	
-	/* Audio */
+	/* Audio Sound (like start of frame sound effect) */
 	if(struct_exists(json_struct.frames[frame_index], "sound_effect")){
 		snd_path = filepath_replace_last_element(json_path, json_struct.frames[frame_index].sound_effect);
-	}
-	else {
+	} else {
 		snd_path = "";	
 	}
 	

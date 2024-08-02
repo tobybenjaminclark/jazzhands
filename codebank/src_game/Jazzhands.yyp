@@ -556,6 +556,7 @@
     {"$GMIncludedFile":"","%Name":"snd_rocket_racer.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_funkopolis/level_4","name":"snd_rocket_racer.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"beatmap.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1","name":"beatmap.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"cutscene.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1","name":"cutscene.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"cutscene.json","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1","name":"cutscene.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"background.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"background.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"backstage.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"backstage.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"black_white_galaxy.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"black_white_galaxy.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
