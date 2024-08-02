@@ -34,9 +34,9 @@
         {"name":"g_TwistBlurTexture","type":2,"value":"_filter_twist_blur_texture",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMREffectLayer":"","%Name":"Vignette","depth":100,"effectEnabled":true,"effectType":"_filter_vignette","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Vignette","properties":[
-        {"name":"g_VignetteEdges","type":0,"value":"0.7",},
+        {"name":"g_VignetteEdges","type":0,"value":"0.75",},
         {"name":"g_VignetteEdges","type":0,"value":"1.45",},
-        {"name":"g_VignetteSharpness","type":0,"value":"4.07",},
+        {"name":"g_VignetteSharpness","type":0,"value":"3.86",},
         {"name":"g_VignetteTexture","type":2,"value":"_filter_vignette_texture",},
       ],"resourceType":"GMREffectLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Cutscene","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Cutscene","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
