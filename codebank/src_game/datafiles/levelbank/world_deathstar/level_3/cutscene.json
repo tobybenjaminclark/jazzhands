@@ -1,9 +1,11 @@
 {
     "name": "Summer Solstice",
+    "sound_loop":"cutscenedata/music2.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/nox.png",
+            "sound_effect":"cutscenedata/nox.ogg",
             "heading": "Nox",
             "body": "Your rhythm... it's undeniable. Perhaps the Grand Composer's vision isn't the only path to harmony.",
             "type": "dialogue"
@@ -46,6 +48,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/solstice.png",
+            "sound_effect":"cutscenedata/solstice.ogg",
             "heading": "Solstice",
             "body": "I am Solstice, the radiant guardian of this platform. Why do you intrude upon my domain?",
             "type": "dialogue"
