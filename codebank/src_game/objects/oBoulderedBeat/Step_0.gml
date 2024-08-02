@@ -128,7 +128,9 @@ if (moving && !paused && !dead)
 /* Symbol Death Logic */
 if(dead)
 {
-	if(image_xscale > 0.2){image_xscale -= 0.02;}
+	if(side == "RIGHT" && image_xscale > 0.2){image_xscale -= 0.02;}
+	if(side == "LEFT" && image_xscale < -0.2){image_xscale += 0.02;}
+	
 	if(image_yscale > 0.2){image_yscale -= 0.02;}
 	if(image_alpha > 0) image_alpha -= 0.005;
 	
