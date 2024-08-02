@@ -96,6 +96,15 @@ if(display_step >= 5) {
 	draw_set_halign(fa_left)
 	draw_text(room_width div 2 - 500, 600, "Grade");
 	draw_set_halign(fa_right)
+	
+	if (grade == "SS") { draw_set_color(#FFBF00); }
+	if (grade == "S")  { draw_set_color(#82FF9E); }
+	if (grade == "A")  { draw_set_color(#47FF6F); }
+	if (grade == "B")  { draw_set_color(#00FFB3); }
+	if (grade == "C")  { draw_set_color(#00F2FF); }
+	if (grade == "D")  { draw_set_color(#F536FF); }
+	if (grade == "F")  { draw_set_color(#D33B3B); }
+	
 	draw_text(room_width div 2 + 500, 600, grade);
 }
 

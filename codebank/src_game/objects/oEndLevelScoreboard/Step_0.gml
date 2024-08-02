@@ -15,7 +15,7 @@ if(a6 < 1 && display_step >= 7) a6 = a6 + alpha_increase;
 current_step++;
 
 if(bg_alpha < 1) {
-	bg_alpha += 0.02;
+	bg_alpha += 0.01;
 	var _a = bg_alpha;
 	with(oLabel){image_alpha = 1 - _a}
 	with(oSpinningDisc){image_alpha = 1 - _a}
