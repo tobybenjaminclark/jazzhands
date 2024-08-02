@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"emit_junk",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"emit_junk",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

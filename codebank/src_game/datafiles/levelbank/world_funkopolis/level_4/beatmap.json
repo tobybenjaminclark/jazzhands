@@ -7,10 +7,9 @@
     },
     "events": [
         {
-            "event_type": "hold",
+            "event_type": "space_junk_beat",
             "event_data": {
-                "start_time": 4200,
-                "end_time": 5200,
+                "time": 4200,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -22,24 +21,6 @@
                 "end_time": 5200,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
-            }
-        },
-        {
-            "event_type": "hold",
-            "event_data": {
-                "start_time": 8014,
-                "end_time": 9914,
-                "symbol": "CLOSED_FIST",
-                "side": "LEFT"
-            }
-        },
-        {
-            "event_type": "hold",
-            "event_data": {
-                "start_time": 9814,
-                "end_time": 11814,
-                "symbol": "OPEN_PALM",
-                "side": "LEFT"
             }
         },
         {
