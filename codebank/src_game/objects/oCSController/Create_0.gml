@@ -16,7 +16,6 @@ if struct_exists(json_struct, "sound_loop"){
 	var _path = filepath_replace_last_element(file_path, json_struct.sound_loop);
 	aud = audio_create_stream(_path);
 	snd = audio_play_sound(aud, 0, true);
-	
 }
 
 cutscene_initialise_components(frame_index, file_path);

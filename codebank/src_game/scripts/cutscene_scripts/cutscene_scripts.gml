@@ -87,6 +87,16 @@ function cutscene_initialise_components(frame_index, json_path)
 		snd_path = "";	
 	}
 	
+	/* Reset Sound Loop to another sound (if its a param) */
+	if(struct_exists(json_struct.frames[frame_index], "sound_loop")){
+		var _path = filepath_replace_last_element(json_path, json_struct.frames[frame_index].sound_loop);
+		with(oCSController){
+			audio_stop_sound(snd);
+			aud = audio_create_stream(_path);
+			snd = audio_play_sound(aud, 0, true);
+		}	
+	}
+	
 	if(_type != CS_SCENE){
 		cutscene_background = instance_create_layer(0,0, "CutsceneBackground", oCSBackground,
 			{

@@ -106,10 +106,8 @@ if(display_step >= 4){
 			var _r = 7;
 			var _o = 3;
 			var _i = iaccuracy_display;
-			part_system_position(_ps, room_width div 2 - (50 * (_r + _o)) + _i * (_r + _o), 550);
 		}
 		else{
-			part_system_destroy(_ps);
 			is_green = true;
 		}
 		
