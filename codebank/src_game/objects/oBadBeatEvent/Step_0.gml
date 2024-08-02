@@ -90,6 +90,7 @@ if (moving && !paused && !dead)
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
 		{
 			/* Hit bad beat */
+			part_particles_create(_ps, x, y, _ptype1, 25);
 			ds_list_clear(parent.combo_list);
 			image_blend = make_color_rgb(255, 100, 100);
 			hit_beat_lights(side, c_red);
@@ -98,6 +99,7 @@ if (moving && !paused && !dead)
 		{
 			/* Didn't hit (good) */
 			global.hit_beats += 1;
+			part_particles_create(_ps, x, y, _ptype2, 25);
 			parent.level_score += (100 * global.score_multiplier);
 			ds_list_add(parent.combo_list, COMBO_ANTIBEAT);
 			image_blend = make_color_rgb(100, 255, 100);

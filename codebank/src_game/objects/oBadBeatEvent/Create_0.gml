@@ -21,6 +21,36 @@ part_type_blend(_ptype12, false);
 part_type_life(_ptype12, 80, 80);
 
 
+/* PS */
+_ps = part_system_create();
+part_system_draw_order(_ps, true);
+
+/* Bad Particles (Missed Beat) */
+_ptype1 = part_type_create();
+part_type_sprite(_ptype1, spr_semiquaver, false, true, true)
+part_type_size(_ptype1, 0.8, 1.2, -0.02, 0);
+part_type_scale(_ptype1, 1, 1);
+part_type_speed(_ptype1, 2, 4, 0.1, 1);
+part_type_direction(_ptype1, 0, 359, 0, 0);
+part_type_gravity(_ptype1, 0.1, 270);
+part_type_orientation(_ptype1, 0, 0, 0, 0, false);
+part_type_colour3(_ptype1, $9999BF, $0000FF, $000060);
+part_type_alpha3(_ptype1, 1, 1, 1);
+part_type_blend(_ptype1, false);
+part_type_life(_ptype1, 80, 80);
+
+/* Good Particles (Hit Beat) */
+_ptype2 = part_type_create();
+part_type_sprite(_ptype2, spr_semiquaver, false, true, true)
+part_type_size(_ptype2, 0.8, 1.2, -0.02, 0);
+part_type_scale(_ptype2, 1, 1);
+part_type_speed(_ptype2, 2, 4, 0.1, 1);
+part_type_direction(_ptype2, 0, 359, 0, 0);
+part_type_orientation(_ptype2, 0, 0, 0, 0, false);
+part_type_colour3(_ptype2, $FFFFFF, $00FF00, $008000);
+part_type_alpha3(_ptype2, 1, 1, 1);
+part_type_blend(_ptype2, false);
+part_type_life(_ptype2, 80, 80);
 
 /* Initial Variable Setup */
 start_time = 0;
