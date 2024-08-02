@@ -110,6 +110,14 @@ if (ly >= parent.kill_line)
 /* Symbol Death Logic */
 if(dead)
 {	
+	/* Scale down sprites */
+	if(side == "RIGHT" && image_xscale > 0.2){image_xscale -= 0.02;}
+	if(side == "LEFT" && image_xscale < -0.2){image_xscale += 0.02;}
+	if(_scale > 0) {_scale -= 0.01;}
+	
+	if(image_yscale > 0.2){image_yscale -= 0.02;}
+	if(image_alpha > 0) {image_alpha -= 0.01;}
+	
 	ly = ly - 1;
 	if(x>room_width/2) lx += 3;
 	else lx -= 3;

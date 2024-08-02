@@ -5,6 +5,10 @@
 lx = -500
 ly = -500
 
+
+/* Scale? */
+_scale = 0.5;
+
 /* Initial Variable Setup */
 pstart_time = 0;
 target_time = 0;

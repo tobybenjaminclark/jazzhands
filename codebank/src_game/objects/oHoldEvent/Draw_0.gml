@@ -9,10 +9,10 @@ else if(missed) {draw_set_color(c_red);}
 else {draw_set_color(c_white);}
 
 if(dead){
-	draw_set_alpha(0.6)
-};
-
-var _scale = 0.5;
+	draw_set_alpha(image_alpha)
+} else {
+	draw_set_alpha(1)
+}
 
 var hw = (sprite_width div 2);
 var hh = (sprite_height div 2);
@@ -29,11 +29,10 @@ draw_line(lx - hws, ly + hh, lx + hws, ly + hh);
 draw_line(lx - hws, ly + hh + 1, lx + hws, ly + hh + 1);
 
 if(!dead) {draw_set_alpha(0.4)}
-
+else {draw_set_alpha(image_alpha / 2);}
 
 var ay = y - sprite_height div 2;
 var by = ly + sprite_height div 2;
-
 draw_line(x, ay, lx, by);
 draw_line(x + 1, ay, lx + 1, by);
 draw_line(x - 1, ay, lx - 1, by);
@@ -49,9 +48,5 @@ draw_line(x + 5, ay, lx + 5, by);
 draw_line(x - 5, ay, lx - 5, by);
 
 if(!dead) {draw_set_alpha(1)}
-
 draw_set_color(c_white);
 
-// draw_set_font(fntDebug);
-// draw_text(x + 10, y, symbol);
-// draw_text(x + 10, y+15, (string(current_time) + " / " + string(target_time)));
