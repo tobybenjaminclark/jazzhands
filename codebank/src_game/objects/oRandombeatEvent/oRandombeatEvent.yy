@@ -10,8 +10,8 @@
   "name":"oRandombeatEvent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Base",
-    "path":"folders/Objects/Stage Objects/Base.yy",
+    "name":"Beats",
+    "path":"folders/Objects/Stage Objects/Base/Beats.yy",
   },
   "parentObjectId":null,
   "persistent":false,
