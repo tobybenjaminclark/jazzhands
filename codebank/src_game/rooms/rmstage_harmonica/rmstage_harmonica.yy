@@ -83,7 +83,7 @@
       ],"layers":[],"name":"SuperGlowLayer","properties":[
         {"name":"g_GlowRadius","type":0,"value":"1024",},
         {"name":"g_GlowQuality","type":0,"value":"5.7",},
-        {"name":"g_GlowIntensity","type":0,"value":"0.675",},
+        {"name":"g_GlowIntensity","type":0,"value":"0.725",},
         {"name":"g_GlowGamma","type":0,"value":"1.6",},
         {"name":"g_GlowAlpha","type":0,"value":"0.9",},
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
