@@ -775,6 +775,7 @@
     {"id":{"name":"logistic_curve","path":"scripts/logistic_curve/logistic_curve.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"parse_json","path":"scripts/parse_json/parse_json.yy",},},
+    {"id":{"name":"split_line","path":"scripts/split_line/split_line.yy",},},
     {"id":{"name":"validate_beatmap","path":"scripts/validate_beatmap/validate_beatmap.yy",},},
     {"id":{"name":"validate_leaderboard","path":"scripts/validate_leaderboard/validate_leaderboard.yy",},},
     {"id":{"name":"validate_savefile","path":"scripts/validate_savefile/validate_savefile.yy",},},

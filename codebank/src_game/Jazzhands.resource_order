@@ -134,6 +134,7 @@
     {"name":"logistic_curve","order":2,"path":"scripts/logistic_curve/logistic_curve.yy",},
     {"name":"macros","order":1,"path":"scripts/macros/macros.yy",},
     {"name":"parse_json","order":1,"path":"scripts/parse_json/parse_json.yy",},
+    {"name":"split_line","order":5,"path":"scripts/split_line/split_line.yy",},
     {"name":"validate_beatmap","order":1,"path":"scripts/validate_beatmap/validate_beatmap.yy",},
     {"name":"validate_leaderboard","order":2,"path":"scripts/validate_leaderboard/validate_leaderboard.yy",},
     {"name":"validate_savefile","order":4,"path":"scripts/validate_savefile/validate_savefile.yy",},

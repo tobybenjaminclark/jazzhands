@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"split_line",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"split_line",
+  "parent":{
+    "name":"Miscellaneous",
+    "path":"folders/Scripts/Miscellaneous.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

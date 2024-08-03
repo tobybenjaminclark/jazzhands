@@ -31,21 +31,27 @@ draw_line(lx - hws, ly + hh + 1, lx + hws, ly + hh + 1);
 if(!dead) {draw_set_alpha(0.4)}
 else {draw_set_alpha(image_alpha / 2);}
 
-var ay = y - sprite_height div 2;
-var by = ly + sprite_height div 2;
-draw_line(x, ay, lx, by);
-draw_line(x + 1, ay, lx + 1, by);
-draw_line(x - 1, ay, lx - 1, by);
-draw_line(x + 2, ay, lx + 2, by);
-draw_line(x - 2, ay, lx - 2, by);
-draw_line(x + 3, ay, lx + 3, by);
-draw_line(x - 3, ay, lx - 3, by);
+if(colliding){
+	split = split_line(x, ay, lx, by, parent.kill_line)
+	lp1 = split[0]
+	lp2 = split[1]
+} else {
+	var ay = y - sprite_height div 2;
+	var by = ly + sprite_height div 2;
+	draw_line(x, ay, lx, by);
+	draw_line(x + 1, ay, lx + 1, by);
+	draw_line(x - 1, ay, lx - 1, by);
+	draw_line(x + 2, ay, lx + 2, by);
+	draw_line(x - 2, ay, lx - 2, by);
+	draw_line(x + 3, ay, lx + 3, by);
+	draw_line(x - 3, ay, lx - 3, by);
 
-if(!dead) {draw_set_alpha(1)}
-draw_line(x + 4, ay, lx + 4, by);
-draw_line(x - 4, ay, lx - 4, by);
-draw_line(x + 5, ay, lx + 5, by);
-draw_line(x - 5, ay, lx - 5, by);
+	if(!dead) {draw_set_alpha(1)}
+	draw_line(x + 4, ay, lx + 4, by);
+	draw_line(x - 4, ay, lx - 4, by);
+	draw_line(x + 5, ay, lx + 5, by);
+	draw_line(x - 5, ay, lx - 5, by);
+}
 
 if(!dead) {draw_set_alpha(1)}
 draw_set_color(c_white);
