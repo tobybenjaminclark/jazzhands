@@ -55,7 +55,6 @@ part_type_life(_ptype2, 80, 80);
 /* Initial Variable Setup */
 start_time = 0;
 target_time = 0;
-movement_factor = 6;
 paused = false;
 set = false;
 moving = false;

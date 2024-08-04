@@ -12,7 +12,6 @@ _scale = 0.5;
 /* Initial Variable Setup */
 pstart_time = 0;
 target_time = 0;
-movement_factor = 6;
 paused = false;
 set = false;
 moving = false;

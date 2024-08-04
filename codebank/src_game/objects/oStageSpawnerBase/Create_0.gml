@@ -81,11 +81,25 @@ end_time = current_time + 99999999999999;
 
 global.total_beats = 0;
 
+if(variable_struct_exists(beatmap_structure.level_data, "speed")) {
+	allbeat_speed = beatmap_structure.level_data.speed;
+} else {
+	allbeat_speed = DEFAULT_BEAT_SPEED;
+}
+
+
 /* Create Beat Events */
 for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++){
 	var reference_to_this = self;
 	var lyr = "Instances"
 	global.total_beats += 1;
+	
+	if(variable_struct_exists(beatmap_structure.events[event_index].event_data, "speed")){
+		thisbeat_speed = beatmap_structure.events[event_index].event_data.speed;
+	} else {
+		thisbeat_speed = allbeat_speed;
+	}
+	
 	switch(beatmap_structure.events[event_index].event_type){
 		case "beat":
 			var inst = instance_create_layer(x,y,lyr, class_beat_event,{
@@ -95,7 +109,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
 				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
 				image_xscale: 0.6,
-				image_yscale: 0.6
+				image_yscale: 0.6,
+				movement_factor: thisbeat_speed
 			});
 		break;
 		
@@ -107,7 +122,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
 				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
 				image_xscale: 0.6,
-				image_yscale: 0.6
+				image_yscale: 0.6,
+				movement_factor: thisbeat_speed
 			});
 		break;
 		
@@ -119,7 +135,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
 				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
 				image_xscale: 0.6,
-				image_yscale: 0.6
+				image_yscale: 0.6,
+				movement_factor: thisbeat_speed
 			});
 		break;
 		
@@ -131,7 +148,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
 				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
 				image_xscale: 0.6,
-				image_yscale: 0.6
+				image_yscale: 0.6,
+				movement_factor: thisbeat_speed
 			});
 		break;
 		
@@ -143,7 +161,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
 				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
 				image_xscale: 0.6,
-				image_yscale: 0.6
+				image_yscale: 0.6,
+				movement_factor: thisbeat_speed
 			});
 		break;
 		
@@ -156,7 +175,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 				symbol: string(beatmap_structure.events[event_index].event_data.symbol),
 				sprite_index: get_sprite_from_symbol(reference_to_this, string(beatmap_structure.events[event_index].event_data.symbol)),
 				image_xscale: 0.6,
-				image_yscale: 0.6
+				image_yscale: 0.6,
+				movement_factor: thisbeat_speed
 			});
 		break;
 		

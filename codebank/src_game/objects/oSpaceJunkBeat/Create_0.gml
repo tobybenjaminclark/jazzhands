@@ -58,7 +58,6 @@ boulder_rot = 0;
 /* Initial Variable Setup */
 start_time = 0;
 target_time = 0;
-movement_factor = 6;
 paused = false;
 set = false;
 moving = false;

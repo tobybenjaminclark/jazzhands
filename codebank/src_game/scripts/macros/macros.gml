@@ -7,6 +7,8 @@ global.current_level = "";
 // Start Level
 #macro START_LEVEL 200
 
+#macro DEFAULT_BEAT_SPEED 6
+
 // Cutscene types
 #macro CS_NONE 1
 #macro CS_DIALOGUE 2
