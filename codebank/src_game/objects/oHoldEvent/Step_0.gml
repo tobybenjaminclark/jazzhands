@@ -53,19 +53,19 @@ if (moving && !paused && !dead)
 	    t = (current_time - activation_time) / (target_time - activation_time);
 		_t = (current_time - activation_time) / (target_time2 - activation_time);
 	}
-
+	
+    y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
+	ly = (parent.kill_line - (sprite_height / 2)) - ((target_time2 - current_time) / movement_factor);
+	
 	// Interpolate between sx and tx
 	if(y > 0) t = (parent.kill_line - y) / parent.kill_line
 	else t = 0
 	x = lerp(tx, sx, t);
 	
 	// Interpolate between sx and tx for second beat
-	if(y > 0) _t = (parent.kill_line - ly) / parent.kill_line
+	if(ly > 0 || y > 0) _t = (parent.kill_line - ly) / parent.kill_line
 	else _t = 0
-	x = lerp(tx, sx, _t);
-	
-    y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
-	ly = (parent.kill_line - (sprite_height / 2)) - ((target_time2 - current_time) / movement_factor);
+	lx = lerp(tx, sx, _t);
 	
 	if(ly <= parent.kill_line && y >= parent.kill_line)
 	{
