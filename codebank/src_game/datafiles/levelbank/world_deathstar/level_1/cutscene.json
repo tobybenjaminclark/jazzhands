@@ -1,5 +1,6 @@
 {
     "name": "Crashing Drums",
+    "sound_loop":"cutscenedata/music0.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
@@ -25,6 +26,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/crescendo.png",
+            "sound_effect":"cutscenedata/crescendo.ogg",
             "heading": "Crescendo",
             "body": "Greetings, troublemaker, I am Crescendo. What brings you to this planet?",
             "type": "dialogue"

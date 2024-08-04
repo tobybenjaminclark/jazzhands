@@ -1,9 +1,11 @@
 {
     "name": "Stifling Shadows",
+    "sound_loop":"cutscenedata/music1.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/crescendo.png",
+            "sound_effect":"cutscenedata/crescendo.ogg",
             "heading": "Crescendo",
             "body": "I have seen the light.. The Grand Composer must be stopped!",
             "type": "dialogue"
@@ -25,6 +27,7 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/nox.png",
+            "sound_effect":"cutscenedata/nox.ogg",
             "heading": "Nox",
             "body": "I am Nox, the guardian of this platform. What brings you to my domain?",
             "type": "dialogue"

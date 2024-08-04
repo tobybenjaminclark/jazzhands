@@ -1,10 +1,12 @@
 {
     "name": "Chiming Chaos",
+    "sound_loop":"cutscenedata/music4.ogg",
     "frames": [
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/discord.png",
             "heading": "Discord",
+            "sound_effect":"cutscenedata/discord.ogg",
             "body": "Your groove... it's powerful enough to bring order to even my chaos. Perhaps there is merit in your harmony.",
             "type": "dialogue"
         },
@@ -12,7 +14,15 @@
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/traveller.png",
             "heading": "Traveller",
-            "body": "Everyone has a place in the universal symphony, Discord. Now, let's place the final amp and complete our mission.",
+            "body": "Everyone has a place in the universal symphony, Discord. Now, let's place the final amp and complete our mission!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/mojo.png",
+            "sound_effect":"cutscenedata/win.ogg",
+            "heading": "Mojo",
+            "body": "Zowie! We've saved the Universe from eternal silence! Now, let's stop the Grand Composer once and for all...",
             "type": "dialogue"
         }
     ]

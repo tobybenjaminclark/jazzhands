@@ -1,16 +1,19 @@
 {
     "name": "Jiving Rebels",
+    "sound_loop":"cutscenedata/music1.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/zapp.png",
             "heading": "Zapp",
+            "sound_effect":"cutscenedata/zapp.ogg",
             "body": "Whoa, friends! Your funk is unparalleled. Let's head on down to Jive Junction and gain recruits!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/ozzy.png",
+            "sound_effect":"cutscenedata/ozzy.ogg",
             "heading": "Ozzy",
             "body": "Hey dudes, it's about time you came! This is Jive Junction, a place for people to come together and make music without the Grand Composer's knowledge.",
             "type": "dialogue"
