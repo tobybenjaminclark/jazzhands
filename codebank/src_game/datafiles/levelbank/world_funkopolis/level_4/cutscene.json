@@ -1,9 +1,11 @@
 {
     "name": "Space Junk",
+    "sound_loop":"cutscenedata/music3.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/moxie.png",
+            "sound_effect":"cutscenedata/moxie.ogg",
             "heading": "Moxie",
             "body": "That was amazing! I can feel the evil hum lessen on our planet. I think you scared him off!",
             "type": "dialogue"
@@ -25,6 +27,7 @@
         {
         "background": "cutscenedata/background.png",
         "foreground": "cutscenedata/amp.png",
+        "sound_effect":"cutscenedata/amp.ogg",
         "heading": "Celestial Amp",
         "body": "In the vibrant world of Funkopolis, where groovy beats and soulful rhythms flow through every street, the Celestial Amp is a legendary artifact of immense musical power. Infused with the essence of delicious basslines, it amplifies grooves with the planet's infectious rhythms. This amplifier transforms simple tunes into electrifying funk symphonies!",
         "type": "showcase"
@@ -39,6 +42,7 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/ozzy.png",
+            "sound_effect":"cutscenedata/ozzy.ogg",
             "heading": "Ozzy",
             "body": "But how will you fly there? The space junk has blocked your exit!",
             "type": "dialogue"

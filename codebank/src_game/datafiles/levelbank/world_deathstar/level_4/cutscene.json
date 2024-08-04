@@ -1,11 +1,9 @@
 {
     "name": "Chiming Chaos",
-    "sound_loop":"cutscenedata/music4.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/solstice.png",
-            "sound_effect":"cutscenedata/solstice.ogg",
             "heading": "Solstice",
             "body": "Your light... it's more vibrant and harmonious than I imagined!!!",
             "type": "dialogue"
@@ -34,7 +32,6 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/discord.png",
-            "sound_effect":"cutscenedata/discord.ogg",
             "heading": "Discord",
             "body": "I am Discord, the guardian of this platform. Why do you dare to step into my domain?",
             "type": "dialogue"
