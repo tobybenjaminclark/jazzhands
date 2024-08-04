@@ -110,7 +110,9 @@ if (moving && !paused && !dead)
 	}
 
 	// Interpolate between sx and tx
-	x = lerp(sx, tx, t);
+	if(y > 0) t = (parent.kill_line - y) / parent.kill_line
+	else t = 0
+	x = lerp(tx, sx, t);
 	
     y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
 	
