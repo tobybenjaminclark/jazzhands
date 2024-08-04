@@ -9,3 +9,4 @@ if __name__ == "__main__":
     settings = JazzHandsSettingsReader().settings
     controller = JazzhandsController(settings)
     controller.mainloop()
+    
