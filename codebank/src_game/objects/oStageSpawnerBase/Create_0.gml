@@ -183,5 +183,8 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		default:
 		break;
 	}
+	
+	// Spawn coconut visualisation
+	instance_create_layer(x, y, layer_get_name(layer), oCoconutEvent, {twin: inst})
 }
 

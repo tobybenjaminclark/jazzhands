@@ -1,125 +1,136 @@
-/// @description Handles Beat Behaviour
-/// @author Toby Benjamin Clark
-/// @date   14/01/2023
 
-/* Particles */
-// Define variables for smooth rotation
-var target_angle = 0;
-var easing = 0.45; // Adjust the easing value for desired smoothness
-
-if (rotation_direction == 1) {
-    target_angle = 10;
-} else {
-    target_angle = -10;
+if(tracking_beat){
+	if twin.side == "LEFT" {
+		x = (room_width div 2) - room_width div 3;
+	} else {
+		x = (room_width div 2) + room_width div 3;
+	}
+	y = twin.y - 300;
 }
 
-// Smoothly adjust the image_angle towards the target_angle
-var delta_angle = target_angle - image_angle;
-image_angle += delta_angle * easing;
+if(twin.dead && !exploded){
+	exploded = true;
+	if(twin.hit_this_beat) {
+		//ps_coconut_good
+		var _ps = part_system_create();
+		part_system_draw_order(_ps, true);
 
-// Check if rotation direction needs to be changed
-if (rotation_direction == 1 && image_angle >= 10) {
-    rotation_direction = 0;
-} else if (rotation_direction == 0 && image_angle <= -10) {
-    rotation_direction = 1;
+		//Milk
+		var _ptype1 = part_type_create();
+		part_type_sprite(_ptype1, spr_semiquaver, false, true, false)
+		part_type_size(_ptype1, 1, 1, -0.01, 0);
+		part_type_scale(_ptype1, 1, 1);
+		part_type_speed(_ptype1, 2, 2, 0, 0);
+		part_type_direction(_ptype1, 0, 255, 0, 0);
+		part_type_gravity(_ptype1, 0, 270);
+		part_type_orientation(_ptype1, 0, 255, 4, 0, false);
+		part_type_colour3(_ptype1, $43DB11, $72FF00, $FFFFFF);
+		part_type_alpha3(_ptype1, 0.6, 1, 0);
+		part_type_blend(_ptype1, false);
+		part_type_life(_ptype1, 50, 80);
+
+		var _pemit1 = part_emitter_create(_ps);
+		part_emitter_region(_ps, _pemit1, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
+		part_emitter_burst(_ps, _pemit1, _ptype1, 25);
+
+		//Coconut_1
+		var _ptype2 = part_type_create();
+		part_type_sprite(_ptype2, sprCoconutChunk, false, true, false)
+		part_type_size(_ptype2, 0.12, 0.12, -0.0017, 0);
+		part_type_scale(_ptype2, 1, 1);
+		part_type_speed(_ptype2, 5, 5, -0.1, 0);
+		part_type_direction(_ptype2, 128, 359, 0, 0);
+		part_type_gravity(_ptype2, 0, 270);
+		part_type_orientation(_ptype2, 0, 359, 15, 0, false);
+		part_type_colour3(_ptype2, $FFFFFF, $FFFFFF, $FFFFFF);
+		part_type_alpha3(_ptype2, 1, 0.69, 0);
+		part_type_blend(_ptype2, false);
+		part_type_life(_ptype2, 40, 80);
+
+		var _pemit2 = part_emitter_create(_ps);
+		part_emitter_region(_ps, _pemit2, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
+		part_emitter_burst(_ps, _pemit2, _ptype2, 1);
+
+		//Coconut
+		var _ptype3 = part_type_create();
+		part_type_sprite(_ptype3, sprCoconutChunk, false, true, false)
+		part_type_size(_ptype3, 0.12, 0.12, -0.0017, 0);
+		part_type_scale(_ptype3, 1, 1);
+		part_type_speed(_ptype3, 5, 5, -0.1, 0);
+		part_type_direction(_ptype3, 0, 128, 0, 0);
+		part_type_gravity(_ptype3, 0, 270);
+		part_type_orientation(_ptype3, 0, 359, 15, 0, false);
+		part_type_colour3(_ptype3, $FFFFFF, $FFFFFF, $FFFFFF);
+		part_type_alpha3(_ptype3, 1, 0.671, 0);
+		part_type_blend(_ptype3, false);
+		part_type_life(_ptype3, 40, 80);
+
+		var _pemit3 = part_emitter_create(_ps);
+		part_emitter_region(_ps, _pemit3, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
+		part_emitter_burst(_ps, _pemit3, _ptype3, 1);
+
+		part_system_position(_ps, x, y);
+	}
+	else {
+		//ps_coconut_bad
+		var _ps = part_system_create();
+		part_system_draw_order(_ps, true);
+
+		//Milk
+		var _ptype1 = part_type_create();
+		part_type_sprite(_ptype1, spr_semiquaver, false, true, false)
+		part_type_size(_ptype1, 1, 1, -0.01, 0);
+		part_type_scale(_ptype1, 1, 1);
+		part_type_speed(_ptype1, 2, 2, 0, 0);
+		part_type_direction(_ptype1, 0, 255, 0, 0);
+		part_type_gravity(_ptype1, 0, 270);
+		part_type_orientation(_ptype1, 0, 255, 4, 0, false);
+		part_type_colour3(_ptype1, $0000FF, $000068, $FFFFFF);
+		part_type_alpha3(_ptype1, 0.6, 1, 0);
+		part_type_blend(_ptype1, false);
+		part_type_life(_ptype1, 50, 80);
+
+		var _pemit1 = part_emitter_create(_ps);
+		part_emitter_region(_ps, _pemit1, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
+		part_emitter_burst(_ps, _pemit1, _ptype1, 25);
+
+		//Coconut_1
+		var _ptype2 = part_type_create();
+		part_type_sprite(_ptype2, sprCoconutChunk, false, true, false)
+		part_type_size(_ptype2, 0.12, 0.12, -0.0017, 0);
+		part_type_scale(_ptype2, 1, 1);
+		part_type_speed(_ptype2, 5, 5, -0.1, 0);
+		part_type_direction(_ptype2, 128, 359, 0, 0);
+		part_type_gravity(_ptype2, 0, 270);
+		part_type_orientation(_ptype2, 0, 359, 15, 0, false);
+		part_type_colour3(_ptype2, $FFFFFF, $FFFFFF, $FFFFFF);
+		part_type_alpha3(_ptype2, 1, 0.69, 0);
+		part_type_blend(_ptype2, false);
+		part_type_life(_ptype2, 40, 80);
+
+		var _pemit2 = part_emitter_create(_ps);
+		part_emitter_region(_ps, _pemit2, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
+		part_emitter_burst(_ps, _pemit2, _ptype2, 1);
+
+		//Coconut
+		var _ptype3 = part_type_create();
+		part_type_sprite(_ptype3, sprCoconutChunk, false, true, false)
+		part_type_size(_ptype3, 0.12, 0.12, -0.0017, 0);
+		part_type_scale(_ptype3, 1, 1);
+		part_type_speed(_ptype3, 5, 5, -0.1, 0);
+		part_type_direction(_ptype3, 0, 128, 0, 0);
+		part_type_gravity(_ptype3, 0, 270);
+		part_type_orientation(_ptype3, 0, 359, 15, 0, false);
+		part_type_colour3(_ptype3, $FFFFFF, $FFFFFF, $FFFFFF);
+		part_type_alpha3(_ptype3, 1, 0.671, 0);
+		part_type_blend(_ptype3, false);
+		part_type_life(_ptype3, 40, 80);
+
+		var _pemit3 = part_emitter_create(_ps);
+		part_emitter_region(_ps, _pemit3, -32, 32, -32, 32, ps_shape_rectangle, ps_distr_linear);
+		part_emitter_burst(_ps, _pemit3, _ptype3, 1);
+
+		part_system_position(_ps, x, y);	
+	}
+	instance_destroy(self);
 }
-
-// Handle respositioning
-if(y + sprite_height > 0 && has_horizontal_shifted == false){
-	if (side == "LEFT"){
-		x = (room_width div 2) - 540;
-		sx = x;
-	}
-	else if (side == "RIGHT"){
-		x = (room_width div 2) + 540;
-		sx = x;
-	}
-	has_horizontal_shifted = true;
-}
-
-
-/* Game Pause Logic */
-if (parent.paused) paused = true;
-if (paused && !parent.paused)
-{
-        paused = false;
-        target_time += (parent.unpaused_time - parent.paused_time);
-} 
-
-
-/* Game Start Logic */
-if (parent.start_time != 0 && !set)
-{
-    set = true;
-    start_time = parent.start_time;
-    target_time = start_time + time;
-    moving = true;
-}
-
-
-/* Move Symbol if moving & not paused */
-if (moving && !paused && !dead)
-{
-	/* Horizontal Moving Logic */
-	// sx = starting x
-	// tx = final x
-	// Define the time at which the symbol should start moving
-	var activation_time = target_time - 5000;  // Example: start moving when 90% of target_time is reached
-
-	// Ensure current_time is within the bounds of 0 to target_time
-	var clamped_time = clamp(current_time, 0, target_time);
-
-	// Calculate the interpolation factor (a value between 0 and 1), starting from activation_time
-	var t = 0;
-	if (clamped_time >= activation_time) {
-	    t = (clamped_time - activation_time) / (target_time - activation_time);
-	}
-
-	// Interpolate between sx and tx
-	if(y > 0) t = (parent.kill_line - y) / parent.kill_line
-	else t = 0
-	x = lerp(tx, sx, t);
-	
-    y = (parent.kill_line - (sprite_height / 2)) - ((target_time - current_time) / movement_factor);
-	
-	/* Symbol Death Transition */
-    if (y >= (parent.kill_line) || current_time >= target_time)
-	{
-		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol))
-		{
-			image_blend = make_color_rgb(100, 255, 100);
-		}
-		else
-		{
-			image_blend = make_color_rgb(255, 100, 100);
-		}
-		
-		dead = true;
-	}
-}	
-
-
-
-/* Symbol Death Logic */
-if(dead)
-{
-	if(side == "RIGHT" && image_xscale > 0.2){image_xscale -= 0.02;}
-	if(side == "LEFT" && image_xscale < -0.2){image_xscale += 0.02;}
-	
-	if(image_yscale > 0.2){image_yscale -= 0.02;}
-	if(image_alpha > 0) image_alpha -= 0.005;
-	
-	moving = false;
-	y = y - 1;
-	if(x>room_width/2) x += 1;
-	else x -= 1;
-	if((x<0 || x>room_width) && (y<0 || y>room_height))
-	{
-		instance_destroy(self);
-	}
-}
-
-
-
-
-

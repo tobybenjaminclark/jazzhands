@@ -2,16 +2,7 @@
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
 
-// Spawn coconut (testing)
-instance_create_layer(x, y, layer_get_name(layer), oCoconutEvent, {
-				parent: parent,
-				time: time,
-				side: side,
-				symbol: symbol,
-				sprite_index: sprCoconut,
-				image_xscale: 0.1,
-				image_yscale: 0.1,
-				movement_factor: movement_factor})
+hit_this_beat = false;
 
 /* Trail PS */
 _ps2 = part_system_create();

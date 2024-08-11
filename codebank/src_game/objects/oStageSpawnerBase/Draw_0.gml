@@ -117,11 +117,7 @@ if(!global.in_cutscene && watched_cutscene == true && current_time < end_time){
 	
 	/* Combohit Stuff */
 	draw_set_halign(fa_right);
-	var combostring = "";
-	for(var _i = 0; _i < ds_list_size(combo_list); _i++){
-		combostring = combostring + " " + string(combo_list[| _i]);
-	}
-	draw_text(room_width - inset, room_height - inset, combostring); 
+	draw_set_font(fntLevelNameSmall);
 	draw_text(room_width - inset, room_height - (inset + 25), "Combo: x" + string(ds_list_size(combo_list)));
 
 }
