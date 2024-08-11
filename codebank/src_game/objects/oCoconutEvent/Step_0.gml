@@ -11,7 +11,7 @@ if(tracking_beat){
 if(twin.dead && !exploded){
 	exploded = true;
 	if(twin.hit_this_beat) {
-		//ps_coconut_good
+		//PS_COCONUT good
 		var _ps = part_system_create();
 		part_system_draw_order(_ps, true);
 

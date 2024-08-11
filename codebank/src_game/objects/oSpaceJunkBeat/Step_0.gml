@@ -95,6 +95,7 @@ if (moving && !paused && !dead)
 		if((side == "LEFT" && global.left_hand == symbol) || (side == "RIGHT" && global.right_hand == symbol) and boulder == false)
 		{
 			/* Hit (Good!) */
+			hit_this_beat = true;
 			global.hit_beats += 1;
 			part_particles_create(_ps, x, y, _ptype2, 30);
 			audio_play_sound(snd_metronome, 0, false);
@@ -106,10 +107,11 @@ if (moving && !paused && !dead)
 		else
 		{
 			/* Fail */
+			hit_this_beat = false;
 			part_particles_create(_ps, x, y, _ptype1, 25);
 			
 			if(boulder == true){
-	
+				
 				audio_play_sound(snd_rock_destroy, 1, false);
 				emit_junk(x, y);
 				boulder = false;

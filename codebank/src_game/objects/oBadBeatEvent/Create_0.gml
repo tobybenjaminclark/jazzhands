@@ -1,6 +1,7 @@
 /// @description Creation & Side Offset
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
+hit_this_beat = false;
 
 //ps_badnotes
 _ps2 = part_system_create();

@@ -1,7 +1,7 @@
 /// @description Creation & Side Offset
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
-
+hit_this_beat = false;
 lx = -500
 ly = -500
 
