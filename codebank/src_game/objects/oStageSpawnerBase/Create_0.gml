@@ -185,6 +185,6 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 	}
 	
 	// Spawn coconut visualisation
-	instance_create_layer(x, y, "SuperGlowLayer", oLaser, {twin: inst})
+	instance_create_layer(x, y, "SuperGlowLayer", oBlockLaserVis, {twin: inst})
 }
 
