@@ -4,9 +4,9 @@ tracking_beat = true;
 exploded = false;
 is_green = false;
 fading_out = false;
-move_offs = 0.0;
+lift_speed = 1.0;
 
-sprite_index = sprLaser;
+sprite_index = sprAngryTiki;
 image_alpha = 0;
-image_xscale = 1;
-image_yscale = 1;
+image_xscale = 0.0;
+image_yscale = 0.0;
