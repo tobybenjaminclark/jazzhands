@@ -1,6 +1,5 @@
 {
     "name": "Space Junk",
-    "sound_loop":"cutscenedata/music3.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
@@ -12,7 +11,6 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/moxie.png",
-            "sound_effect":"cutscenedata/moxie.ogg",
             "heading": "Moxie",
             "body": "Thank you for freeing our planet, I wish you the best of luck!",
             "type": "dialogue"
@@ -20,7 +18,6 @@
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/ozzy.png",
-            "sound_effect":"cutscenedata/ozzy.ogg",
             "heading": "Ozzy",
             "body": "I feel so much better now that the space junk has been destroyed!",
             "type": "dialogue"

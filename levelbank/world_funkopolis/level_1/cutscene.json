@@ -1,11 +1,9 @@
 {
     "name": "Disco Fighter",
-    "sound_loop": "cutscenedata/music0.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/zapp.png",
-            "sound_effect": "cutscenedata/zapp.ogg",
             "heading": "Zapp",
             "body": "Boogie on down to funky town! The name's Zapp, welcome to Funkopolis.",
             "type": "dialogue"
@@ -26,17 +24,17 @@
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/traveller.png",
-            "heading": "Traveller",
-            "body": "Zapp, I'll do whatever it takes to save your planet.",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Man, I have the perfect thing! Player, your funk training has reached the point to unleash Disco Fever!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/zapp.png",
-            "heading": "Zapp",
-            "body": "Show me the groove!",
-            "type": "dialogue"
+            "foreground": "cutscenedata/discofever.png",
+            "heading": "Disco Fever",
+            "body": "Hit two thumbs up to amplify your groove energy!",
+            "type": "showcase"
         }
     ]
 }

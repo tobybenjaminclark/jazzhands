@@ -1,19 +1,16 @@
 {
     "name": "Beebop Boulevard",
-    "sound_loop":"cutscenedata/music3.ogg",
     "frames": [
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/ozzy.png",
             "heading": "Ozzy",
-            "sound_effect":"cutscenedata/ozzy.ogg",
             "body": "Whoa, we haven't vibed that hard since before the uprising!",
             "type": "dialogue"
         },
         {
             "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/zapp.png",
-            "sound_effect":"cutscenedata/zapp.ogg",
             "heading": "Zapp",
             "body": "Let's head to Beebop Boulevard, the center of Funktopolis. They will help us there!",
             "type": "dialogue"
@@ -21,7 +18,6 @@
         {
             "background": "cutscenedata/background2.png",
             "foreground": "cutscenedata/moxie.png",
-            "sound_effect":"cutscenedata/moxie.ogg",
             "heading": "Moxie",
             "body": "Welcome to Beebop Boulevard, it's a pleasure to meet you!",
             "type": "dialogue"
