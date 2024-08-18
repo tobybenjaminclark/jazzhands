@@ -12,6 +12,7 @@ var _killline = 0;
 var _return = false;
 var _end_time = -1;
 var _is_paused = false;
+
 with(oStageSpawnerBase){
 	_end_time = end_time;
 	_is_paused = paused

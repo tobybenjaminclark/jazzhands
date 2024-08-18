@@ -184,7 +184,17 @@ for(var event_index = 0; event_index < array_length(beatmap_structure.events); e
 		break;
 	}
 	
-	// Spawn coconut visualisation
-	instance_create_layer(x, y, "SuperGlowLayer", oFunkLaser, {twin: inst})
+	// Level Visualisation (need to switch this to be included in beatmap)
+	if(global.numerical_level <= 4) {
+		instance_create_layer(x, y, "SuperGlowLayer", oTikiVis, {twin: inst});
+	} else if (global.numerical_level <= 8) {
+		instance_create_layer(x, y, "SuperGlowLayer", oBlockLaserVis, {twin: inst});
+	} else if (global.numerical_level <= 12) {
+		instance_create_layer(x, y, "SuperGlowLayer", oCrossLaserVis, {twin: inst});
+	} else if (global.numerical_level <= 16) {
+		instance_create_layer(x, y, "SuperGlowLayer", oFunkLaser, {twin: inst});
+	} else if (global.numerical_level <= 20) {
+		instance_create_layer(x, y, "SuperGlowLayer", oLaserVis, {twin: inst});
+	}
 }
 
