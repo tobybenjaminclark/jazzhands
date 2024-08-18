@@ -5,6 +5,7 @@ exploded = false;
 is_green = false;
 fading_out = false;
 lift_speed = 1.0;
+rotation_amount = 3.0;
 
 sprite_index = sprAngryTiki;
 image_alpha = 0;

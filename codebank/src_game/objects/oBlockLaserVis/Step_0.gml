@@ -16,7 +16,7 @@ if(twin.dead && !fading_out){
 	if(twin.hit_this_beat) {
 		image_blend = c_white;
 	} else {
-		image_blend = c_red;
+		image_blend = c_white;
 	}
 	
 	move_offs += 0.5;

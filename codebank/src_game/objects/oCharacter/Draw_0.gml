@@ -40,10 +40,10 @@ switch(global.left_hand)
 	case "POINTING_UP":
 		_left_hand = sprSymbolPointUpBase;
 		break;
-	case "THUMBS_DOWN":
+	case "THUMB_DOWN":
 		_left_hand = sprSymbolThumbsDownBase;
 		break;
-	case "THUMBS_UP":
+	case "THUMB_UP":
 		_left_hand = sprSymbolThumbsUpBase;
 		break;
 	default:
@@ -66,10 +66,10 @@ switch(global.right_hand)
 	case "POINTING_UP":
 		_left_hand = sprSymbolPointUpBase;
 		break;
-	case "THUMBS_DOWN":
+	case "THUMB_DOWN":
 		_left_hand = sprSymbolThumbsDownBase;
 		break;
-	case "THUMBS_UP":
+	case "THUMB_UP":
 		_left_hand = sprSymbolThumbsUpBase;
 		break;
 	default:

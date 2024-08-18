@@ -18,8 +18,7 @@ if(intro_delay == 0){
 		
 }
 
-// if((global.left_hand == "THUMB_DOWN" && global.right_hand == "THUMB_DOWN" && !paused) and spawned_powerball == false){
-if(keyboard_check_pressed(vk_space) and spawned_powerball == false && !paused){
+if((global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP" && !paused) and spawned_powerball == false){
 	
 	var _x = x;
 	var _y = y + 300;
@@ -66,10 +65,8 @@ if(keyboard_check_pressed(vk_space) and spawned_powerball == false && !paused){
 	
 	spawned_powerball = true;
 	
-	/* comment to disable (breaks game when enabled) */
-	spawned_powerball = false;
 }
-else{
+else if ((global.left_hand != "THUMB_UP" && global.right_hand != "THUMB_UP" && !paused) and spawned_powerball == true){
 	spawned_powerball = false;
 }
 

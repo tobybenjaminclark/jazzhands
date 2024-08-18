@@ -14,7 +14,7 @@ if(tracking_beat){
 
 if(twin.dead && !fading_out){
 	if(twin.hit_this_beat) {
-		image_blend = c_lime;
+		image_blend = c_aqua;
 	} else {
 		image_blend = c_red;
 	}
