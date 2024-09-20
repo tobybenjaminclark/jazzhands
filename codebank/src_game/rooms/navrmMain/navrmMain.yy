@@ -15,6 +15,8 @@
     {"name":"inst_3A873689","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_41CF4295","path":"rooms/navrmMain/navrmMain.yy",},
     {"name":"inst_4B0688DD","path":"rooms/navrmMain/navrmMain.yy",},
+    {"name":"inst_5163D59F","path":"rooms/navrmMain/navrmMain.yy",},
+    {"name":"inst_17EE9377","path":"rooms/navrmMain/navrmMain.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -59,9 +61,17 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2752.0,"y":1248.0,},
         {"$GMRInstance":"v1","%Name":"inst_41CF4295","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_41CF4295","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabelRight/oLabelRight.yy",},"resource":{"name":"fntCutsceneHeading","path":"fonts/fntCutsceneHeading/fntCutsceneHeading.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntCutsceneHeading",},
-            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelData","path":"objects/oLabelRight/oLabelRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"v1.0.0",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabelRight","path":"objects/oLabelRight/oLabelRight.yy",},"propertyId":{"name":"labelData","path":"objects/oLabelRight/oLabelRight.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"d1.0.0",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2464.0,"y":832.0,},
         {"$GMRInstance":"v1","%Name":"inst_4B0688DD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4B0688DD","objectId":{"name":"oMouseNotes","path":"objects/oMouseNotes/oMouseNotes.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":32.0,},
+        {"$GMRInstance":"v1","%Name":"inst_5163D59F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5163D59F","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelData","path":"objects/oLabel/oLabel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Just a demo!",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabel/oLabel.yy",},"resource":{"name":"fntLevelNameHuge","path":"fonts/fntLevelNameHuge/fntLevelNameHuge.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntLevelNameHuge",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.98560286,"scaleY":1.0,"x":1920.0,"y":1536.0,},
+        {"$GMRInstance":"v1","%Name":"inst_17EE9377","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17EE9377","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelData","path":"objects/oLabel/oLabel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"This does not reflect the\\nquality of the final product",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLabel","path":"objects/oLabel/oLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLabel/oLabel.yy",},"resource":{"name":"fntLevelNameSmall","path":"fonts/fntLevelNameSmall/fntLevelNameSmall.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntLevelNameSmall",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.98560286,"scaleY":1.0,"x":1920.0,"y":1675.0,},
       ],"layers":[],"name":"Text","properties":[
         {"name":"g_GlowRadius","type":0,"value":"795",},
         {"name":"g_GlowQuality","type":0,"value":"5.35",},
