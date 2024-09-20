@@ -8,7 +8,7 @@ if(selector_growing) selector_scale += 0.02;
 else selector_scale -= 0.02;
 
 if(selector_scale == 0) selector_growing = true
-else if(selector_scale == 1) selector_growing = false;
+else if(selector_scale == 1.5) selector_growing = false;
 
 
 /* If this planet hasn't stopped the movment, hide the text */

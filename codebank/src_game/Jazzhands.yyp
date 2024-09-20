@@ -715,6 +715,7 @@
     {"id":{"name":"fntDebug","path":"fonts/fntDebug/fntDebug.yy",},},
     {"id":{"name":"fntGroovy","path":"fonts/fntGroovy/fntGroovy.yy",},},
     {"id":{"name":"fntLevelName","path":"fonts/fntLevelName/fntLevelName.yy",},},
+    {"id":{"name":"fntLevelNameHuge","path":"fonts/fntLevelNameHuge/fntLevelNameHuge.yy",},},
     {"id":{"name":"fntLevelNameSmall","path":"fonts/fntLevelNameSmall/fntLevelNameSmall.yy",},},
     {"id":{"name":"fntLevelNameTiny","path":"fonts/fntLevelNameTiny/fntLevelNameTiny.yy",},},
     {"id":{"name":"fntMenuTitle","path":"fonts/fntMenuTitle/fntMenuTitle.yy",},},
