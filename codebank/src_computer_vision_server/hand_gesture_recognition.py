@@ -3,6 +3,7 @@
 # Code Review Passed by Toby Clark 06/01/2024
 
 import cv2
+from cv2_enumerate_cameras import enumerate_cameras
 import mediapipe as mp
 
 import time
@@ -17,6 +18,7 @@ import sys
 class JazzHandsGestureRecognizer():
     stop_event: threading.Event      # Event to signal the termination of the thread.
     gesture_queue: Queue             # Queue to transfer data from the subthread to the main thread.
+    notifications_queue: Queue       # Queue to transfer notifications from the subthread to the main thread.
     thread: threading.Thread         # Thread to continously retrieve gestures from webcam input.
     current_result: Dict[str,str]    # Dictionary mapping handedness to gesture (e.g. left: OPEN_HAND)
     previous_result: Dict[str,str]   # Dictionary storing the previous contents of current_result.
@@ -34,6 +36,23 @@ class JazzHandsGestureRecognizer():
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event: threading.Event = threading.Event()
         self.gesture_queue = Queue()
+        self.send_initial_information()
+        self.notifications_queue = Queue()
+
+
+    def send_initial_information(self):
+        # Convert the list of tuples to a list of dictionaries
+        cameras_available = self.list_cameras()
+        cameras = [{"cam_id": cam[0], "name": cam[1]} for cam in cameras_available]
+
+        # Create the final structure
+        data = {"cameras": cameras}
+
+        # Convert to JSON string
+        json_string = json.dumps(data, indent=4)
+
+        self.gesture_queue.put(json_string)
+
 
     def start_thread(self) -> None:
         """
@@ -118,15 +137,16 @@ class JazzHandsGestureRecognizer():
         # valid_frame = false implies there is an error in reading images from the webcam.
         if not valid_frame:
             print("not valid frame!!!!!!!!!!!!!!!!!!!!!")
-            return None
+            self.send_disconnected_error_code()
+            exit()
         
         mp_image: mp.Image = mp.Image(image_format=mp.ImageFormat.SRGB, data=self.frame)
         recognizer.recognize_async(mp_image, int(time.time() * 1000))
 
         # Display the frame in OpenCV.
         # Fix for macOS (uncomment to break macOS support, at your demise.)
-        # cv2.imshow("frame", self.frame)
-        # cv2.waitKey(1)
+        cv2.imshow("frame", self.frame)
+        cv2.waitKey(1)
         time.sleep(0.01)
 
         return None
@@ -160,6 +180,7 @@ class JazzHandsGestureRecognizer():
         queue.put(image_json)
 
         return None
+    
 
     def hands_changed(self) -> bool:
         """
@@ -173,6 +194,24 @@ class JazzHandsGestureRecognizer():
             return False
         else:
             return True
+
+    def list_cameras(self) -> list[tuple[int, str]]:
+        """
+            list the available cameras.
+            returns a list of tuples (camera index, camera name)
+        """
+
+        cameras = [(camera_info.index, camera_info.name) for camera_info in enumerate_cameras(cv2.CAP_MSMF)]
+
+        return cameras
+        
+    def send_no_cameras_error(self) -> None:
+        """ send an error to the client because there are no available cameras. """
+        pass
+
+    def send_disconnected_error_code(self) -> None:
+        """ send an error to the client that the camera has been disconnected. """
+        pass
 
     def begin_retrieval(self, stop_event) -> None:
         """
@@ -188,8 +227,19 @@ class JazzHandsGestureRecognizer():
             self.gesture_queue
         )
 
+        camera_list = self.list_cameras()
+        print(f"camera list: {camera_list}")
+
+        if len(camera_list) == 0:
+            print("No available cameras.")
+            self.send_no_cameras_error()
+            exit()
+            
+        # The default camera is the first in the list.
+        default_camera = camera_list[0][0]
+
         # Initialise the webcam feed using the constant WEBCAM_ID.
-        cap: np.array = cv2.VideoCapture(int(self.settings["WEBCAM_ID"]))
+        self.cap: np.array = cv2.VideoCapture(default_camera)
 
         self.current_result = {"Left": "None", "Right": "None"}
         self.previous_result = {"Left": "None", "Right": "None"}
@@ -199,13 +249,52 @@ class JazzHandsGestureRecognizer():
         recognizer = mp.tasks.vision.GestureRecognizer.create_from_options(options)
 
         while not stop_event.is_set():
-            self.receive_image_data(recognizer, cap)
+            self.receive_image_data(recognizer, self.cap)
+            self.handle_notifications()
 
         return None
-
-    # need a thing to say whether the camera is too dark or too cluttered
-    # this should call when no hands have been detected for a while (5 seconds?)
     
+    def handle_notifications(self):
+        """ handle notifications from the notifications queue """
+        
+
+        if self.notifications_queue.empty(): return
+        else:
+            parsed_json = self.notifications_queue.get()
+            # Check for status field
+            if 'status' in parsed_json:
+                status = parsed_json['status']
+                
+                if status == 'hello':
+                    print("Connection status: Hello! Connected successfully.")
+                elif status == 'goodbye':
+                    print("Connection status: Goodbye! Disconnecting.")
+                else:
+                    print(f"Connection status: {status}")
+
+            # Check for error field
+            elif 'error' in parsed_json:
+                error_code = parsed_json['error'].get('code', 'Unknown error code')
+                error_message = parsed_json['error'].get('message', 'No error message provided')
+                print(f"Error occurred: Code {error_code}, Message: {error_message}")
+
+            elif 'camera' in parsed_json:
+                camera_name = parsed_json['camera']
+                available_cameras = self.list_cameras()
+                camera_id = next((first for first, second in available_cameras if second == camera_name), None)
+                if camera_id is not None:
+                    self.cap.release()
+                    self.cap: np.array = cv2.VideoCapture(camera_id)
+
+
+                
+
+            # Handle other potential fields
+            else:
+                print("Received unknown reply:", parsed_json)
+            pass
+
+
 
     def handle_camera(self) -> None:
         """

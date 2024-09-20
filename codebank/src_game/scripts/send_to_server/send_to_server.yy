@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"send_to_server",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"send_to_server",
+  "parent":{
+    "name":"Miscellaneous",
+    "path":"folders/Scripts/Miscellaneous.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

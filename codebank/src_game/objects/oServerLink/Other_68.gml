@@ -3,7 +3,7 @@
 /// @date   16/01/2023
 
 var n_id = ds_map_find_value(async_load, "id");
-if(n_id == server_socket)
+if(n_id == global.server_socket)
 {
     var t = ds_map_find_value(async_load, "type");
     var socketlist = ds_list_create();
@@ -25,6 +25,19 @@ if(n_id == server_socket)
 		try
 		{
         jsonData = json_parse(originalString)
+		
+		// Check if the struct lists available cameras
+		if variable_struct_exists(jsonData, "cameras")
+		{
+			show_debug_message("found cameras")
+			global.cameras = jsonData.cameras
+			if(global.chosen_camera == "NONE")
+			{
+				// initialise the chosen camera as the first camera
+				global.chosen_camera = global.cameras[0].name;
+			};
+			
+		}
 
         // Check if the struct has left variable
         if variable_struct_exists(jsonData, "Left")

@@ -20,8 +20,11 @@ class JazzhandsController():
         # Retrieve the settings.ini declarations.
         self.settings = settings
 
+        self.client_replies_queue = Queue()
+
         self.create_client()
         self.create_gesture_recognizer()
+        
 
         # Boolean flag to continuously run the controller until a stopping condition is met.
         self.running = True
@@ -31,7 +34,7 @@ class JazzhandsController():
         Creates a thread which initialises the client.
         """
 
-        self.client = GMS2Client(self.settings)
+        self.client = GMS2Client(self.settings, self)
         self.client_queue: Queue = self.client.client_queue
         self.client.start_thread()
 
@@ -42,6 +45,7 @@ class JazzhandsController():
 
         self.gesture_recognizer = JazzHandsGestureRecognizer(self.settings)
         self.gesture_queue: Queue = self.gesture_recognizer.gesture_queue
+        self.notifications_queue: Queue = self.gesture_recognizer.notifications_queue
         self.gesture_recognizer.start_thread()
 
     def mainloop(self) -> None:
@@ -79,10 +83,20 @@ class JazzhandsController():
         """
         Attempt to send the most recent gesture from gesture_queue to the GMS2 server.
         """
+
+
+
         if not self.gesture_queue.empty():
             gestures: str = self.gesture_queue.get()
-            print(gestures)
+            print(f"gestures: {gestures}")
             self.client_queue.put(gestures)
             return True
+        
+        elif not self.client_replies_queue.empty():
+            replies: str = self.client_replies_queue.get()
+            print(f"replies: {replies}")
+            self.notifications_queue.put(replies)
+            return True
+        
         else:
             return False
