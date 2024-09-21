@@ -13,6 +13,7 @@ import numpy as np
 import threading
 import json
 import sys
+import platform
 
 
 class JazzHandsGestureRecognizer():
@@ -41,6 +42,7 @@ class JazzHandsGestureRecognizer():
 
 
     def send_initial_information(self):
+        
         # Convert the list of tuples to a list of dictionaries
         cameras_available = self.list_cameras()
         cameras = [{"cam_id": cam[0], "name": cam[1]} for cam in cameras_available]
@@ -200,8 +202,11 @@ class JazzHandsGestureRecognizer():
             list the available cameras.
             returns a list of tuples (camera index, camera name)
         """
-
-        cameras = [(camera_info.index, camera_info.name) for camera_info in enumerate_cameras(cv2.CAP_MSMF)]
+        
+        if platform.system() == 'Darwin':
+            cameras = [(0, "Apple Camera")]
+        else:
+            cameras = [(camera_info.index, camera_info.name) for camera_info in enumerate_cameras(cv2.CAP_MSMF)]
 
         return cameras
         
