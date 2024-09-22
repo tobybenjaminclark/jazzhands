@@ -16,6 +16,5 @@ else
     status_message = {
         status: "hello",
     };
-
     send_to_server(status_message);
 }

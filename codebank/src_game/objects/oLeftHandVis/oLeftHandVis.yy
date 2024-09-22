@@ -1,17 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oCamera",
+  "%Name":"oLeftHandVis",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oCamera",
+  "name":"oLeftHandVis",
   "overriddenProperties":[],
   "parent":{
-    "name":"Miscellaeneous",
-    "path":"folders/Objects/Miscellaeneous.yy",
+    "name":"HandVis",
+    "path":"folders/Objects/User Interface/HandVis.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"s_slider_button",
-    "path":"sprites/s_slider_button/s_slider_button.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
