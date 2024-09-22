@@ -13,12 +13,9 @@ global.server_socket = network_connect_raw_async(global.client_socket, "127.0.0.
 if(global.server_socket < 0) show_message("Could not connect! Try turning on the server?");
 else
 {
-	status_message =
-	{
-	    status: "hello",
-	};
-	
-	send_to_server(status_message);
-	
+    status_message = {
+        status: "hello",
+    };
 
+    send_to_server(status_message);
 }

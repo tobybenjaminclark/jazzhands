@@ -147,7 +147,9 @@ class JazzHandsGestureRecognizer():
 
         # Display the frame in OpenCV.
         # Fix for macOS (uncomment to break macOS support, at your demise.)
-        cv2.imshow("frame", self.frame)
+        # Can someone please just insert an OS check here, this is the 3rd time I have had to recomment...
+        # cv2.imshow("frame", self.frame)
+
         cv2.waitKey(1)
         time.sleep(0.01)
 

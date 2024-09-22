@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"validate_leaderboard",
   "isCompatibility":false,
   "isDnD":false,

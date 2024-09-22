@@ -610,6 +610,7 @@
     {"$GMIncludedFile":"","%Name":"grand_composer_1.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"grand_composer_1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"grand_composer_2.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"grand_composer_2.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"mojo.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"mojo.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"new_york_street.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"new_york_street.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"percussion_tribal_drum.ogg","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"percussion_tribal_drum.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"ship.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"ship.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"space.png","CopyToMask":-1,"filePath":"datafiles/levelbank/world_harmonius/level_1/cutscenedata","name":"space.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -704,7 +705,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.2.0.132",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Jazzhands",
   "resources":[
