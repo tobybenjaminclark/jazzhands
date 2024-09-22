@@ -229,5 +229,6 @@
     {"name":"sprSymbolThumbsUpBase","order":1,"path":"sprites/sprSymbolThumbsUpBase/sprSymbolThumbsUpBase.yy",},
     {"name":"sprVictory","order":1,"path":"sprites/sprVictory/sprVictory.yy",},
     {"name":"sprVolcano","order":7,"path":"sprites/sprVolcano/sprVolcano.yy",},
+    {"name":"sprWebcam","order":24,"path":"sprites/sprWebcam/sprWebcam.yy",},
   ],
 }

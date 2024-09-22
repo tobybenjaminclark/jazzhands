@@ -923,6 +923,7 @@
     {"id":{"name":"sprUnknownSymbol","path":"sprites/sprUnknownSymbol/sprUnknownSymbol.yy",},},
     {"id":{"name":"sprVictory","path":"sprites/sprVictory/sprVictory.yy",},},
     {"id":{"name":"sprVolcano","path":"sprites/sprVolcano/sprVolcano.yy",},},
+    {"id":{"name":"sprWebcam","path":"sprites/sprWebcam/sprWebcam.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

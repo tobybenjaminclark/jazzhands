@@ -3,7 +3,7 @@
 
 if (mouse_check_button_pressed(mb_left)) {
     // Check if the mouse is over the button
-    if (position_meeting(mouse_x, mouse_y, self)) {
+    if (point_in_rectangle(mouse_x, mouse_y, x, y, x + 300, y + 70)) {
         // Handle button click
         // show_message("Selected camera: " + string(name));
 		global.chosen_camera = name;
