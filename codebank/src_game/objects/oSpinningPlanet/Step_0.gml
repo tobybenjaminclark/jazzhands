@@ -73,7 +73,7 @@ switch(state)
 {
 	// Spin State : Keep spinning.
 	case state_spin_button.spinning:
-		image_angle +=  spin_speed;
+		if(image_index != 6) {image_angle +=  spin_speed;}
 		break;
 		
 	// Speeding State: Increase speed + Scale

@@ -15,7 +15,7 @@
   "managed":true,
   "name":"oSpinningPlanet",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"spin_speed","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"spin_speed","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
   ],
   "parent":{
     "name":"User Interface",
@@ -41,7 +41,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"variable_name","filters":[
         "GMObject",
-      ],"listItems":[],"multiselect":false,"name":"variable_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"variable_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -106,7 +106,7 @@ deathstar_names =
  * This isn't great, rewite at some point.
  */
 angle_step = 0;
-for (var i = 0; i < 4; i++;)
+for (var i = 0; i < 3; i++;)
 {
 	global.current_story_navigator = self;
 	var _levels = [];
@@ -138,7 +138,7 @@ for (var i = 0; i < 4; i++;)
         y_max: (y + lengthdir_y(400, 270)),
         y_min: (y + lengthdir_y(400, 90)),
         y_mid: ( (y + lengthdir_y(400, 270)) + (y + lengthdir_y(400, 90))) / 2,
-        image_index: i mod 5,
+        image_index: (i mod 5) + 5,
         spin_speed: 0.5,
         title: titles[i],
 		world: i,

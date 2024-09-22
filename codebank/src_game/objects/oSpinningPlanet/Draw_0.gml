@@ -28,7 +28,7 @@ if(text_alpha != 0)
 	draw_text(x, y + 185, title);
 	
 	draw_set_font(fntLevelNameSmall);
-	draw_text(x, y + 250, "[ENTER]");
+	draw_text(x, y + 250, "[PERFORM]");
 	
 	
 	
