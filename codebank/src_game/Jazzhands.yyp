@@ -704,7 +704,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.2.0.132",
   },
   "name":"Jazzhands",
   "resources":[
@@ -733,6 +733,8 @@
     {"id":{"name":"oBlackBox","path":"objects/oBlackBox/oBlackBox.yy",},},
     {"id":{"name":"oBlockLaserVis","path":"objects/oBlockLaserVis/oBlockLaserVis.yy",},},
     {"id":{"name":"oBoulderedBeat","path":"objects/oBoulderedBeat/oBoulderedBeat.yy",},},
+    {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
+    {"id":{"name":"oCameraController","path":"objects/oCameraController/oCameraController.yy",},},
     {"id":{"name":"oCharacter","path":"objects/oCharacter/oCharacter.yy",},},
     {"id":{"name":"oColourDisc","path":"objects/oColourDisc/oColourDisc.yy",},},
     {"id":{"name":"oColourSelector","path":"objects/oColourSelector/oColourSelector.yy",},},
@@ -825,6 +827,7 @@
     {"id":{"name":"logistic_curve","path":"scripts/logistic_curve/logistic_curve.yy",},},
     {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"parse_json","path":"scripts/parse_json/parse_json.yy",},},
+    {"id":{"name":"send_to_server","path":"scripts/send_to_server/send_to_server.yy",},},
     {"id":{"name":"split_line","path":"scripts/split_line/split_line.yy",},},
     {"id":{"name":"validate_beatmap","path":"scripts/validate_beatmap/validate_beatmap.yy",},},
     {"id":{"name":"validate_leaderboard","path":"scripts/validate_leaderboard/validate_leaderboard.yy",},},

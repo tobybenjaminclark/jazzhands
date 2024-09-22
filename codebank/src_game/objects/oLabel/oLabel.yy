@@ -2,7 +2,7 @@
   "$GMObject":"",
   "%Name":"oLabel",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oLabel",
@@ -26,10 +26,10 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"labelData","filters":[],"listItems":[],"multiselect":false,"name":"labelData","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Label","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"labelFont","filters":[
+    {"$GMObjectProperty":"","%Name":"labelData","filters":[],"listItems":[],"multiselect":false,"name":"labelData","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Label","varType":2,},
+    {"$GMObjectProperty":"","%Name":"labelFont","filters":[
         "GMFont",
-      ],"listItems":[],"multiselect":false,"name":"labelFont","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"fntRaanana","path":"fonts/fntRaanana/fntRaanana.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fntRaanana","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"labelFont","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fntRaanana","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

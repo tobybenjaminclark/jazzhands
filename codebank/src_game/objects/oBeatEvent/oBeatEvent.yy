@@ -2,9 +2,9 @@
   "$GMObject":"",
   "%Name":"oBeatEvent",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oBeatEvent",
@@ -28,13 +28,13 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"time","filters":[],"listItems":[],"multiselect":false,"name":"time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1500","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"side","filters":[],"listItems":[],"multiselect":false,"name":"side","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"LEFT","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"parent","filters":[
+    {"$GMObjectProperty":"","%Name":"time","filters":[],"listItems":[],"multiselect":false,"name":"time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1500","varType":0,},
+    {"$GMObjectProperty":"","%Name":"side","filters":[],"listItems":[],"multiselect":false,"name":"side","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"LEFT","varType":2,},
+    {"$GMObjectProperty":"","%Name":"parent","filters":[
         "GMObject",
       ],"listItems":[],"multiselect":false,"name":"parent","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"symbol","filters":[],"listItems":[],"multiselect":false,"name":"symbol","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"None","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"side_offset","filters":[],"listItems":[],"multiselect":false,"name":"side_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"152","varType":0,},
+    {"$GMObjectProperty":"","%Name":"symbol","filters":[],"listItems":[],"multiselect":false,"name":"symbol","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"None","varType":2,},
+    {"$GMObjectProperty":"","%Name":"side_offset","filters":[],"listItems":[],"multiselect":false,"name":"side_offset","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"152","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

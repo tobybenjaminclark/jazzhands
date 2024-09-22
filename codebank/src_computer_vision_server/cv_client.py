@@ -5,6 +5,10 @@
 import socket
 import threading
 from queue import Queue
+import re
+import json
+import cv2
+from cv2_enumerate_cameras import enumerate_cameras
 
 
 class GMS2Client():
@@ -12,7 +16,7 @@ class GMS2Client():
     client_queue: Queue             # Queue to transfer data from the subthread to the main thread.
     thread: threading.Thread        # Client thread to maintain client-server connection.
 
-    def __init__(self, settings):
+    def __init__(self, settings, parent):
         """
         Initializes stop event & client queue
         """
@@ -24,6 +28,8 @@ class GMS2Client():
         self.stop_event = threading.Event()
 
         self.client_queue = Queue()
+
+        self.replies_queue = parent.client_replies_queue
 
     def start_thread(self) -> None:
         """
@@ -85,17 +91,62 @@ class GMS2Client():
             raise e
 
         with conn:  
+            self.send_initial_information(conn)
             self.mainloop(stop_event, conn)
 
-    def mainloop(self, stop_event: threading.Event, conn:socket.socket) -> None:
+    def send_initial_information(self, conn):
+        """ send information about the cameras etc to the client. """
+        #available_cameras = self.list
+
+    def mainloop(self, stop_event: threading.Event, conn: socket.socket) -> None:
         """
-        Send messages to the GMS2 server if any are queued.
+        Send messages to the GMS2 server if any are queued, and receive messages from the server.
         """
+        conn.settimeout(0.1)  # Set a small timeout to avoid blocking on recv
         while not stop_event.is_set():
+            # Send messages if any are queued
             if not self.client_queue.empty():
                 data: str = self.client_queue.get()
-                conn.send(bytes(data,encoding=self.settings["ENCODING"]))
-            else:
+                print(f"data: {data}")
+                conn.send(bytes(data, encoding=self.settings["ENCODING"]))
+            
+            # Try to receive messages from the server
+            try:
+                incoming_data = conn.recv(1024)  # Adjust buffer size as needed
+                if incoming_data:
+                    # Decode the incoming data as latin1
+                    decoded_data = incoming_data.decode('latin1')
+                    try:
+                        # Find the start of the JSON
+                        json_start = decoded_data.find('{')
+                        # Find the last closing brace
+                        json_end = decoded_data.rfind('}') + 1
+
+                        if json_start != -1 and json_end != -1 and json_end > json_start:
+                            # Extract the JSON portion of the data
+                            json_data = decoded_data[json_start:json_end]
+
+                            # Attempt to load the JSON data
+                            parsed_json = json.loads(json_data)
+
+                            self.handle_reply(parsed_json)
+                            
+                    except json.JSONDecodeError as e:
+                        print(f"Error decoding JSON: {e}")
+                    
+            except socket.timeout:
+                # Timeout happens when no data is received, we just continue the loop
                 pass
+            
         return None
-                
+    
+    def handle_reply(self, parsed_json:dict[str,any]) -> None:
+        """ handle the reply from the gamemaker client """
+
+        """ TODO: make a second queue to put replies in """
+
+        self.replies_queue.put(parsed_json)
+
+
+
+                    
