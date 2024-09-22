@@ -11,7 +11,7 @@ function create_camera_buttons() {
     // Create new buttons
     for (var i = 0; i < array_length(global.cameras); i++) {
         var camera = global.cameras[i];
-        var button = instance_create_layer(x, y + (i * 50), "Instances", oWebcamButton);
+        var button = instance_create_layer(x, y + (i * 85), "Instances", oWebcamButton);
 		
 		if(variable_struct_exists(camera, "name"))
 		{
