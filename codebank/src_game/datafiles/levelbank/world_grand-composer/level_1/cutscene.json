@@ -1,0 +1,54 @@
+{
+    "name": "The Final Battle",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "We did it! We've replaced all four amps, and stopped the Grand Composer from his evil plan of silencing the universe!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Groovy!!! But... What's stopping him from doing all of this again?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Space",
+            "body": "The planet starts to rumble, space junk shooting through the atmosphere.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Space",
+            "body": "A shrieking cry fills the air, the planet is being sucked into a vortex!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "The Grand Composer is trying to stop us!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Player, this is it. Our final song will break his hold over the galaxy.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Let's give it everything we've got!",
+            "type": "dialogue"
+        }
+    ]
+}
