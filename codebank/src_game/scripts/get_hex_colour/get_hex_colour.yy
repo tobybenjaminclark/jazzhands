@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"get_hex_colour",
   "isCompatibility":false,
   "isDnD":false,

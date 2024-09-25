@@ -69,6 +69,12 @@ function cutscene_initialise_components(frame_index, json_path)
 		});
 	}
 	else if(_type == CS_SCENE) {
+		cutscene_foreground = instance_create_layer(0,0, "Cutscene", oCSForeground,
+			{
+				path: foreground_path,
+				parent: self
+			});
+			
 		cutscene_text = instance_create_layer(room_width/2,room_height/2, "Cutscene", oCSTextScene,
 		{
 			heading: frame_heading,

@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"v1",
+  "$GMRoom":"",
   "%Name":"rmFreemode",
   "creationCodeFile":"",
   "inheritCode":false,

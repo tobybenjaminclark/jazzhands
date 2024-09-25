@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"send_to_server",
   "isCompatibility":false,
   "isDnD":false,
