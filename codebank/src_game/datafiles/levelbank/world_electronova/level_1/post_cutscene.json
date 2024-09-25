@@ -1,0 +1,49 @@
+{
+    "name": "Moon",
+    "sound_loop":"cutscenedata/moon.ogg",
+    "frames": [
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/rob.png",
+            "sound_effect":"cutscenedata/rob.ogg",
+            "heading": "R.O.B.",
+            "body": "Dance protocol... successful. We experienced... joy.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Look at you, R.O.B.! I didn't think you'd catch on that quick, but you got some serious moves!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/rob.png",
+            "heading": "R.O.B.",
+            "body": "We are now... groove-enhanced.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "That's what I like to hear! Lunar Base, you just proved that even robots can feel the funk!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/rob.png",
+            "heading": "R.O.B.",
+            "body": "Funk detected. Groove level: maximum.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "It's been real, Lunar Base! But I've got one more stop on this tour - Mars, here I come!",
+            "type": "dialogue"
+        }
+    ]
+}

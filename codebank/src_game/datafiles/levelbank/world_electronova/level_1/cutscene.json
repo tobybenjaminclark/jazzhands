@@ -1,13 +1,83 @@
 {
-    "name": "Welcome to Electronova!",
-    "sound_loop": "cutscenedata/music4.ogg",
+    "name": "Moon",
+    "sound_loop":"cutscenedata/moon.ogg",
     "frames": [
         {
-            "background": "cutscenedata/background.png",
-            "sound_effect":"cutscenedata/diode.ogg",
-            "foreground": "cutscenedata/diode.png",
-            "heading": "Diode",
-            "body": "Intruder detected. Scanning... Greetings specimen. I am Diode, guardian of Complex 0x2A.",
+            "background": "cutscenedata/moon.png",
+            "foreground":"cutscenedata/nothing.png",
+            "heading": "Moon",
+            "body": "On the Moon's surface, a funky lunar party is about to kick off! The Lunar Base gleams under the shimmering stars, a high-tech playground filled with whirring robots and flashing lights. Craters dance in the moonlight, creating a surreal vibe that's out of this world. Mojo stands at the edge of the stage, bursting with energy as he gazes at the curious robots, ready to experience live music for the first time. With a swagger in his step and a twinkle in his eye, he's pumped to teach these metal marvels how to groove, proving that even in the chill of space, the funk is alive and kicking!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Whoa... I'm actually on the Moon. Feels like a dream, but I'm here to make these robots dance!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/rob.png",
+            "sound_effect":"cutscenedata/rob.ogg",
+            "heading": "R.O.B.",
+            "body": "Greetings, Mojo. I am R.O.B., the Lunar Base's primary function coordinator. You have arrived for the... performance?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "That's right, R.O.B.! I hear your crew's never experienced live music before - today's the day we fix that!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/rob.png",
+            "heading": "R.O.B.",
+            "body": "We have analyzed music frequencies, but we have not... experienced rhythm. What is the function of dancing?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "It's not about function, my friend. Dancing is all about feelin' the beat and letting your body move! I'll show you how it's done.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/rob.png",
+            "heading": "R.O.B.",
+            "body": "Understood. We are prepared to learn.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Alright, I hope you've got your gears oiled up—because once I start, you won't want to stop!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/rob.png",
+            "heading": "R.O.B.",
+            "body": "We are fully operational and prepared for... fun?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Alright then! Let's light up the Moon and show the universe that even robots can groove!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon.png",
+            "foreground": "cutscenedata/rob.png",
+            "heading": "R.O.B.",
+            "body": "Beginning dance program. Activating funk mode.",
             "type": "dialogue"
         }
     ]

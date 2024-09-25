@@ -1,13 +1,77 @@
 {
-    "name": "Crash Landing",
-    "sound_loop": "cutscenedata/bongo2.ogg",
+    "name": "Earth",
+    "sound_loop":"cutscenedata/latin.ogg",
     "frames": [
         {
-            "background": "cutscenedata/backstage.png",
+            "background": "cutscenedata/mexico.png",
+            "foreground":"cutscenedata/nothing.png",
+            "heading": "Mexico",
+            "body": "As the sun sets, Mexico City comes alive with music and laughter. The air is filled with the delicious smell of street food, and colorful murals brighten the walls. A crowd gathers in a lively plaza, their feet tapping to the catchy sounds of mariachi bands. Mojo steps onto the stage, filled with energy and excitement, ready to share his dream of cosmic funk. With a playful wink, he gets ready to kick off a dance party that will spread joy across the galaxy!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "sound_effect": "cutscenedata/crowd.ogg",
-            "body": "The crowd's going wild... I think they want an encore!",
+            "body": "Hola, Mexico! I can feel the energy already - this place is alive!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/fan_1.png",
+            "sound_effect":"cutscenedata/fan1.ogg",
+            "heading": "Fan",
+            "body": "Mojo! We're so happy to see you!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "You all ready for a cosmic journey?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/fan_2.png",
+            "sound_effect":"cutscenedata/fan2.ogg",
+            "heading": "Fan",
+            "body": "Absolutely! But tell us - what's next for you? We heard you're planning something big!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "You bet! I've got this wild idea to take funk beyond Earth. I want to spread it across the galaxy!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/fan_1.png",
+            "heading": "Fan",
+            "body": "Across the galaxy? How do you plan to do that?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "With music, of course! I want to perform on the Moon, Mars, and who knows where else! Every planet needs some funky beats!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/fan_2.png",
+            "heading": "Fan",
+            "body": "That sounds amazing! We'd love to dance with Martians and robots!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Exactly! Just imagine the rhythm of the universe coming together. We'll groove like never before! But first, let's turn up the funk right here in Mexico City!",
             "type": "dialogue"
         }
     ]

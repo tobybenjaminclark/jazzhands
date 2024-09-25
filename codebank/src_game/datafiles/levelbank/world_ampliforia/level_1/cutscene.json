@@ -1,13 +1,55 @@
 {
-    "name": "A Hero's Welcome",
-    "sound_loop":"cutscenedata/music1.ogg",
+    "name": "Mars",
+    "sound_loop":"cutscenedata/mars.ogg",
     "frames": [
         {
-            "background": "cutscenedata/background.png",
-            "foreground": "cutscenedata/gnork.png",
-            "sound_effect":"cutscenedata/gnork.ogg",
-            "heading": "Gnork",
-            "body": "Hail, brave traveller! What brings you to the barren lands of Ampliforia?",
+            "background": "cutscenedata/mars.png",
+            "foreground":"cutscenedata/nothing.png",
+            "heading": "Mars",
+            "body": "On the red planet Mars, a funky dance party is about to begin! The sun shines down on the rocky landscape, filling the air with a warm glow. Martians gather in a big open area, their eyes sparkling with excitement as they get ready for some live music. Mojo hops onto the stage, brimming with energy, eager to mix his lively Earth beats with the Martians' unique style. With a big smile, he's ready to turn Mars into a dance floor, showing that no matter where you are in the universe, everyone can groove together!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/mars.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Mars! Now this is what I call a cool vibe. Red rocks and dusty skies—let's see if you're ready to get funky!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars.png",
+            "foreground": "cutscenedata/zarvox.png",
+            "sound_effect":"cutscenedata/alien.ogg",
+            "heading": "Zarvox",
+            "body": "Welcome, Mojo. We are... intrigued by your rhythm. Martians move differently. Our dance is slow and deliberate. Can we... adapt?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Zarvox, every planet's got its own rhythm! We'll mix your slow groove with my funky beats, and we'll create something out of this world!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars.png",
+            "foreground": "cutscenedata/zarvox.png",
+            "heading": "Zarvox",
+            "body": "We are ready to learn. Martian rhythm has never encountered... Earth funk.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars.png",
+            "foreground": "cutscenedata/zarvox.png",
+            "heading": "Zarvox",
+            "body": "We will synchronize with your rhythm. Begin when ready.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "That's what I like to hear! Get ready, 'cause the funk train is about to roll into Mars!",
             "type": "dialogue"
         }
     ]

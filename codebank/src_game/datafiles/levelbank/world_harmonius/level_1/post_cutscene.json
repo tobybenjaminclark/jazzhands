@@ -1,0 +1,57 @@
+{
+    "name": "Earth",
+    "sound_loop":"cutscenedata/latin.ogg",
+    "frames": [
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Wow! You guys sure know how to keep a groove going! Mexico, you've been incredible!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/fan_1.png",
+            "sound_effect":"cutscenedata/fan1.ogg",
+            "heading": "Fan",
+            "body": "You brought the funk, Mojo! We loved every second!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/fan_2.png",
+            "sound_effect":"cutscenedata/fan2.ogg",
+            "heading": "Fan",
+            "body": "Where to next? Are you really going to the Moon?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Absolutely! I'll be bringing the Earth funk to the lunar base. And I want all of you to spread the word!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/fan_1.png",
+            "heading": "Fan",
+            "body": "We'll shout it from the rooftops! Funk in space!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Keep the energy alive, Mexico! You've shown me the power of music and connection.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "I'll be back to funk it up again! Until then, keep dancing!",
+            "type": "dialogue"
+        }
+    ]
+}
