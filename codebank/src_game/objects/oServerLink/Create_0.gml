@@ -8,7 +8,7 @@ global.left_hand = "NONE";
 global.right_hand = "NONE";
 global.cameras = {};
 global.chosen_camera = "NONE";
-global.server_socket = network_connect_raw_async(global.client_socket, "127.0.0.1", 5005);
+global.server_socket = network_connect_raw_async(global.client_socket, "127.0.0.1", 36042);
 
 if(global.server_socket < 0) show_message("Could not connect! Try turning on the server?");
 else

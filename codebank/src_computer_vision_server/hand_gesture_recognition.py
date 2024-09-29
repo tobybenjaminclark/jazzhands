@@ -24,13 +24,13 @@ class JazzHandsGestureRecognizer():
     current_result: Dict[str,str]    # Dictionary mapping handedness to gesture (e.g. left: OPEN_HAND)
     previous_result: Dict[str,str]   # Dictionary storing the previous contents of current_result.
 
-    def __init__(self, settings):
+    def __init__(self):
         """
         Initialise the stop event and gesture queue.
         """
 
         # Retrieve the settings.ini declarations.
-        self.settings = settings
+        self.init_settings()
 
         self.frame = None
 
@@ -39,6 +39,15 @@ class JazzHandsGestureRecognizer():
         self.gesture_queue = Queue()
         self.send_initial_information()
         self.notifications_queue = Queue()
+
+    
+    def init_settings(self):
+        """initialise settings: replacement for settings.ini"""
+        self.MEDIAPIPE_PATH = "codebank/src_computer_vision_server/gesture_recognizer.task"
+        self.threshold = 75
+        
+
+
 
 
     def send_initial_information(self):
@@ -102,9 +111,7 @@ class JazzHandsGestureRecognizer():
         # mp.tasks: mediapipe tasks API.
         # Used to load the Deep Learning model for the Gesture Recognition task and initialise the options related to the task.
 
-        self.MEDIAPIPE_PATH = self.settings["MEDIAPIPE_PATH"]
-        if getattr(sys, 'frozen', False):
-            self.MEDIAPIPE_PATH = self.settings.resource_path(self.MEDIAPIPE_PATH)
+        self.MEDIAPIPE_PATH = self.MEDIAPIPE_PATH
 
         options: mp.tasks.vision.GestureRecognizerOptions = mp.tasks.vision.GestureRecognizerOptions(
             base_options=mp.tasks.BaseOptions(
@@ -321,7 +328,7 @@ class JazzHandsGestureRecognizer():
         
     def is_image_too_dark(self) -> bool:
         if(self.frame is not None):
-            THRESHOLD = int(self.settings["THRESHOLD"])
+            THRESHOLD = self.threshold
             is_light = np.mean(self.frame) > THRESHOLD
             return False if is_light else True
         return False

@@ -12,13 +12,10 @@ class JazzhandsController():
     client_queue: Queue                             # An instance of the client queue. Facilitates sending gesture data to the client object.
     gesture_queue: Queue                            # An instance of the gesture_recognition queue. Allows transmission of gesture data to the client.
 
-    def __init__(self, settings) -> None:
+    def __init__(self) -> None:
         """
         Main function which initiates the client and gesture recognition.
         """
-
-        # Retrieve the settings.ini declarations.
-        self.settings = settings
 
         self.client_replies_queue = Queue()
 
@@ -34,7 +31,7 @@ class JazzhandsController():
         Creates a thread which initialises the client.
         """
 
-        self.client = GMS2Client(self.settings, self)
+        self.client = GMS2Client(self)
         self.client_queue: Queue = self.client.client_queue
         self.client.start_thread()
 
@@ -43,7 +40,7 @@ class JazzhandsController():
         Creates a thread which initialises the gesture recognition.
         """
 
-        self.gesture_recognizer = JazzHandsGestureRecognizer(self.settings)
+        self.gesture_recognizer = JazzHandsGestureRecognizer()
         self.gesture_queue: Queue = self.gesture_recognizer.gesture_queue
         self.notifications_queue: Queue = self.gesture_recognizer.notifications_queue
         self.gesture_recognizer.start_thread()

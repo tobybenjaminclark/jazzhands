@@ -5,10 +5,7 @@
 import socket
 import threading
 from queue import Queue
-import re
 import json
-import cv2
-from cv2_enumerate_cameras import enumerate_cameras
 
 
 class GMS2Client():
@@ -16,13 +13,11 @@ class GMS2Client():
     client_queue: Queue             # Queue to transfer data from the subthread to the main thread.
     thread: threading.Thread        # Client thread to maintain client-server connection.
 
-    def __init__(self, settings, parent):
+    def __init__(self, parent):
         """
         Initializes stop event & client queue
         """
 
-        # Retrieve the settings.ini declarations.
-        self.settings = settings
 
         # Create an event to signal the subthreads to safely stop execution.
         self.stop_event = threading.Event()
@@ -30,6 +25,17 @@ class GMS2Client():
         self.client_queue = Queue()
 
         self.replies_queue = parent.client_replies_queue
+
+        self.init_settings()
+
+    def init_settings(self):
+        """initialise settings: replacement for settings.ini"""
+        self.host = "127.0.0.1"
+        self.port = 36042
+        self.socket_timeout = 500
+        self.encoding = "utf-8"
+
+
 
     def start_thread(self) -> None:
         """
@@ -73,10 +79,10 @@ class GMS2Client():
         # Initialise the socket and bind it to the specified host, at the specified port.
         sock: socket.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-        sock.bind(( self.settings["HOST"], int(self.settings["PORT"]) ))
+        sock.bind(( self.host, int(self.port) ))
         print("listening")
         sock.listen()
-        sock.settimeout(int(self.settings["SOCKET_TIMEOUT"]))
+        sock.settimeout(int(self.socket_timeout))
 
         # Attempt connection to the server.
         try:
@@ -108,7 +114,7 @@ class GMS2Client():
             if not self.client_queue.empty():
                 data: str = self.client_queue.get()
                 print(f"data: {data}")
-                conn.send(bytes(data, encoding=self.settings["ENCODING"]))
+                conn.send(bytes(data, encoding=self.encoding))
             
             # Try to receive messages from the server
             try:
