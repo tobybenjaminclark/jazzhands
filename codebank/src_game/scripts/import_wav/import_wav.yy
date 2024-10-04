@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"import_wav",
   "isCompatibility":false,
   "isDnD":false,

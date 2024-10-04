@@ -115,10 +115,7 @@ if(display_step >= 6){
 	draw_set_font(fntLevelNameSmall);
 	
 	if(accuracy >= pass_accuracy){
-		if(has_post_cutscene) {
-			draw_set_halign(fa_left);
-			draw_text(room_width div 2 - 380, 750, "Watch End Scene & Return To Menu");
-		}
+
 		if(!has_post_cutscene) {
 			draw_set_halign(fa_left);
 			draw_text(room_width div 2 - 380, 750, "Return to Menu");

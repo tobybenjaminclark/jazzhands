@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"validate_beatmap",
   "isCompatibility":false,
   "isDnD":false,

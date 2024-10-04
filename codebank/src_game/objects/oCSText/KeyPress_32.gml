@@ -19,6 +19,9 @@ else
 			global.in_cutscene = false;
 			audio_stop_all();
 			instance_create_layer(x, y, "Instances", oSpinner);
+			if self.next_room != room {
+				global.queued_room = self.next_room;
+			}
 			return;
 		}
 

@@ -21,10 +21,10 @@ var hws = hw * _scale;
 // Draw bottom sprite
 draw_line(x - hws, y - hh, x + hws, y - hh);
 draw_line(x - hws, y - hh + 1, x + hws, y - hh + 1);
-draw_sprite_ext(sprite_index, 0, x, y + 10, _scale, _scale, 0, draw_get_color(), draw_get_alpha());
+draw_sprite_ext(sprite_index, 0, x, y + 10, _scale, _scale, 0, c_white, draw_get_alpha());
 
 // Draw top sprite
-draw_sprite_ext(sprite_index, 0, lx, ly - 10, _scale, _scale, 0, draw_get_color(), draw_get_alpha());
+draw_sprite_ext(sprite_index, 0, lx, ly - 10, _scale, _scale, 0, c_white, draw_get_alpha());
 draw_line(lx - hws, ly + hh, lx + hws, ly + hh);
 draw_line(lx - hws, ly + hh + 1, lx + hws, ly + hh + 1);
 

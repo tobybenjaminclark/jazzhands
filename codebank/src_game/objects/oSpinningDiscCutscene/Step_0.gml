@@ -29,7 +29,7 @@ switch(state)
 		{
 			have_queued_room = true;
 			audio_play_sound(sound, 0, false);
-			cutscene_start(cutscene_path, room);
+			cutscene_start(cutscene_path, navrmStory);
 			instance_destroy(self);
 		}
 	
