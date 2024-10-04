@@ -91,8 +91,9 @@ if(variable_struct_exists(beatmap_structure.level_data, "speed")) {
 /* Create Beat Events */
 for(var event_index = 0; event_index < array_length(beatmap_structure.events); event_index++){
 	var reference_to_this = self;
-	var lyr = "Instances"
-	global.total_beats += 1;
+	var lyr = "Instances";
+	
+	global.total_beats = global.total_beats + 1;
 	
 	if(variable_struct_exists(beatmap_structure.events[event_index].event_data, "speed")){
 		thisbeat_speed = beatmap_structure.events[event_index].event_data.speed;

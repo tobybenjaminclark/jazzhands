@@ -8,6 +8,7 @@ ly = -500
 
 /* Scale? */
 _scale = 0.5;
+death_trigger = false;
 
 /* Initial Variable Setup */
 pstart_time = 0;
