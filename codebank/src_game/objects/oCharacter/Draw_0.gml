@@ -49,7 +49,12 @@ switch(global.left_hand)
 	default:
 		_left_hand = sprUnknownSymbol;
 }		
-draw_sprite_ext(_left_hand, 0, x - 154, _killline - 25, 0.7, 0.7, 0, c_white, 1);
+
+if _left_hand != sprUnknownSymbol {
+	draw_sprite_ext(_left_hand, 0, x - 154, _killline - 25, -0.7, 0.7, 0, c_white, 1);
+} else {
+	draw_sprite_ext(_left_hand, 0, x - 154, _killline - 25, 0.7, 0.7, 0, c_white, 1);
+}
 
 var _left_hand = 0;
 switch(global.right_hand)
