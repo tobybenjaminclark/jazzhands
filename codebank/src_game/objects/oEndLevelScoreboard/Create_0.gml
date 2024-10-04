@@ -33,7 +33,6 @@ display_step = -1;
 
 /* Calculate accuracy etc... determine if the player won or failed? */
 accuracy = global.hit_beats / global.total_beats; 
-accuracy = 0.8
 iaccuracy = round(accuracy * 100);
 
 /* Calculate Grade */
