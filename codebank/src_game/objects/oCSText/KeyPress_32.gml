@@ -24,7 +24,6 @@ else
 			}
 			return;
 		}
-
 		cutscene_delete_components();
 		cutscene_initialise_components(frame_index, file_path);
 	}

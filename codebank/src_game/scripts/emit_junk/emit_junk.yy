@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"emit_junk",
   "isCompatibility":false,
   "isDnD":false,

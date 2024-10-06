@@ -19,9 +19,11 @@ else
 			global.in_cutscene = false;
 			audio_stop_all();
 			instance_create_layer(x, y, "Instances", oSpinner);
+			if self.next_room != room {
+				global.queued_room = self.next_room;
+			}
 			return;
 		}
-
 		cutscene_delete_components();
 		cutscene_initialise_components(frame_index, file_path);
 	}
