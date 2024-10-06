@@ -13,7 +13,7 @@
             "background": "cutscenedata/mars.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Mars! Now this is what I call a cool vibe. Red rocks and dusty skies—let's see if you're ready to get funky!",
+            "body": "Mars! Now this is what I call a cool vibe. Red rocks and dusty skies - let's see if you're ready to get funky!",
             "type": "dialogue"
         },
         {
@@ -50,6 +50,34 @@
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
             "body": "That's what I like to hear! Get ready, 'cause the funk train is about to roll into Mars!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Alright, we've got a funky new challenge here on Mars. It's not just about hitting the right moves anymore - sometimes we've got to hold back.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "When a beat shows up that looks red, that's our cue to hold back. Don't make the gesture for that one, we let it slide by.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mars_stage.png",
+            "foreground": "cutscenedata/pointing_up.png",
+            "heading": "Mojo",
+            "body": "And we've got a brand-new symbol to work with - the index finger pointing up! Raise that finger and hold it proud when it shows up.",
+            "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/mars_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Stay smooth, dodge the bad beats, and let's mix Earth funk with Martian style!",
             "type": "dialogue"
         }
     ]

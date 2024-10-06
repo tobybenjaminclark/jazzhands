@@ -56,7 +56,7 @@
             "background": "cutscenedata/moon.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Alright, I hope you've got your gears oiled up—because once I start, you won't want to stop!",
+            "body": "Alright, I hope you've got your gears oiled up - because once I start, you won't want to stop!",
             "type": "dialogue"
         },
         {
@@ -78,6 +78,27 @@
             "foreground": "cutscenedata/rob.png",
             "heading": "R.O.B.",
             "body": "Beginning dance program. Activating funk mode.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Alright, partner! We've rocked Earth, but here on the Moon, we've got a new challenge. We're not just hitting beats - we're holding them. Let's get those moves steady!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/victory.png",
+            "heading": "Mojo",
+            "body": "When that peace sign symbol shows up, we hold our hands just like this - two fingers up, and we keep it locked in. It's all about control, feelin' the rhythm, and holding that groove!",
+            "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/moon_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "We keep it steady together, holding the beat while the funk flows through us. Let's show these robots how it's done!",
             "type": "dialogue"
         }
     ]

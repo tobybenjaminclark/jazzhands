@@ -73,6 +73,41 @@
             "heading": "Mojo",
             "body": "Exactly! Just imagine the rhythm of the universe coming together. We'll groove like never before! But first, let's turn up the funk right here in Mexico City!",
             "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Alright, before we take this party to the next level, let's make sure we're in sync! We'll be using our hands to bring the groove to life.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "To start, we've gotta raise our hands to the camera - nice and steady, like we're ready to take the stage. Hold them still so the game can lock in on our movements. The magic happens when we match our hands with the symbols on the screen!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Once we've got our hands locked in, the real fun begins. We'll hit those symbols with precision, moving to the rhythm. It's all about feeling the groove, reacting to the beat, and keeping that energy flowing!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/open_palm.png",
+            "heading": "Mojo",
+            "body": "When those symbols appear, we've got two moves to nail together - first, the open palm! We spread our fingers wide, like we're catching all that cosmic energy!",
+            "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/mexico_stage.png",
+            "foreground": "cutscenedata/closed_fist.png",
+            "heading": "Mojo",
+            "body": "Then, there's the closed palm. We clench that fist, strong and ready, like we're smashing through the beat! Ready to rock this stage together? Let's light it up!",
+            "type": "showcase"
         }
     ]
 }
