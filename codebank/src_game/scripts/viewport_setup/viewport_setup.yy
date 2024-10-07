@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"viewport_setup",
   "isCompatibility":false,
   "isDnD":false,
