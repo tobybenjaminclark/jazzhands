@@ -1,0 +1,136 @@
+# Details
+
+Date : 2024-10-08 21:23:21
+
+Directory /Users/tobybenjaminclark/Documents/Personal/jazzhands
+
+Total : 121 files,  23284 codes, 85 comments, 536 blanks, all 23905 lines
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
+
+## Files
+| filename | language | code | comment | blank | total |
+| :--- | :--- | ---: | ---: | ---: | ---: |
+| [jazzhands/README.md](/jazzhands/README.md) | Markdown | 12 | 0 | 4 | 16 |
+| [jazzhands/codebank/src_computer_vision_server/controller.py](/jazzhands/codebank/src_computer_vision_server/controller.py) | Python | 73 | 5 | 22 | 100 |
+| [jazzhands/codebank/src_computer_vision_server/cv_client.py](/jazzhands/codebank/src_computer_vision_server/cv_client.py) | Python | 100 | 17 | 41 | 158 |
+| [jazzhands/codebank/src_computer_vision_server/hand_gesture_recognition.py](/jazzhands/codebank/src_computer_vision_server/hand_gesture_recognition.py) | Python | 209 | 30 | 92 | 331 |
+| [jazzhands/codebank/src_game/datafiles/languages/codes.json](/jazzhands/codebank/src_game/datafiles/languages/codes.json) | JSON | 252 | 0 | 1 | 253 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_1/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_1/beatmap.json) | JSON | 615 | 0 | 0 | 615 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_1/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_1/cutscene.json) | JSON | 84 | 0 | 0 | 84 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_1/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_1/post_cutscene.json) | JSON | 63 | 0 | 0 | 63 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_2/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_2/beatmap.json) | JSON | 785 | 0 | 0 | 785 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_2/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_2/cutscene.json) | JSON | 57 | 0 | 0 | 57 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_3/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_3/beatmap.json) | JSON | 636 | 0 | 0 | 636 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_3/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_3/cutscene.json) | JSON | 79 | 0 | 0 | 79 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_4/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_4/beatmap.json) | JSON | 298 | 0 | 0 | 298 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_4/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_4/cutscene.json) | JSON | 79 | 0 | 0 | 79 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_4/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_ampliforia/level_4/post_cutscene.json) | JSON | 73 | 0 | 0 | 73 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_1/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_1/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_1/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_1/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_2/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_2/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_2/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_2/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_3/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_3/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_3/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_3/cutscene.json) | JSON | 96 | 0 | 0 | 96 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_4/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_4/beatmap.json) | JSON | 807 | 0 | 0 | 807 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_4/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_4/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_4/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_deathstar/level_4/post_cutscene.json) | JSON | 19 | 0 | 0 | 19 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_1/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_1/beatmap.json) | JSON | 438 | 0 | 1 | 439 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_1/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_1/cutscene.json) | JSON | 105 | 0 | 0 | 105 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_1/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_1/post_cutscene.json) | JSON | 49 | 0 | 0 | 49 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_2/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_2/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_2/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_2/cutscene.json) | JSON | 93 | 0 | 0 | 93 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_3/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_3/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_3/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_3/cutscene.json) | JSON | 51 | 0 | 0 | 51 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_4/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_4/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_4/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_4/cutscene.json) | JSON | 66 | 0 | 0 | 66 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_4/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_electronova/level_4/post_cutscene.json) | JSON | 64 | 0 | 0 | 64 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_1/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_1/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_1/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_1/cutscene.json) | JSON | 40 | 0 | 0 | 40 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_1/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_1/post_cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_2/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_2/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_2/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_2/cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_3/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_3/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_3/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_3/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_4/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_4/beatmap.json) | JSON | 753 | 0 | 3 | 756 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_4/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_4/cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_4/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_funkopolis/level_4/post_cutscene.json) | JSON | 33 | 0 | 0 | 33 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_grand-composer/level_1/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_grand-composer/level_1/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_grand-composer/level_1/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_grand-composer/level_1/cutscene.json) | JSON | 54 | 0 | 0 | 54 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_grand-composer/level_1/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_grand-composer/level_1/post_cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_1/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_1/beatmap.json) | JSON | 594 | 0 | 1 | 595 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_1/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_1/cutscene.json) | JSON | 113 | 0 | 0 | 113 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_1/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_1/post_cutscene.json) | JSON | 57 | 0 | 0 | 57 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_2/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_2/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_2/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_2/cutscene.json) | JSON | 106 | 0 | 0 | 106 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_3/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_3/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_3/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_3/cutscene.json) | JSON | 79 | 0 | 0 | 79 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_4/beatmap.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_4/beatmap.json) | JSON | 650 | 0 | 1 | 651 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_4/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_4/cutscene.json) | JSON | 93 | 0 | 0 | 93 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_4/post_cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_harmonius/level_4/post_cutscene.json) | JSON | 85 | 0 | 0 | 85 |
+| [jazzhands/codebank/src_game/datafiles/levelbank/world_tutorial/cutscene.json](/jazzhands/codebank/src_game/datafiles/levelbank/world_tutorial/cutscene.json) | JSON | 35 | 0 | 1 | 36 |
+| [jazzhands/codebank/src_game/datafiles/tutorial.json](/jazzhands/codebank/src_game/datafiles/tutorial.json) | JSON | 334 | 0 | 35 | 369 |
+| [jazzhands/codebank/src_game/datafiles/userbank/user1.json](/jazzhands/codebank/src_game/datafiles/userbank/user1.json) | JSON | 10 | 0 | 1 | 11 |
+| [jazzhands/codebank/src_game/datafiles/userbank/user2.json](/jazzhands/codebank/src_game/datafiles/userbank/user2.json) | JSON | 10 | 0 | 1 | 11 |
+| [jazzhands/codebank/src_game/shaders/shader_bw/shader_bw.vsh](/jazzhands/codebank/src_game/shaders/shader_bw/shader_bw.vsh) | HLSL | 12 | 4 | 4 | 20 |
+| [jazzhands/codebank/src_level_editor/beatmap_creator.py](/jazzhands/codebank/src_level_editor/beatmap_creator.py) | Python | 161 | 3 | 57 | 221 |
+| [jazzhands/codebank/src_level_editor/beatmap_gui.py](/jazzhands/codebank/src_level_editor/beatmap_gui.py) | Python | 360 | 13 | 166 | 539 |
+| [jazzhands/codebank/src_settings_loader/SettingsReader.py](/jazzhands/codebank/src_settings_loader/SettingsReader.py) | Python | 34 | 1 | 14 | 49 |
+| [jazzhands/docbank/DOCBANK_README.md](/jazzhands/docbank/DOCBANK_README.md) | Markdown | 2 | 0 | 0 | 2 |
+| [jazzhands/docbank/business_plan.md](/jazzhands/docbank/business_plan.md) | Markdown | 64 | 0 | 48 | 112 |
+| [jazzhands/docbank/core_calculus.tex](/jazzhands/docbank/core_calculus.tex) | LaTeX | 174 | 12 | 21 | 207 |
+| [jazzhands/level_editor_builder.bat](/jazzhands/level_editor_builder.bat) | Batch | 3 | 0 | 0 | 3 |
+| [jazzhands/level_editor_runner.py](/jazzhands/level_editor_runner.py) | Python | 6 | 0 | 2 | 8 |
+| [jazzhands/levelbank/world_ampliforia/level_1/beatmap.json](/jazzhands/levelbank/world_ampliforia/level_1/beatmap.json) | JSON | 444 | 0 | 0 | 444 |
+| [jazzhands/levelbank/world_ampliforia/level_1/cutscene.json](/jazzhands/levelbank/world_ampliforia/level_1/cutscene.json) | JSON | 101 | 0 | 0 | 101 |
+| [jazzhands/levelbank/world_ampliforia/level_2/beatmap.json](/jazzhands/levelbank/world_ampliforia/level_2/beatmap.json) | JSON | 785 | 0 | 0 | 785 |
+| [jazzhands/levelbank/world_ampliforia/level_2/cutscene.json](/jazzhands/levelbank/world_ampliforia/level_2/cutscene.json) | JSON | 57 | 0 | 0 | 57 |
+| [jazzhands/levelbank/world_ampliforia/level_3/beatmap.json](/jazzhands/levelbank/world_ampliforia/level_3/beatmap.json) | JSON | 636 | 0 | 0 | 636 |
+| [jazzhands/levelbank/world_ampliforia/level_3/cutscene.json](/jazzhands/levelbank/world_ampliforia/level_3/cutscene.json) | JSON | 79 | 0 | 0 | 79 |
+| [jazzhands/levelbank/world_ampliforia/level_4/beatmap.json](/jazzhands/levelbank/world_ampliforia/level_4/beatmap.json) | JSON | 298 | 0 | 0 | 298 |
+| [jazzhands/levelbank/world_ampliforia/level_4/cutscene.json](/jazzhands/levelbank/world_ampliforia/level_4/cutscene.json) | JSON | 79 | 0 | 0 | 79 |
+| [jazzhands/levelbank/world_ampliforia/level_4/post_cutscene.json](/jazzhands/levelbank/world_ampliforia/level_4/post_cutscene.json) | JSON | 73 | 0 | 0 | 73 |
+| [jazzhands/levelbank/world_deathstar/level_1/beatmap.json](/jazzhands/levelbank/world_deathstar/level_1/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_deathstar/level_1/cutscene.json](/jazzhands/levelbank/world_deathstar/level_1/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/levelbank/world_deathstar/level_2/beatmap.json](/jazzhands/levelbank/world_deathstar/level_2/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_deathstar/level_2/cutscene.json](/jazzhands/levelbank/world_deathstar/level_2/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/levelbank/world_deathstar/level_3/beatmap.json](/jazzhands/levelbank/world_deathstar/level_3/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_deathstar/level_3/cutscene.json](/jazzhands/levelbank/world_deathstar/level_3/cutscene.json) | JSON | 96 | 0 | 0 | 96 |
+| [jazzhands/levelbank/world_deathstar/level_4/beatmap.json](/jazzhands/levelbank/world_deathstar/level_4/beatmap.json) | JSON | 807 | 0 | 0 | 807 |
+| [jazzhands/levelbank/world_deathstar/level_4/cutscene.json](/jazzhands/levelbank/world_deathstar/level_4/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/levelbank/world_deathstar/level_4/post_cutscene.json](/jazzhands/levelbank/world_deathstar/level_4/post_cutscene.json) | JSON | 19 | 0 | 0 | 19 |
+| [jazzhands/levelbank/world_electronova/level_1/beatmap.json](/jazzhands/levelbank/world_electronova/level_1/beatmap.json) | JSON | 309 | 0 | 1 | 310 |
+| [jazzhands/levelbank/world_electronova/level_1/cutscene.json](/jazzhands/levelbank/world_electronova/level_1/cutscene.json) | JSON | 93 | 0 | 0 | 93 |
+| [jazzhands/levelbank/world_electronova/level_2/beatmap.json](/jazzhands/levelbank/world_electronova/level_2/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/levelbank/world_electronova/level_2/cutscene.json](/jazzhands/levelbank/world_electronova/level_2/cutscene.json) | JSON | 93 | 0 | 0 | 93 |
+| [jazzhands/levelbank/world_electronova/level_3/beatmap.json](/jazzhands/levelbank/world_electronova/level_3/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/levelbank/world_electronova/level_3/cutscene.json](/jazzhands/levelbank/world_electronova/level_3/cutscene.json) | JSON | 51 | 0 | 0 | 51 |
+| [jazzhands/levelbank/world_electronova/level_4/beatmap.json](/jazzhands/levelbank/world_electronova/level_4/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/levelbank/world_electronova/level_4/cutscene.json](/jazzhands/levelbank/world_electronova/level_4/cutscene.json) | JSON | 66 | 0 | 0 | 66 |
+| [jazzhands/levelbank/world_electronova/level_4/post_cutscene.json](/jazzhands/levelbank/world_electronova/level_4/post_cutscene.json) | JSON | 64 | 0 | 0 | 64 |
+| [jazzhands/levelbank/world_funkopolis/level_1/beatmap.json](/jazzhands/levelbank/world_funkopolis/level_1/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_funkopolis/level_1/cutscene.json](/jazzhands/levelbank/world_funkopolis/level_1/cutscene.json) | JSON | 40 | 0 | 0 | 40 |
+| [jazzhands/levelbank/world_funkopolis/level_2/beatmap.json](/jazzhands/levelbank/world_funkopolis/level_2/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_funkopolis/level_2/cutscene.json](/jazzhands/levelbank/world_funkopolis/level_2/cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/levelbank/world_funkopolis/level_3/beatmap.json](/jazzhands/levelbank/world_funkopolis/level_3/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_funkopolis/level_3/cutscene.json](/jazzhands/levelbank/world_funkopolis/level_3/cutscene.json) | JSON | 75 | 0 | 0 | 75 |
+| [jazzhands/levelbank/world_funkopolis/level_4/beatmap.json](/jazzhands/levelbank/world_funkopolis/level_4/beatmap.json) | JSON | 753 | 0 | 3 | 756 |
+| [jazzhands/levelbank/world_funkopolis/level_4/cutscene.json](/jazzhands/levelbank/world_funkopolis/level_4/cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/levelbank/world_funkopolis/level_4/post_cutscene.json](/jazzhands/levelbank/world_funkopolis/level_4/post_cutscene.json) | JSON | 33 | 0 | 0 | 33 |
+| [jazzhands/levelbank/world_grand-composer/level_1/beatmap.json](/jazzhands/levelbank/world_grand-composer/level_1/beatmap.json) | JSON | 280 | 0 | 0 | 280 |
+| [jazzhands/levelbank/world_grand-composer/level_1/cutscene.json](/jazzhands/levelbank/world_grand-composer/level_1/cutscene.json) | JSON | 54 | 0 | 0 | 54 |
+| [jazzhands/levelbank/world_grand-composer/level_1/post_cutscene.json](/jazzhands/levelbank/world_grand-composer/level_1/post_cutscene.json) | JSON | 61 | 0 | 0 | 61 |
+| [jazzhands/levelbank/world_harmonius/level_1/beatmap.json](/jazzhands/levelbank/world_harmonius/level_1/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/levelbank/world_harmonius/level_1/cutscene.json](/jazzhands/levelbank/world_harmonius/level_1/cutscene.json) | JSON | 261 | 0 | 0 | 261 |
+| [jazzhands/levelbank/world_harmonius/level_2/beatmap.json](/jazzhands/levelbank/world_harmonius/level_2/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/levelbank/world_harmonius/level_2/cutscene.json](/jazzhands/levelbank/world_harmonius/level_2/cutscene.json) | JSON | 106 | 0 | 0 | 106 |
+| [jazzhands/levelbank/world_harmonius/level_3/beatmap.json](/jazzhands/levelbank/world_harmonius/level_3/beatmap.json) | JSON | 266 | 0 | 1 | 267 |
+| [jazzhands/levelbank/world_harmonius/level_3/cutscene.json](/jazzhands/levelbank/world_harmonius/level_3/cutscene.json) | JSON | 79 | 0 | 0 | 79 |
+| [jazzhands/levelbank/world_harmonius/level_4/beatmap.json](/jazzhands/levelbank/world_harmonius/level_4/beatmap.json) | JSON | 650 | 0 | 1 | 651 |
+| [jazzhands/levelbank/world_harmonius/level_4/cutscene.json](/jazzhands/levelbank/world_harmonius/level_4/cutscene.json) | JSON | 93 | 0 | 0 | 93 |
+| [jazzhands/levelbank/world_harmonius/level_4/post_cutscene.json](/jazzhands/levelbank/world_harmonius/level_4/post_cutscene.json) | JSON | 85 | 0 | 0 | 85 |
+| [jazzhands/levelbank/world_tutorial/cutscene.json](/jazzhands/levelbank/world_tutorial/cutscene.json) | JSON | 35 | 0 | 1 | 36 |
+| [jazzhands/server_builder.bat](/jazzhands/server_builder.bat) | Batch | 3 | 0 | 0 | 3 |
+| [jazzhands/server_runner.py](/jazzhands/server_runner.py) | Python | 4 | 0 | 3 | 7 |
+
+[Summary](results.md) / Details / [Diff Summary](diff.md) / [Diff Details](diff-details.md)
