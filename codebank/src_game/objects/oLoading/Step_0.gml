@@ -11,4 +11,5 @@ progress = (curr_time / loading_time) * 100;
 
 if progress >= 100 {
 	room_goto(rmInitialize);
+	audio_stop_all();
 }
