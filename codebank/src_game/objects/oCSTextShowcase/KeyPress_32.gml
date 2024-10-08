@@ -20,7 +20,7 @@ else
 			audio_stop_all();
 			instance_create_layer(x, y, "Instances", oSpinner);
 			if next_room != room {
-				global.queued_room = next_room;
+				room = self.next_room;
 			}
 			return;
 		}
