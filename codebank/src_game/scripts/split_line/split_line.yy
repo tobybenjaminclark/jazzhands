@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"split_line",
   "isCompatibility":false,
   "isDnD":false,

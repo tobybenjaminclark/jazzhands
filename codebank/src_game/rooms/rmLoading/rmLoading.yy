@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"",
+  "$GMRoom":"v1",
   "%Name":"rmLoading",
   "creationCodeFile":"",
   "inheritCode":false,
@@ -12,9 +12,9 @@
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"","%Name":"inst_9026AE7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9026AE7","objectId":{"name":"oLoading","path":"objects/oLoading/oLoading.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":672.0,},
-        {"$GMRInstance":"","%Name":"inst_107E271B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_107E271B","objectId":{"name":"oLoadingLabel","path":"objects/oLoadingLabel/oLoadingLabel.yy",},"properties":[
-            {"$GMOverriddenProperty":"","%Name":"","name":"","objectId":{"name":"oLoadingLabel","path":"objects/oLoadingLabel/oLoadingLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLoadingLabel/oLoadingLabel.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntLevelNameSmall",},
+        {"$GMRInstance":"v1","%Name":"inst_9026AE7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_9026AE7","objectId":{"name":"oLoading","path":"objects/oLoading/oLoading.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":672.0,},
+        {"$GMRInstance":"v1","%Name":"inst_107E271B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_107E271B","objectId":{"name":"oLoadingLabel","path":"objects/oLoadingLabel/oLoadingLabel.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oLoadingLabel","path":"objects/oLoadingLabel/oLoadingLabel.yy",},"propertyId":{"name":"labelFont","path":"objects/oLoadingLabel/oLoadingLabel.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"fntLevelNameSmall",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":111.0,"y":511.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Logo","assets":[

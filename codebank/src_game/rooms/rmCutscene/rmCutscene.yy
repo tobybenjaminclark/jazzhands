@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"",
+  "$GMRoom":"v1",
   "%Name":"rmCutscene",
   "creationCodeFile":"",
   "inheritCode":false,
