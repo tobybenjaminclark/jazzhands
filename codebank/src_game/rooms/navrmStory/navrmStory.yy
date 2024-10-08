@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"navrmStory",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/navrmStory/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
