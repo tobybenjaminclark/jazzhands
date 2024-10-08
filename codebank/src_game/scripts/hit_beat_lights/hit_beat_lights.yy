@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"hit_beat_lights",
   "isCompatibility":false,
   "isDnD":false,

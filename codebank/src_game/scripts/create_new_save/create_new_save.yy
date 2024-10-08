@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"create_new_save",
   "isCompatibility":false,
   "isDnD":false,

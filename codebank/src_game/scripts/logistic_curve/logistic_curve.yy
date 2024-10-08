@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"logistic_curve",
   "isCompatibility":false,
   "isDnD":false,

@@ -1,5 +1,5 @@
 {
-  "$GMScript":"v1",
+  "$GMScript":"",
   "%Name":"parse_json",
   "isCompatibility":false,
   "isDnD":false,
