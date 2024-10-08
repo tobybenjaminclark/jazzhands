@@ -1,12 +1,12 @@
 {
-    "name": "Mars",
+    "name": "Alien Rhythm: Mars",
     "sound_loop":"cutscenedata/mars.ogg",
     "frames": [
         {
             "background": "cutscenedata/mars.png",
             "foreground":"cutscenedata/nothing.png",
             "heading": "Mars",
-            "body": "On the red planet Mars, a funky dance party is about to begin! The sun shines down on the rocky landscape, filling the air with a warm glow. Martians gather in a big open area, their eyes sparkling with excitement as they get ready for some live music. Mojo hops onto the stage, brimming with energy, eager to mix his lively Earth beats with the Martians' unique style. With a big smile, he's ready to turn Mars into a dance floor, showing that no matter where you are in the universe, everyone can groove together!",
+            "body": "On the red planet Mars, a funky dance party is about to begin! The sun shines down on the rocky landscape, filling the air with a warm glow. Martians gather in a big open area, their eyes sparkling with excitement as they get ready for some live music. Mojo hops onto the stage, brimming with energy, eager to mix his lively Earth beats with the Martians' unique style.",
             "type": "scene"
         },
         {

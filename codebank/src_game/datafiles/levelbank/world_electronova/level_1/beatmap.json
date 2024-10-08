@@ -1,7 +1,7 @@
 {
     "level_data": {
-        "level_name": "Demo 2",
-        "description": "",
+        "level_name": "Lunar Groove: Moon Base",
+        "description": "Teach the robots of the Lunar Base how to feel the beat!",
         "background": "TUTORIAL",
         "song": "snd_funky.ogg"
     },

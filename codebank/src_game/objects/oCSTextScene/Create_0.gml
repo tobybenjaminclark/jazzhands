@@ -6,7 +6,7 @@ show_index = 0;
 var text_index = 0;
 
 // Maximum line length
-var max_line_length = 130;
+var max_line_length = 100;
 
 // Length of the body text
 var body_length = string_length(body);

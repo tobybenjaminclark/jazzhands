@@ -1,12 +1,12 @@
 {
-    "name": "Moon",
+    "name": "Lunar Groove: Moon Base",
     "sound_loop":"cutscenedata/moon.ogg",
     "frames": [
         {
             "background": "cutscenedata/moon.png",
             "foreground":"cutscenedata/nothing.png",
             "heading": "Moon",
-            "body": "On the Moon's surface, a funky lunar party is about to kick off! The Lunar Base gleams under the shimmering stars, a high-tech playground filled with whirring robots and flashing lights. Craters dance in the moonlight, creating a surreal vibe that's out of this world. Mojo stands at the edge of the stage, bursting with energy as he gazes at the curious robots, ready to experience live music for the first time. With a swagger in his step and a twinkle in his eye, he's pumped to teach these metal marvels how to groove, proving that even in the chill of space, the funk is alive and kicking!",
+            "body": "On the Moon's surface, a funky lunar party is about to kick off! The Lunar Base gleams under the shimmering stars, a high-tech playground filled with whirring robots and flashing lights. With a swagger in his step and a twinkle in his eye, Mojo's pumped to teach these metal marvels how to groove!",
             "type": "scene"
         },
         {
