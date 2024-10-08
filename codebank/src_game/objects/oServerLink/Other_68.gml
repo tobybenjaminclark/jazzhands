@@ -38,6 +38,25 @@ if(n_id == server_socket)
             global.right_hand = string_upper(jsonData.Right);
         }
 		
+				// Check if the struct lists available cameras
+		if variable_struct_exists(jsonData, "cameras")
+		{
+			global.cameras = jsonData.cameras
+			
+			// handle no cameras
+			if array_length(global.cameras) == 0
+			{
+				show_message("no camera")
+			}
+			
+			if(global.chosen_camera == "NONE")
+			{
+				// initialise the chosen camera as the first camera
+				global.chosen_camera = global.cameras[0].name;
+			};
+			
+		}
+		
 		}
 		catch(e)
 		{
