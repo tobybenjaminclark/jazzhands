@@ -18,6 +18,21 @@ if(intro_delay == 0){
 		
 }
 
+if(intro_delay <= 0 && !started && global.in_cutscene == false && !paused && created_switcher == false && watched_cutscene){
+	created_switcher = true;
+	var _self = self;
+	switcher = instance_create_layer(x,y,layer,oCallibrationStart,{symb_sprite: sprSymbolVictoryBase, symb_string:"VICTORY",parent:_self});
+}
+
+if(done && !started){
+	audio_stop_all();
+	instance_create_layer(x, y, "InstancesNoGlow", oCountdown, {snd: sound});
+	start_time = current_time + 3000;
+	alt_start_time = start_time;
+	started = true;
+	end_time = start_time + (sound_len * 1000)
+}
+
 if((global.left_hand == "THUMB_UP" && global.right_hand == "THUMB_UP" && !paused) and spawned_powerball == false){
 	
 	var _x = x;

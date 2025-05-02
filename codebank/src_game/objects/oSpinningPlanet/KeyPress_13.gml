@@ -12,7 +12,7 @@ if(is_stopper)
 	global.current_beatmap = levels[index];
 	global.numerical_level = 4 * (world) + index + 1
 	global.current_level = "DEMO" + "-L" + string(world + 1);
-	global.queued_room = rmstage_harmonica;
+	global.queued_room = rmConfirmation;
 }
 
 

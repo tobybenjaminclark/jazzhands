@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Jazzhands",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -55,6 +55,7 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"datafiles alias","CopyToMask":-1,"filePath":"datafiles","name":"datafiles alias","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"fonts alias","CopyToMask":-1,"filePath":"datafiles","name":"fonts alias","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -775,6 +776,12 @@
     {"id":{"name":"oBlackBox","path":"objects/oBlackBox/oBlackBox.yy",},},
     {"id":{"name":"oBlockLaserVis","path":"objects/oBlockLaserVis/oBlockLaserVis.yy",},},
     {"id":{"name":"oBoulderedBeat","path":"objects/oBoulderedBeat/oBoulderedBeat.yy",},},
+    {"id":{"name":"oCallibrationDiagram","path":"objects/oCallibrationDiagram/oCallibrationDiagram.yy",},},
+    {"id":{"name":"oCallibrationIntro","path":"objects/oCallibrationIntro/oCallibrationIntro.yy",},},
+    {"id":{"name":"oCallibrationMatch","path":"objects/oCallibrationMatch/oCallibrationMatch.yy",},},
+    {"id":{"name":"oCallibrationSkip","path":"objects/oCallibrationSkip/oCallibrationSkip.yy",},},
+    {"id":{"name":"oCallibrationStart","path":"objects/oCallibrationStart/oCallibrationStart.yy",},},
+    {"id":{"name":"oCallibrationTutorial","path":"objects/oCallibrationTutorial/oCallibrationTutorial.yy",},},
     {"id":{"name":"oCharacter","path":"objects/oCharacter/oCharacter.yy",},},
     {"id":{"name":"oColourDisc","path":"objects/oColourDisc/oColourDisc.yy",},},
     {"id":{"name":"oColourSelector","path":"objects/oColourSelector/oColourSelector.yy",},},
@@ -835,6 +842,7 @@
     {"id":{"name":"oTextInput","path":"objects/oTextInput/oTextInput.yy",},},
     {"id":{"name":"oTikiVis","path":"objects/oTikiVis/oTikiVis.yy",},},
     {"id":{"name":"oTips","path":"objects/oTips/oTips.yy",},},
+    {"id":{"name":"oTutorialBlockVis","path":"objects/oTutorialBlockVis/oTutorialBlockVis.yy",},},
     {"id":{"name":"oTutorialCharacter","path":"objects/oTutorialCharacter/oTutorialCharacter.yy",},},
     {"id":{"name":"oTutorialManager","path":"objects/oTutorialManager/oTutorialManager.yy",},},
     {"id":{"name":"oTutorialSymbol","path":"objects/oTutorialSymbol/oTutorialSymbol.yy",},},
@@ -852,6 +860,7 @@
     {"id":{"name":"ps_spacejunkexplode","path":"particles/ps_spacejunkexplode/ps_spacejunkexplode.yy",},},
     {"id":{"name":"navrmMain","path":"rooms/navrmMain/navrmMain.yy",},},
     {"id":{"name":"navrmStory","path":"rooms/navrmStory/navrmStory.yy",},},
+    {"id":{"name":"rmConfirmation","path":"rooms/rmConfirmation/rmConfirmation.yy",},},
     {"id":{"name":"rmCutscene","path":"rooms/rmCutscene/rmCutscene.yy",},},
     {"id":{"name":"rmFreemode","path":"rooms/rmFreemode/rmFreemode.yy",},},
     {"id":{"name":"rmInitialize","path":"rooms/rmInitialize/rmInitialize.yy",},},
@@ -988,6 +997,7 @@
     {"roomId":{"name":"rmFreemode","path":"rooms/rmFreemode/rmFreemode.yy",},},
     {"roomId":{"name":"rmTutorial","path":"rooms/rmTutorial/rmTutorial.yy",},},
     {"roomId":{"name":"rmLangaugeSelector","path":"rooms/rmLangaugeSelector/rmLangaugeSelector.yy",},},
+    {"roomId":{"name":"rmConfirmation","path":"rooms/rmConfirmation/rmConfirmation.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

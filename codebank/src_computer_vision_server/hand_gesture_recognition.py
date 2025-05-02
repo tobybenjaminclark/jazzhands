@@ -43,7 +43,7 @@ class JazzHandsGestureRecognizer():
     def init_settings(self):
         """initialise settings: replacement for settings.ini"""
         self.MEDIAPIPE_PATH = "codebank/src_computer_vision_server/gesture_recognizer.task"
-        self.threshold = 75
+        self.threshold = 65
         
 
 
@@ -250,7 +250,7 @@ class JazzHandsGestureRecognizer():
         default_camera = camera_list[0][0]
 
         # Initialise the webcam feed using the constant WEBCAM_ID.
-        self.cap: np.array = cv2.VideoCapture(default_camera)
+        self.cap: np.array = cv2.VideoCapture(0)
 
         self.current_result = {"Left": "None", "Right": "None"}
         self.previous_result = {"Left": "None", "Right": "None"}

@@ -8,7 +8,8 @@ level_score = 0;
 started = false;
 global.disco_mode = false;
 global.hit_beats = 0;
-
+done = false;
+created_switcher = false;
 
 /* Started Variables */
 start_time = 0;
