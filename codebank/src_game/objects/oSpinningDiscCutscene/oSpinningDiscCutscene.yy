@@ -8,7 +8,7 @@
   "managed":true,
   "name":"oSpinningDiscCutscene",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"scale_modifier","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resource":null,"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.035",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oSpinButtonBase","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"propertyId":{"name":"scale_modifier","path":"objects/oSpinButtonBase/oSpinButtonBase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.035",},
   ],
   "parent":{
     "name":"User Interface",
@@ -32,7 +32,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"cutscene_path","filters":[],"listItems":[],"multiselect":false,"name":"cutscene_path","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"cutscene_path","filters":[],"listItems":[],"multiselect":false,"name":"cutscene_path","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

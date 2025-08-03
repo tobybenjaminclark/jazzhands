@@ -28,9 +28,9 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"parent","filters":[],"listItems":[],"multiselect":false,"name":"parent","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
-    {"$GMObjectProperty":"v1","%Name":"body","filters":[],"listItems":[],"multiselect":false,"name":"body","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! ","varType":2,},
-    {"$GMObjectProperty":"v1","%Name":"heading","filters":[],"listItems":[],"multiselect":false,"name":"heading","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":null,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Yoyoyo","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"parent","filters":[],"listItems":[],"multiselect":false,"name":"parent","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"body","filters":[],"listItems":[],"multiselect":false,"name":"body","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! Hello, it's a BODY TEXT bruh! ","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"heading","filters":[],"listItems":[],"multiselect":false,"name":"heading","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"Yoyoyo","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

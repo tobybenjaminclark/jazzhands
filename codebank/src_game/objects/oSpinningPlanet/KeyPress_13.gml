@@ -11,7 +11,7 @@ if(is_stopper)
 	audio_play_sound(snd_ping_low, 0, false);
 	global.current_beatmap = levels[index];
 	global.numerical_level = 4 * (world) + index + 1
-	global.current_level = "DEMO" + "-L" + string(world + 1);
+	global.current_level = "W" + string(world + 1) + "-L" + string(index + 1);
 	global.queued_room = rmstage_harmonica;
 }
 
