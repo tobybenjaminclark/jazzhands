@@ -7,4 +7,4 @@ bar_height = 20;   // Height of the loading bar
 bar_x = x;
 bar_y = y;
 
-audio_play_sound(snd_level, 0, true);
+audio_play_sound(snd_level, 0, true, 0.2);

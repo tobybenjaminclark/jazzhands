@@ -1,113 +1,261 @@
 {
-    "name": "Earth",
-    "sound_loop":"cutscenedata/latin.ogg",
+    "name": "Crash Landing",
+    "sound_loop": "cutscenedata/bongo2.ogg",
     "frames": [
         {
-            "background": "cutscenedata/mexico.png",
-            "foreground":"cutscenedata/nothing.png",
-            "heading": "Mexico",
-            "body": "As the sun sets over Mexico beach, the air fills with the sounds of music and laughter. A crowd gathers on the sandy shore, swaying to the rhythm of live music. Mojo steps up, his energy electric, ready to share his dream of cosmic funk. With a playful wink, he gears up to start a beachside dance party that will spread joy across the galaxy!",
+            "background": "cutscenedata/backstage.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "sound_effect": "cutscenedata/crowd.ogg",
+            "body": "The crowd's going wild... I think they want an encore!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/backstage.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "I've already packed up all of the gear. We need to hurry, or we'll be late to our gig on Mars!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: Vessel Theseoid is en route to Mars. Estimated time of arrival: 8 hours, 13 minutes. All systems are functioning within normal parameters. Cruise control initiated.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Zowie! I'm so pumped from that set. The crowd loved me!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "What a great show, Mojo! You've earned a well-deserved break. Meanwhile, I've upgraded the Beat Deck for your next gig - your funk levels will be through the roof!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "What would I do without my trusty engineer? Now, time for a snooze...",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: Imminent wormhole detected. Probability of successful traversal: 0%. Initiating death sequence. Clearing search history.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "sound_effect": "cutscenedata/wormhole.ogg",
+            "body": "NOOOOOOOOOOOOOOOOOO!!!!!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/space.png",
+            "heading": "Space",
+            "foreground": "cutscenedata/traveller.png",
+            "body": "Somewhere in another universe...",
             "type": "scene"
         },
         {
-            "background": "cutscenedata/mexico.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "My head hurts... Are we still alive?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Hola, Mexico! I can feel the energy already - this place is alive!",
+            "body": "More importantly... How are we going to get to our gig???",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
-            "foreground": "cutscenedata/fan_1.png",
-            "sound_effect":"cutscenedata/fan1.ogg",
-            "heading": "Fan",
-            "body": "Mojo! We're so happy to see you!",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Theseoid is intact... It must have been reassembled at a quantum level. But if each piece of the ship has been replaced, is it still the same ship?",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: We have reached Galaxy Jazzus IV.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Strange... Computer, provide a detailed report on Galaxy Jazzus IV.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/galaxy_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "On Galaxy Jazzus IV... A cosmic orchestra sang in perfect harmony.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/galaxy_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Each planet contributing a unique melody, each note blending into a beautiful song.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "There emerged a being of unparalleled musical talent, The Grand Composer.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_1.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "His baton, shimmering with celestial light, echoed a cosmic groove through the void!",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_2.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "But as the ages wore on, and eons had passed, the Grand Composer's admiration twisted into envy.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/grand_composer_2.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "His baton, once creating wonderful music, now enforced silence.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/black_white_galaxy.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "He stifled the planets' voices, and an ominous hum dominated the galaxy.",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/black_white_galaxy.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "The cosmic orchestra has since remained silent, awaiting the day that they may sing again...",
+            "type": "scene"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "body": "Attention: Unauthorized energy surge detected. Malicious energy is disrupting control systems.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Mojo, can you feel that? A powerful hum is disrupting our navigation...",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/ship.png",
+            "foreground": "cutscenedata/computer.png",
+            "heading": "Computer",
+            "sound_effect": "cutscenedata/explosion.ogg",
+            "body": "Warning: Critical failure in control systems. Initiating crash landing procedures. Brace for impact.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Player",
+            "body": "Well, that wasn't part of the plan. You okay, Mojo?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "You all ready for a cosmic journey?",
+            "body": "I think so... but something feels off. My mojo... it's like it's gone.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
-            "foreground": "cutscenedata/fan_2.png",
-            "sound_effect":"cutscenedata/fan2.ogg",
-            "heading": "Fan",
-            "body": "Absolutely! But tell us - what's next for you? We heard you're planning something big!",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Player",
+            "body": "What do you mean gone? You're the funkiest being in the galaxy! Maybe it's just the crash shock.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "You bet! I've got this wild idea to take funk beyond Earth. I want to spread it across the galaxy!",
+            "body": "No, this is different. I can't feel the rhythm, the groove... it's like I've been unplugged from the funk.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
-            "foreground": "cutscenedata/fan_1.png",
-            "heading": "Fan",
-            "body": "Across the galaxy? How do you plan to do that?",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Player",
+            "body": "That hum... do you hear it? It's everywhere. It's messing with our systems. The beat deck is malfunctioning too!",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "With music, of course! I want to perform on the Moon, Mars, and who knows where else! Every planet needs some funky beats!",
+            "body": "The sound waves... they're blocking my mojo power.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
-            "foreground": "cutscenedata/fan_2.png",
-            "heading": "Fan",
-            "body": "That sounds amazing! We'd love to dance with Martians and robots!",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Player",
+            "body": "So, what do we do now? We can't stay here forever, and we sure can't perform with our tech busted.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico.png",
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Exactly! Just imagine the rhythm of the universe coming together. We'll groove like never before! But first, let's turn up the funk right here in Mexico City!",
+            "body": "We fix the ship, get my mojo back, and find out what's really going on here. There's gotta be someone who can help us out.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico_stage.png",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Player",
+            "body": "Guess I'll have to take your place on stage for now. I might not have your groove, but I can still hold a beat.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "Alright, before we take this party to the next level, let's make sure we're in sync! We'll be using our hands to bring the groove to life.",
+            "body": "You've got heart, Player. I'll work on repairing the Beat Deck. But first, let's see your groove!",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/mexico_stage.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "To start, we've gotta raise our hands to the camera - nice and steady, like we're ready to take the stage. Hold them still so the game can lock in on our movements. The magic happens when we match our hands with the symbols on the screen!",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Player",
+            "body": " Alright, let's go. And Mojo, we're getting your mojo back, no matter what!!",
             "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/mexico_stage.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Once we've got our hands locked in, the real fun begins. We'll hit those symbols with precision, moving to the rhythm. It's all about feeling the groove, reacting to the beat, and keeping that energy flowing!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/mexico_stage.png",
-            "foreground": "cutscenedata/open_palm.png",
-            "heading": "Mojo",
-            "body": "When those symbols appear, we've got two moves to nail together - first, the open palm! We spread our fingers wide, like we're catching all that cosmic energy!",
-            "type": "showcase"
-        },
-        {
-            "background": "cutscenedata/mexico_stage.png",
-            "foreground": "cutscenedata/closed_fist.png",
-            "heading": "Mojo",
-            "body": "Then, there's the closed palm. We clench that fist, strong and ready, like we're smashing through the beat! Ready to rock this stage together? Let's light it up!",
-            "type": "showcase"
         }
     ]
 }

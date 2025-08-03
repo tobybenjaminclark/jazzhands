@@ -263,10 +263,7 @@
   "sdfSpread":8,
   "size":28.0,
   "styleName":"Bold Italic",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"",
   "usesSDF":false,
 }

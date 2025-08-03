@@ -97,33 +97,41 @@
             }
         },
         {
-            "event_type": "bouldered_beat",
+            "event_type": "beat",
             "event_data": {
-                "time": 30770,
+                "time": 30710,
                 "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 30710,
+                "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "bouldered_beat",
+            "event_type": "beat",
             "event_data": {
-                "time": 34661,
+                "time": 31669,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "bouldered_beat",
+            "event_type": "beat",
             "event_data": {
-                "time": 38500,
-                "symbol": "POINTING_UP",
+                "time": 31669,
+                "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 40480,
+                "time": 32628,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -131,7 +139,152 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 40480,
+                "time": 32628,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 33586,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 33586,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 34561,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 34561,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 35504,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 35504,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 36479,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 36479,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 37437,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 37437,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 38413,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 38413,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 39355,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 39355,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 40313,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 40313,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 41338,
+                "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 41338,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }

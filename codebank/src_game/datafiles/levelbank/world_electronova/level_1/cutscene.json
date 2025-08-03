@@ -1,105 +1,93 @@
 {
-    "name": "Lunar Groove: Moon Base",
-    "sound_loop":"cutscenedata/moon.ogg",
+    "name": "Welcome to Electronova!",
+    "sound_loop": "cutscenedata/music4.ogg",
     "frames": [
         {
-            "background": "cutscenedata/moon.png",
-            "foreground":"cutscenedata/nothing.png",
-            "heading": "Moon",
-            "body": "On the Moon's surface, a funky lunar party is about to kick off! The Lunar Base gleams under the shimmering stars, a high-tech playground filled with whirring robots and flashing lights. With a swagger in his step and a twinkle in his eye, Mojo's pumped to teach these metal marvels how to groove!",
-            "type": "scene"
-        },
-        {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Whoa... I'm actually on the Moon. Feels like a dream, but I'm here to make these robots dance!",
+            "background": "cutscenedata/background.png",
+            "sound_effect":"cutscenedata/diode.ogg",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "Intruder detected. Scanning... Greetings specimen. I am Diode, guardian of Complex 0x2A.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/rob.png",
-            "sound_effect":"cutscenedata/rob.ogg",
-            "heading": "R.O.B.",
-            "body": "Greetings, Mojo. I am R.O.B., the Lunar Base's primary function coordinator. You have arrived for the... performance?",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Hello Diode! Your planet looks beautiful, but what happened to it?",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "That's right, R.O.B.! I hear your crew's never experienced live music before - today's the day we fix that!",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "Planet: Electronova. Status: Silent. Electronova once thrived with the energy of techno music. Diodes and Fuseons worked together to power the beats. But the Grand Composer's interference jammed our signal and shorted our circuits, leaving Electronova in perpetual silence.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/rob.png",
-            "heading": "R.O.B.",
-            "body": "We have analyzed music frequencies, but we have not... experienced rhythm. What is the function of dancing?",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Don't worry Diode, I'm here to restore your harmony. I rode the great wave from Harmonious, and Monad told me I might find parts here to repair my ship.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "It's not about function, my friend. Dancing is all about feelin' the beat and letting your body move! I'll show you how it's done.",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "Your mission aligns with our needs. Mother Board will provide the parts you require.",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/rob.png",
-            "heading": "R.O.B.",
-            "body": "Understood. We are prepared to learn.",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Great! Where can I find this Mother Board?",
             "type": "dialogue"
         },
         {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Alright, I hope you've got your gears oiled up - because once I start, you won't want to stop!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/rob.png",
-            "heading": "R.O.B.",
-            "body": "We are fully operational and prepared for... fun?",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Alright then! Let's light up the Moon and show the universe that even robots can groove!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/moon.png",
-            "foreground": "cutscenedata/rob.png",
-            "heading": "R.O.B.",
-            "body": "Beginning dance program. Activating funk mode.",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/moon_stage.png",
-            "foreground": "cutscenedata/mojo.png",
-            "heading": "Mojo",
-            "body": "Alright, partner! We've rocked Earth, but here on the Moon, we've got a new challenge. We're not just hitting beats - we're holding them. Let's get those moves steady!",
-            "type": "dialogue"
-        },
-        {
-            "background": "cutscenedata/moon_stage.png",
-            "foreground": "cutscenedata/victory.png",
-            "heading": "Mojo",
-            "body": "When that peace sign symbol shows up, we hold our hands just like this - two fingers up, and we keep it locked in. It's all about control, feelin' the rhythm, and holding that groove!",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/motherboard_asleep.png",
+            "sound_effect": "cutscenedata/motherboard.ogg",
+            "heading": "Diode",
+            "body": "Mother Board is located in the Central Hub, but her circuits are dormant. You must mend her broken Rhythm Core, a task that only the best techno jammers can accomplish.",
             "type": "showcase"
         },
         {
-            "background": "cutscenedata/moon_stage.png",
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Sounds like a challenge, but I'm ready. Where is the Rhythm Core?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/diode.png",
+            "heading": "Diode",
+            "body": "The Rhythm Core is guarded by the Fuseon Sentinels. Their position is written on my Locator Chip. But it requires a blast of techno power to jumpstart.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Stand still Diode, I can handle this.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
             "foreground": "cutscenedata/mojo.png",
             "heading": "Mojo",
-            "body": "We keep it steady together, holding the beat while the funk flows through us. Let's show these robots how it's done!",
+            "body": "Player! A new symbol has appeared on the Beat Deck!",
             "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/pointingup.png",
+            "sound_effect": "cutscenedata/item.ogg",
+            "heading": "Pointing Up",
+            "body": "When the beat appears, raise your index finger to the sky!",
+            "type": "showcase"
         }
     ]
 }

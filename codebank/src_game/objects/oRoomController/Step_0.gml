@@ -1,11 +1,12 @@
-/// @description Handles Room Transitions
+/// @description Handles Room Transitions (Spin Effect - Shortened Duration)
 /// @author Toby Benjamin Clark
 /// @date   14/01/2023
+
+var TRANSITION_DURATION = 10; /* <-- Was 20, now 10 for faster transitions */
 
 /* If there is a queued room */
 if(global.queued_room != -1)
 {
-
 	transitioning = true;
 	next_room = global.queued_room;
 	global.queued_room = -1;
@@ -17,9 +18,9 @@ if(transitioning)
 	step += 1;
 	
 	shake_fx = layer_get_fx("ShakeLayer");
-	fx_set_parameter(shake_fx, "g_TwistBlurIntensity", 0.2 * modified_logistic_curve(step / 20));
+	fx_set_parameter(shake_fx, "g_TwistBlurIntensity", 0.2 * modified_logistic_curve(step / TRANSITION_DURATION));
 	
-	if(step >= 20)
+	if(step >= TRANSITION_DURATION)
 	{
 		room_goto(next_room);
 		transitioning = false;
@@ -33,7 +34,7 @@ else if(slowing)
 	shake_fx = layer_get_fx("ShakeLayer");
 	step -= 1;
 
-	fx_set_parameter(shake_fx, "g_TwistBlurIntensity", 0.2 * (modified_logistic_curve(step / 20)));
+	fx_set_parameter(shake_fx, "g_TwistBlurIntensity", 0.2 * modified_logistic_curve(step / TRANSITION_DURATION));
 
 	if(step <= 0)
 	{
@@ -50,9 +51,3 @@ else
 	slowing = false;
 	fx_set_parameter(shake_fx, "g_TwistBlurIntensity", 0);
 }
-
-
-
-
-
-
