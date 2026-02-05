@@ -512,10 +512,7 @@
   "sdfSpread":8,
   "size":35.0,
   "styleName":"Book",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"",
   "usesSDF":false,
 }
