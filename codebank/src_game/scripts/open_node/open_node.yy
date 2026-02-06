@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"open_node",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"open_node",
+  "parent":{
+    "name":"Freemode",
+    "path":"folders/Scripts/Freemode.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

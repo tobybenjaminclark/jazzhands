@@ -71,7 +71,13 @@ if(!global.in_cutscene && watched_cutscene == true && current_time < end_time){
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_top);
 	draw_set_font(fntLevelNameTiny);
-	var sound_string = string(audio_sound_length(sound) div 60) + ":" + string(round(audio_sound_length(sound) mod 60));
+	var len = audio_sound_length(sound);
+	
+	/* handle 2:8 to 2:08 issue */
+	var len_min = floor(len / 60);
+	var len_sec = floor(len - (len_min * 60));
+	var sound_string = string(len_min) + ":" + (len_sec >= 10 ? string(len_sec) : "0" + string(len_sec));
+
 	draw_text(inset - (thickness div 2) + width, room_height + bar_height - inset + 3, sound_string);
 	draw_text(inset - (thickness div 2), room_height + bar_height - inset + 3, "0:00");
 	
