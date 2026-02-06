@@ -1,0 +1,79 @@
+{
+    "name": "Rhythic Sanctuary",
+    "sound_loop": "cutscenedata/bongo_and_drum.ogg",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "sound_effect": "cutscenedata/om.ogg",
+            "body": "Impressive, traveller! Your groove is unparalleled. You have proven yourself worthy. Let us proceed to the Elder Maoi.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Thank you, Monad. Lead the way.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Follow me closely. Our path takes us through a sacred grove known as the Rhythmic Sanctuary, where the functional guardian Funktor resides.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Greetings, Funktor. We seek passage to the Elder Maoi. This traveller has proven his worthiness.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/funktor.png",
+            "heading": "Funktor",
+            "sound_effect": "cutscenedata/funktor_om.ogg",
+            "body": "Monad, you know I must protect the path. The Grand Composer's deceit knows no bounds. How can I be sure this traveller is not in league with him?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "I understand your concern, Funktor. We come only to free you from tyranny, and restore Harmonius to its former glory.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/funktor.png",
+            "heading": "Funktor",
+            "body": "Words are easy to speak. Prove your intentions with your groove. Show me that your soul resonates with the true essence of funk.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Very well. Prepare to witness the groove that will free this world!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/mojo.png",
+            "heading": "Mojo",
+            "body": "Player, I've upgraded the Beat Deck! A new beat has been added to the system...",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background2.png",
+            "foreground": "cutscenedata/holdbeat.png",
+            "sound_effect": "cutscenedata/item.ogg",
+            "heading": "Hold Beat",
+            "body": "When a Hold Beat appears, keep those hands still and maintain the symbol for the duration of the beat!",
+            "type": "showcase"
+        }
+    ]
+}

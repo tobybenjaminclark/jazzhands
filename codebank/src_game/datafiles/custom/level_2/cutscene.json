@@ -1,0 +1,106 @@
+{
+    "name": "The Melody of the Maoi",
+    "sound_loop": "cutscenedata/tribal_drums.ogg",
+    "frames": [
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "sound_effect": "cutscenedata/om.ogg",
+            "body": "Greetings, travellers. You have landed on the shores of Harmonius, a once vibrant planet in the cosmic orchestra. I am Monad, a humble philosopher among the Maoi. I heard your song, and it inspired me.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Harmonius... It's beautiful, but what happened?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "It is the work of the Grand Composer. Long ago, this world was alive with uplifting beats. But the Grand Composer grew envious and silenced us all.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "That's terrible... Is there anything we can do to help?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Indeed! We possess a Celestial Amp, a device capable of restoring our lost melody. But to wield it, you must convince our leader, the Elder Maoi, to entrust it to you.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "The Elder Maoi? Where can we find him?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/elder.png",
+            "heading": "Monad",
+            "sound_effect": "cutscenedata/low_om.ogg",
+            "body": "With eyes that have witnessed the birth and death of stars, the Elder Maoi stands atop the tallest peak of Harmonius, contemplating the mysteries of the universe. Seek his wisdom, and perhaps he will aid you in your quest to silence the Grand Composer's tyranny.",
+            "type": "showcase"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "I'll try my best to save your planet. But may I ask, who gave you the name Monad?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Ah, my name? Well, you could say I'm a 'functional' philosopher, deeply rooted in the principles of order and abstraction. A monad encapsulates values and sequences operations in a structured manner, and I strive to distill the essence of existence into coherent patterns of thought.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "So you're like the monad of this world's wisdom?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Precisely! In a universe of chaos, I strive to be an unwavering thread of reason. Now brave traveller, set forth to restore the melody of Harmonius!",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Interesting. So, how exactly do we scale this mountain?",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/maoi.png",
+            "heading": "Monad",
+            "body": "Before venturing to the Elder, you must first show me that you are worthy of his presence. Prove to me that you can handle the divine vibes, and I will guide you atop the mountain myself.",
+            "type": "dialogue"
+        },
+        {
+            "background": "cutscenedata/background.png",
+            "foreground": "cutscenedata/traveller.png",
+            "heading": "Traveller",
+            "body": "Challenge accepted, Monad. Throw the vibes our way!",
+            "type": "dialogue"
+        }
+    ]
+}

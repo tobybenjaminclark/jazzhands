@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scan_custom_folder",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scan_custom_folder",
+  "parent":{
+    "name":"Freemode",
+    "path":"folders/Scripts/Freemode.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
