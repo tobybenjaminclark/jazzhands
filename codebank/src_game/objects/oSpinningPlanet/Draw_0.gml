@@ -48,7 +48,17 @@ if(text_alpha != 0)
 			shader_reset();
 		}
 		else{
-			draw_sprite_ext(sprPlanetRecord1, image_index, px, py, 0.12, 0.12, 0, c_white, text_alpha);
+			if (angle == 0) {
+				draw_set_font(fntLevelNameHuge);
+				draw_set_color(c_white);
+			} else {
+				draw_set_font(fntLevelName);
+				draw_set_color(c_gray);
+			};
+			draw_set_halign(fa_center);
+			draw_set_valign(fa_middle);
+			draw_text(px, py, string(index + 1));
+			draw_set_color(c_white);
 		}
 			
 		if(angle == 0)
