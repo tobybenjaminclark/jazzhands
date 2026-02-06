@@ -59,3 +59,5 @@ global.current_level = "";
 #macro COMBO_HOLD 3
 
 #macro RANDOMBEAT_SAFEZONE_OFFSET 400
+
+#macro CUSTOM_LEVEL_DIRECTORY working_directory + "custom/*"
