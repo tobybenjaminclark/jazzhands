@@ -4,6 +4,8 @@
 
 
 /* Draw planet sprite */
+
+
 if(player_level < world * 4){
 	shader_set(shader_bw);
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
@@ -19,22 +21,18 @@ else{
 if(text_alpha != 0)
 {
 	draw_set_alpha(text_alpha);
-	draw_sprite_ext(sprPlanetSelector, 0, x, y, 0.29 + (0.02 * selector_scale), 0.29 + (0.02 * selector_scale), 0, c_white, text_alpha);
 	
 	/* Draw Planet */	
-	draw_set_halign(fa_center);
+	draw_set_halign(fa_right);
 	
 	draw_set_font(fntLevelName);
-	draw_text(x, y + 185, title);
+	draw_text(x - 135, y + 5, title);
 	
-	draw_set_font(fntLevelNameSmall);
-	draw_text(x, y + 250, "[PERFORM]");
-	
-	
+	draw_set_font(fntRaananaSmall);
+	draw_text(x - 135, y + 65, description);
 	
 	
 	// Draw Level Headers
-	/*
 	var index = -1;
 	for (var angle = start_angle; angle < start_angle + 91; angle += 30)
 	{
@@ -55,8 +53,11 @@ if(text_alpha != 0)
 			
 		if(angle == 0)
 		{
+			/* Draw planet selector */
 			draw_sprite_ext(sprPlanetSelector, 0, px, py, 0.1 + (0.02 * selector_scale), 0.1 + (0.02 * selector_scale), 0, c_white, text_alpha);
 
+
+			/* Draw 'Moons' (levels) */
 			draw_set_halign(fa_left);
 			
 			draw_set_font(fntRaananaSmall);
@@ -67,8 +68,6 @@ if(text_alpha != 0)
 
 		}
 	}
-	*/
 	draw_set_alpha(1);
 }
-
 
