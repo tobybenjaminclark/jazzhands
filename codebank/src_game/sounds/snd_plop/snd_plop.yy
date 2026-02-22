@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.032,
+  "duration":1.0320182,
   "name":"snd_plop",
   "parent":{
     "name":"Sounds",

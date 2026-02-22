@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.6008,
+  "duration":0.6008163,
   "name":"snd_vibrate",
   "parent":{
     "name":"Sounds",

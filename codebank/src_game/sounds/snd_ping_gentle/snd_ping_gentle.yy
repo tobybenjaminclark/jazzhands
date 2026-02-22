@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":2.037531,
+  "duration":2.037551,
   "name":"snd_ping_gentle",
   "parent":{
     "name":"Sounds",
