@@ -3,7 +3,7 @@
         "level_name": "Rhythic Sanctuary",
         "description": "Conquer Funktor's trials to earn passage to the Elder Maoi!",
         "background": "TUTORIAL",
-        "song": "snd_bazaar.ogg"
+        "song": "snd_cluster.ogg"
     },
     "events": [
         {

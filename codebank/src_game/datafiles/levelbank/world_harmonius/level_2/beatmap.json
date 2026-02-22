@@ -3,7 +3,7 @@
         "level_name": "The Melody of the Maoi",
         "description": "Enter the tranquil shores of Harmonius, a cosmic symphony waiting to be restored.",
         "background": "TUTORIAL",
-        "song": "snd_bazaar.ogg"
+        "song": "snd_inspect.ogg"
     },
     "events": [
         {
