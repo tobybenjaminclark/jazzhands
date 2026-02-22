@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"star_logic",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"star_logic",
+  "parent":{
+    "name":"Freemode",
+    "path":"folders/Scripts/Freemode.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
