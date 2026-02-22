@@ -3,13 +3,17 @@
         "level_name": "Rhythic Sanctuary",
         "description": "Conquer Funktor's trials to earn passage to the Elder Maoi!",
         "background": "TUTORIAL",
+<<<<<<< Updated upstream
         "song": "snd_cluster.ogg"
+=======
+        "song": "snd_level.ogg"
+>>>>>>> Stashed changes
     },
     "events": [
         {
             "event_type": "beat",
             "event_data": {
-                "time": 6800,
+                "time": 7300,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -17,47 +21,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 6800,
-                "symbol": "OPEN_PALM",
-                "side": "RIGHT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 13600,
-                "symbol": "CLOSED_FIST",
-                "side": "LEFT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 13600,
-                "symbol": "CLOSED_FIST",
-                "side": "RIGHT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 20400,
-                "symbol": "OPEN_PALM",
-                "side": "LEFT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 24004,
-                "symbol": "CLOSED_FIST",
-                "side": "LEFT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 27404,
+                "time": 7300,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -65,31 +29,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 30904,
-                "symbol": "CLOSED_FIST",
-                "side": "RIGHT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 34204,
-                "symbol": "OPEN_PALM",
-                "side": "LEFT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 34204,
-                "symbol": "OPEN_PALM",
-                "side": "RIGHT"
-            }
-        },
-        {
-            "event_type": "beat",
-            "event_data": {
-                "time": 37504,
+                "time": 11000,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -97,7 +37,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 37504,
+                "time": 11000,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
@@ -105,7 +45,23 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 41204,
+                "time": 14800,
+                "symbol": "VICTORY",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 14800,
+                "symbol": "VICTORY",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 18469,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -113,7 +69,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 41204,
+                "time": 18469,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -121,23 +77,23 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 44604,
-                "symbol": "CLOSED_FIST",
+                "time": 22169,
+                "symbol": "VICTORY",
                 "side": "LEFT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 44604,
-                "symbol": "CLOSED_FIST",
+                "time": 22169,
+                "symbol": "VICTORY",
                 "side": "RIGHT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 54804,
+                "time": 25769,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -145,7 +101,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 54804,
+                "time": 25769,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -153,23 +109,23 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 58404,
-                "symbol": "CLOSED_FIST",
+                "time": 29469,
+                "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 58404,
-                "symbol": "CLOSED_FIST",
+                "time": 29469,
+                "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 68404,
+                "time": 33169,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -177,7 +133,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 68404,
+                "time": 33169,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -185,23 +141,23 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 71704,
-                "symbol": "CLOSED_FIST",
+                "time": 36769,
+                "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 71704,
-                "symbol": "CLOSED_FIST",
+                "time": 36769,
+                "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
         },
         {
             "event_type": "beat",
             "event_data": {
-                "time": 75204,
+                "time": 40469,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -209,7 +165,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 75204,
+                "time": 40469,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -217,7 +173,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 78904,
+                "time": 44069,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -225,7 +181,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 78904,
+                "time": 44069,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
@@ -233,7 +189,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 48100,
+                "time": 48045,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -241,7 +197,7 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 51500,
+                "time": 51545,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -249,7 +205,15 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 61500,
+                "time": 51545,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 55445,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -257,8 +221,64 @@
         {
             "event_type": "beat",
             "event_data": {
-                "time": 64900,
+                "time": 59445,
+                "symbol": "OPEN_PALM",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 59445,
+                "symbol": "OPEN_PALM",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 63245,
                 "symbol": "CLOSED_FIST",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 63245,
+                "symbol": "CLOSED_FIST",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 66845,
+                "symbol": "VICTORY",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 66845,
+                "symbol": "VICTORY",
+                "side": "RIGHT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 70545,
+                "symbol": "POINTING_UP",
+                "side": "LEFT"
+            }
+        },
+        {
+            "event_type": "beat",
+            "event_data": {
+                "time": 70545,
+                "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
         }
