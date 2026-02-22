@@ -19,7 +19,7 @@ array_push(n1, s.n_down);
 
 for (var i = 0; i < array_length(n1); i++) {
     var a = n1[i];
-    _draw_edge_once(drawn, s, a, 1.0);
+    _draw_edge_once(drawn, s, a, 0.4, 4);
 }
 
 // ----- ring 2: neighbours -> their neighbours (alpha 0.5)
@@ -38,7 +38,7 @@ for (var i = 0; i < array_length(n1); i++) {
         var b = nb[j];
         if (b == noone || !instance_exists(b)) continue;
         if (b == s) continue; // don't redraw ring1 as ring2
-        _draw_edge_once(drawn, a, b, 0.5);
+        _draw_edge_once(drawn, a, b, 0.2, 2);
     }
 }
 
@@ -55,7 +55,7 @@ if (ds_exists(pos_map, ds_type_map)) {
 
     for (var k = 0; k < 4; k++) {
         var d = _map_get_or_noone(pos_map, _key(s.grid_x + dx[k], s.grid_y + dy[k]));
-        _draw_edge_once(drawn, s, d, 0.5);
+        _draw_edge_once(drawn, s, d, 0.5, 2);
     }
 }
 

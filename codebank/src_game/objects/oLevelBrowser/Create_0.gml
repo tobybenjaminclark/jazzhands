@@ -44,7 +44,7 @@ function _edge_key(_a, _b) {
     else         return string(ib) + "|" + string(ia);
 }
 
-function _draw_edge_once(_drawn_map, _a, _b, _alpha) {
+function _draw_edge_once(_drawn_map, _a, _b, _alpha, _width) {
     if (_a == noone || _b == noone) return;
     if (!instance_exists(_a) || !instance_exists(_b)) return;
 
@@ -52,8 +52,19 @@ function _draw_edge_once(_drawn_map, _a, _b, _alpha) {
     if (ds_map_exists(_drawn_map, k)) return;
     ds_map_add(_drawn_map, k, 1);
 
+    var x1 = _a.x, y1 = _a.y;
+    var x2 = _b.x, y2 = _b.y;
+
+    // Option A: snap everything to pixel centers (good general fix)
+    x1 = floor(x1) + 0.5;  y1 = floor(y1) + 0.5;
+    x2 = floor(x2) + 0.5;  y2 = floor(y2) + 0.5;
+
+    // Option B (if you prefer): only nudge perfectly horizontal/vertical
+    // if (abs(y1 - y2) < 0.001) { y1 = floor(y1) + 0.5; y2 = floor(y2) + 0.5; }
+    // if (abs(x1 - x2) < 0.001) { x1 = floor(x1) + 0.5; x2 = floor(x2) + 0.5; }
+
     draw_set_alpha(_alpha);
-    draw_line_width(_a.x, _a.y, _b.x, _b.y, 2);
+    draw_line_width(x1, y1, x2, y2, _width);
 }
 
 function _build_from_names(_names_array) {
