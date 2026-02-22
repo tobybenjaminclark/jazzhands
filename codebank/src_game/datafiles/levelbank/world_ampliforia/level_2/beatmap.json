@@ -53,7 +53,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 5875,
-                "end_time": 6875,
+                "end_time": 6375,
                 "symbol": "VICTORY",
                 "side": "LEFT"
             }
@@ -62,7 +62,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 5875,
-                "end_time": 6875,
+                "end_time": 6375,
                 "symbol": "VICTORY",
                 "side": "RIGHT"
             }
@@ -71,7 +71,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 8175,
-                "end_time": 9175,
+                "end_time": 8675,
                 "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
@@ -80,7 +80,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 8175,
-                "end_time": 9175,
+                "end_time": 8675,
                 "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
@@ -89,7 +89,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 9975,
-                "end_time": 10975,
+                "end_time": 10475,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -98,16 +98,15 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 9975,
-                "end_time": 10975,
+                "end_time": 10475,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 11875,
-                "end_time": 12875,
+                "time": 11875,
                 "symbol": "VICTORY",
                 "side": "LEFT"
             }
@@ -129,91 +128,81 @@
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 13875,
-                "end_time": 14875,
+                "time": 13875,
                 "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 13875,
-                "end_time": 14875,
+                "time": 13875,
                 "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 15975,
-                "end_time": 16975,
+                "time": 15975,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 15975,
-                "end_time": 16975,
+                "time": 15975,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 16733,
-                "end_time": 18733,
+                "time": 16733,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 16733,
-                "end_time": 18733,
+                "time": 16733,
                 "symbol": "VICTORY",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 17633,
-                "end_time": 19633,
+                "time": 17633,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 17633,
-                "end_time": 19633,
+                "time": 17633,
                 "symbol": "VICTORY",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 19933,
-                "end_time": 21933,
+                "time": 19933,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 19933,
-                "end_time": 21933,
+                "time": 19933,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
@@ -235,28 +224,25 @@
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 21882,
-                "end_time": 23582,
+                "time": 21882,
                 "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 21882,
-                "end_time": 23582,
+                "time": 21882,
                 "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
         },
         {
-            "event_type": "hold",
+            "event_type": "beat",
             "event_data": {
-                "start_time": 24382,
-                "end_time": 25882,
+                "time": 24382,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -273,7 +259,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 26230,
-                "end_time": 27230,
+                "end_time": 26730,
                 "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
@@ -282,7 +268,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 26230,
-                "end_time": 27230,
+                "end_time": 26730,
                 "symbol": "POINTING_UP",
                 "side": "RIGHT"
             }
@@ -291,7 +277,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 28130,
-                "end_time": 29130,
+                "end_time": 28630,
                 "symbol": "VICTORY",
                 "side": "LEFT"
             }
@@ -300,7 +286,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 28130,
-                "end_time": 29130,
+                "end_time": 28630,
                 "symbol": "VICTORY",
                 "side": "RIGHT"
             }
@@ -309,7 +295,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 30230,
-                "end_time": 31230,
+                "end_time": 30730,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -318,7 +304,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 30230,
-                "end_time": 31230,
+                "end_time": 30730,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
@@ -327,7 +313,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 32430,
-                "end_time": 33430,
+                "end_time": 32930,
                 "symbol": "VICTORY",
                 "side": "LEFT"
             }
@@ -336,7 +322,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 34430,
-                "end_time": 35430,
+                "end_time": 34930,
                 "symbol": "CLOSED_FIST",
                 "side": "RIGHT"
             }
@@ -345,7 +331,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 36330,
-                "end_time": 37330,
+                "end_time": 36830,
                 "symbol": "POINTING_UP",
                 "side": "LEFT"
             }
@@ -354,7 +340,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 38230,
-                "end_time": 39230,
+                "end_time": 38730,
                 "symbol": "VICTORY",
                 "side": "RIGHT"
             }
@@ -379,7 +365,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 40898,
-                "end_time": 41898,
+                "end_time": 41398,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -388,7 +374,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 41898,
-                "end_time": 42898,
+                "end_time": 42398,
                 "symbol": "VICTORY",
                 "side": "RIGHT"
             }
@@ -557,7 +543,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 56584,
-		"end_time": 57844,
+		        "end_time": 57344,
                 "symbol": "OPEN_PALM",
                 "side": "LEFT"
             }
@@ -566,7 +552,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 58084,
-		"end_time": 59984,
+                "end_time": 59484,
                 "symbol": "CLOSED_FIST",
                 "side": "LEFT"
             }
@@ -575,7 +561,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 59877,
-		"end_time": 61277,
+		"end_time": 60777,
                 "symbol": "OPEN_PALM",
                 "side": "RIGHT"
             }
@@ -584,7 +570,7 @@
             "event_type": "hold",
             "event_data": {
                 "start_time": 61877,
-		"end_time": 63277,
+		"end_time": 62777,
                 "symbol": "VICTORY",
                 "side": "RIGHT"
             }
